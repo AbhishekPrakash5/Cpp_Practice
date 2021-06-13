@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<NotepadPlus>
+   <!-- The key words of the supported languages, don't touch them! -->
+   <Languages>
+        <Language name="normal" ext="txt"/>
+        <Language name="c" ext="c" commentLine="//" commentStart="/*" commentEnd="*/">
+            <Keywords name="instre1">if else switch case default break goto return for while do continue typedef sizeof NULL</Keywords>
+            <Keywords name="type1">void struct union enum char short int long double float signed unsigned const static extern auto register volatile</Keywords>
+        </Language>
+        <Language name="cpp" ext="h hpp hxx cpp cxx cc" commentLine="//" commentStart="/*" commentEnd="*/">
+            <Keywords name="instre1">alignof and and_eq bitand bitor break case catch compl const_cast continue default delete do dynamic_cast else false for goto if namespace new not not_eq nullptr operator or or_eq reinterpret_cast return sizeof static_assert static_cast switch this throw true try typedef typeid using while xor xor_eq NULL</Keywords>
+            <Keywords name="type1">alignas asm auto bool char char16_t char32_t class const constexpr decltype double enum explicit export extern final float friend inline int int8_t int16_t int32_t int64_t int_fast8_t int_fast16_t int_fast32_t int_fast64_t intmax_t intptr_t long mutable noexcept override private protected public register short signed size_t ssize_t static struct template thread_local typename uint8_t uint16_t uint32_t uint64_t uint_fast8_t uint_fast16_t uint_fast32_t uint_fast64_t uintmax_t uintptr_t union unsigned virtual void volatile wchar_t</Keywords>
+        </Language>
+        <Language name="searchResult" ext="">
+            <Keywords name="instre1"></Keywords>
+            <Keywords name="instre2"></Keywords>
+            <Keywords name="type1"></Keywords>
+        </Language>
+<!--
+        <Language name="" ext="" commentLine="" commentStart="" commentEnd="">
+            <Keywords name="instre1"></Keywords>
+            <Keywords name="instre2"></Keywords>
+            <Keywords name="type1"></Keywords>
+            <Keywords name="type2"></Keywords>
+            <Keywords name="type3"></Keywords>
+            <Keywords name="type4"></Keywords>
+        </Language>
+-->
+    </Languages>
+</NotepadPlus>

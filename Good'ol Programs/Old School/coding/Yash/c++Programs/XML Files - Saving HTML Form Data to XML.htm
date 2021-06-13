@@ -1,0 +1,831 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+
+<title>XML Files - Saving HTML Form Data to XML</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+
+<meta name="description" content="XMLFiles.com provides web developers with a basic introduction to programming in XML, XML DTD, XML DOM, XML XSL, XML RSS and ASP.NET. Learn how to create basic XML programs from XMLFile.com's expert tutorials and example code." />
+
+<meta name="keywords" content="Saving HTML Form Data to XML xml dtd dom xsl rss basic introduction xml learn programming what is xml primer training define database XML web services html to XML define definition XML database standards primer build xml schema tutorials xml extensible markup language RSS feeds XML references definitions training xml forums rss latest news rss tutorials" />
+<meta name="channel" content="Developer" />
+
+<meta name="section" content="articles">
+
+<meta name="author" content="Michael Qualls">
+<meta name="date" content="2000-12-06">
+
+<link rel="stylesheet" type="text/css" href="/css/stdtheme.css" />
+
+<!-- Begin comScore Tag -->
+<script>
+  var _comscore = _comscore || [];
+  _comscore.push({ c1: "2", c2: "17199065" });
+  (function() {
+    var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+    s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+    el.parentNode.insertBefore(s, el);
+  })();
+</script>
+<noscript>
+  <img src="http://b.scorecardresearch.com/p?c1=2&c2=17199065&cv=2.0&cj=1" />
+</noscript>
+<!-- End comScore Tag -->
+
+
+<script language="javascript" src="/js/menu.js" type="text/javascript"></script>
+
+<script language="javaScript" type="text/javascript"><!--
+
+function openDescription(ID) {
+
+var url = "http://www.ppcforhosts.com/public/util/description.cfm?id=" + ID;
+
+link = window.open(url,"newWin","directories=0,height=250,location=0,menubar=0,resizable=1,scrollbars=1,status=0,toolbar=0,width=450");
+
+}
+
+//--></script>
+
+
+<script type='text/javascript' src="/icom_includes/dfp/js/dfp-common-min.js"></script>
+<script type='text/javascript' src="/icom_includes/dfp/js/dfp-sync-min.js"></script>
+
+<!-- BEGIN ML/CCM Tag -->
+<script type='text/javascript'>var mlCLID="50459";</script>
+<script type='text/javascript' src="/icom_includes/dfp/js/dfp-ml_ccm2-min.js"></script>
+<!-- END ML/CCM Tag -->
+
+<!-- BEGIN Krux Tag -->
+<script type='text/javascript' src="/icom_includes/dfp/js/dfp-krux-min.js"></script>
+<script class="kxct" data-id="Jd_Irz2I" data-timing="async" data-version="1.9" type="text/javascript">
+	window.Krux||((Krux=function(){Krux.q.push(arguments)}).q=[]);
+	(function(){
+		var k=document.createElement('script');k.type='text/javascript';k.async=true;
+		var m,src=(m=location.href.match(/\bkxsrc=([^&]+)/))&&decodeURIComponent(m[1]);
+		k.src = /^https?:\/\/([a-z0-9_\-\.]+\.)?krxd\.net(:\d{1,5})?\//i.test(src) ? src : src === "disable" ? "" : (location.protocol==="https:"?"https:":"http:")+"//cdn.krxd.net/controltag?confid=Jd_Irz2I";
+		var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(k,s);
+	}());
+</script>
+<!-- END Krux Tag -->
+
+<script type="text/javascript">
+	eval(function(p,a,c,k,e,d){e=function(c){return c};if(!''.replace(/^/,String)){while(c--){d[c]=k[c]||c}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('0 2=1(\'2\');0 3=1(\'3\');0 6=1(\'6\');0 4=1(\'4\');0 5=1(\'5\');',7,7,'var|gDFPC|dn|jf|ir|noer|dr'.split('|'),0,{}));
+
+    googletag.defineSlot('/5055/b2b/dev/xmlfiles/ciu', [[600, 200],[300,200]], 'ciu-1').addService(googletag.pubads()).setTargeting('pos', 'top');
+    googletag.defineSlot('/5055/b2b/dev/xmlfiles/imu', [[300, 250], [300, 600]], 'imu-1').addService(googletag.pubads()).setTargeting('pos', 'top');
+    googletag.defineSlot('/5055/b2b/dev/xmlfiles/lb', [728, 90], 'lb-1').addService(googletag.pubads()).setTargeting('pos', 'top');
+    googletag.defineSlot('/5055/b2b/dev/xmlfiles/lb', [728, 90], 'lb-2').addService(googletag.pubads()).setTargeting('pos', 'low');
+    googletag.defineSlot('/5055/b2b/dev/xmlfiles/sky', [160, 600], 'sky-1').addService(googletag.pubads());
+    googletag.defineOutOfPageSlot('/5055/b2b/dev/xmlfiles/wa', 'wa-1').addService(googletag.pubads());
+    if(mbw>1049){googletag.defineOutOfPageSlot('/5055/b2b/dev/xmlfiles/hero', 'hero-1').addService(googletag.pubads());}
+
+    googletag.pubads().setTargeting('kw', ['Saving HTML Form Data to XML xml dtd dom xsl rss basic introduction xml learn programming what is xml primer training define database XML web services html to XML define definition XML database standards primer build xml schema tutorials xml extensible markup language RSS feeds XML references definitions training xml forums rss latest news rss tutorials']);
+    googletag.pubads().setTargeting('tax', ['B2B_PRODUCT_DEVELOPMENT_MARKUP_LANGUAGES_XML']);
+    googletag.pubads().setTargeting('path', ['articles','michael','htmlxml','Default.asp']);
+    googletag.pubads().setTargeting('pagetype','index');
+    googletag.pubads().setTargeting('url','articles/michael/htmlxml/Default.asp');
+	if(mbw<641){googletag.pubads().setTargeting('pfm','mob');}else{googletag.pubads().setTargeting('pfm','des');}
+	googletag.pubads().setTargeting('wtdlk',''+myWTDLK+'');
+	if(typeof _ml!='undefined'&&_ml.us){if(_ml.us.tp&&_ml.us.tp.length>0){googletag.pubads().setTargeting('mlt',''+_ml.us.tp+'');}}
+	if(typeof Krux!='undefined'&&Krux.segments&&Krux.segments.length>0&&Krux.user&&Krux.user.length>0){
+		googletag.pubads().setTargeting('ksg',Krux.segments);
+		googletag.pubads().setTargeting('kuid',Krux.user);
+	}
+
+	eval(function(p,a,c,k,e,d){e=function(c){return c};if(!''.replace(/^/,String)){while(c--){d[c]=k[c]||c}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('0(5!=\'\'&&5!=\'2\'){1.3().4(\'5\',\'\'+5+\'\')}0(6!=\'\'&&6!=\'2\'){1.3().4(\'6\',\'\'+6+\'\')}0(9!=\'\'&&9!=\'2\'){1.3().4(\'9\',\'\'+9+\'\')}0(7!=\'\'&&7!=\'2\'){1.3().4(\'7\',\'\'+7+\'\')}0(8!=\'\'&&8!=\'2\'){1.3().4(\'8\',\'\'+8+\'\')}',10,10,'if|googletag|null|pubads|setTargeting|dn|jf|ir|noer|dr'.split('|'),0,{}))
+
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs();
+    googletag.pubads().enableSyncRendering();
+    googletag.disablePublisherConsole();
+    googletag.enableServices();
+</script>
+
+</head>
+
+<body bgcolor="#FFFFFF">
+
+    <script type="text/javascript">
+       var t=displayDFPTag("wa");
+       document.write(t);
+    </script>
+
+<div align="center">
+
+<style type="text/css">
+<!--
+body { margin: 0; padding: 0;}
+.brandLogo a img { border: none;}
+.globalHeader { font: 100%/1.4 Arial, Helvetica, sans-serif; height: 25px; background-color: #111; background-image: url(/icom_includes/toolbars/globaltoolbar/img/header-bg.jpg); background-repeat: repeat-x;	background-position: center top;}
+.globalHeader .brandLogo { padding: 4px 0 0 .5em; float: left; }
+.globalHeader .brandLogo p { color: #666; font-family: Arial, sans-serif; font-size: 11px; padding: 0; margin: 0;}
+.globalHeader .login-register { text-align: right; padding: 4px .5em 0 .5em; /*float: right;*/}
+.globalHeader .login-register img{ cursor:pointer;}
+.globalHeader .logout { text-align: right;  }
+.globalHeader .logout .greeting span{ color: #797979; font-family: Arial, sans-serif; font-size: 13px; padding: 0; margin: 0;}
+.globalHeader .logout .greeting a{ color: #797979 !important; font-family: Arial, sans-serif; padding: 0; font-size: 13px; margin: 0;}
+.logout-link img{ cursor:pointer;margin-top:3px; margin-right:5px;}
+.clearfloat { clear:both; height:0;	font-size: 1px;	line-height: 0px;} 
+-->
+</style>
+<div class="globalHeader" id="ITBE-ACLHeader" style="display:none;"></div>
+<div class="globalHeader" id="ITBE-NonACLHeader" style="display:none;"></div>
+<div class="globalHeader" id="Developer.com-ACLHeader" style="display:none;"></div>
+<div class="globalHeader" id="Developer.com-NonACLHeader" style="display:none;"></div>
+<div class="globalHeader" id="Developer.com-CustomToolbar" style="display:none;"></div>
+<div class="globalHeader" id="developerBrandForum" style="display:none;"></div>
+<div class="globalHeader" id="itbeBrandForum-CustomToolbar" style="display:none;"></div>
+<div class="globalHeader" id="itbeBrandForum" style="display:none;"></div>
+<div class="globalHeader" id="ZDE-ACLHeader" style="display:none;"></div>
+<div class="globalHeader" id="ZDE-NonACLHeader" style="display:none;"></div>
+<div class="globalHeader" id="BASELINE-ACLHeader" style="display:none;"></div>
+<div class="globalHeader" id="BASELINE-NonACLHeader" style="display:none;"></div>
+<div class="globalHeader" id="CINSIDER-ACLHeader" style="display:none;"></div>
+<div class="globalHeader" id="CINSIDER-NonACLHeader" style="display:none;"></div>
+<div class="globalHeader" id="CIOINSIGHT-ACLHeader" style="display:none;"></div>
+<div class="globalHeader" id="CIOINSIGHT-NonACLHeader" style="display:none;"></div>
+<div class="globalHeader" id="EWEEK-ACLHeader" style="display:none;"></div>
+<div class="globalHeader" id="EWEEK-NonACLHeader" style="display:none;"></div>
+<div class="globalHeader" id="WBG-ACLHeader" style="display:none;"></div>
+<script async language="Javascript" src="/icom_includes/toolbars/globaltoolbar/scripts/brandingcode_new.js"></script>
+
+<table border="0" width="750" cellspacing="0" cellpadding="4">
+
+	<tr><td align="center">
+
+    <script type="text/javascript">
+       var t=displayDFPTag("lb");
+       document.write(t);
+    </script>
+    
+	</td></tr>
+
+</table>
+
+</div>
+
+
+
+<table border="0" width="100%" cellpadding="2" cellspacing="0" style="border-right: 1px solid #000000; border-left: 1px solid #000000; border-bottom: 1px solid #000000; border-top: 1px solid #000000">
+
+<tr>
+
+	<td class="topnav" align="right">
+
+		<b><a class="topnav" href="/advertise/default.asp">Advertise Here</a></b>
+
+	</td>
+
+</tr>
+
+</table>
+
+
+
+<table border="0" width="100%" cellpadding="5" cellspacing="0" style="border-right: 1px solid #000000; border-left: 1px solid #000000; border-bottom: 1px solid #000000">
+
+	<tr>
+
+		<td valign="top" align="left" class="topnav" style="border-right: 1px solid #000000">
+
+			<table border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" style="border-right: 1px solid #000000; border-left: 1px solid #000000; border-bottom: 1px solid #000000; border-top: 1px solid #000000">
+
+				<tr>
+
+					<td>
+
+						<a href="/"><img src="/images/xmlfileslogo.gif" alt="XML Files - Extensible Markup Language Tutorials for Developers - ?" width="165" height="50" border="0" /></a><br />
+
+						<div align="center" style="color:#000000">Extensible Markup Language</div>
+
+						<div id="lnavi">
+
+							<a href="/">Home</a><span class="expanded" id="upper-menu"><a href="/" onclick="toggleMenu('submenuid'); return false;" class="leftnav">XML Basics &#187;</a></span>
+
+								<span class="expanded" id="submenuid">
+
+								<div id="lnavi_sub">
+
+								<a href="/xml/"                   class="leftnav">&nbsp;&#187; XML BASICS HOME</a>
+
+								<a href="/xml/xml_intro.asp"      class="leftnav">&nbsp;&#187; XML Introduction</a>
+
+								<a href="/xml/xml_usedfor.asp"    class="leftnav">&nbsp;&#187; XML How to Use</a>
+
+								<a href="/xml/xml_syntax.asp"     class="leftnav">&nbsp;&#187; XML Syntax</a>
+
+								<a href="/xml/xml_attributes.asp" class="leftnav">&nbsp;&#187; XML Attributes</a>
+
+								<a href="/xml/xml_dtd.asp"        class="leftnav">&nbsp;&#187; XML Validation</a>
+
+								<a href="/xml/xml_browsers.asp"   class="leftnav">&nbsp;&#187; XML in your Browser</a>
+
+								<a href="/xml/xml_view.asp"       class="leftnav">&nbsp;&#187; XML Viewing</a>
+
+								<a href="/xml/xml_format.asp"     class="leftnav">&nbsp;&#187; XML Display</a>
+
+								</div>
+
+								</span>
+
+							<span class="expanded" id="upper-menu"><a href="/" onclick="toggleMenu('submenuid2'); return false;" class="leftnav">XML DTD &#187;</a></span>
+
+								<span class="expanded" id="submenuid2">
+
+								<div id="lnavi_sub">
+
+								<a href="/dtd/"                   class="leftnav">&nbsp;&#187; DTD HOME</a>
+
+								<a href="/dtd/dtd_intro.asp"      class="leftnav">&nbsp;&#187; DTD Introduction</a>
+
+								<a href="/dtd/dtd_elements.asp"   class="leftnav">&nbsp;&#187; DTD Elements</a>
+
+								<a href="/dtd/dtd_attributes.asp" class="leftnav">&nbsp;&#187; DTD Attributes</a>
+
+								<a href="/dtd/dtd_entities.asp"   class="leftnav">&nbsp;&#187; DTD Entities</a>
+
+								<a href="/dtd/dtd_validation.asp" class="leftnav">&nbsp;&#187; DTD Validation</a>
+
+								<a href="/dtd/dtd_examples.asp"   class="leftnav">&nbsp;&#187; DTD Examples</a>
+
+								</div>
+
+								</span>
+
+							<span class="expanded" id="upper-menu"><a href="/" onclick="toggleMenu('submenuid3'); return false;" class="leftnav">XML DOM &#187;</a></span>
+
+								<span class="expanded" id="submenuid3">
+
+								<div id="lnavi_sub">
+
+								<a href="/dom/"               class="leftnav">&nbsp;&#187; DOM HOME</a>
+
+								<a href="/dom/dom_intro.asp"  class="leftnav">&nbsp;&#187; DOM Introduction</a>
+
+								<a href="/dom/dom_parser.asp" class="leftnav">&nbsp;&#187; DOM Parsing</a>
+
+								<a href="/dom/dom_errors.asp" class="leftnav">&nbsp;&#187; DOM ParseError</a>
+
+								<a href="/dom/dom_access.asp" class="leftnav">&nbsp;&#187; DOM Access</a>
+
+								</div>
+
+								</span>
+
+							<span class="expanded" id="upper-menu"><a href="/" onclick="toggleMenu('submenuid4'); return false;" class="leftnav">XML XSL &#187;</a></span>
+
+								<span class="expanded" id="submenuid4">
+
+								<div id="lnavi_sub">
+
+								<a href="/xsl/"                       class="leftnav">&nbsp;&#187; XSL HOME</a>
+
+								<a href="/xsl/xsl_intro.asp"          class="leftnav">&nbsp;&#187; XSL Introduction</a>
+
+								<a href="/xsl/xsl_transformation.asp" class="leftnav">&nbsp;&#187; XSL Transformation</a>
+
+								<a href="/xsl/xsl_client.asp"         class="leftnav">&nbsp;&#187; XSL on the Client</a>
+
+								<a href="/xsl/xsl_server.asp"         class="leftnav">&nbsp;&#187; XSL on the Server</a>
+
+								<a href="/xsl/xsl_sorting.asp"        class="leftnav">&nbsp;&#187; XSL Sorting</a>
+
+								<a href="/xsl/xsl_filter.asp"         class="leftnav">&nbsp;&#187; XSL Filtering</a>
+
+								<a href="/xsl/xsl_if.asp"             class="leftnav">&nbsp;&#187; XSL If..Then</a>
+
+								<a href="/xsl/xsl_choose.asp"         class="leftnav">&nbsp;&#187; XSL Choose</a>
+
+								</div>
+
+								</span>
+
+							<a href="/rss/">XML RSS</a><a href="/xhtml/">XHTML</a><a href="/examples/" class="leftnav">XML Examples</a><span class="expanded" id="upper-menu"><a href="/" onclick="toggleMenu('submenuid5'); return false;" class="leftnav">XML Links &#187;</a></span>
+
+								<span class="expanded" id="submenuid5">
+
+								<div id="lnavi_sub">
+
+								<a href="/links/" class="leftnav">&nbsp;&#187; XML Links HOME</a>
+
+								<a href="/links/#w3c" class="leftnav">&nbsp;&#187; W3C Links</a>
+
+								<a href="/links/#Microsoft" class="leftnav">&nbsp;&#187; Microsoft</a>
+
+								<a href="/links/#Netscape" class="leftnav">&nbsp;&#187; Netscape</a>
+
+								<a href="/links/#Reading" class="leftnav">&nbsp;&#187; Interesting Reading</a>
+
+								<a href="/links/xml_books.asp" class="leftnav">&nbsp;&#187; XML Books</a>
+
+								</div>
+
+								</span>
+
+							<a href="http://www.webdeveloper.com/forum/forumdisplay.php?f=5" class="leftnav">XML Forum</a>
+
+							<a href="http://www.asp101.com/" class="leftnav">ASP Information</a>
+
+							<a href="http://www.justtechjobs.com/Jobseekers.asp" class="leftnav">Technology Jobs</a>
+
+						</div>
+
+
+
+						<br />
+
+
+
+						<!-- XMLFiles Search -->
+
+						<center>
+
+							<table border="0" width="90%" cellspacing="0" cellpadding="4" style="border-right: 1px solid #000000; border-left: 1px solid #000000; border-bottom: 1px solid #000000; border-top: 1px solid #000000">
+
+								<tr>
+
+									<form action="/search/" id="cse-search-box">
+
+									  <div style="color: #000000;font-size: 13px;font-weight: bold;">Search XML Files</div>
+
+									  <div>
+
+										<input type="hidden" name="cx" value="partner-pub-8768004398756183:9747076356" />
+
+										<input type="hidden" name="cof" value="FORID:10" />
+
+										<input type="hidden" name="ie" value="UTF-8" />
+
+										<input type="text" name="q" size="12" />
+
+										<input type="submit" name="sa" value="Search" />
+
+									  </div>
+
+									</form>
+
+
+
+									<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+								</tr>
+
+							</table>
+
+						</center>
+
+						<!-- /XMLFiles Search -->
+
+
+
+						<br />
+
+						<p align="center">
+
+						<a href="/feeds/rss20/"><img src="/feeds/images/rss-icon.png" alt="XML Files RSS Feed" width="16" height="16" border="0" style="vertical-align:middle;" /></a>&nbsp;<a href="/feeds/rss20/">XML Files Updates</a>
+
+						</p>
+
+						<p>&nbsp;</p>
+
+					</td>
+
+				</tr>
+
+			</table>
+
+			<!-- Web Dev Channel -->
+
+
+
+			<!-- internet.commerce -->
+
+			<div align="center">
+
+			<table border="0" cellspacing="0" cellpadding="2" WIDTH="100%">
+
+			<tr><td bgcolor="#FFFFFF" align="left">
+
+			<font size="-1">
+
+			<div>
+            <script type="text/javascript">
+               var t=displayDFPTag("sky");
+               document.write(t);
+            </script>
+            </div>
+
+			</font>
+
+			</td></tr>
+
+			</table>
+
+			</div>
+
+			<br />
+		</td>
+
+		<!-- Main Body Table Cell -->
+
+		<td valign="top" class="main">
+
+			<table border="0" cellpadding="6" cellspacing="0" align="right">
+				<tr><td>
+                    <script type="text/javascript">
+                        var t=displayDFPTag("imu");
+                        document.write(t);
+                    </script>
+				</td></tr>
+			</table>
+
+			<link rel="stylesheet" type="text/css" href="/icom_includes/adcodecss/ciustyle.css">
+			<div id="ciu_ads">
+				<span class="ciu_wrapper_left" style="width:100%">
+					<script type="text/javascript">
+						var t=displayDFPTag("ciu");
+						document.write(t);
+					</script>
+				</span>							
+			</div>
+
+<!--content_start-->
+
+
+
+<h1>Saving HTML Form Data to XML</h1>
+By <address><a href="/authors/default.asp?author=Michael%20Qualls">Michael Qualls</a></address>
+<!--December 6, 2000 -->
+
+<h2>Introduction</h2>
+<p>
+This example assumes that you are familiar with ASP, XML and HTML 4.0.
+
+</p>
+
+<h2>Storing your form submissions in XML</h2>
+<p>
+Usually form submissions in ASP are written to some sort of database management system. However, if you need your form submission data to be more portable, it can be written to an XML file. This is especially useful when the data you are gathering on your Web site will be sent to applications on non-Windows platforms. Since XML is completely portable across all platforms the data will not need to be converted.
+</p>
+<p>
+In order to write a form submission to an XML document, it is necessary to create a new XML document using the Microsoft XMLDOM Object. The XMLDOM Object has an extensive object library that can be used to create the elements, attributes, and values that will make up the XML document. I will not cover the entire object model, because it is very extensive and could make up an entire section of this Web site by itself.
+</p>
+<p>
+After the XMLDOM Object has been instantiated, the structure of the XML must be laid out by creating object references to the elements that make up each layer of the XML document. The following is an example of how the XMLDOM would be instantiated and a reference to the root element created. After the root element is created, it is appended to the XMLDOM Document. Then child elements are created and appended to the root element and then the document is saved.
+</p>
+
+<h3>Instantiating the Microsoft XMLDOM Object:</h3>
+<table bgcolor="white" border="1">
+<tr><td>
+<pre>
+
+<font style="background-color: #FFFF00">&lt;%</font>
+ Dim objDom
+ Dim objRoot
+ Dim objChild1
+ Dim objChild2
+ Dim objPI
+
+
+ <font color="#009900">'Instantiate the XMLDOM object using the CreateObject Method of the</font>
+ <font color="#009900">'Server Object.</font>
+ Set objDom = Server.CreateObject(&quot;Microsoft.XMLDOM&quot;)
+
+
+ <font color="#009900">'Create a reference to an IXMLDOMElement (XML Element) Object by</font>
+ <font color="#009900">'calling the createElement Method of the XMLDOM. The createElement</font>
+ <font color="#009900">'Method accepts one paramter, a string representing the name of the</font>
+ <font color="#009900">'element. The return value is passed to the objRoot variable. This</font>
+ <font color="#009900">'element reference will represent the root element of the XML</font>
+ <font color="#009900">'Document.</font>
+ Set objRoot = objDom.createElement(&quot;rootElement&quot;)
+
+
+ <font color="#009900">'Use the appendChild Method of the XMLDOM Object to add the objRoot</font>
+ <font color="#009900">'Element Reference to the XML Document.</font>
+ objDom.appendChild objRoot
+
+
+ <font color="#009900">'Now, following the same steps, you will create references to the</font>
+ <font color="#009900">'child elements for the XML Document. The only difference is, when the</font>
+ <font color="#009900">'child elements are appended to the document, you will call the</font>
+ <font color="#009900">'appendChild Method of the IXMLDOMElement Object rather than the</font>
+ <font color="#009900">'appendChild Method of the XMLDOM Object. By using the IXMLDOMElement</font>
+ <font color="#009900">'to append the children, you are differentiating (and applying tiered</font>
+ <font color="#009900">'structure to) the child elements from the root element.</font>
+ Set objChild1 = objDom.createElement(&quot;childElement1&quot;)
+ objRoot.appendChild objChild1
+
+ Set objChild2 = objDom.createElement(&quot;childElement2&quot;)
+ objRoot.appendChild objChild2
+
+
+ <font color="#009900">'The final step to take care of before saving this document is to add</font>
+ <font color="#009900">'an XML processing instruction. This is necessary so that XML parsers</font>
+ <font color="#009900">'will recognize this document as an XML document.</font>
+ Set objPI = objDom.createProcessingInstruction(&quot;xml&quot;,&quot;version='1.0'&quot;)
+
+
+ <font color="#009900">'Call the insertBefore Method of the XMLDOM Object in order to insert</font>
+ <font color="#009900">'the processing instruction before the root element (the zero element</font>
+ <font color="#009900">'in the XMLDOM childNodes Collection).</font>
+ objDom.insertBefore objPI, objDom.childNodes(0)
+
+
+ <font color="#009900">'Calling the Save Method of the XMLDOM Object will save this XML</font>
+ <font color="#009900">'document to your disk drive. In this case, the document will be saved</font>
+ <font color="#009900">'to the &quot;c:&quot; drive and will be named &quot;MyXMLDoc.xml&quot;. When saving an</font>
+ <font color="#009900">'XML document, if the file does not exist, it will be created. If it</font>
+ <font color="#009900">'does exist, it will be overwritten.</font>
+ objDom.Save &quot;c:\MyXMLDoc.xml&quot;
+<font style="background-color: #FFFF00">%&gt;</font>
+</pre>
+</td></tr>
+</table>
+
+<p>
+Once the document has been saved, if you open the document it will look like the following code listing.
+</p>
+
+<h3>MyXMLDoc.xml:</h3>
+<table bgcolor="white" border="1">
+<tr><td>
+<pre>
+
+&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;rootElement&gt;
+ &lt;childElement1 /&gt;
+ &lt;childElement2 /&gt;
+&lt;/rootElement&gt;
+</pre>
+</td></tr>
+</table>
+
+<p>
+In the &quot;MyXMLDoc.xml&quot; document, the childElement1 and childElement2 elements are rendered as empty elements. If they contained values each would have been rendered with opening and closing tags enclosing the value of the element.
+</p>
+<p> 
+Now, lets consider the idea of writing an HTML form submission to an XML document. We saw above how we could create and save an XML document. Writing a form submission to an XML document just becomes a matter of iterating through the Request Object's Form Collection and writing the value of each form field to an XML element value. This can be accomplished with Active Server Pages.
+</p>
+
+<h2>Example: Sending Form Submissions to XML</h2>
+<p>
+Below is a normal HTML form that we will be using for this example. This form asks for the user's name, address, telephone number, and e-mail address. This information will be written to an XML file for storage.
+</p>
+
+<h3>EnterContact.html:</h3>
+<table bgcolor="white" border="1">
+<tr><td>
+<pre>
+
+&lt;html&gt;
+&lt;head&gt;
+ &lt;title&gt;
+  Contact Information
+ &lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+ &lt;form action=&quot;processForm.asp&quot; method=&quot;post&quot;&gt;
+  &lt;h3&gt;Enter your contact information&lt;/h3&gt;
+  First Name: &lt;input type=&quot;text&quot; id=&quot;firstName&quot; name=&quot;firstName&quot;&gt;&lt;br&gt;
+  Last Name: &lt;input type=&quot;text&quot; id=&quot;lastName&quot; name=&quot;lastName&quot;&gt;&lt;br&gt;
+  Address #1: &lt;input type=&quot;text&quot; id=&quot;address1&quot; name=&quot;address1&quot;&gt;&lt;br&gt;
+  Address #2: &lt;input type=&quot;text&quot; id=&quot;address2&quot; name=&quot;address2&quot;&gt;&lt;br&gt;
+  Phone Number: &lt;input type=&quot;text&quot; id=&quot;phone&quot; name=&quot;phone&quot;&gt;&lt;br&gt;
+  E-Mail: &lt;input type=&quot;text&quot; id=&quot;email&quot; name=&quot;email&quot;&gt;&lt;br&gt;
+  &lt;input type=&quot;submit&quot; id=&quot;btnSub&quot; name=&quot;btnSub&quot; value=&quot;Submit&quot;&gt;&lt;br&gt;
+ &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</td></tr>
+</table>
+
+<p>
+The action for this HTML form is set to processForm.asp. This is an ASP page that will call a function which iterates through the form fields and writes their values to an XML file.
+</p>
+
+<h3>processForm.asp:</h3>
+<table bgcolor="white" border="1">
+<tr><td>
+<pre>
+
+<font style="background-color: #FFFF00">&lt;%</font>
+
+<font color="#009900">'--------------------------------------------------------------------</font>
+<font color="#009900">'The &quot;ConvertFormtoXML&quot; Function accepts to parameters.</font>
+<font color="#009900">'strXMLFilePath - The physical path where the XML file will be saved.</font>
+<font color="#009900">'strFileName - The name of the XML file that will be saved.</font>
+<font color="#009900">'--------------------------------------------------------------------</font>
+
+Function ConvertFormtoXML(strXMLFilePath, strFileName)
+
+ <font color="#009900">'Declare local variables.</font>
+ Dim objDom
+ Dim objRoot
+ Dim objField
+ Dim objFieldValue
+ Dim objattID
+ Dim objattTabOrder
+ Dim objPI
+ Dim x
+
+
+ <font color="#009900">'Instantiate the Microsoft XMLDOM.</font>
+ Set objDom = server.CreateObject(&quot;Microsoft.XMLDOM&quot;)
+ objDom.preserveWhiteSpace = True
+
+
+ <font color="#009900">'Create your root element and append it to the XML document.</font>
+ Set objRoot = objDom.createElement(&quot;contact&quot;)
+ objDom.appendChild objRoot
+
+
+ <font color="#009900">'Iterate through the Form Collection of the Request Object.</font>
+ For x = 1 To Request.Form.Count
+
+  <font color="#009900">'Check to see if &quot;btn&quot; is in the name of the form element.</font>
+  <font color="#009900">'If it is, then it is a button and we do not want to add it</font>
+  <font color="#009900">'to the XML document.</font>
+  If instr(1,Request.Form.Key(x),&quot;btn&quot;) = 0 Then
+
+   <font color="#009900">'Create an element, &quot;field&quot;.</font>
+   Set objField = objDom.createElement(&quot;field&quot;)
+
+   <font color="#009900">'Create an attribute, &quot;id&quot;.</font>
+   Set objattID = objDom.createAttribute(&quot;id&quot;)
+
+   <font color="#009900">'Set the value of the id attribute equal the the name of</font>
+   <font color="#009900">'the current form field.</font>
+   objattID.Text = Request.Form.Key(x)
+
+   <font color="#009900">'The setAttributeNode method will append the id attribute</font>
+   <font color="#009900">'to the field element.</font>
+   objField.setAttributeNode objattID
+
+   <font color="#009900">'Create another attribute, &quot;taborder&quot;. This just orders the</font>
+   <font color="#009900">'elements.</font>
+   Set objattTabOrder = objDom.createAttribute(&quot;taborder&quot;)
+
+   <font color="#009900">'Set the value of the taborder attribute.</font>
+   objattTabOrder.Text = x
+
+   <font color="#009900">'Append the taborder attribute to the field element.</font>
+   objField.setAttributeNode objattTabOrder
+
+   <font color="#009900">'Create a new element, &quot;field_value&quot;.</font>
+   Set objFieldValue = objDom.createElement(&quot;field_value&quot;)
+
+   <font color="#009900">'Set the value of the field_value element equal to</font>
+   <font color="#009900">'the value of the current field in the Form Collection.</font>
+   objFieldValue.Text = Request.Form(x)
+
+   <font color="#009900">'Append the field element as a child of the root element.</font>
+   objRoot.appendChild objField
+
+   <font color="#009900">'Append the field_value element as a child of the field elemnt.</font>
+   objField.appendChild objFieldValue
+  End If
+ Next 
+
+
+ <font color="#009900">'Create the xml processing instruction.</font>
+ Set objPI = objDom.createProcessingInstruction(&quot;xml&quot;, &quot;version='1.0'&quot;)
+
+ <font color="#009900">'Append the processing instruction to the XML document.</font>
+ objDom.insertBefore objPI, objDom.childNodes(0)
+
+
+ <font color="#009900">'Save the XML document.</font>
+ objDom.save strXMLFilePath &amp; &quot;\&quot; &amp; strFileName
+
+
+ <font color="#009900">'Release all of your object references.</font>
+ Set objDom = Nothing
+ Set objRoot = Nothing
+ Set objField = Nothing
+ Set objFieldValue = Nothing
+ Set objattID = Nothing
+ Set objattTabOrder = Nothing
+ Set objPI = Nothing
+End Function
+
+
+<font color="#009900">'Do not break on an error.</font>
+On Error Resume Next
+
+
+<font color="#009900">'Call the ConvertFormtoXML function, passing in the physical path to</font>
+<font color="#009900">'save the file to and the name that you wish to use for the file.</font>
+ConvertFormtoXML &quot;c:&quot;,&quot;Contact.xml&quot;
+
+
+<font color="#009900">'Test to see if an error occurred, if so, let the user know.</font>
+<font color="#009900">'Otherwise, tell the user that the operation was successful.</font>
+If err.number &lt;&gt; 0 then
+ Response.write(&quot;Errors occurred while saving your form submission.&quot;)
+Else
+ Response.write(&quot;Your form submission has been saved.&quot;)
+End If
+<font style="background-color: #FFFF00">%&gt;</font>
+</pre>
+</td></tr>
+</table>
+
+<p>
+If you use this code in your own applications, remember one thing, when the &quot;ConvertFormtoXML&quot; Function runs, if the XML file name specified already exists, it will be overwritten. I suggest dynamically creating random file names before calling the &quot;ConvertFormtoXML&quot; Function. That way you will never risk overwriting any valuable data.
+</p>
+<p>
+The XML file that would be produced by this example would appear (something similar to) as follows:
+</p>
+
+<h3>Contact.xml</h3>
+<table bgcolor="white" border="1">
+<tr><td>
+<pre>
+
+&lt;?xml version=&quot;1.0&quot; ?&gt;
+&lt;contact&gt;
+ &lt;field id=&quot;firstName&quot; taborder=&quot;1&quot;&gt;
+  &lt;field_value&gt;Michael&lt;/field_value&gt; 
+ &lt;/field&gt;
+ &lt;field id=&quot;lastName&quot; taborder=&quot;2&quot;&gt;
+  &lt;field_value&gt;Qualls&lt;/field_value&gt; 
+ &lt;/field&gt;
+ &lt;field id=&quot;address1&quot; taborder=&quot;3&quot;&gt;
+  &lt;field_value&gt;2129 NW 27th St.&lt;/field_value&gt; 
+ &lt;/field&gt;
+ &lt;field id=&quot;address2&quot; taborder=&quot;4&quot;&gt;
+  &lt;field_value /&gt; 
+ &lt;/field&gt;
+ &lt;field id=&quot;phone&quot; taborder=&quot;5&quot;&gt;
+  &lt;field_value&gt;4055253988&lt;/field_value&gt; 
+ &lt;/field&gt;
+ &lt;field id=&quot;email&quot; taborder=&quot;6&quot;&gt;
+  &lt;field_value&gt;michaelq@vertiscope.com&lt;/field_value&gt; 
+ &lt;/field&gt;
+&lt;/contact&gt;
+</pre>
+</td></tr>
+</table>
+
+<p>
+I would suggest copying the code for EnterContact.htm and processForm.asp to pages of the same name on your Web server and running the example. Make sure that you use a path and file name that work for your server. Examine the XML file when you are done.
+</p>
+<!--content_stop-->			<div style="color:#ffffff">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</div>			<!-- Content Feed Table -->			<table bgcolor="#cc0000" border="0" cellspacing="0" cellpadding="2">				<tr>					<td bgcolor="#393131"><strong><font color="#FFFFFF">&nbsp;DevX&nbsp;XML&nbsp;Content&nbsp;</font></strong></td>				</tr>				<tr>					<td>						<!-- DevX Content Feed -->						<font size="-2" face="Arial, Helvetica">- <a href="http://www.devx.com/webdev/easily-create-responsive-websites-using-bootstrap.html"><font color="#ffffff">Easily Create Responsive Websites Using Bootstrap</font></a></font><br>						<!--10/16/2015 4:09:30 PM-->						<!-- /DevX Content Feed -->					</td>				</tr>			</table>			<!-- /Content Feed Table-->			<hr noshade size="1" color="#000000">			<p>			Jump to : <a href="#top"><b>Top Of Page</b></a> or <a href="/"><b>HOME</b></a>			</p>		</td>		<!-- /Main Body Table Cell -->	</tr></table><br /><div align="center"><table border="0" width="750" cellspacing="0" cellpadding="4">	<tr>		<td align="center">        <script type="text/javascript">            var t=displayDFPTag("lb");            document.write(t);        </script>        </td>	</tr></table></div><!-- Google Analytics --><script>    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');    ga('create', 'UA-48209209-1', 'auto');    ga('send', 'pageview');</script><!-- End Google Analytics --><div style="margin:30px;"><style type="text/css">
+#developerBrand-footer{text-align:center;margin:0 auto}
+#footerlinks{font-size:12px;word-spacing:1px}
+#footerlinks a{color:#000;margin:5px 0 0}
+#itbeBrand-footer{text-align:center;margin:0 auto}
+#itbusinessedge-footer{text-align:center;margin:0 auto}
+#footercopyright{font-size:12px;margin:5px 0 0}
+#developerBrandForum-footer{text-align:center;margin:0 auto}
+#itbeBrandForum-footer{text-align:center;margin:0 auto}
+.footerLogoClass{text-align:center;margin:0 auto}
+</style>
+<div id="developerBrand-footer" style="display:none"></div>
+<div id="itbeBrand-footer" style="display:none"></div>
+<div id="itbusinessedge-footer" style="display:none"></div>
+<div id="zde-footer" style="display:none" class="footerLogoClass"></div>
+<div id="baseline-footer" style="display:none" class="footerLogoClass"></div>
+<div id="cinsider-footer" style="display:none" class="footerLogoClass"></div>
+<div id="cioinsight-footer" style="display:none" class="footerLogoClass"></div>
+<div id="eweek-footer" style="display:none" class="footerLogoClass"></div>
+<div id="enterpriseappstoday-footer" style="display:none" class="footerLogoClass"></div>
+<div id="eseminar-footer" style="display:none" class="footerLogoClass"></div>
+<div id="wbg-footer" style="display:none" class="footerLogoClass"></div>
+<div id="developerBrandForum-footer" style="display:none"></div>
+<div id="itbeBrandForum-footer" style="display:none"></div>
+<script async language="Javascript" src="/icom_includes/footers/scripts/footerbrandingcode.js"></script>
+<!-- Google Classical Analytics -->
+<script src="/icom_includes/footers/scripts/ga.js"  type="text/javascript"></script>
+<script  type="text/javascript" >
+<!--     hide from no js browsers
+delete Array.prototype.itemValidation;
+delete Array.prototype.isArray;
+var superTracker = _gat._getTracker("UA-2838492-1");
+superTracker._initData();
+superTracker._trackPageview();
+
+-->
+</script>
+<script  type="text/javascript" >
+<!--     hide from no js browsers
+   var site_name =  location.hostname;
+   if ( site_name.indexOf("www.") != 0 ) {
+     site_name  = "www."+site_name ;
+   }
+   document.write("<SCR" + "IPT LANGUAGE='JavaScript1.2' SRC='/icom_includes/footers/sites/"+ site_name +".js' TYPE='text/javascript'><\/SCR" + "IPT>");
+-->
+</script>
+<script  type="text/javascript" >
+<!--hide from no js browsers
+   pageTracker._initData();
+   pageTracker._trackPageview();
+   // -->
+</script>
+<!-- End Google Analytics --></div><script language="JavaScript">	var t=displayDFPTag("hero");	document.write(t);</script></body></html>

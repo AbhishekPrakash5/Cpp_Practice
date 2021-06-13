@@ -1,0 +1,705 @@
+body {
+	background: rgb(255, 255, 255); margin: 0px; padding: 0px; text-align: left; color: rgb(34, 34, 34); line-height: 135%; font-family: Verdana, Tahoma, Arial, Trebuchet MS, Sans-Serif, Georgia, Courier, Times New Roman, Serif; font-size: 10px;
+}
+.ipbtable {
+	width: 100%;
+}
+.phpcode {
+	margin: 0px auto 15px; padding: 5px; border: 1px dashed rgb(115, 114, 114); border-image: none; width: 720px; color: rgb(12, 62, 100); overflow: auto; font-family: Courier New, Verdana, Arial, Comic Sans MS; font-size: 9pt; white-space: nowrap; background-color: rgb(250, 252, 254);
+}
+.aspcode {
+	margin: 0px auto 15px; padding: 5px; border: 1px dashed rgb(115, 114, 114); border-image: none; width: 720px; color: rgb(12, 62, 100); overflow: auto; font-family: Courier New, Verdana, Arial, Comic Sans MS; font-size: 9pt; white-space: nowrap; background-color: rgb(250, 252, 254);
+}
+.sqlcode {
+	margin: 0px auto 15px; padding: 5px; border: 1px dashed rgb(115, 114, 114); border-image: none; width: 720px; color: rgb(12, 62, 100); overflow: auto; font-family: Courier New, Verdana, Arial, Comic Sans MS; font-size: 9pt; white-space: nowrap; background-color: rgb(250, 252, 254);
+}
+.vbacode {
+	margin: 0px auto 15px; padding: 5px; border: 1px dashed rgb(115, 114, 114); border-image: none; width: 720px; color: rgb(12, 62, 100); overflow: auto; font-family: Courier New, Verdana, Arial, Comic Sans MS; font-size: 9pt; white-space: nowrap; background-color: rgb(250, 252, 254);
+}
+.jscode {
+	margin: 0px auto 15px; padding: 5px; border: 1px dashed rgb(115, 114, 114); border-image: none; width: 720px; color: rgb(12, 62, 100); overflow: auto; font-family: Courier New, Verdana, Arial, Comic Sans MS; font-size: 9pt; white-space: nowrap; background-color: rgb(250, 252, 254);
+}
+.plaincode {
+	margin: 0px auto 15px; padding: 5px; border: 1px dashed rgb(115, 114, 114); border-image: none; width: 720px; color: rgb(12, 62, 100); overflow: auto; font-family: Courier New, Verdana, Arial, Comic Sans MS; font-size: 9pt; white-space: nowrap; background-color: rgb(250, 252, 254);
+}
+.phpcode {
+	background-image: url("images/php_bg.gif");
+}
+.aspcode {
+	background-image: url("images/asp_bg.gif");
+}
+.sqlcode {
+	background-image: url("images/sql_bg.gif");
+}
+.vbacode {
+	background-image: url("images/vba_bg.gif");
+}
+.jscode {
+	background-image: url("images/javascript_bg.gif");
+}
+.phpmain {
+	background: rgb(250, 252, 254); margin: 0px auto; padding: 2px; border: 1px solid rgb(224, 224, 224); border-image: none; color: rgb(12, 62, 100); font-family: Courier New, Verdana, Arial, Comic Sans MS; font-size: 9pt; display: block;
+}
+.aspmain {
+	background: rgb(250, 252, 254); margin: 0px auto; padding: 2px; border: 1px solid rgb(224, 224, 224); border-image: none; color: rgb(12, 62, 100); font-family: Courier New, Verdana, Arial, Comic Sans MS; font-size: 9pt; display: block;
+}
+.sqlmain {
+	background: rgb(250, 252, 254); margin: 0px auto; padding: 2px; border: 1px solid rgb(224, 224, 224); border-image: none; color: rgb(12, 62, 100); font-family: Courier New, Verdana, Arial, Comic Sans MS; font-size: 9pt; display: block;
+}
+.vbamain {
+	background: rgb(250, 252, 254); margin: 0px auto; padding: 2px; border: 1px solid rgb(224, 224, 224); border-image: none; color: rgb(12, 62, 100); font-family: Courier New, Verdana, Arial, Comic Sans MS; font-size: 9pt; display: block;
+}
+.jsmain {
+	background: rgb(250, 252, 254); margin: 0px auto; padding: 2px; border: 1px solid rgb(224, 224, 224); border-image: none; color: rgb(12, 62, 100); font-family: Courier New, Verdana, Arial, Comic Sans MS; font-size: 9pt; display: block;
+}
+.codemain {
+	background: rgb(250, 252, 254); margin: 0px auto; padding: 2px; border: 1px solid rgb(224, 224, 224); border-image: none; color: rgb(12, 62, 100); font-family: Courier New, Verdana, Arial, Comic Sans MS; font-size: 9pt; display: block;
+}
+.highlightPHP {
+	background: url("images/php_bg.gif") rgb(250, 252, 254); width: 640px; overflow: auto; white-space: nowrap;
+}
+.highlightASP {
+	background: url("images/asp_bg.gif") rgb(250, 252, 254); width: 640px; overflow: auto; white-space: nowrap;
+}
+.highlightSQL {
+	background: url("images/sql_bg.gif") rgb(250, 252, 254); width: 640px; overflow: auto; white-space: nowrap;
+}
+.highlightVBA {
+	background: url("images/vba_bg.gif") rgb(250, 252, 254); width: 640px; overflow: auto; white-space: nowrap;
+}
+.highlightJS {
+	background: url("images/javascript_bg.gif") rgb(250, 252, 254); width: 640px; overflow: auto; white-space: nowrap;
+}
+.highlightCODE {
+	background: rgb(250, 252, 254); width: 640px; overflow: auto; white-space: nowrap;
+}
+#commentform {
+	margin: 0px 0px 10px; border: 1px solid rgb(204, 204, 204); width: 750px;
+}
+#commenthead {
+	padding: 10px; width: 750px; margin-bottom: 10px;
+}
+.commentheadoption {
+	
+}
+.commentrss {
+	left: 650px; position: relative;
+}
+.commentmain {
+	margin: 0px 0px 10px; border: 1px solid rgb(204, 204, 204); width: 750px;
+}
+.commenterror {
+	margin: 0px 0px 10px; padding: 10px; border: 1px solid rgb(204, 204, 204); color: rgb(51, 102, 51); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 0.8em;
+}
+.commentsuccess {
+	margin: 0px 0px 10px; padding: 10px; border: 1px solid rgb(204, 204, 204); color: rgb(51, 102, 51); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 0.8em;
+}
+.commenterror {
+	color: rgb(153, 0, 0);
+}
+.commentbody {
+	padding: 10px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 0.8em;
+}
+.commentbyline {
+	border-width: 1px; border-style: dashed none none; border-color: rgb(184, 184, 184); padding: 5px 15px; border-image: none; text-align: right; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 0.8em;
+}
+.commentbyline a {
+	color: rgb(22, 83, 130); font-family: Verdana, Arial, Helvetica, sans-serif; text-decoration: none;
+}
+.comment {
+	color: rgb(0, 119, 0);
+}
+.smallfont {
+	color: rgb(102, 102, 102); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 0.8em;
+}
+label {
+	margin: 0.3em 0px 0px; padding: 0.2em; text-align: right; color: rgb(102, 102, 102); font-size: 0.8em; font-weight: bold; float: left;
+}
+a {
+	color: rgb(22, 83, 130); font-family: Verdana, Arial, Helvetica, sans-serif; text-decoration: none;
+}
+a.smallfont {
+	color: rgb(22, 83, 130); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 0.8em; text-decoration: none;
+}
+a.smallfont:hover {
+	color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 0.8em; text-decoration: none;
+}
+a.related {
+	color: rgb(0, 78, 153); font-family: Verdana, Arial, Comic Sans ms; font-size: 10pt; text-decoration: none;
+}
+a.related:hover {
+	text-decoration: underline;
+}
+a.link {
+	color: rgb(28, 98, 203); text-decoration: underline;
+}
+a.link:hover {
+	color: rgb(28, 98, 203); text-decoration: none;
+}
+a.quote {
+	text-align: justify; color: rgb(0, 0, 0); line-height: 17px; text-decoration: underline;
+}
+a.quote:hover {
+	text-align: justify; color: rgb(0, 0, 0); line-height: 17px; text-decoration: none;
+}
+a.tablelinks {
+	font-family: Verdana; font-size: 10pt;
+}
+a.backlink {
+	margin: 0px; color: rgb(33, 96, 145); font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 12px; font-weight: normal; text-decoration: none;
+}
+a.backlink:hover {
+	margin: 0px; color: rgb(33, 96, 145); font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 12px; font-weight: normal; text-decoration: underline;
+}
+a.insidetable {
+	color: rgb(22, 83, 130); font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 11px; font-weight: normal; text-decoration: none;
+}
+a.insidetable:hover {
+	color: rgb(0, 0, 0); text-decoration: underline;
+}
+.menutext {
+	color: rgb(153, 102, 51); line-height: 20px; letter-spacing: 1px; font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold;
+}
+.verdana10 {
+	margin: 0px auto; font-family: Verdana; font-size: 10pt;
+}
+.tahoma10blue {
+	margin: 0cm 0cm 10pt; color: rgb(71, 145, 211); font-family: Tahoma; font-size: 10pt; font-weight: bold;
+}
+.articleheader {
+	margin: 0cm 0cm 10pt; color: rgb(22, 83, 130); font-family: Arial, Verdana, Comic Sans ms, Helvetica; font-size: 11pt; font-weight: bold; text-decoration: underline;
+}
+p {
+	margin: 0cm 0cm 10pt; font-family: Verdana; font-size: 10pt;
+}
+p.quote {
+	text-align: justify; line-height: 17px;
+}
+p.sql {
+	margin: 0cm 0cm 10pt; color: rgb(42, 109, 35); font-family: Verdana; font-size: 10pt; font-weight: bold;
+}
+p.code {
+	color: rgb(62, 132, 195); font-family: Arial; font-size: 12px; font-weight: bold;
+}
+p.topicheader {
+	margin: 0cm 0cm 10pt; color: rgb(22, 83, 130); font-family: Arial, Verdana, Comic Sans ms, Helvetica; font-size: 11pt; font-style: italic; font-weight: bold;
+}
+p.articleheader {
+	margin: 0cm 0cm 10pt; color: rgb(22, 83, 130); font-family: Arial, Verdana, Arial, Comic Sans ms, Helvetica; font-size: 11pt; font-weight: bold; text-decoration: underline;
+}
+li.square {
+	list-style: square; margin: 0cm; font-family: Verdana; font-size: 10pt;
+}
+li.decimal {
+	list-style: decimal; margin: 0cm; font-family: Verdana; font-size: 10pt;
+}
+ul.square li {
+	list-style: square; margin: 0cm; font-family: Verdana; font-size: 10pt;
+}
+ul.decimal li {
+	list-style: decimal; margin: 0cm; font-family: Verdana; font-size: 10pt;
+}
+td {
+	margin: 0px; font-family: Verdana; font-size: 10pt;
+}
+tr .contentheading {
+	border-width: 1px; border-style: none none dashed; border-color: rgb(22, 83, 130); border-image: none; color: rgb(51, 103, 153); font-size: 18px; font-weight: bold;
+}
+tr .contentheading a {
+	color: rgb(51, 103, 153); font-size: 18px; font-weight: bold; text-decoration: none;
+}
+tr .buttonheading {
+	border-width: 1px; border-style: none none dashed; border-color: rgb(22, 83, 130); border-image: none;
+}
+td.smallcol {
+	margin: 0px auto; width: 20px; font-family: Verdana; font-size: 10pt;
+}
+table.tableprop {
+	border: 1px solid rgb(183, 188, 219); border-image: none;
+}
+table.tableprop td.tableheadprop {
+	padding: 5px; text-align: left; color: rgb(255, 255, 255); font-family: Verdana; font-size: 8pt; font-weight: bold; vertical-align: top; background-color: rgb(115, 145, 190);
+}
+table.tableprop td {
+	padding: 5px; text-align: left; color: rgb(51, 51, 51); font-family: Verdana; font-size: 8pt; vertical-align: top; background-color: rgb(235, 242, 253);
+}
+table.tutorial {
+	border: 0px currentColor; border-image: none; width: 600px;
+}
+table.article {
+	border: 0px currentColor; border-image: none;
+}
+table.tutorial p {
+	text-align: justify;
+}
+li {
+	text-align: justify;
+}
+td.article p {
+	text-align: justify;
+}
+table.article p {
+	text-align: justify;
+}
+li {
+	text-align: justify;
+}
+.smalltext {
+	font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: normal;
+}
+.smalltextwhite {
+	font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: normal;
+}
+.smalltextblack {
+	font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: normal;
+}
+.smalltext {
+	color: rgb(51, 51, 51);
+}
+.smalltextwhite {
+	color: rgb(106, 123, 156);
+}
+.smalltextblack {
+	color: rgb(0, 0, 0);
+}
+.newstext {
+	color: rgb(124, 126, 127); font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: normal; text-decoration: none;
+}
+.newsdata {
+	color: rgb(124, 126, 127); font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: normal; text-decoration: none;
+}
+.newsdatab {
+	color: rgb(124, 126, 127); font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: normal; text-decoration: none;
+}
+.newstext {
+	color: rgb(124, 126, 127);
+}
+.newsdata {
+	color: rgb(255, 76, 30);
+}
+.newsdatab {
+	color: rgb(255, 76, 30); font-weight: bold;
+}
+.titletext {
+	color: rgb(71, 87, 196); line-height: 18px; font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: bold;
+}
+.subtitletext {
+	color: rgb(71, 145, 211); font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold;
+}
+.copy {
+	color: rgb(163, 165, 167); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-weight: normal; text-decoration: none;
+}
+.rssbody {
+	margin: 50px 0px 0px; padding: 20px; width: 700px; background-color: rgb(247, 247, 247);
+}
+.wellcomepagebody {
+	background: url("http://www.webcheatsheet.com/images/wellcomepagebody.jpg") no-repeat left bottom; margin: 10px 0px 0px 15px; width: 700px; padding-bottom: 10px;
+}
+.wellcomepagehead {
+	background: url("http://www.webcheatsheet.com/images/wellcomepagehead.jpg") no-repeat left top;
+}
+.wellcomepagebody a {
+	margin: 0px; color: rgb(22, 83, 130); font-family: comic sans ms, Verdana,Arial,Helvetica,sans-serif; font-size: 18px; font-weight: normal; text-decoration: none;
+}
+.sqltutorialbody a {
+	margin: 0px; color: rgb(22, 83, 130); font-family: comic sans ms, Verdana,Arial,Helvetica,sans-serif; font-size: 18px; font-weight: normal; text-decoration: none;
+}
+.tutorialbody a {
+	margin: 0px; color: rgb(22, 83, 130); font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 12px; font-weight: bold; text-decoration: none;
+}
+.wellcomepagebody a:hover {
+	margin: 0px; color: rgb(0, 0, 0); font-family: comic sans ms, Verdana,Arial,Helvetica,sans-serif; font-size: 18px; text-decoration: underline;
+}
+.sqltutorialbody a:hover {
+	margin: 0px; color: rgb(0, 0, 0); font-family: comic sans ms, Verdana,Arial,Helvetica,sans-serif; font-size: 18px; text-decoration: underline;
+}
+.tutorialbody a:hover {
+	margin: 0px; color: rgb(0, 0, 0); font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 12px; text-decoration: underline;
+}
+.wellcomepagebody a.insidetable {
+	margin: 0px; color: rgb(22, 83, 130); font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 11px; font-weight: normal; text-decoration: none;
+}
+.sqltutorialbody a.insidetable {
+	margin: 0px; color: rgb(22, 83, 130); font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 11px; font-weight: normal; text-decoration: none;
+}
+.tutorialbody a.insidetable {
+	margin: 0px; color: rgb(22, 83, 130); font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 11px; font-weight: normal; text-decoration: none;
+}
+.wellcomepagebody a.insidetable:hover {
+	margin: 0px; color: rgb(0, 0, 0); font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 11px; text-decoration: underline;
+}
+.sqltutorialbody a.insidetable:hover {
+	margin: 0px; color: rgb(0, 0, 0); font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 11px; text-decoration: underline;
+}
+.tutorialbody a.insidetable:hover {
+	margin: 0px; color: rgb(0, 0, 0); font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 11px; text-decoration: underline;
+}
+.wellcomepagebody strong {
+	padding: 5px 0px; width: 700px; color: rgb(255, 255, 255); text-indent: 35px; font-family: comic sans ms,arial; font-size: 15px; display: block;
+}
+.sqltutorialbody strong {
+	padding: 5px 0px; width: 700px; color: rgb(255, 255, 255); text-indent: 35px; font-family: comic sans ms,arial; font-size: 15px; display: block;
+}
+.tutorialbody strong {
+	padding: 5px 0px; width: 700px; color: rgb(255, 255, 255); text-indent: 35px; font-family: comic sans ms,arial; font-size: 15px; display: block;
+}
+.wellcomepagebody p {
+	list-style: square; margin: 10px 10px 0px 2px; padding: 0px; color: rgb(93, 93, 93); font-family: Verdana; font-size: 10pt; background-image: none;
+}
+.sqltutorialbody p {
+	list-style: square; margin: 10px 10px 0px 2px; padding: 0px; color: rgb(93, 93, 93); font-family: Verdana; font-size: 10pt; background-image: none;
+}
+.tutorialbody p {
+	list-style: square; margin: 10px 10px 0px 2px; padding: 0px; color: rgb(93, 93, 93); font-family: Verdana; font-size: 10pt; background-image: none;
+}
+.wellcomepagebody img {
+	margin: 0px 0px 0px 10px;
+}
+.mainbody {
+	background: url("/images/wellcomepagebody.jpg") no-repeat left bottom; margin: 0px; width: 349px; padding-bottom: 10px;
+}
+.mainbody a {
+	margin: 0px; color: rgb(22, 83, 130); font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 11px; font-weight: normal; text-decoration: none;
+}
+.mainbody a:hover {
+	margin: 0px; color: rgb(0, 0, 0); font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 11px; text-decoration: underline;
+}
+.mainbody strong {
+	padding: 5px 0px 7px 40px; width: 350px; color: rgb(255, 255, 255); font-family: comic sans ms,arial; font-size: 15px; display: block;
+}
+.mainbody p {
+	list-style: square; margin: 10px 10px 0px; padding: 0px; color: rgb(93, 93, 93); font-family: Verdana; font-size: 10pt; background-image: none;
+}
+.accesshead {
+	background: url("/images/access_head.jpg") no-repeat left top;
+}
+.generalhead {
+	background: url("/images/general_head.jpg") no-repeat left top;
+}
+.mysqlhead {
+	background: url("/images/mysqlhead.jpg") no-repeat left top;
+}
+.searchbody {
+	background: url("/images/searchbody.jpg") no-repeat left bottom; margin: 14px 4px 4px; width: 171px; padding-bottom: 10px;
+}
+.subbody {
+	background: url("/images/searchbody.jpg") no-repeat left bottom; margin: 14px 4px 4px; width: 171px; padding-bottom: 10px;
+}
+.subbody {
+	background: url("/images/incbody.jpg") no-repeat left bottom;
+}
+.subbody p {
+	padding: 0px 10px; color: rgb(102, 102, 102); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 0.8em;
+}
+.subbody a {
+	color: rgb(22, 83, 130); text-decoration: underline;
+}
+.searchhead {
+	background: url("/images/searchhead.jpg") no-repeat left top;
+}
+.subhead {
+	background: url("/images/subhead.jpg") no-repeat left top;
+}
+.questions {
+	background: url("/images/questions.jpg") no-repeat left top;
+}
+.searchbody strong {
+	padding: 5px 0px; color: rgb(255, 255, 255); text-indent: 35px; font-family: comic sans ms,arial; font-size: 15px; display: block;
+}
+.subbody strong {
+	padding: 5px 0px; color: rgb(255, 255, 255); text-indent: 35px; font-family: comic sans ms,arial; font-size: 15px; display: block;
+}
+.sqltutorialbody {
+	background: url("http://www.webcheatsheet.com/images/sqltutorialbody.jpg") no-repeat left bottom; margin: 0px; width: 550px; padding-bottom: 10px;
+}
+.tutorialbody {
+	background: url("http://www.webcheatsheet.com/images/tutorialbody.jpg") no-repeat left bottom; margin: 0px; width: 550px; padding-bottom: 10px;
+}
+table.tableborders {
+	border: 1px solid rgb(183, 188, 219); border-image: none;
+}
+td.tableborders {
+	border: 1px solid rgb(183, 188, 219); border-image: none;
+}
+table.tableheads {
+	padding: 5px; background-color: rgb(235, 236, 243);
+}
+td.tableheads {
+	margin: 0cm; padding: 1px; color: rgb(255, 255, 255); font-family: Verdana; font-size: 10pt; font-weight: bold; background-color: rgb(86, 147, 238);
+}
+table.tableheads .smalltext {
+	color: rgb(86, 90, 138);
+}
+td.tableheads .smalltext {
+	color: rgb(86, 90, 138);
+}
+table.tablebodys {
+	padding: 5px; background-color: rgb(255, 255, 255);
+}
+td.tablebodys {
+	padding: 5px; background-color: rgb(228, 239, 255);
+}
+table.tablebodys strong {
+	color: rgb(86, 90, 138);
+}
+td.tablebodys strong {
+	color: rgb(86, 90, 138);
+}
+.categories {
+	background: url("/images/incbody.jpg") no-repeat left bottom; margin: 0px; width: 171px; padding-bottom: 10px;
+}
+.one {
+	background: url("/images/inchead.jpg") no-repeat left top;
+}
+.categories li a {
+	margin: 0px; color: rgb(22, 83, 130); font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 11px; font-weight: normal; text-decoration: none;
+}
+.categories li a:hover {
+	margin: 0px; color: rgb(0, 0, 0); font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 11px; text-decoration: underline;
+}
+.categories strong {
+	padding: 5px 0px; width: 171px; color: rgb(255, 255, 255); text-indent: 35px; font-family: comic sans ms,arial; font-size: 14px; display: block;
+}
+.categories ul {
+	list-style: square; margin: 5px 0px 0px 5px; padding: 0px; width: 160px; line-height: 14px;
+}
+.categories li {
+	list-style: square; margin: 0px 10px 3px 20px; padding: 0px; text-align: left; color: rgb(93, 93, 93); font-size: 11px; background-image: none;
+}
+hr {
+	height: 1px; color: rgb(189, 206, 222);
+}
+h1 {
+	margin: 10px 0px 15px; color: rgb(51, 103, 153); line-height: 15px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 18px; font-weight: bold;
+}
+h2 {
+	margin: 20px 0px; color: rgb(51, 103, 153); font-family: Verdana,Arial, Helvetica, sans-serif; font-size: 16px; font-weight: bold;
+}
+h3 {
+	margin: 15px 0px; color: rgb(51, 103, 153); font-family: Verdana,Arial, Helvetica, sans-serif; font-size: 16px; font-weight: bold;
+}
+h4 {
+	margin: 15px 0px; color: rgb(51, 103, 153); line-height: 20px; font-family: Verdana,Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold;
+}
+td.tableborder {
+	background-color: rgb(183, 188, 219);
+}
+table.tableborder {
+	background-color: rgb(183, 188, 219);
+}
+table.tablehead {
+	background-color: rgb(235, 236, 243);
+}
+td.tablehead {
+	background-color: rgb(235, 236, 243);
+}
+table.tablebody {
+	background-color: rgb(255, 255, 255);
+}
+td.tablebody {
+	background-color: rgb(255, 255, 255);
+}
+table.tablenullbody {
+	background-color: rgb(255, 255, 255);
+}
+td.tablenullbody {
+	background-color: rgb(255, 255, 255);
+}
+.tablebodytext {
+	font-family: Arial, Helvetica, sans-serif; font-size: 12px;
+}
+.tablefieldtext {
+	font-family: Arial, Helvetica, sans-serif; font-size: 12px;
+}
+.tabletitletext {
+	font-family: Arial, Helvetica, sans-serif; font-size: 12px;
+}
+.tableheadtext {
+	font-family: Arial, Helvetica, sans-serif; font-size: 12px;
+}
+.tablebodylink {
+	font-family: Arial, Helvetica, sans-serif; font-size: 12px;
+}
+.tableheadtext {
+	color: rgb(37, 99, 154);
+}
+a.tablebodylink {
+	text-decoration: none;
+}
+a.tablebodylink:hover {
+	text-decoration: underline;
+}
+.text {
+	font-family: Arial, Helvetica, sans-serif; font-size: 12px;
+}
+.errorcolor {
+	color: rgb(153, 0, 0);
+}
+.successcolor {
+	color: green;
+}
+input.inputtext {
+	font-family: Verdana,Arial,Helvetica; font-size: 11px;
+}
+textarea.inputtextarea {
+	font-family: Verdana,Arial,Helvetica; font-size: 11px;
+}
+select.inputselect {
+	font-family: Verdana,Arial,Helvetica; font-size: 11px;
+}
+input.inputcheckbox {
+	font-family: Verdana,Arial,Helvetica; font-size: 11px;
+}
+input.inputradio {
+	font-family: Verdana,Arial,Helvetica; font-size: 11px;
+}
+input.inputfile {
+	font-family: Verdana,Arial,Helvetica; font-size: 11px;
+}
+input.inputbutton {
+	font-family: Verdana,Arial,Helvetica; font-size: 11px;
+}
+input.inputbodybutton {
+	font-family: Verdana,Arial,Helvetica; font-size: 11px;
+}
+input.inputfield {
+	font-family: Verdana,Arial,Helvetica; font-size: 11px;
+}
+input.inputbuttonflat {
+	font-family: Verdana,Arial,Helvetica; font-size: 11px;
+}
+input.inputbuttonS {
+	font-family: Verdana,Arial,Helvetica; font-size: 11px;
+}
+input.inputfield {
+	border: 1px solid rgb(200, 200, 200); border-image: none; color: black;
+}
+input.inputbuttonflat {
+	border: 1px solid rgb(200, 200, 200); border-image: none; color: rgb(146, 146, 146); background-color: rgb(239, 239, 239);
+}
+input.inputbutton {
+	border: 1px solid rgb(200, 200, 200); border-image: none; color: rgb(146, 146, 146); background-color: rgb(239, 239, 239);
+}
+input.inputbuttonS {
+	font-weight: bold;
+}
+.mainincbg {
+	height: 18px;
+}
+.mainincline {
+	background-color: rgb(180, 189, 205);
+}
+.maininctitle {
+	color: rgb(106, 123, 156); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; text-decoration: none;
+}
+.tagCloudBox {
+	padding: 12px;
+}
+.tagCloudDiv {
+	border: 1px solid rgb(238, 238, 238); border-image: none; width: 750px; padding-right: 7px; padding-left: 7px; margin-top: 0px; background-color: rgb(245, 245, 245);
+}
+.tagCloudDiv a {
+	padding: 2px; text-decoration: none;
+}
+.tagCloudDiv a:visited {
+	color: rgb(0, 99, 220);
+}
+.tagCloudDiv a:hover {
+	background: rgb(0, 99, 220); color: rgb(255, 255, 255);
+}
+.tagCloudDiv a:active {
+	background: rgb(255, 0, 136); color: rgb(255, 255, 255);
+}
+div.tagsearch h2 {
+	margin: 15px 0px 0px; padding: 3px 3px 3px 0px; font-size: 16px; font-weight: bold;
+}
+div.tagsearch h2 a {
+	color: rgb(68, 119, 170); font-size: 18px; font-weight: bold; text-decoration: none;
+}
+#tabnav {
+	background: url("/img/tab-line.gif") repeat-x bottom; margin: 1em 0px 0.5em; width: 750px; font-family: Arial, Comic Sans Ms, Verdana; font-size: 12pt; font-weight: bold;
+}
+#tabnav br {
+	clear: both;
+}
+#tabnav ul {
+	list-style: none; margin: 0.5em 0px 0px; padding: 0px 0px 0px 1em;
+}
+#tabnav li {
+	background: url("/img/mytab.png") 100% -100px; margin: 0px 1px 0px 0px; padding: 0px 5px 0px 0px; text-align: center; border-bottom-color: rgb(187, 187, 187); border-bottom-width: 1px; border-bottom-style: solid; float: left;
+}
+#tabnav li.active {
+	background: url("/img/mytab.png") 100% 0px; border-bottom-color: rgb(255, 255, 255); border-bottom-width: 1px; border-bottom-style: solid;
+}
+#tabnav li a {
+	background: url("/img/mytab.png") 0px -100px; padding: 5px 11px 5px 16px; text-align: center; color: rgb(255, 255, 255); font-family: Arial, Comic Sans Ms, Verdana; font-size: 12pt; font-weight: bold; text-decoration: none; float: left; display: block; white-space: nowrap; min-height: 12pt;
+}
+#tabnav li a:visited {
+	background: url("/img/mytab.png") 0px -100px; padding: 5px 11px 5px 16px; text-align: center; color: rgb(255, 255, 255); font-family: Arial, Comic Sans Ms, Verdana; font-size: 12pt; font-weight: bold; text-decoration: none; float: left; display: block; white-space: nowrap; min-height: 12pt;
+}
+#tabnav li span {
+	background: url("/img/mytab.png") 0px -100px; padding: 5px 11px 5px 16px; text-align: center; color: rgb(255, 255, 255); font-family: Arial, Comic Sans Ms, Verdana; font-size: 12pt; font-weight: bold; text-decoration: none; float: left; display: block; white-space: nowrap; min-height: 12pt;
+}
+#tabnav li.active a {
+	background: url("/img/mytab.png") 0px 0px; color: rgb(51, 103, 153);
+}
+#tabnav li.active span {
+	background: url("/img/mytab.png") 0px 0px; color: rgb(51, 103, 153);
+}
+#tabnav li:hover {
+	background-position: 100% -200px;
+}
+#tabnav li:hover a {
+	background-position: 0px -200px; font-family: Arial, Comic Sans Ms, Verdana; font-size: 12pt; font-weight: bold;
+}
+#tabnav li.active:hover {
+	background-position: 100% 0px;
+}
+#tabnav li.active:hover a {
+	background-position: 0px 0px; text-decoration: underline;
+}
+.ask {
+	margin: 2px; border-radius: 4px; top: 7px; width: 450px; text-align: center; bottom: 7px; position: relative; background-color: rgb(100, 102, 105); -moz-border-radius: 4px; -webkit-border-radius: 4px; -khtml-border-radius: 4px;
+}
+.ask h2 {
+	color: rgb(255, 166, 0); padding-top: 5px; font-family: "Trebuchet MS", Helvetica, sans-serif; font-size: 140%; font-weight: bold; margin-bottom: 5px;
+}
+.ask p {
+	color: white; padding-bottom: 5px; font-family: Arial, Helvetica, sans-serif; font-size: 105%; font-weight: bold; margin-top: 7px;
+}
+.ask a {
+	color: white; padding-bottom: 5px; font-family: Arial, Helvetica, sans-serif; font-size: 105%; font-weight: bold; margin-top: 7px;
+}
+.ask a {
+	text-decoration: underline;
+}
+.askbanner a {
+	text-decoration: underline;
+}
+.askbanner h2 {
+	color: rgb(171, 115, 10); padding-top: 5px; font-family: "Trebuchet MS", Helvetica, sans-serif; font-size: 140%; font-weight: bold; margin-bottom: 5px;
+}
+.askbanner a {
+	color: rgb(171, 115, 10); padding-top: 5px; font-family: "Trebuchet MS", Helvetica, sans-serif; font-size: 140%; font-weight: bold; margin-bottom: 5px;
+}
+div.ad125 {
+	background: rgb(231, 231, 231); margin: 3px; width: 125px; height: 125px; text-align: center; color: rgb(231, 231, 231); float: left;
+}
+div.ad234 {
+	background: rgb(231, 231, 231); margin: 3px; width: 234px; height: 60px; text-align: center; color: rgb(231, 231, 231); float: left;
+}
+div.mainbody li {
+	background: url("/images/bul23.gif") no-repeat 0px 5px; margin: 0px; padding: 2px 3px 2px 15px; vertical-align: middle; list-style-type: none;
+}
+.simplelist li {
+	margin: 0px; padding: 2px 3px 2px 5px; line-height: 18px; vertical-align: middle;
+}
+div.mainbody ul {
+	padding: 0px 0px 0px 10px;
+}
+.maxBountyAds {
+	padding: 10px; text-align: center;
+}
+.bottom-mb-ads {
+	padding: 20px;
+}

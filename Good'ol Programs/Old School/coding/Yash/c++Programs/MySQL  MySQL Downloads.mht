@@ -1,0 +1,3434 @@
+From: "Saved by Internet Explorer 11"
+Subject: MySQL :: MySQL Downloads
+Date: Sun, 18 Oct 2015 06:06:51 +0530
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_0000_01D1096B.2E5E55E0"
+X-MimeOLE: Produced By Microsoft MimeOLE V6.3.9600.18052
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0000_01D1096B.2E5E55E0
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.mysql.com/downloads/
+
+=EF=BB=BF<!DOCTYPE HTML>
+<!DOCTYPE html PUBLIC "" ""><HTML lang=3D"en"><HEAD><META =
+content=3D"IE=3D11.0000"=20
+http-equiv=3D"X-UA-Compatible">
+    =20
+<META charset=3D"utf-8">     <!--[if IE ]>=0A=
+    <meta http-equiv=3D"X-UA-Compatible" =
+content=3D"IE=3DEdge,chrome=3D1" />=0A=
+    <![endif]-->=20
+    <TITLE>MySQL ::  MySQL Downloads</TITLE>         <LINK =
+href=3D"http://www.mysql.com/common/css/mysql.css?v=3D20140618"=20
+rel=3D"stylesheet" media=3D"screen">     <LINK =
+href=3D"http://www.mysql.com/common/css/print.css?v=3D20111230"=20
+rel=3D"stylesheet" media=3D"print">                                 =
+<LINK href=3D"/common/themes/sakila/favicon.ico"=20
+rel=3D"shortcut icon">                    =20
+<META name=3D"GENERATOR" content=3D"MSHTML 11.00.9600.18052"></HEAD>=20
+<BODY class=3D"downloads-www">
+<DIV id=3D"container"><!--UdmComment--> <A class=3D"skipToContent" =
+href=3D"http://www.mysql.com/downloads/#mainContent">Skip=20
+navigation links</A>    =20
+<DIV id=3D"header">
+<DIV class=3D"left">
+<DIV id=3D"logo"><A title=3D"MySQL" href=3D"http://www.mysql.com/"><IMG =
+width=3D"110"=20
+height=3D"57" alt=3D"MySQL" =
+src=3D"http://www.mysql.com/common/logos/logo-mysql-110x57.png"></A>=20
+            </DIV>
+<DIV id=3D"tagline">The world's most popular open source =
+database</DIV></DIV>
+<DIV class=3D"right">
+<DIV id=3D"login">
+<P><A class=3D"contact_us" =
+href=3D"http://www.mysql.com/about/contact/">Contact=20
+MySQL</A> |                                      <A =
+href=3D"https://www.mysql.com/auth/login/?dest=3Dhttp%3a%2f%2fwww.mysql.c=
+om%2Fdownloads%2F">Login</A>=20
+| <A href=3D"https://www.mysql.com/auth/register/">Register</A>          =
+         =20
+     </P></DIV>
+<DIV id=3D"search_box"><!-- Start Search -->        		=20
+<FORM name=3D"searchform" id=3D"searchform" =
+action=3D"https://search.oracle.com/search/search"=20
+method=3D"get"><INPUT name=3D"q" class=3D"swap_value" id=3D"q" =
+onfocus=3D"this.value=3D'';" type=3D"text" value=3D"Search">
+			 <INPUT name=3D"group" type=3D"hidden" value=3D"MySQL">			 <INPUT =
+title=3D"Search"=20
+id=3D"go" type=3D"image" alt=3D"Search" =
+src=3D"http://www.mysql.com/common/themes/sakila/search_g.png">
+		     </FORM></DIV><!-- End Search -->     </DIV></DIV><!-- MySQL =
+Navigation -->=20
+   =20
+<DIV id=3D"nav_container">
+<DIV id=3D"flags">
+<UL>
+  <LI style=3D"top: -5px; position: relative;"><!-- Icons from =
+http://icondock.com/free/vector-social-media-icons //-->=20
+                  <A href=3D"http://www.facebook.com/mysql"><IMG =
+width=3D"20"=20
+  height=3D"20" title=3D"Join us on Facebook" class=3D"facebook-icon" =
+alt=3D"fb" =
+src=3D"http://www.mysql.com/common/themes/sakila/sp.gif"></A>&nbsp;=20
+                 <A href=3D"https://plus.google.com/+mysql"><IMG =
+width=3D"20"=20
+  height=3D"20" title=3D"Join Google+ to follow MySQL" =
+class=3D"googleplus-icon" alt=3D"g+"=20
+  src=3D"http://www.mysql.com/common/themes/sakila/sp.gif"></A>&nbsp;    =
+         =20
+    <A href=3D"https://twitter.com/#!/mysql"><IMG width=3D"20" =
+height=3D"20" title=3D"Follow us on Twitter"=20
+  class=3D"twitter-icon" alt=3D"tw" =
+src=3D"http://www.mysql.com/common/themes/sakila/sp.gif"></A>&nbsp;=20
+                 <A href=3D"http://www.youtube.com/mysqlchannel"><IMG =
+width=3D"20"=20
+  height=3D"20" title=3D"Visit our YouTube channel" =
+class=3D"youtube-icon" alt=3D"yt"=20
+  =
+src=3D"http://www.mysql.com/common/themes/sakila/sp.gif"></A>&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;=20
+             </LI>                                                     =
+</UL></DIV>
+<DIV id=3D"nav-tabs">
+<UL>
+  <LI class=3D"off-left-end"></LI>
+  <LI><A href=3D"http://www.mysql.com/">MySQL.com</A></LI>
+  <LI class=3D"on-left"></LI>
+  <LI class=3D"current"><A=20
+  href=3D"http://www.mysql.com/downloads/">Downloads</A></LI>
+  <LI class=3D"on-right"></LI>
+  <LI><A href=3D"http://dev.mysql.com/doc/">Documentation</A></LI>
+  <LI class=3D"off-mid"></LI>
+  <LI><A href=3D"http://dev.mysql.com/">Developer Zone</A></LI>
+  <LI class=3D"off-right-end"></LI></UL></DIV>
+<DIV id=3D"mysql_menu">
+<UL>
+  <LI class=3D"current"><A class=3D"current "=20
+  href=3D"http://www.mysql.com/downloads/">Enterprise</A>			 </LI>	=20
+  <LI class=3D"link"><A =
+href=3D"http://dev.mysql.com/downloads/">Community</A>	=09
+  	 </LI>	=20
+  <LI class=3D"link"><A =
+href=3D"http://dev.mysql.com/downloads/repo/yum/">Yum=20
+  Repository</A>			 </LI>	=20
+  <LI class=3D"link"><A =
+href=3D"http://dev.mysql.com/downloads/repo/apt/">APT=20
+  Repository</A>			 </LI>	=20
+  <LI class=3D"link"><A =
+href=3D"http://dev.mysql.com/downloads/repo/suse/">SUSE=20
+  Repository</A>			 </LI>	=20
+  <LI class=3D"link"><A =
+href=3D"http://dev.mysql.com/downloads/windows/">Windows</A>
+  			 </LI>	=20
+  <LI class=3D"link last"><A=20
+  href=3D"http://downloads.mysql.com/archives/">Archives</A>			 </LI> =
+</UL></DIV>
+<DIV id=3D"og_sakila">&nbsp;</DIV>
+<DIV id=3D"og_title">&nbsp;</DIV></DIV><!-- End Navigation Container --> =
+<!--/UdmComment-->=20
+<DIV class=3D"page_container">
+<DIV class=3D"page_sidebar"><!--UdmComment-->    =20
+<DIV id=3D"menu_title">        &nbsp;    </DIV>
+<DIV class=3D"promo11">
+<H2 style=3D"margin: 0px 0px 8px; color: rgb(232, 124, 0);">Contact =
+Sales</H2>
+<P style=3D"font-size: 90%;">		USA: <SPAN =
+class=3D"nobr">+1-866-221-0634</SPAN><BR>
+Canada: <SPAN class=3D"nobr">+1-866-221-0634</SPAN></P>
+<P>Germany: <SPAN class=3D"nobr">+49 89 143 01280</SPAN><BR>France: =
+<SPAN class=3D"nobr">+33=20
+1 57 60 83 57</SPAN><BR>Italy: <SPAN class=3D"nobr">+39 02 249 59 =
+120</SPAN><BR>
+UK: <SPAN class=3D"nobr">+44 207 553 8447</SPAN></P>
+<P>Japan: <SPAN class=3D"nobr">0120-065556</SPAN><BR>China: <SPAN=20
+class=3D"nobr">10800-811-0823</SPAN><BR>India: <SPAN=20
+class=3D"nobr">0008001005870</SPAN></P>
+<P><A href=3D"http://www.mysql.com/about/contact/phone/">More=20
+Countries&nbsp;=C2=BB</A>	</P>
+<P><STRONG><A class=3D"moreinfo"=20
+href=3D"http://www.mysql.com/about/contact/">Contact Us=20
+Online&nbsp;=C2=BB</A></STRONG></P></DIV><!--/UdmComment--> </DIV><!-- =
+Main content -->=20
+<DIV class=3D"sidebar" id=3D"page">
+<H1 class=3D"page_header" id=3D"mainContent">MySQL Downloads</H1>
+<DIV style=3D"padding-bottom: 15px; margin-bottom: 15px; =
+border-bottom-color: rgb(238, 238, 238); border-bottom-width: 1px; =
+border-bottom-style: solid;">
+<H2 style=3D"display: inline;">MySQL Enterprise Edition</H2> =
+(commercial)<BR>
+<P>MySQL Enterprise Edition includes the most comprehensive set of =
+advanced=20
+features and management tools for MySQL.</P>
+<UL>
+  <LI>MySQL Database</LI>
+  <LI>MySQL Storage Engines (InnoDB, MyISAM, etc.)</LI>
+  <LI>MySQL Connectors (JDBC, ODBC, .Net, etc.)</LI>
+  <LI>MySQL Replication</LI>
+  <LI>MySQL Fabric</LI>
+  <LI>MySQL Partitioning</LI>
+  <LI>MySQL Utilities</LI>
+  <LI>MySQL Workbench</LI>
+  <LI>MySQL Enterprise Backup</LI>
+  <LI>MySQL Enterprise Monitor</LI>
+  <LI>MySQL Enterprise HA</LI>
+  <LI>MySQL Enterprise Scalability</LI>
+  <LI>MySQL Enterprise Security</LI>
+  <LI>MySQL Enterprise Audit</LI></UL><A =
+href=3D"http://www.mysql.com/products/enterprise/">Learn=20
+More =C2=BB</A><BR><A href=3D"https://edelivery.oracle.com/" =
+target=3D"_blank">Download=20
+from Oracle eDelivery =C2=BB</A> </DIV>
+<DIV style=3D"padding-bottom: 15px; margin-bottom: 15px; =
+border-bottom-color: rgb(238, 238, 238); border-bottom-width: 1px; =
+border-bottom-style: solid;">
+<H2 style=3D"display: inline;">MySQL Cluster CGE</H2> (commercial)<BR>
+<P>MySQL Cluster is a real-time open source transactional database =
+designed for=20
+fast, always-on access to data under high throughput conditions.</P>
+<UL>
+  <LI>MySQL Cluster</LI>
+  <LI>MySQL Cluster Manager</LI>
+  <LI>Plus, everything in MySQL Enterprise Edition</LI></UL><A =
+href=3D"http://www.mysql.com/products/cluster/">Learn=20
+More =C2=BB</A><BR><A href=3D"https://edelivery.oracle.com/" =
+target=3D"_blank">Download=20
+from Oracle eDelivery =C2=BB</A> </DIV>
+<DIV style=3D"padding-bottom: 30px;">
+<H2 style=3D"display: inline;">MySQL Community Edition</H2> (GPL)<BR><A =
+href=3D"http://dev.mysql.com/downloads/">Community=20
+(GPL) Downloads =C2=BB</A> </DIV></DIV><!--End Container -->  =
+</DIV></DIV>
+<DIV id=3D"footer">
+<DIV class=3D"six-col">
+<DIV class=3D"links">
+<UL>
+  <LI class=3D"top"><A =
+href=3D"http://www.mysql.com/products/">Products</A></LI>
+  <LI><A href=3D"http://www.mysql.com/products/enterprise/">MySQL =
+Enterprise=20
+  Edition</A></LI>
+  <LI><A href=3D"http://www.mysql.com/products/standard/">MySQL Standard =
+
+  Edition</A></LI>
+  <LI><A href=3D"http://www.mysql.com/products/classic/">MySQL Classic=20
+  Edition</A></LI>
+  <LI><A href=3D"http://www.mysql.com/products/cluster/">MySQL Cluster=20
+CGE</A></LI>
+  <LI><A href=3D"http://www.mysql.com/oem/">MySQL Embedded=20
+(OEM/ISV)</A></LI></UL></DIV>
+<DIV class=3D"links">
+<UL>
+  <LI class=3D"top"><A =
+href=3D"http://dev.mysql.com/downloads/">Downloads=20
+  (GA)</A></LI>
+  <LI><A href=3D"http://dev.mysql.com/downloads/mysql/">MySQL =
+Server</A></LI>
+  <LI><A href=3D"http://dev.mysql.com/downloads/cluster/">MySQL =
+Cluster</A></LI>
+  <LI><A href=3D"http://dev.mysql.com/downloads/fabric/">MySQL =
+Fabric</A></LI>
+  <LI><A href=3D"http://dev.mysql.com/downloads/utilities/">MySQL=20
+  Utilities</A></LI>
+  <LI><A href=3D"http://dev.mysql.com/downloads/workbench/">MySQL=20
+  Workbench</A></LI></UL></DIV>
+<DIV class=3D"links">
+<UL>
+  <LI class=3D"top"><A =
+href=3D"http://dev.mysql.com/doc/">Documentation</A></LI>
+  <LI><A href=3D"http://dev.mysql.com/doc/">MySQL Reference =
+Manuals</A></LI>
+  <LI><A href=3D"http://dev.mysql.com/doc/index-gui.html">MySQL =
+Workbench</A></LI>
+  <LI><A href=3D"http://dev.mysql.com/doc/index-expert.html">Expert=20
+Guides</A></LI>
+  <LI><A href=3D"http://dev.mysql.com/doc/index-topic.html">Topic =
+Guides</A></LI>
+  <LI><A href=3D"http://dev.mysql.com/doc/index-cluster.html">MySQL=20
+  Cluster</A></LI></UL></DIV>
+<DIV class=3D"links">
+<UL>
+  <LI class=3D"top"><A =
+href=3D"http://www.mysql.com/services/">Services</A></LI>
+  <LI><A href=3D"http://www.mysql.com/training/">Training</A></LI>
+  <LI><A =
+href=3D"http://www.mysql.com/certification/">Certification</A></LI>
+  <LI><A href=3D"http://www.mysql.com/consulting/">Consulting</A></LI>
+  <LI><A =
+href=3D"http://www.mysql.com/support/">Support</A></LI></UL></DIV>
+<DIV class=3D"links">
+<UL>
+  <LI class=3D"top"><A href=3D"http://www.mysql.com/about/">About =
+MySQL</A></LI>
+  <LI><A href=3D"http://www.mysql.com/about/contact/">Contact =
+Us</A></LI>
+  <LI><A href=3D"http://www.mysql.com/buy-mysql/">How to Buy</A></LI>
+  <LI><A href=3D"http://www.mysql.com/partners/">Partners</A></LI>
+  <LI><A href=3D"http://www.mysql.com/about/jobs/">Job =
+Opportunities</A></LI>
+  <LI><A href=3D"http://www.mysql.com/sitemap.html">Site =
+Map</A></LI></UL></DIV>
+<DIV class=3D"links">
+<UL>
+  <LI class=3D"top"><A =
+href=3D"http://www.mysql.com/about/legal/">Legal</A></LI>
+  <LI><A href=3D"http://www.mysql.com/about/legal/">Legal =
+Policies</A></LI>
+  <LI><A href=3D"http://www.oracle.com/us/legal/privacy/index.htm">Your =
+Privacy=20
+  Rights</A></LI>
+  <LI><A href=3D"http://www.oracle.com/us/legal/terms/index.html">Terms =
+of=20
+  Use</A></LI>
+  <LI><A=20
+  =
+href=3D"http://www.oracle.com/us/legal/third-party-trademarks/index.html"=
+>Trademark=20
+  Policy</A></LI>
+  <LI><A=20
+  =
+href=3D"http://www.oracle.com/technetwork/community/oca-486395.html">Cont=
+ributor=20
+  Agreement</A></LI></UL></DIV>
+<DIV class=3D"en" id=3D"search">
+<FORM id=3D"footer_search" =
+action=3D"https://search.oracle.com/search/search"=20
+method=3D"get"><INPUT name=3D"q" class=3D"swap_value" id=3D"f_q" =
+type=3D"text">	    =20
+<INPUT name=3D"group" type=3D"hidden" value=3D"MySQL">	     <INPUT =
+title=3D"Search" id=3D"f_go"=20
+type=3D"image" alt=3D"Search" =
+src=3D"http://www.mysql.com/common/themes/sakila/footer_search_g.png">=20
+        </FORM></DIV></DIV></DIV><!-- End Footer -->=20
+<DIV id=3D"copyright-oracle"><A href=3D"http://www.oracle.com/"><IMG =
+width=3D"91"=20
+height=3D"22" alt=3D"Oracle" =
+src=3D"http://www.mysql.com/common/logos/logo-oracle-red-91x22.gif"></A>&=
+nbsp;&nbsp;<SPAN>=C2=A9=20
+2015, Oracle Corporation and/or its affiliates</SPAN></DIV>
+<SCRIPT =
+src=3D"http://www.mysql.com/common/js/metrics/s_code_remote.js"></SCRIPT>=
+
+ </BODY></HTML>
+
+------=_NextPart_000_0000_01D1096B.2E5E55E0
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.mysql.com/common/logos/logo-mysql-110x57.png
+
+iVBORw0KGgoAAAANSUhEUgAAAG4AAAA5CAMAAADgDu6GAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+bWFnZVJlYWR5ccllPAAAAwBQTFRF//z3lbHB/N21/eK+ZY2m7PH0/M2ROm2NRnaU95EM8fT2qsDO
++I0F+JAM3OXrcZatepyy+rVd/enO//r1TnyY+rhm//Xp//35/MaBjKq8gKG2+rFV+I4IQXKRWYSf
+/Nelzdrihqa5xdTd/u7Z5ezxvc3ZnLbG6O7y+JIQ9oYA95YZ+ZoipbzL+/z9u8zX+q1M1eDmS3qX
+/erS+aU5NWqKRHWT+75xkK2/6u/y948IfZ+0+JcaWoWg+Z4q//De//bs/Nmr+IsA94oA+IwC94QA
+XoiiXIag2ePp/u/cmbTEUX6aSHiVk6/A/MqKSnqWTXuX+Pn7SnmW+71t940D/Pz99ff51+HotsnU
+VYCc+ac9SHeVUn+a+alC/NqubJOq95ALy9nh9oEAydjgYImjwNHc/uXG/ePC+JIOPXCPjqu+ytfg
+//Tn+IwF+JkeoLjI+rBS94gA+8J5dZmv944GV4Ke+aM39vn69noA8vb4rsPPsMTS/NCYp77M3OTq
++rNX09/l0d3l//ny/NOeSXiW/NGa+JAJvtDabpSrYoukiKa6+7xqQ3SS/f7+9/r69Pj4tMjUa5Gp
++aAuiqm8VoKe+7pof6C1097m+JMRVoKcUoCb+8iG+qIyiai7+8R+ssbS+I8L6/D0/e3WT3yZ4+vv
+4enu3+jt3ubs+Zwn1N/m+JUWfZ+z+JEOxNPdM2iJUH2Z/MmKtsrV+rVb+q9QUH6ZSXiV+ZsjeJux
+aI+nZ46n/v7+/v///evT/ezV/f3+oLnIztzj7/P2/+7XhKS40t3l/unQ//7+o7rK+rdf4ert//Pj
+ZIuk/ezT/v/+e56z95kgSHqW+KdAU3+byNbf//jv/eTDl7LCmbPE+aQ2w9LcPnCPw9TdVIGcVICb
++JQT+8F1ssjTtMjT5Orv0t3m/evSXIWf/ejM/v7///7/+vv8//799vj5/P79+I0I/v374Ojt4eru
+4unt+8yPVYGdsMXSscbRsMbSssbRMGaIt8nVuMrWMmeHg6O3o7vJgqO3z9vk////YToMlwAABhtJ
+REFUeNq8mHlcE0cUxxXQrJSI0VREk+BFTFDULTeEIwlEDdC4IlgWJRwqIKiBROsJeAEabb1TPBpq
+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
+
+------=_NextPart_000_0000_01D1096B.2E5E55E0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.mysql.com/common/themes/sakila/sp.gif
+
+R0lGODlhAQABAIAAAP///wAAACH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlk
+PSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpu
+czptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjEgNjQuMTQwOTQ5LCAyMDEw
+LzEyLzA3LTEwOjU3OjAxICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cu
+dzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjph
+Ym91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnht
+cE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDov
+L25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29s
+PSJBZG9iZSBQaG90b3Nob3AgQ1M1LjEgTWFjaW50b3NoIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAu
+aWlkOjc4OUFFNDFFRDIzQzExRTM5MUE2Qjg5Q0U3N0M5MzJDIiB4bXBNTTpEb2N1bWVudElEPSJ4
+bXAuZGlkOkFGOEYzQ0VDRDI4RjExRTM5MUE2Qjg5Q0U3N0M5MzJDIj4gPHhtcE1NOkRlcml2ZWRG
+cm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6Nzg5QUU0MUNEMjNDMTFFMzkxQTZCODlDRTc3
+QzkzMkMiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6Nzg5QUU0MUREMjNDMTFFMzkxQTZCODlD
+RTc3QzkzMkMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/
+eHBhY2tldCBlbmQ9InIiPz4B//79/Pv6+fj39vX08/Lx8O/u7ezr6uno5+bl5OPi4eDf3t3c29rZ
+2NfW1dTT0tHQz87NzMvKycjHxsXEw8LBwL++vby7urm4t7a1tLOysbCvrq2sq6qpqKempaSjoqGg
+n56dnJuamZiXlpWUk5KRkI+OjYyLiomIh4aFhIOCgYB/fn18e3p5eHd2dXRzcnFwb25tbGtqaWhn
+ZmVkY2JhYF9eXVxbWllYV1ZVVFNSUVBPTk1MS0pJSEdGRURDQkFAPz49PDs6OTg3NjU0MzIxMC8u
+LSwrKikoJyYlJCMiISAfHh0cGxoZGBcWFRQTEhEQDw4NDAsKCQgHBgUEAwIBAAAh+QQBAAAAACwA
+AAAAAQABAAACAkQBADs=
+
+------=_NextPart_000_0000_01D1096B.2E5E55E0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.mysql.com/common/logos/logo-oracle-red-91x22.gif
+
+R0lGODlhWwAWAMQAAP8QEP/v7/8gIP/Pz/8wMP+fn/9QUP9wcP/f3/+Pj/+vr/9gYP+AgP9AQP+/
+v/////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAA
+AAAALAAAAABbABYAAAX/ICSOZGmeaKqubOu+cCzPdG3feK7vfN83wGCQBBAaCSjBQZA0BosNwErg
+BAKoKgPiwe12AwxRw0t+OKQkQeARQI8AjjIXAeA2UoCCnA0YBA4oC10OhIVxXAUQY2aGDgNcCSUK
+XZFvjw8IjQ53dih9c5oGEH4LJ2oPA0wmeXaLJwxsJAZch3ciegGiKJ0nCVyASUgnB3wqcQquJskQ
+AFsOo6gidQ/Auw+2JmthM5OVKcSbXCYCkwgjvg9Mi2HL1tgkBHtdiSrdK4LhDwRbZcDxD9sg4KIi
+TgWvEv/2tFkBi46xB8jEfeqCoNojMAwyojvDpVSKgyV+0RCAyE0JdAaSg8HhEhACrGuTyhiYFEDY
+CZAkcL2D8TKAJgf8ErXT84DeKQXMMiqNU3MNqp+znv5c4HQAVBYHnO6p1A4CugErF45bU4DAoTID
+IGgtQ0fAWTIOWQAwoLTuAlUQBGQ0QZfBgoy6TvQVQeBA3YxICByui63wYps+IkueTLmy5cuYM2ve
+LDkEADs=
+
+------=_NextPart_000_0000_01D1096B.2E5E55E0
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.mysql.com/common/themes/sakila/search_g.png
+
+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
+
+------=_NextPart_000_0000_01D1096B.2E5E55E0
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://www.mysql.com/common/themes/sakila/footer_search_g.png
+
+iVBORw0KGgoAAAANSUhEUgAAACkAAAAnCAIAAAAdCPbRAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+bWFnZVJlYWR5ccllPAAAAhlJREFUeNrsl80uA1EUxzszNWZUq5O0pRQZVOMrohYWrLBkaeNBPIGX
+8Ay2FhYsJDYkIhKKlDZoS9rSSUszKS3/GHNzgzBNJgaZszoz52Z+956P/22Z4aWVo1TO8ePmaxbZ
+k0zeYYUVyipbrT1bwgaXdVhnNttm22yb/SvYs8PywsTAx/ci75yPhhE1/imn8aVTkc4Z/dND6Tx9
++wE5GenU/ES2kMgqZp67J+Cdoc40N9YnuQTNH5eDBAybj/YjB0a+yTEj04auvAfVI/JByf2WLo4L
+eJoOLrPwr5V7+H6PSwsJvBPbiqXzprFhV7fFoZBf0M8kucRqrXZ5W9Two10BbEgLYR/5UjlXLJvG
+fqrW7tXKYMhPFUKK39yV1Ir6+MQwDB7pGuHoeG8OG4aj0OmFtXub95I3cJCAbp8HySBFcQv815mv
+jw1L5pRxuY2k1y02NnCs1tjAT/R1kJXYIinK39eWubGwwDeQR+VB3ThM6tMVpldeF0rbp1emsdHn
+dK/BVneOifLIVK+plUcSMoENxXgnmZuHyUyh9DpvwmR/iA6t7Z9BEkxjA+zVtexdShGiCxFL5Yz8
+36hDU6Ny8NOUQlPpQqAD1vbjJmsqBoaox/pBglwYEDWMWZevRe+A2LeKVvd8Y1K3ji+AgbqR3tbv
+LmX3PI2GgKNJjRFjmMVl+3eLzbbZ/5TNsYwlYHDZ3lbJEnaL2PgiwACmAtXZzA1h2AAAAABJRU5E
+rkJggg==
+
+------=_NextPart_000_0000_01D1096B.2E5E55E0
+Content-Type: text/css;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.mysql.com/common/css/mysql.css?v=20140618
+
+html {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+body {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+div {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+span {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+applet {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+object {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+iframe {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+h1 {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+h2 {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+h3 {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+h4 {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+h5 {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+h6 {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+p {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+blockquote {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+pre {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+a {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+abbr {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+acronym {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+address {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+big {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+cite {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+code {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+del {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+dfn {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+em {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+font {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+img {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+ins {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+kbd {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+q {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+s {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+samp {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+small {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+strike {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+strong {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+sub {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+sup {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+tt {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+var {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+b {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+u {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+i {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+center {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+dl {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+dt {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+dd {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+ol {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+ul {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+li {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+fieldset {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+form {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+label {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+legend {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+table {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+caption {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+tbody {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+tfoot {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+thead {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+tr {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+th {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+td {
+	background: none; margin: 0px; padding: 0px; outline: 0px; border: 0px =
+currentColor; border-image: none; font-size: 100%; vertical-align: =
+baseline;
+}
+table {
+	border-collapse: collapse; border-spacing: 0px;
+}
+body {
+	background: rgb(255, 255, 255); margin: 0px 0px 0px 0.1em; padding: =
+0px; height: 100%; color: rgb(85, 85, 85); line-height: 180%; =
+font-family: verdana, arial, helvetica, sans-serif; font-size: small;
+}
+#container {
+	overflow: hidden; min-width: 916px;
+}
+p {
+	margin: 0px 0px 10px; padding: 0px; line-height: 180%; font-size: 95%;
+}
+img {
+	border: 0px currentColor; border-image: none;
+}
+sup {
+	font-size: 80%; font-weight: bold; vertical-align: top;
+}
+sub {
+	font-size: 80%; vertical-align: bottom;
+}
+#header {
+	margin: 0px; padding: 0px;
+}
+#header .left {
+	float: left;
+}
+#header .right {
+	float: right; z-index: -1;
+}
+#logo {
+	margin: 15px 0px 5px 66px; position: static;
+}
+#logo-cic {
+	margin: 15px 0px 5px 66px; position: static;
+}
+#logo-disruption-mysql {
+	margin-top: 55px; margin-right: 15px; float: right; display: inline; =
+position: static;
+}
+#logo-disruption-oracle {
+	right: 0px; margin-top: 85px; float: right; display: inline; position: =
+static;
+}
+#tagline {
+	padding: 0px; left: 190px; top: 60px; color: rgb(0, 117, 151); =
+position: absolute;
+}
+#tagline-cic {
+	padding: 0px; left: 190px; top: 60px; color: rgb(0, 117, 151); =
+position: absolute;
+}
+#sunsystems {
+	background: url("/common/themes/sakila/systems_gradient.jpg") no-repeat =
+left top; padding: 0px 0px 0px 10px; left: 275px; top: 15px; height: =
+30px; color: rgb(0, 117, 151); position: absolute;
+}
+#sunsystems a {
+	background: none; color: rgb(0, 117, 151); font-size: 12px; font-style: =
+italic; text-decoration: none; vertical-align: middle;
+}
+#sunsystems a:hover {
+	color: rgb(153, 153, 153);
+}
+#search_box {
+	top: 35px; width: 180px; height: 21px; right: 5px; position: absolute;
+}
+#search_box #q {
+	margin: 0px; padding: 2px 0px 3px 5px; border-radius: 4px; border: 1px =
+solid rgb(178, 195, 211); border-image: none; width: 145px; color: =
+rgb(51, 51, 51); line-height: 150%; font-size: 11px; float: left; =
+background-color: rgb(248, 248, 248); -moz-border-radius: 4px; =
+-webkit-border-radius: 4px; -webkit-appearance: none;
+}
+#search_box #go {
+	margin: 0px; width: 20px; height: 21px; float: right;
+}
+#login {
+	top: 5px; right: 5px; color: rgb(102, 102, 102); font-size: 90%; =
+position: absolute;
+}
+#login a {
+	padding: 0px 5px; display: inline-block;
+}
+#login a.contact_us {
+	font-weight: bold;
+}
+#flags {
+	float: right;
+}
+#flags img {
+	vertical-align: bottom;
+}
+#flags ul {
+	list-style: none; margin: 8px 5px 0px 0px; padding: 0px; height: 24px;
+}
+#flags ul li {
+	padding: 0px 0px 0px 10px; display: inline;
+}
+#flags ul li a {
+	border: 0px currentColor; border-image: none;
+}
+img.flag-en {
+	background: url("/common/themes/sakila/site-sprite1.png") no-repeat; =
+width: 15px; height: 24px; display: inline-block;
+}
+img.flag-de {
+	background: url("/common/themes/sakila/site-sprite1.png") no-repeat; =
+width: 15px; height: 24px; display: inline-block;
+}
+img.flag-fr {
+	background: url("/common/themes/sakila/site-sprite1.png") no-repeat; =
+width: 15px; height: 24px; display: inline-block;
+}
+img.flag-it {
+	background: url("/common/themes/sakila/site-sprite1.png") no-repeat; =
+width: 15px; height: 24px; display: inline-block;
+}
+img.flag-ja {
+	background: url("/common/themes/sakila/site-sprite1.png") no-repeat; =
+width: 15px; height: 24px; display: inline-block;
+}
+img.facebook-icon {
+	background: url("/common/themes/sakila/site-sprite1.png") no-repeat; =
+width: 20px; height: 20px; display: inline-block;
+}
+img.googleplus-icon {
+	background: url("/common/themes/sakila/site-sprite1.png") no-repeat; =
+width: 20px; height: 20px; display: inline-block;
+}
+img.twitter-icon {
+	background: url("/common/themes/sakila/site-sprite1.png") no-repeat; =
+width: 20px; height: 20px; display: inline-block;
+}
+img.youtube-icon {
+	background: url("/common/themes/sakila/site-sprite1.png") no-repeat; =
+width: 20px; height: 20px; display: inline-block;
+}
+img.flag-en {
+	background-position: -90px 0px;
+}
+img.flag-de {
+	background-position: -115px 0px;
+}
+img.flag-fr {
+	background-position: -140px 0px;
+}
+img.flag-it {
+	background-position: -165px 0px;
+}
+img.flag-ja {
+	background-position: -190px 0px;
+}
+img.facebook-icon {
+	background-position: -215px 0px;
+}
+img.googleplus-icon {
+	background-position: -245px 0px;
+}
+img.twitter-icon {
+	background-position: -275px 0px;
+}
+img.youtube-icon {
+	background-position: -306px 0px;
+}
+#nav_container {
+	margin: 15px 0px 0px; padding: 3px 0px 0px; height: 1%; clear: left; =
+position: relative;
+}
+#nav-tabs {
+	background: url("/common/themes/sakila/nav-sprite2.png") repeat-x 0px =
+-385px; margin: 0px 0px 0px 33px; line-height: normal; float: left;
+}
+#nav-tabs ul {
+	background: url("/common/themes/sakila/nav-sprite2.png") no-repeat 100% =
+-330px; list-style: none; margin: 0px; padding: 0px; height: 34px; =
+float: left;
+}
+#nav-tabs li {
+	margin: 0px; float: left;
+}
+#nav-tabs li a {
+	margin: 12px 0px 0px; padding: 0px 20px; color: rgb(0, 0, 0); =
+font-size: 105%; text-decoration: none; display: block;
+}
+#nav-tabs li a:visited {
+	color: rgb(0, 0, 0);
+}
+#nav-tabs li a:hover {
+	color: rgb(0, 117, 151);
+}
+#nav-tabs li.on-left-end {
+	background: url("/common/themes/sakila/nav-sprite2.png") no-repeat; =
+width: 26px; height: 34px; float: left;
+}
+#nav-tabs li.on-right-end {
+	background: url("/common/themes/sakila/nav-sprite2.png") no-repeat; =
+width: 26px; height: 34px; float: left;
+}
+#nav-tabs li.on-left {
+	background: url("/common/themes/sakila/nav-sprite2.png") no-repeat; =
+width: 26px; height: 34px; float: left;
+}
+#nav-tabs li.on-right {
+	background: url("/common/themes/sakila/nav-sprite2.png") no-repeat; =
+width: 26px; height: 34px; float: left;
+}
+#nav-tabs li.off-left-end {
+	background: url("/common/themes/sakila/nav-sprite2.png") no-repeat; =
+width: 26px; height: 34px; float: left;
+}
+#nav-tabs li.off-right-end {
+	background: url("/common/themes/sakila/nav-sprite2.png") no-repeat; =
+width: 26px; height: 34px; float: left;
+}
+#nav-tabs li.off-mid {
+	background: url("/common/themes/sakila/nav-sprite2.png") no-repeat; =
+width: 26px; height: 34px; float: left;
+}
+#nav-tabs li.on-left-end {
+	background-position: left top;
+}
+#nav-tabs li.on-right-end {
+	background-position: 0px -55px;
+}
+#nav-tabs li.on-left {
+	background-position: 0px -110px;
+}
+#nav-tabs li.on-right {
+	background-position: 0px -165px;
+}
+#nav-tabs li.off-left-end {
+	background-position: 0px -275px;
+}
+#nav-tabs li.off-right-end {
+	background-position: 0px -330px;
+}
+#nav-tabs li.off-mid {
+	background-position: 0px -491px;
+}
+#nav-tabs li.current {
+	background: url("/common/themes/sakila/nav-sprite2.png") repeat-x 0px =
+-220px; height: 34px; float: left;
+}
+#nav-tabs li.current a {
+	margin: 0px; padding: 7px 15px 0px; height: 34px; color: rgb(255, 255, =
+255); font-size: 115%; font-weight: bold;
+}
+#nav-tabs li.current a:visited {
+	color: rgb(255, 255, 255);
+}
+#nav-tabs li.current a:hover {
+	color: rgb(255, 204, 102);
+}
+#mysql_menu {
+	background: url("/common/themes/sakila/nav_sakila.png") no-repeat left =
+top rgb(1, 90, 132); margin: 0px; padding: 8px 0px 0px 30px; height: =
+30px; clear: both; font-size: 90%;
+}
+#mysql_menu ul {
+	list-style: none; margin: 0px; padding: 0px;
+}
+#mysql_menu ul li {
+	margin: 0px 0px 0px 25px; padding: 0px; color: rgb(255, 255, 255); =
+font-weight: bold; display: inline;
+}
+#mysql_menu li.current {
+	color: rgb(255, 204, 102); font-size: 110%;
+}
+#mysql_menu li.current a {
+	color: rgb(255, 204, 102);
+}
+#mysql_menu a {
+	color: rgb(255, 255, 255); text-decoration: none;
+}
+#mysql_menu a:hover {
+	color: rgb(255, 204, 102);
+}
+#og_sakila {
+	background: url("/common/themes/sakila/sakila_bottom.png") no-repeat =
+left top rgb(1, 90, 132); float: left; min-height: 30px; max-height: =
+30px; min-width: 252px;
+}
+#no_og_sakila {
+	background: url("/common/themes/sakila/no_sakila_bottom.png") no-repeat =
+left top rgb(1, 90, 132); float: left; min-height: 30px; max-height: =
+30px; min-width: 15px;
+}
+#og_title {
+	background: url("/common/themes/sakila/nav-sprite2.png") repeat-x 0px =
+-440px rgb(233, 123, 0); overflow: hidden; min-height: 30px; max-height: =
+30px;
+}
+#og_title_small {
+	background: url("/common/themes/sakila/nav-sprite2.png") repeat-x 0px =
+-440px rgb(233, 123, 0); overflow: hidden; font-size: 1px; min-height: =
+12px; max-height: 12px;
+}
+#page {
+	margin: 0px 5px 0px 0px; padding: 0px;
+}
+.margin_left#page {
+	margin: 0px 5px 0px 10px;
+}
+.page_container {
+	clear: both;
+}
+.sidebar#page {
+	margin-left: 260px;
+}
+.page_sidebar {
+	margin: 0px 0px 10px; padding: 0px 4px 4px 0px; width: 240px; float: =
+left;
+}
+.page_sidebar p {
+	margin: 0px 0px 10px 5px; width: 225px;
+}
+.page_sidebar h4 {
+	margin: 15px 0px 0px 5px;
+}
+.page_sidebar img {
+	margin: 10px 5px; padding: 0px;
+}
+.page_header {
+	margin: 0px 0px 12px; padding: 4px 0px; color: rgb(1, 90, 132); =
+line-height: 140%; font-size: 160%; font-weight: bold; =
+border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; =
+border-bottom-style: solid;
+}
+.page_banner {
+	width: 99%; clear: right; margin-bottom: 15px; border-bottom-color: =
+rgb(224, 224, 224); border-bottom-width: 1px; border-bottom-style: =
+solid;
+}
+#training_front {
+	margin: 0px 0px 0px -20px; padding: 0px;
+}
+#sidebar {
+	margin: 0px; padding: 0px; width: 240px; overflow: hidden; float: left;
+}
+#sidebar ul {
+	margin: 0px 0px 0px 5px; padding: 0px; width: 215px; list-style-type: =
+none;
+}
+#sidebar ul li {
+	margin: 0px; padding: 0px 0px 12px 15px; line-height: 110%;
+}
+#sidebar h3 {
+	margin: 0px; padding: 20px 0px 5px 10px; width: 215px; font-size: 110%;
+}
+#sidebar img.communityLogo {
+	padding: 0px 25px 0px 0px; float: right;
+}
+.sidebar-banner {
+	margin: 10px 0px 10px 12px;
+}
+.sidebar-shade {
+	background: url("/common/themes/sakila/page_shade.jpg") no-repeat right =
+top; margin: 0px; padding: 0px; min-height: 275px;
+}
+.related_pages {
+	padding: 0px 6px 0px 5px;
+}
+.related_pages ul {
+	list-style: none;
+}
+.related_pages ul li {
+	line-height: 150%; font-size: 95%; margin-bottom: 5px; margin-left: =
+8px;
+}
+.related_pages img {
+	margin: 0px; padding: 0px 0px 20px;
+}
+#spotlight {
+	background: linear-gradient(rgb(255, 255, 255) 0%, rgb(255, 255, 255) =
+8%, rgb(245, 245, 245) 35%, rgb(209, 209, 209) 100%); margin: 50px auto =
+25px; padding: 20px 15px; width: 185px; text-align: center; font-size: =
+95%; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px;
+}
+#menu_title {
+	background: url("/common/themes/sakila/get_started_bg.png") no-repeat =
+left top; margin: 0px; padding: 5px 0px 0px 60px; height: 25px; color: =
+rgb(255, 255, 255); text-transform: uppercase; line-height: 24px; =
+font-size: 14px; font-weight: bold;
+}
+#menu {
+	background: url("/common/themes/sakila/page_shade.jpg") no-repeat right =
+top; margin: 0px; padding: 0px; min-height: 275px;
+}
+#menu ul {
+	margin: 0px !important; padding: 0px 0px 0px 10px; width: 215px; =
+list-style-type: none; list-style-image: none;
+}
+#menu ul li {
+	margin: 0px 0px 5px; padding: 5px 0px; color: rgb(102, 102, 102); =
+line-height: 18px; font-size: 12px; border-bottom-color: rgb(224, 224, =
+224); border-bottom-width: 0.1em; border-bottom-style: solid;
+}
+#menu ul ul {
+	margin: 0px; padding: 5px 0px 0px 15px; width: 175px; list-style-type: =
+none;
+}
+#menu ul ul li {
+	margin: 0px 0px 5px; padding: 0px; border: 0px currentColor; =
+border-image: none; color: rgb(102, 102, 102); line-height: 195%; =
+font-size: 100%;
+}
+#menu ul a {
+=09
+}
+#menu ul a:visited {
+	color: rgb(0, 117, 159);
+}
+#menu li.current a.current {
+	color: rgb(0, 117, 159); font-weight: bold;
+}
+#menu li.current a.current:hover {
+	color: rgb(255, 204, 102); font-weight: bold;
+}
+#menu li.current a.current:visited {
+	color: rgb(0, 117, 159); font-weight: bold;
+}
+#menu li.current a.subitems.current {
+	color: rgb(0, 117, 159);
+}
+#menu ul.subitems2 li.current {
+	font-weight: bold;
+}
+#fp_main {
+	width: 670px; clear: right; float: left;
+}
+#fp_main ul {
+	list-style-type: none; list-style-image: none;
+}
+#fp_main h2 {
+	margin: 0px; padding: 0px 0px 5px; color: rgb(233, 123, 0); =
+line-height: 130%; font-size: 125%; font-weight: normal;
+}
+#fp_columns h2 a {
+	margin: 0px; padding: 0px 0px 5px; color: rgb(233, 123, 0); =
+line-height: 130%; font-size: 125%; font-weight: normal;
+}
+#fp_main h3 {
+	margin: 0px; padding: 0px 0px 5px; font-size: 115%; font-weight: =
+normal;
+}
+#fp_banners {
+	padding: 0px 0px 10px;
+}
+#imageRotateGroup {
+	padding: 0px 0px 0px 5px; float: left;
+}
+#imageRotateGroup ul {
+	list-style: none; margin: 0px !important; padding: 0px;
+}
+#imageRotateGroup ul li {
+	border-width: 0.1em; border-color: rgb(224, 224, 224); margin: 0px 5px =
+0px 0px; padding: 5px; line-height: 110%; border-bottom-style: solid;
+}
+.imageRotateIndexCurrent a {
+	color: rgb(153, 153, 153); font-size: 105%; font-weight: bold;
+}
+#fp_featured {
+	margin: 10px 0px 0px 5px; padding: 0px 10px 0px 5px; float: left; =
+min-height: 125px;
+}
+#fp_featured ul {
+	margin: 0px; padding: 0px; width: inherit; list-style-type: none;
+}
+#fp_featured ul li {
+	margin: 0px; padding: 0px 0px 15px; line-height: 110%; list-style-type: =
+none;
+}
+#fp_featured ul.ondemand li {
+	margin: 0px 0px 0px 15px; padding: 0px; color: rgb(233, 123, 0); =
+line-height: 120%; list-style-type: disc;
+}
+#fp_columns table {
+	margin: 0px; padding: 0px; width: 670px; clear: left; font-size: 95%;
+}
+#fp_columns table td {
+	margin: 0px 10px 0px 0px; padding: 5px; border: 0.1em solid rgb(224, =
+224, 224); border-image: none; width: 33%; vertical-align: top;
+}
+#fp_columns td.localization-spotlight {
+	background: rgb(224, 224, 224); border-style: solid; border-color: =
+rgb(102, 102, 102);
+}
+#fp_columns table ul {
+	margin: 0px 0px 0px 15px; padding: 0px; list-style-type: none;
+}
+#fp_columns table ul li {
+	margin: 0px; padding: 0px 0px 12px; line-height: 130%; list-style-type: =
+none;
+}
+span.right {
+	padding: 5px 5px 0px 0px; float: right;
+}
+#sub-footer {
+	background: url("/common/themes/sakila/footer_gradient_bg.png") =
+repeat-x bottom; margin: 15px 0px 0px; padding: 10px 0px 0px 8px; clear: =
+left; min-width: 916px;
+}
+#footer {
+	background: rgb(1, 90, 132); border-color: rgb(0, 0, 0); margin: 0px; =
+padding: 0px 0px 25px; color: rgb(224, 224, 224); overflow: hidden; =
+clear: both; font-size: 85%; position: relative; min-width: 916px;
+}
+#footer a {
+	color: rgb(224, 224, 224); text-decoration: none;
+}
+#footer a:hover {
+	color: rgb(153, 153, 153); text-decoration: underline;
+}
+#footer ul {
+	list-style: none; padding: 0px;
+}
+#footer ul li {
+	margin: 0px 0px 0px 25px; line-height: 175%; font-size: 95%;
+}
+#footer .top {
+	font-size: 100%; font-weight: bold;
+}
+#footer .links {
+	margin: 5px 0px 0px; padding: 0px; float: left; position: relative;
+}
+#footer #search {
+	margin: 50px 25px 0px 0px; width: 241px; height: 89px; float: right; =
+position: relative;
+}
+#footer .en#search {
+	background: url("/common/themes/sakila/footer_search.en.png") =
+no-repeat;
+}
+#footer .fr#search {
+	background: url("/common/themes/sakila/footer_search.fr.png") =
+no-repeat;
+}
+#footer .de#search {
+	background: url("/common/themes/sakila/footer_search.de.png") =
+no-repeat;
+}
+#footer .it#search {
+	background: url("/common/themes/sakila/footer_search.it.png") =
+no-repeat;
+}
+#footer .ja#search {
+	background: url("/common/themes/sakila/footer_search.ja.png") =
+no-repeat;
+}
+#footer_search #f_q {
+	background: none; margin: 46px 0px 0px 13px; padding: 5px 0px; border: =
+currentColor; border-image: none; width: 175px; height: 25px; color: =
+rgb(51, 51, 51); line-height: 160%; font-size: 150%; float: left;
+}
+#footer_search #f_go {
+	margin: 43px 6px 0px 0px; width: 41px; height: 39px; float: right;
+}
+#copyright {
+	text-align: right; color: rgb(102, 102, 102); clear: both; font-size: =
+80%;
+}
+#copyright-oracle {
+	text-align: right; color: rgb(102, 102, 102); padding-top: 1px; clear: =
+both; font-size: 80%;
+}
+#copyright-oracle span {
+	vertical-align: top;
+}
+strong {
+	font-style: normal; font-weight: bold;
+}
+em {
+	font-style: normal; font-weight: bold;
+}
+h1 {
+	margin: 0px 0px 8px; font-size: 140%; font-weight: bold;
+}
+h2 {
+	margin: 16px 0px 6px; line-height: 110%; font-size: 120%; font-weight: =
+bold;
+}
+h2 a {
+	color: rgb(0, 117, 159); text-decoration: none;
+}
+h2 a:visited {
+	color: rgb(0, 117, 159); text-decoration: none;
+}
+h3 {
+	margin: 16px 0px 4px; font-size: 110%; font-weight: bold;
+}
+h4 {
+	margin: 14px 0px 2px; font-size: 100%; font-weight: bold;
+}
+h5 {
+	margin: 10px 0px; letter-spacing: 1px; font-size: 95%; font-weight: =
+bold;
+}
+small {
+	font-size: 80%;
+}
+code {
+	color: rgb(118, 21, 150); font-size: 120%;
+}
+code.md5 {
+	color: inherit;
+}
+.attention {
+	color: rgb(233, 123, 0); font-weight: bold;
+}
+.attention a {
+	color: rgb(233, 123, 0); font-weight: bold;
+}
+.subheading {
+	color: rgb(153, 153, 153); font-size: 90%;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+big {
+	font-size: 90%; font-weight: 700;
+}
+.nobr {
+	white-space: nowrap;
+}
+hr {
+	border: 1px solid rgb(224, 224, 224); border-image: none;
+}
+.hr01 {
+	width: 80%; margin-bottom: 40px; border-bottom-color: rgb(224, 224, =
+224); border-bottom-width: 1px; border-bottom-style: solid;
+}
+div.gray1 {
+	margin: 8px 0px 0px 5px; padding: 0px; width: 225px; =
+border-bottom-color: rgb(224, 224, 224); border-bottom-width: 0.1em; =
+border-bottom-style: solid;
+}
+div.gray1 hr {
+	display: none;
+}
+div.gray2 {
+	background: url("../img/gray2.png") repeat-x rgb(255, 255, 255); =
+margin: 8px 0px; padding: 0px; height: 3px;
+}
+div.gray2 hr {
+	display: none;
+}
+div.orange1 {
+	background: url("/common/themes/sakila/list-disc-orange.png") repeat-x =
+rgb(255, 255, 255); margin: 8px 0px; padding: 0px; height: 3px;
+}
+div.orange1 hr {
+	display: none;
+}
+div.orange2 {
+	background: url("../img/orange2.png") repeat-x rgb(255, 255, 255); =
+margin: 8px 0px; padding: 0px; height: 3px;
+}
+div.orange2 hr {
+	display: none;
+}
+hr.clear {
+	margin: 0px; padding: 0px; clear: both; visibility: hidden;
+}
+br.clear {
+	margin: 0px; padding: 0px; clear: both;
+}
+br.clear-right {
+	clear: right;
+}
+.newsltrButton {
+	padding: 0px 10px 10px 0px; float: right;
+}
+.product-logo {
+	padding: 0px 10px 10px 0px; float: right;
+}
+.productButton {
+	padding: 0px 25px 0px 0px; float: left;
+}
+a {
+	background: none; text-decoration: none;
+}
+a:link {
+	color: rgb(0, 117, 159);
+}
+a:active {
+	color: rgb(0, 117, 159);
+}
+a:visited {
+	color: rgb(0, 117, 159);
+}
+a:hover {
+	color: rgb(0, 117, 159); text-decoration: underline;
+}
+a[id]:hover {
+	color: inherit;
+}
+a img {
+	border: currentColor; border-image: none;
+}
+.skipToContent {
+	display: none;
+}
+a.cta:link {
+=09
+}
+.quote {
+	margin: 20px 10px 10px 25px; padding: 15px 10px 0px 12px; border: 1px =
+solid rgb(153, 153, 153); border-image: none; width: 90%; font-style: =
+italic;
+}
+.quote p {
+	margin: 0px; padding: 0px 0px 20px;
+}
+.pullquote {
+	background: rgb(255, 249, 242); margin: 10px 10px 10px 20px; padding: =
+12px; border: 1px solid rgb(221, 221, 221); border-image: none; width: =
+70%; font-size: 95%; font-style: italic;
+}
+.pulloutbox {
+	background: rgb(255, 249, 242); margin: 5px; padding: 5px; border: 1px =
+solid rgb(221, 221, 221); border-image: none; width: 200px;
+}
+.pulloutbox#right {
+	float: right;
+}
+.pulloutbox#wide {
+	margin: 15px 0px 15px 20px; width: 75%;
+}
+.basicquote {
+	padding: 10px 0px; font-size: 95%; font-style: italic;
+}
+.callout {
+	background: rgb(253, 253, 253); margin: 15px 0px 15px 20px; padding: =
+12px 12px 6px; border-radius: 3px; border: 1px solid rgb(204, 204, 204); =
+border-image: none; width: 75%;
+}
+.callout h2 {
+	margin: 0px; padding: 0px 0px 10px;
+}
+.callout a {
+	line-height: 120%; font-size: 130%; font-weight: bold;
+}
+.callout a:visited {
+	color: rgb(0, 117, 159);
+}
+.webinar-callout {
+	background: rgb(251, 251, 251); margin: 10px 0px 10px 20px; padding: =
+10px 12px 6px; border: 1px solid rgb(153, 153, 153); border-image: none; =
+width: 75%;
+}
+.webinar-callout a {
+	line-height: 120%; font-size: 100%; font-weight: bold;
+}
+.webinar-callout a:visited {
+	color: rgb(0, 117, 159);
+}
+.login-callout {
+	background: rgb(245, 245, 245); margin: 15px 0px 15px 20px; padding: =
+12px; border: 1px solid rgb(224, 224, 224); border-image: none; width: =
+75%; min-width: 640px;
+}
+.login-callout-btns {
+	padding: 20px; text-align: center;
+}
+.promo1 {
+	background: rgb(228, 237, 251); margin: 10px 5px 0px; padding: 6px =
+10px; border: 1px solid rgb(224, 224, 224); border-image: none;
+}
+.promo2 {
+	background: rgb(150, 216, 236); margin: 10px 0px; padding: 6px 10px; =
+border: 1px solid rgb(224, 224, 224); border-image: none;
+}
+.promo3 {
+	background: rgb(227, 203, 208); margin: 10px 0px; padding: 6px 10px; =
+border: 1px solid rgb(224, 224, 224); border-image: none;
+}
+.promo4 {
+	background: rgb(255, 249, 242); margin: 10px 0px; padding: 6px 10px; =
+border: 1px solid rgb(224, 224, 224); border-image: none;
+}
+.promo5 {
+	background: rgb(210, 223, 220); margin: 10px 0px; padding: 6px 10px; =
+border: 1px solid rgb(224, 224, 224); border-image: none;
+}
+.promo6 {
+	background: rgb(255, 251, 201); margin: 10px 0px; padding: 6px 10px; =
+border: 1px solid rgb(224, 224, 224); border-image: none;
+}
+.promo7 {
+	background: rgb(255, 243, 212); margin: 10px 0px; padding: 6px 10px; =
+border: 1px solid rgb(224, 224, 224); border-image: none;
+}
+.promo8 {
+	background: rgb(213, 231, 240); margin: 10px 0px; padding: 6px 10px; =
+border: 1px solid rgb(153, 153, 153); border-image: none; color: rgb(51, =
+51, 51);
+}
+.headingBar8 {
+	background: rgb(213, 231, 240); margin: 10px 0px; padding: 6px 10px; =
+border: 1px solid rgb(153, 153, 153); border-image: none; color: rgb(51, =
+51, 51);
+}
+.promo9 {
+	background: rgb(251, 251, 251); margin: 0px 0px 20px 5px; padding: 5px =
+0px 5px 5px; border: 1px solid rgb(153, 153, 153); border-image: none; =
+font-size: 80%;
+}
+.promo9 p {
+	width: 95%;
+}
+.promo10 {
+	background: rgb(253, 253, 253); margin: 5px 5px 10px; padding: 10px; =
+border: 1px solid rgb(229, 229, 229); border-image: none;
+}
+.promo11 {
+	margin: 5px 5px 10px; padding: 12px; border: 1px solid rgb(153, 153, =
+153); border-image: none;
+}
+.promo11 p {
+	width: 95%;
+}
+.promo11 p.small {
+	font-size: 80%;
+}
+.promo12 {
+	background: rgb(213, 231, 240); margin: 0px auto; padding: 5px; =
+border-radius: 8px; width: 218px; color: rgb(51, 51, 51); line-height: =
+120%;
+}
+.promo12 h1 {
+	color: rgb(1, 90, 132);
+}
+.promo12 h3 {
+	color: rgb(1, 90, 132);
+}
+.buynow.promo12 {
+	background: rgb(204, 204, 204); margin: 0px 0px 0px 30px; padding: 2px; =
+line-height: 130%; font-weight: bold;
+}
+.downloads.promo12 {
+	margin: 0px auto 0px 10px; padding: 15px; width: 40%; line-height: =
+120%; font-size: 90%;
+}
+.promo13 {
+	background: rgb(219, 230, 217); margin: 0px auto; padding: 15px 5px; =
+border-radius: 8px; width: 218px; color: rgb(51, 51, 51); line-height: =
+140%;
+}
+.promo13 p {
+	width: 95%;
+}
+.promo14 {
+	background: rgb(243, 243, 243); margin: 0px auto; padding: 5px; =
+border-radius: 8px; width: 218px; color: rgb(51, 51, 51); line-height: =
+120%;
+}
+.promo15 {
+	background: rgb(213, 231, 240); margin: 0px auto; padding: 15px; =
+border-radius: 8px; color: rgb(51, 51, 51);
+}
+.narrow {
+	width: 55%;
+}
+.promo1 ul {
+=09
+}
+.promo2 ul {
+=09
+}
+.promo3 ul {
+=09
+}
+.promo4 ul {
+=09
+}
+.promo5 ul {
+=09
+}
+.promo6 ul {
+=09
+}
+.promo7 ul {
+=09
+}
+.promo8 ul {
+=09
+}
+.promo9 ul {
+=09
+}
+.promo14 ul {
+=09
+}
+.boxStyled {
+	background: url("/common/img/box/box-styled-top.gif") no-repeat left =
+top rgb(1, 90, 132); margin: 0px; padding: 0px; width: 190px; float: =
+right;
+}
+.boxStyled .content {
+	background: url("/common/img/box/box-styled-bottom.gif") no-repeat left =
+bottom; padding: 15px 15px 15px 40px; height: 1%; color: rgb(255, 255, =
+255); font-family: verdana, helvetica, arial, sans-serif; font-size: =
+90%;
+}
+.boxStyled p {
+	font-size: 100%;
+}
+.boxStyled h2 {
+	color: rgb(251, 172, 93); letter-spacing: 1px; font-size: larger;
+}
+.boxStyled h3 {
+	color: rgb(251, 172, 93);
+}
+.boxStyled ul {
+	font-size: 100%;
+}
+.boxStyled ul li {
+	list-style: url("/common/themes/sakila/list-arrow-orange-on-blue.gif"); =
+margin: 0px 5px 5px 15px; color: rgb(255, 255, 255); line-height: 120%;
+}
+.boxStyled ul .developer {
+	font-size: 100%;
+}
+.boxStyled ul li .developer {
+	list-style: url("/common/themes/sakila/list-arrow-orange-on-blue.gif");
+}
+.boxStyled a {
+	background: none; text-decoration: none;
+}
+.boxStyled a:link {
+	color: rgb(255, 255, 255);
+}
+.boxStyled a:active {
+	color: rgb(255, 255, 255);
+}
+.boxStyled a:visited {
+	color: rgb(255, 255, 255);
+}
+.boxStyled a:hover {
+	color: rgb(251, 172, 93); text-decoration: underline;
+}
+.boxStyled h2 a:link {
+	color: rgb(251, 172, 93);
+}
+.boxStyled h2 a:active {
+	color: rgb(251, 172, 93);
+}
+.boxStyled h2 a:visited {
+	color: rgb(251, 172, 93);
+}
+.boxStyled h2 a:hover {
+	color: rgb(251, 172, 93); text-decoration: underline;
+}
+.boxStyled h3 a:link {
+	color: rgb(251, 172, 93);
+}
+.boxStyled h3 a:active {
+	color: rgb(251, 172, 93);
+}
+.boxStyled h3 a:visited {
+	color: rgb(251, 172, 93);
+}
+.boxStyled h3 a:hover {
+	color: rgb(251, 172, 93); text-decoration: underline;
+}
+.boxStyled .button-blue {
+	background: linear-gradient(rgb(246, 246, 246) 5%, rgb(205, 205, 205) =
+100%); padding: 2px 8px; border-radius: 4px; border: 1px solid rgb(114, =
+114, 114); border-image: none; text-align: center; color: rgb(0, 89, =
+135); font-family: arial; font-size: 14px; font-weight: bold; =
+text-decoration: none; display: inline-block; box-shadow: inset 0px 1px =
+0px 0px #fff; text-shadow: 1px 1px 1px #fff;
+}
+.boxStyled .button-blue:hover {
+	background: linear-gradient(rgb(1, 90, 132) 5%, rgb(63, 139, 174) =
+100%); border: 1px solid rgb(32, 110, 146); border-image: none; color: =
+rgb(255, 255, 255); text-decoration: none; box-shadow: inset 0px 1px 0px =
+0px #9fc0cf; text-shadow: 1px 1px 1px #1570cd;
+}
+.boxStyled a.button-blue {
+	color: rgb(0, 89, 135);
+}
+.boxStyled51 {
+	background: url("/common/img/box/box-styled-top.gif") no-repeat left =
+top rgb(1, 90, 132); margin: 0px; padding: 0px; width: 190px; float: =
+right;
+}
+.boxStyled51 .content {
+	background: url("/common/img/box/box-styled-bottom.gif") no-repeat left =
+bottom; padding: 15px 15px 15px 40px; height: 1%; color: rgb(255, 255, =
+255); font-family: verdana, helvetica, arial, sans-serif; font-size: =
+90%;
+}
+.boxStyled51 p {
+	font-size: 100%;
+}
+.boxStyled51 h2 {
+	color: rgb(251, 172, 93); letter-spacing: 1px; font-size: larger;
+}
+.boxStyled51 h3 {
+	color: rgb(251, 172, 93);
+}
+.boxStyled51 ul {
+	list-style: url("/common/themes/sakila/list-arrow-orange-on-blue.gif"); =
+font-size: 100%;
+}
+.boxStyled51 ul li {
+	margin: 0px 5px 5px 15px; color: rgb(255, 255, 255); line-height: 120%;
+}
+.boxStyled51 ul ul {
+	list-style: url("/common/themes/sakila/list-disc-orange-on-blue.png");
+}
+.boxStyled51 ul ul li {
+	margin: 0px 5px 5px 15px; color: rgb(255, 255, 255); line-height: 120%;
+}
+.boxStyled51 a {
+	background: none; text-decoration: none;
+}
+.boxStyled51 a:link {
+	color: rgb(255, 255, 255);
+}
+.boxStyled51 a:active {
+	color: rgb(255, 255, 255);
+}
+.boxStyled51 a:visited {
+	color: rgb(255, 255, 255);
+}
+.boxStyled51 a:hover {
+	color: rgb(251, 172, 93); text-decoration: underline;
+}
+.boxStyled51 h2 a:link {
+	color: rgb(251, 172, 93);
+}
+.boxStyled51 h2 a:active {
+	color: rgb(251, 172, 93);
+}
+.boxStyled51 h2 a:visited {
+	color: rgb(251, 172, 93);
+}
+.boxStyled51 h2 a:hover {
+	color: rgb(251, 172, 93); text-decoration: underline;
+}
+.boxStyled51 h3 a:link {
+	color: rgb(251, 172, 93);
+}
+.boxStyled51 h3 a:active {
+	color: rgb(251, 172, 93);
+}
+.boxStyled51 h3 a:visited {
+	color: rgb(251, 172, 93);
+}
+.boxStyled51 h3 a:hover {
+	color: rgb(251, 172, 93); text-decoration: underline;
+}
+#roundedBox1 {
+	background: url("/common/img/box/box-grey-bg-top-left.gif") no-repeat =
+left top rgb(224, 224, 224);
+}
+#roundedBox1 .container {
+	background: url("/common/img/box/box-grey-bg-bottom-right.gif") =
+no-repeat right bottom;
+}
+#roundedBox1 .containerInner {
+	background: url("/common/img/box/box-grey-bg-bottom-left.gif") =
+no-repeat left bottom;
+}
+#roundedBox1 .contentContainer {
+	background: url("/common/img/box/box-grey-bg-top-right.gif") no-repeat =
+right top;
+}
+#roundedBox1 .content {
+	padding: 10px 14px;
+}
+#roundedBox1 .content img {
+	padding: 0px 2px;
+}
+#roundedBox2 {
+	background: url("/common/img/box/box-blue-bg-top-left.gif") no-repeat =
+left top rgb(1, 90, 132);
+}
+#roundedBox2 .container {
+	background: url("/common/img/box/box-blue-bg-bottom-right.gif") =
+no-repeat right bottom;
+}
+#roundedBox2 .containerInner {
+	background: url("/common/img/box/box-blue-bg-bottom-left.gif") =
+no-repeat left bottom;
+}
+#roundedBox2 .contentContainer {
+	background: url("/common/img/box/box-blue-bg-top-right.gif") no-repeat =
+right top;
+}
+#roundedBox2 .content {
+	padding: 5px 14px; color: rgb(255, 255, 255);
+}
+#roundedBox2 .content img {
+	padding: 0px 2px;
+}
+#roundedBox3 {
+	background: url("/common/img/box/box-peach-bg-top-left.gif") no-repeat =
+left top rgb(251, 230, 207);
+}
+#roundedBox3 .container {
+	background: url("/common/img/box/box-peach-bg-bottom-right.gif") =
+no-repeat right bottom;
+}
+#roundedBox3 .containerInner {
+	background: url("/common/img/box/box-peach-bg-bottom-left.gif") =
+no-repeat left bottom;
+}
+#roundedBox3 .contentContainer {
+	background: url("/common/img/box/box-peach-bg-top-right.gif") no-repeat =
+right top;
+}
+#roundedBox3 .content {
+	padding: 5px 14px;
+}
+#roundedBox3 .content img {
+	padding: 0px 2px;
+}
+#accordion {
+	margin: 5px 0px 55px; width: 70%; display: table;
+}
+#accordion ul li {
+	margin-left: 10px;
+}
+#accordion .accordionentry {
+	padding: 10px; border-radius: 8px; border: 1px solid rgb(204, 204, =
+204); border-image: none; margin-left: 10px;
+}
+#accordion h3 {
+	background: url("/common/themes/sakila/accordion_bg.jpg") repeat-x =
+bottom; padding: 2px 5px; border-radius: 8px; border: 1px solid rgb(224, =
+224, 224); border-image: none;
+}
+div.screenshot {
+	padding: 4px; width: 240px; text-align: center; clear: right; =
+font-size: smaller; float: right;
+}
+div.renew_button {
+	padding: 10px 25px 15px 0px; width: 240px; text-align: center; clear: =
+right; font-size: smaller; float: right;
+}
+div.pageMainColumn {
+	width: 65%;
+}
+div.pageMainColumn ul li {
+	margin-left: 8px;
+}
+.imageContentLayout {
+	margin: 0px; padding: 0px; float: left; max-width: 65%;
+}
+.imageContentLayout dl {
+	margin: 0px; padding: 10px 0px; border-bottom-color: rgb(224, 224, =
+224); border-bottom-width: 1px; border-bottom-style: solid; float: left; =
+display: inline;
+}
+.imageContentLayout dl.last {
+	margin-bottom: 25px; border-bottom-color: currentColor; =
+border-bottom-width: medium; border-bottom-style: none;
+}
+.imageContentLayout dt {
+	padding: 0px; width: 50%; color: rgb(102, 102, 102); float: right;
+}
+.imageContentLayout dd {
+	margin: 0px 0px 0px 220px; padding: 0px; width: 50%;
+}
+.imageContentLayout dd.img {
+	margin: 0px;
+}
+.imageContentLayout dd.img img {
+	background: rgb(255, 255, 255); margin: 0px; padding: 0px 8px; float: =
+left;
+}
+.imageContentLayout .byline {
+	font-style: italic;
+}
+.imageContentLayout a {
+	text-transform: uppercase;
+}
+form {
+	margin: 0px 0px 15px; padding: 0px; color: rgb(51, 51, 51);
+}
+.form {
+	margin: 10px auto 0px; border: 1px solid rgb(153, 153, 153); =
+border-image: none; width: 575px;
+}
+.form .section td {
+	background: rgb(204, 204, 204); margin: 0px; padding: 2px 4px 2px 10px; =
+border: currentColor; border-image: none; text-align: left; font-size: =
+12px; font-weight: bold;
+}
+.form td {
+	margin: 0px; padding: 5px 0px 6px 14px; border-top-color: rgb(153, 153, =
+153); border-top-width: 1px; border-top-style: solid;
+}
+.form td.label {
+	padding: 2px 4px; width: 45%; text-align: right; font-size: 11px; =
+vertical-align: middle;
+}
+.form td.labeltextarea {
+	padding: 8px 4px; font-size: 11px; vertical-align: middle;
+}
+.form td.helptext {
+	padding: 8px 4px; font-size: 11px; vertical-align: middle;
+}
+.form .helptext_alt {
+	padding: 8px 4px; font-size: 10px; font-weight: normal; vertical-align: =
+middle;
+}
+.form tr.section td.label {
+	text-align: left;
+}
+.form .required.label {
+	font-weight: bold;
+}
+.form .required.labeltextarea {
+	font-weight: bold;
+}
+.form tr.buttons td {
+	text-align: right; padding-right: 25px; border-bottom-color: =
+currentColor; border-bottom-width: medium; border-bottom-style: none;
+}
+.radio {
+	top: 3px; position: relative;
+}
+.check {
+	top: 3px; position: relative;
+}
+fieldset {
+	margin: 8px 0px; padding: 12px; border: 1px solid rgb(204, 204, 204); =
+border-image: none;
+}
+legend {
+	margin: 0px 4px; color: rgb(51, 51, 51); font-weight: bold;
+}
+.frm {
+	padding: 2px 1px 0px; border: 1px solid rgb(127, 127, 127); =
+border-image: none; line-height: 110%;
+}
+.submit {
+	background: rgb(33, 123, 168); border-width: 1px; border-style: solid; =
+border-color: rgb(224, 224, 224) rgb(48, 76, 96) rgb(48, 76, 96) =
+rgb(224, 224, 224); padding: 5px 8px; color: rgb(255, 255, 255); =
+font-size: 90%; font-weight: bold;
+}
+.submit2 {
+	background: rgb(33, 123, 168); border-width: 1px; border-style: solid; =
+border-color: rgb(224, 224, 224) rgb(48, 76, 96) rgb(48, 76, 96) =
+rgb(224, 224, 224); padding: 3px 8px; color: rgb(255, 255, 255); =
+font-size: 90%; font-weight: bold;
+}
+.submit3 {
+	background: rgb(33, 123, 168); border-width: 1px; border-style: solid; =
+border-color: rgb(224, 224, 224) rgb(48, 76, 96) rgb(48, 76, 96) =
+rgb(224, 224, 224); padding: 3px 8px; color: rgb(255, 255, 255); =
+font-size: 90%; font-weight: bold;
+}
+div.lead_form {
+	background: rgb(224, 224, 224); padding: 5px; border: 1px solid =
+rgb(153, 153, 153); border-image: none; width: 300px; height: 220px; =
+text-align: center;
+}
+div.lead_inner {
+	margin: 5px; border: currentColor; border-image: none; width: 298px; =
+height: 170px;
+}
+.lead_form table {
+	width: 99%; text-align: left;
+}
+.lead_form a {
+	color: rgb(0, 0, 0); font-size: 85%;
+}
+div.lead_button {
+	margin-top: 1em; margin-right: 1em; float: right;
+}
+div.leac_button .submit {
+	margin: 0px;
+}
+table {
+	margin-bottom: 10px;
+}
+.table02 {
+	margin-bottom: 30px;
+}
+.table02 table {
+	margin-bottom: 30px;
+}
+.table02 th {
+	background: rgb(238, 238, 238); padding: 7px; text-align: left; color: =
+rgb(102, 102, 102); font-weight: bold; border-top-color: rgb(153, 153, =
+153); border-right-color: rgb(153, 153, 153); border-bottom-color: =
+rgb(153, 153, 153); border-top-width: 1px; border-right-width: 1px; =
+border-bottom-width: 1px; border-top-style: solid; border-right-style: =
+dashed; border-bottom-style: solid;
+}
+.table02 th:first-child {
+	border-left-color: rgb(153, 153, 153); border-left-width: 1px; =
+border-left-style: solid;
+}
+.table02 th:last-child {
+	border-right-color: rgb(153, 153, 153); border-right-width: 1px; =
+border-right-style: solid;
+}
+.table02 td {
+	padding: 8px; font-size: 95%; border-right-color: rgb(224, 224, 224); =
+border-bottom-color: rgb(224, 224, 224); border-right-width: 1px; =
+border-bottom-width: 1px; border-right-style: dashed; =
+border-bottom-style: solid;
+}
+.table02 td:last-child {
+	border-right-color: currentColor; border-right-width: medium; =
+border-right-style: none;
+}
+.table02 .alt {
+	background: rgb(243, 243, 243);
+}
+.table04 table {
+	width: 90%;
+}
+.table04 td {
+	padding: 0px 7px;
+}
+.table04 td.col1 {
+	width: 40%;
+}
+.table04 td.col2 {
+	width: 20%;
+}
+.table04 td.col3 {
+	width: 10%;
+}
+.table04 td.col4 {
+	width: 10%; text-align: right;
+}
+.table04 td.col5 {
+	width: 20%; text-align: right; white-space: nowrap;
+}
+.table04 .alt {
+	background: rgb(243, 243, 243);
+}
+.table04 .sub-text {
+	color: rgb(102, 102, 102); font-size: 80%;
+}
+.download-info {
+	line-height: 1.8em; padding-top: 25px; font-size: 85%;
+}
+.table05 table {
+	width: 80%; margin-bottom: 30px;
+}
+.table05 tr {
+	vertical-align: top;
+}
+.table05 td:first-child {
+	width: 150px; text-align: center; padding-top: 15px;
+}
+.table05 td.item {
+	padding: 0px 0px 30px; color: rgb(102, 102, 102); font-weight: normal; =
+border-bottom-color: rgb(224, 224, 224); border-bottom-width: 1px; =
+border-bottom-style: solid;
+}
+.table05 td.item h2 {
+	font-size: 115%; font-weight: bold;
+}
+.table05 td.item .linkAction {
+	text-transform: uppercase;
+}
+table.styled {
+	margin: 1em 0px; border-bottom-color: rgb(224, 224, 224); =
+border-bottom-width: 1px; border-bottom-style: solid;
+}
+table.styled th {
+	background: rgb(238, 238, 238); margin: 0px; padding: 3px 4px; =
+font-weight: bold;
+}
+table.styled th.title {
+	font-size: 120%;
+}
+table.styled td {
+	margin: 0px; padding: 8px 8px 4px 4px; border-top-color: rgb(224, 224, =
+224); border-top-width: 1px; border-top-style: solid;
+}
+table.styledGrid {
+	margin: 1em 0px; border: 1px solid rgb(189, 206, 187); border-image: =
+none; border-collapse: collapse;
+}
+table.styledGrid th {
+	background: rgb(224, 224, 224); margin: 0px; padding: 8px 5px; =
+font-weight: bold;
+}
+table.styledGrid th.title {
+	font-size: 120%;
+}
+table.styledGrid td {
+	margin: 0px; padding: 8px 8px 4px 4px; text-align: center; =
+border-right-color: rgb(189, 206, 187); border-bottom-color: rgb(189, =
+206, 187); border-right-width: 1px; border-bottom-width: 1px; =
+border-right-style: solid; border-bottom-style: solid;
+}
+table.styledGrid td.col1 {
+	text-align: left;
+}
+table.styledGrid th.alt1 {
+	background: rgb(255, 249, 242);
+}
+.basictable {
+	border: 1px solid rgb(153, 153, 153); border-image: none; =
+border-collapse: collapse;
+}
+.basictable th {
+	background: rgb(0, 78, 97); color: white; font-family: Arial; =
+font-size: 9pt; font-weight: bold;
+}
+.basictable th.solutions {
+	background: rgb(255, 251, 201); color: rgb(0, 0, 0); font-family: =
+Arial; font-size: 9pt; font-weight: bold;
+}
+.basictable td {
+	text-align: center;
+}
+.basictable td:first-child {
+	padding: 4px; text-align: left;
+}
+.entrytable {
+	padding: 4px;
+}
+.entrytable th {
+	background: rgb(227, 239, 244); text-align: left; font-size: 12px; =
+font-weight: bold; border-top-color: rgb(204, 204, 204); =
+border-top-width: 2px; border-top-style: solid;
+}
+.entrytable td:first-child {
+	text-align: right; vertical-align: top;
+}
+.entrytable td {
+	padding: 8px 8px 4px 4px; border-top-color: rgb(226, 233, 235); =
+border-top-width: 1px; border-top-style: solid;
+}
+table.agenda {
+	margin: 0px; width: 90%; color: rgb(51, 51, 51);
+}
+table.agenda th {
+	background: rgb(204, 204, 204); margin: 0px; padding: 3px 4px; =
+font-weight: bold;
+}
+table.agenda th.title {
+	font-size: 115%;
+}
+table.agenda th.subTitle {
+	font-size: 100%;
+}
+table.agenda td {
+	margin: 0px; padding: 8px 8px 4px 4px; border: 1px solid rgb(226, 233, =
+235); border-image: none; font-size: 90%;
+}
+table.agenda td.col1 {
+	background: rgb(251, 251, 251);
+}
+table.agenda td.special {
+	background: rgb(251, 251, 251);
+}
+table.matrix {
+	margin: 10px 0px; padding: 0px; border: 1px solid rgb(102, 102, 102); =
+width: 90%;
+}
+table.matrix .label {
+	padding: 0px 0px 0px 5px; font-size: 115%;
+}
+table.matrix th {
+	padding: 2px 20px 2px 5px; border-top-color: rgb(102, 102, 102); =
+border-top-width: 1px; border-top-style: solid;
+}
+table.matrix tr td {
+	border-top-color: rgb(102, 102, 102); border-top-width: 1px; =
+border-top-style: solid;
+}
+table.matrix tr.header {
+	border-top-color: rgb(102, 102, 102); border-top-width: 1px; =
+border-top-style: solid;
+}
+table.matrix tr.header th {
+	background: rgb(1, 90, 132); color: rgb(255, 255, 255);
+}
+table.matrix tr.header a {
+	color: rgb(255, 255, 255);
+}
+table.matrix tr.sub_header th {
+	vertical-align: middle;
+}
+table.matrix tr.label a {
+	color: rgb(0, 0, 0);
+}
+table.matrix tr.alt td {
+	background: rgb(213, 231, 240); color: rgb(51, 51, 51); =
+border-top-color: rgb(102, 102, 102); border-top-width: 1px; =
+border-top-style: solid;
+}
+table.matrix td.alt {
+	background: rgb(213, 231, 240);
+}
+table.matrix th.alt {
+	background: rgb(213, 231, 240);
+}
+table.matrix tr.label td {
+	background: rgb(204, 204, 204); margin: 0px; padding: 0px 0px 0px 2px; =
+text-align: left; color: rgb(51, 51, 51); font-size: 85%; font-weight: =
+bold; border-top-color: rgb(102, 102, 102); border-top-width: 1px; =
+border-top-style: solid;
+}
+table.matrix td.row {
+	margin: 0px; padding: 0px 50px 0px 10px; text-align: left;
+}
+table.matrix th.row {
+	margin: 0px; padding: 0px 50px 0px 10px; text-align: left;
+}
+table.matrix tr.rownb {
+	line-height: 90%;
+}
+table.matrix tr.rownb td {
+	font-size: 90%; border-top-color: currentColor; border-bottom-color: =
+currentColor; border-top-width: medium; border-bottom-width: medium; =
+border-top-style: hidden; border-bottom-style: hidden;
+}
+table.matrix tr.rownb th {
+	font-size: 90%; border-top-color: currentColor; border-bottom-color: =
+currentColor; border-top-width: medium; border-bottom-width: medium; =
+border-top-style: hidden; border-bottom-style: hidden;
+}
+table.matrix tr.rownb td.row {
+	padding-left: 20px;
+}
+table.matrix tr.rownb th.row {
+	padding-left: 20px;
+}
+table.matrix td.techspec {
+	margin: 0px; padding: 0px 50px 0px 10px; text-align: left; font-size: =
+85%;
+}
+table.matrix td.techspec ul li {
+	line-height: 120%; list-style-image: none;
+}
+table.matrix td.techspec h3 {
+	line-height: 150%; font-size: 105%; margin-top: 10px;
+}
+table.matrix td {
+	margin: 0px; padding: 5px; text-align: center;
+}
+table.matrix td:nth-of-type(2n+1).altn {
+	margin: 0px; padding: 5px; text-align: center;
+}
+table.matrix th:nth-of-type(2n+1).altn {
+	margin: 0px; padding: 5px; text-align: center;
+}
+table.matrix td:nth-of-type(2n).altn {
+	background: rgb(213, 231, 240);
+}
+table.matrix th:nth-of-type(2n).altn {
+	background: rgb(213, 231, 240);
+}
+.lCol {
+	background: rgb(255, 255, 255); width: 49%; margin-right: 1%; float: =
+left;
+}
+.rCol {
+	background: rgb(255, 255, 255); width: 49%; float: left;
+}
+.col15 {
+	background: none; width: 15%; float: left;
+}
+.col25 {
+	background: none; width: 25%; float: left;
+}
+.col33 {
+	background: none; width: 32%; float: left;
+}
+.col49 {
+	background: none; width: 49%; float: left;
+}
+.col66 {
+	background: none; width: 65%; float: left;
+}
+.col75 {
+	background: none; width: 75%; float: left;
+}
+.col84 {
+	background: none; width: 84%; float: left;
+}
+.col99 {
+	background: none; width: 99%; float: left;
+}
+.lCol .indent {
+	margin: 0px 12px; padding: 0px;
+}
+.rCol .indent {
+	margin: 0px 0px 0px 12px; padding: 0px;
+}
+.col15 .indent {
+	margin: 0px 12px; padding: 0px;
+}
+.col25 .indent {
+	margin: 0px 12px; padding: 0px;
+}
+.col33 .indent {
+	margin: 0px 12px; padding: 0px;
+}
+.col49 .indent {
+	margin: 0px 12px; padding: 0px;
+}
+.col66 .indent {
+	margin: 0px 12px; padding: 0px;
+}
+.col75 .indent {
+	margin: 0px 12px; padding: 0px;
+}
+.col84 .indent {
+	margin: 0px 12px; padding: 0px;
+}
+.col99 .indent {
+	margin: 0px 12px; padding: 0px;
+}
+.bio-sidebar {
+	margin-right: 10px; float: left;
+}
+.button03 {
+	margin: 10px 3px; line-height: 2em; white-space: nowrap;
+}
+.button03 a:link {
+	background: rgb(33, 123, 168); border-width: 1px; border-style: solid; =
+border-color: rgb(224, 224, 224) rgb(48, 76, 96) rgb(48, 76, 96) =
+rgb(224, 224, 224); padding: 3px 8px; color: rgb(255, 255, 255); =
+font-size: 90%; font-weight: bold;
+}
+.button03 a:visited {
+	background: rgb(33, 123, 168); border-width: 1px; border-style: solid; =
+border-color: rgb(224, 224, 224) rgb(48, 76, 96) rgb(48, 76, 96) =
+rgb(224, 224, 224); padding: 3px 8px; color: rgb(255, 255, 255); =
+font-size: 90%; font-weight: bold;
+}
+input.button03 {
+	background: rgb(33, 123, 168); border-width: 1px; border-style: solid; =
+border-color: rgb(224, 224, 224) rgb(48, 76, 96) rgb(48, 76, 96) =
+rgb(224, 224, 224); padding: 3px 8px; color: rgb(255, 255, 255); =
+font-size: 90%; font-weight: bold;
+}
+.lead_button input {
+	background: rgb(33, 123, 168); border-width: 1px; border-style: solid; =
+border-color: rgb(224, 224, 224) rgb(48, 76, 96) rgb(48, 76, 96) =
+rgb(224, 224, 224); padding: 3px 8px; color: rgb(255, 255, 255); =
+font-size: 90%; font-weight: bold;
+}
+.button03 a:hover {
+	color: rgb(255, 204, 102); text-decoration: none;
+}
+.button04 {
+	margin: 10px 3px; line-height: 2em; white-space: nowrap;
+}
+.button04 a:link {
+	background: rgb(248, 152, 29); border-width: 1px; border-style: solid; =
+border-color: rgb(250, 226, 204) rgb(192, 102, 0) rgb(192, 102, 0) =
+rgb(250, 226, 204); padding: 3px 8px; color: rgb(255, 255, 255); =
+font-size: 90%; font-weight: bold;
+}
+.button04 a:visited {
+	background: rgb(248, 152, 29); border-width: 1px; border-style: solid; =
+border-color: rgb(250, 226, 204) rgb(192, 102, 0) rgb(192, 102, 0) =
+rgb(250, 226, 204); padding: 3px 8px; color: rgb(255, 255, 255); =
+font-size: 90%; font-weight: bold;
+}
+input.button04 {
+	background: rgb(248, 152, 29); border-width: 1px; border-style: solid; =
+border-color: rgb(250, 226, 204) rgb(192, 102, 0) rgb(192, 102, 0) =
+rgb(250, 226, 204); padding: 3px 8px; color: rgb(255, 255, 255); =
+font-size: 90%; font-weight: bold;
+}
+.button04 a:hover {
+	color: rgb(255, 204, 102); text-decoration: none;
+}
+.button05 {
+	margin: 10px 3px; line-height: 2em; white-space: nowrap;
+}
+.button05 a:link {
+	background: rgb(251, 251, 251); border-width: 1px; border-style: solid; =
+border-color: rgb(224, 224, 224) rgb(153, 153, 153) rgb(153, 153, 153) =
+rgb(224, 224, 224); padding: 2px 8px; color: rgb(102, 102, 102); =
+font-size: 90%; font-weight: bold;
+}
+.button05 a:visited {
+	background: rgb(251, 251, 251); border-width: 1px; border-style: solid; =
+border-color: rgb(224, 224, 224) rgb(153, 153, 153) rgb(153, 153, 153) =
+rgb(224, 224, 224); padding: 2px 8px; color: rgb(102, 102, 102); =
+font-size: 90%; font-weight: bold;
+}
+input.button05 {
+	background: rgb(251, 251, 251); border-width: 1px; border-style: solid; =
+border-color: rgb(224, 224, 224) rgb(153, 153, 153) rgb(153, 153, 153) =
+rgb(224, 224, 224); padding: 2px 8px; color: rgb(102, 102, 102); =
+font-size: 90%; font-weight: bold;
+}
+.button05 a:hover {
+	color: rgb(102, 102, 102); text-decoration: underline;
+}
+.big-button-blue {
+	background: linear-gradient(rgb(63, 139, 174) 5%, rgb(1, 90, 132) =
+100%); padding: 6px 24px; border-radius: 6px; border: 1px solid rgb(32, =
+110, 146); border-image: none; text-align: center; color: rgb(255, 255, =
+255); font-family: arial; font-size: 22px; font-weight: bold; =
+text-decoration: none; display: inline-block; box-shadow: inset 0px 1px =
+0px 0px #9fc0cf; text-shadow: 1px 1px 0px #1570cd;
+}
+.med-button-blue {
+	background: linear-gradient(rgb(63, 139, 174) 5%, rgb(1, 90, 132) =
+100%); padding: 6px 24px; border-radius: 6px; border: 1px solid rgb(32, =
+110, 146); border-image: none; text-align: center; color: rgb(255, 255, =
+255); font-family: arial; font-size: 22px; font-weight: bold; =
+text-decoration: none; display: inline-block; box-shadow: inset 0px 1px =
+0px 0px #9fc0cf; text-shadow: 1px 1px 0px #1570cd;
+}
+.small-button-blue {
+	background: linear-gradient(rgb(63, 139, 174) 5%, rgb(1, 90, 132) =
+100%); padding: 6px 24px; border-radius: 6px; border: 1px solid rgb(32, =
+110, 146); border-image: none; text-align: center; color: rgb(255, 255, =
+255); font-family: arial; font-size: 22px; font-weight: bold; =
+text-decoration: none; display: inline-block; box-shadow: inset 0px 1px =
+0px 0px #9fc0cf; text-shadow: 1px 1px 0px #1570cd;
+}
+.big-button-blue:hover {
+	background: linear-gradient(rgb(1, 90, 132) 5%, rgb(63, 139, 174) =
+100%); text-decoration: none;
+}
+.med-button-blue:hover {
+	background: linear-gradient(rgb(1, 90, 132) 5%, rgb(63, 139, 174) =
+100%); text-decoration: none;
+}
+.small-button-blue:hover {
+	background: linear-gradient(rgb(1, 90, 132) 5%, rgb(63, 139, 174) =
+100%); text-decoration: none;
+}
+.big-button-blue:active {
+	top: 1px; position: relative;
+}
+.med-button-blue:active {
+	top: 1px; position: relative;
+}
+.small-button-blue:active {
+	top: 1px; position: relative;
+}
+.med-button-blue {
+	padding: 4px 16px; border-radius: 4px; font-size: 16px;
+}
+.small-button-blue {
+	padding: 2px 8px; border-radius: 4px; font-size: 14px;
+}
+.big-button-green {
+	background: linear-gradient(rgb(137, 196, 3) 5%, rgb(119, 168, 9) =
+100%); padding: 6px 24px; border-radius: 6px; border: 1px solid rgb(116, =
+184, 7); border-image: none; text-align: center; color: rgb(255, 255, =
+255); font-family: arial; font-size: 22px; font-weight: bold; =
+text-decoration: none; display: inline-block; box-shadow: inset 0px 1px =
+0px 0px #a4e271; text-shadow: 1px 1px 0px #528009;
+}
+.big-button-green:hover {
+	background: linear-gradient(rgb(119, 168, 9) 5%, rgb(119, 168, 9) =
+100%); text-decoration: none;
+}
+.big-button-green:active {
+	top: 1px; position: relative;
+}
+a.big-button-blue {
+	color: rgb(255, 255, 255);
+}
+a.med-button-blue {
+	color: rgb(255, 255, 255);
+}
+a.small-button-blue {
+	color: rgb(255, 255, 255);
+}
+a.big-button-green {
+	color: rgb(255, 255, 255);
+}
+.button-subtitle {
+	color: rgb(238, 238, 238); font-size: 50%;
+}
+.button-clear {
+	padding: 15px 0px 0px 55px; clear: both; margin-top: 20px;
+}
+.tweetButton {
+	display: none;
+}
+.newsltrButton {
+	padding: 0px 10px 10px 0px; float: right;
+}
+.productButton {
+	padding: 0px 25px 0px 0px; float: left;
+}
+.addthis_toolbox {
+	margin: 0px; padding: 0px; overflow: hidden;
+}
+.addthis_toolbox .custom_images a {
+	margin: 0px; padding: 0px; width: 60px; height: 60px;
+}
+.addthis_toolbox .custom_images a:hover img {
+	opacity: 1;
+}
+.addthis_toolbox .custom_images a img {
+	opacity: 0.5;
+}
+div.img-text-column {
+	padding-bottom: 50px; margin-left: 180px;
+}
+ul {
+	list-style: url("/common/themes/sakila/list-disc-orange.png"); margin: =
+0px 4px 8px 16px; padding: 0px;
+}
+ul li {
+	margin: 0px 0px 5px; line-height: 150%; font-size: 95%;
+}
+ul ul {
+	list-style: url("/common/themes/sakila/list-disc-blue.png");
+}
+ul ul li {
+	font-size: 100%;
+}
+ul .date {
+	font-size: 90%;
+}
+ul.styled {
+	list-style: url("/common/themes/sakila/list-raquo-orange.png");
+}
+ul.styled li {
+	line-height: 120%;
+}
+ul .date {
+	font-size: 90%;
+}
+ul.none {
+	list-style-type: none; list-style-image: none;
+}
+ol {
+	margin: 0px 4px 8px 16px; padding: 0px;
+}
+ol li {
+	margin: 0px 0px 1px 8px; padding: 0px 0px 7px; font-size: 95%;
+}
+ol ol li {
+	font-size: 100%;
+}
+dd {
+	margin: 1em 0em 1em 2em;
+}
+ul.attentionItem {
+	list-style: url("/common/themes/sakila/list-arrow-orange.gif");
+}
+ul.attentionItem li {
+	margin: 16px 0px 4px; font-size: 110%; font-weight: bold;
+}
+ul.attentionItem span.subText {
+	margin: 16px 0px 4px; font-size: 90%; font-weight: normal;
+}
+ul.attentionItem a:visited {
+	color: rgb(0, 117, 159);
+}
+ul.results {
+	margin: 1.6em -1px 0.8em; padding: 0.6em 1px 0px 150px; overflow: =
+hidden; list-style-type: none; list-style-image: none;
+}
+ul.noImage.results {
+	padding: 0px 1px 0px 10px;
+}
+ul.noImage.results li.item {
+	width: 100%;
+}
+ul.results li.item {
+	margin: 0px; padding: 20px 0px; width: 80%; line-height: 180%; =
+font-weight: normal; border-bottom-color: rgb(224, 224, 224); =
+border-bottom-width: 1px; border-bottom-style: solid; position: =
+relative;
+}
+ul.results li.item a.thumbnail {
+	text-align: center; font-weight: bold; margin-left: -140px; display: =
+block; position: absolute;
+}
+ul.results .title {
+	font-size: 120%; font-weight: bold; display: block;
+}
+ul.results li.item span.tag {
+	font-weight: bold; margin-bottom: 10px; display: block;
+}
+ul.results li.item span.subtext {
+	font-size: 95%; margin-bottom: 10px; display: block;
+}
+ul.results li.item span.description {
+	margin-bottom: 10px; display: block;
+}
+ul.results li.item span.button03 {
+	margin-left: 80%;
+}
+ul.results li.item .linkAction {
+	text-transform: uppercase;
+}
+dt {
+	font-weight: bold;
+}
+dl.FAQ {
+	margin-top: 25px;
+}
+.FAQ dt {
+	margin-top: 30px;
+}
+.FAQ dd {
+	margin: 10px 0px 0px;
+}
+.FAQ dd::first-letter {
+	font-weight: bold;
+}
+.FAQ dd li {
+	margin-left: 10px;
+}
+ol.FAQ {
+=09
+}
+ol.FAQ li {
+	font-size: 12px; margin-bottom: 8px;
+}
+.faq-question {
+	font-size: 110%; font-weight: bold;
+}
+.faq-answer {
+	padding-bottom: 10px;
+}
+.alert01 {
+	background: rgb(255, 249, 215); margin: 15px 0px; padding: 8px 10px =
+0px; border: 1px solid rgb(234, 227, 193); border-image: none;
+}
+.alert01 .icon {
+	background: url("/common/img/icons/alert-24x24.png") no-repeat;
+}
+.alert01 p {
+	font-weight: bold; margin-left: 35px;
+}
+.alert01 ul {
+	list-style-image: none;
+}
+.alert02 {
+	background: rgb(251, 251, 251); margin: 15px 0px; padding: 8px 10px =
+0px; border: 2px solid rgb(229, 229, 229); border-image: none;
+}
+.alert02 .icon {
+	background: url("/common/img/icons/info-24x24.png") no-repeat;
+}
+.alert02 p {
+	margin-left: 35px;
+}
+.alert02 ul {
+	list-style-image: none;
+}
+.error {
+	background: rgb(255, 249, 215); padding: 10px; border: 1px solid =
+rgb(226, 200, 34); border-image: none; width: 90%; font-weight: bold;
+}
+.notice {
+	text-align: center; font-size: 12px; font-weight: bold;
+}
+.success {
+	color: rgb(0, 153, 0);
+}
+.explain {
+	background: rgb(255, 255, 238); padding: 7px; border: 1px solid =
+rgb(204, 204, 204); border-image: none; width: 90%; font-size: 12px;
+}
+small.help {
+	font-style: italic;
+}
+#dev_SmallPromo {
+	margin: 10px 0px 0px 40px; padding: 0px;
+}
+#sunLogos {
+	margin: 0px 0px 0px auto; width: 215px; text-align: center; =
+padding-top: 10px;
+}
+#sunLogos img {
+	padding: 0px; vertical-align: middle;
+}
+#sunLogos h3 {
+	color: rgb(153, 153, 153);
+}
+#dev_articles {
+	margin: 25px 0px 0px 5px; padding: 0px 10px 0px 250px;
+}
+#dev_articles .subText {
+	margin: 0px; padding: 0px 0px 5px; font-size: 85%;
+}
+#dev_articles h1 {
+	margin: 10px 0px 0px; padding: 0px 10px 0px 0px; font-size: 140%;
+}
+#dev_articles h4 {
+	margin: 20px 0px 0px; padding: 0px; font-size: 100%;
+}
+#dev_blogs {
+	width: 45%; margin-top: 25px; margin-right: 5%; float: left;
+}
+#dev_blogs ul {
+	margin: 0px 0px 0px 5px; padding: 0px; list-style-type: none;
+}
+#dev_blogs ul li {
+	margin: 0px; padding: 0px 0px 12px; line-height: 125%; list-style-type: =
+none;
+}
+#dev_blogs h1 {
+	margin: 0px; padding: 0px 0px 5px; font-size: 140%;
+}
+#dev_quickPoll {
+	padding: 20px; border-radius: 10px; border: 1px solid rgb(221, 221, =
+221); border-image: none; width: 45%; margin-top: 25px; margin-right: =
+10%; margin-bottom: 20px; background-color: rgb(238, 238, 238);
+}
+#dev_quickPoll h1 {
+	color: rgb(102, 102, 102);
+}
+#dev_quickPoll form {
+	font-size: 90%;
+}
+table#quickpoll td.pollbox {
+	vertical-align: top;
+}
+table#quickpoll td.polloption {
+	vertical-align: top;
+}
+table#quickpoll td.polloptionothers {
+	vertical-align: top;
+}
+table#quickpoll td.polltext {
+	vertical-align: top;
+}
+table#quickpoll td.polloptionothers {
+	width: 150px;
+}
+.headerBannerAd {
+	margin: 0px; padding: 0px; left: 250px; top: 4px; font-family: verdana, =
+arial, helvetica, sans-serif; position: absolute;
+}
+.sidebarBannerAd {
+	margin: 20px 0px; text-align: center; font-family: verdana, arial, =
+helvetica, sans-serif;
+}
+.guimenu {
+	font-style: normal; font-weight: bold;
+}
+.searchmanual {
+	margin: 5px 5px 5px 10px; padding: 4px;
+}
+select.searchmanualselect {
+	font-size: 95%;
+}
+#docnav {
+	margin: 0px 0px 8px 8px; float: right;
+}
+#docheader {
+	margin: 0px 0px 12px; padding: 5px 0px; line-height: 140%; =
+border-bottom-color: gray; border-bottom-width: 1px; =
+border-bottom-style: solid;
+}
+#submenu {
+	background: rgb(1, 90, 132); margin: 0px 0px 6px; padding: 4px; width: =
+228px; color: rgb(255, 255, 255); float: left;
+}
+#submenu ul {
+	margin: 0px; padding: 0px; list-style-type: none; list-style-image: =
+none;
+}
+#submenu li {
+	margin: 0px; padding: 2px; font-size: 90%;
+}
+#submenu li a {
+	padding: 3px; width: 98%; color: rgb(255, 255, 255); text-decoration: =
+none; display: block;
+}
+#submenu li.current {
+	padding: 3px; border: 1px solid rgb(224, 224, 224); border-image: none; =
+font-size: 100%; margin-top: 2px;
+}
+#submenu li.current a.current {
+	color: rgb(255, 255, 255); font-weight: bold;
+}
+#submenu li.current a.current:hover {
+	color: rgb(0, 100, 140); font-weight: bold;
+}
+#submenu li.current a.subitems.current {
+	color: rgb(255, 255, 255);
+}
+#submenu li a:hover {
+	background: rgb(255, 249, 242); color: rgb(0, 100, 140);
+}
+#submenu li.current a.subitems.current:hover {
+	color: rgb(0, 100, 140);
+}
+#submenu ul.subitems1 {
+	margin-left: 10px;
+}
+.news_head {
+	background: rgb(254, 248, 230); padding: 3px; color: rgb(1, 104, 138); =
+font-size: 100%; font-weight: bold;
+}
+.subhead.news {
+	background: rgb(234, 246, 251); padding: 3px; color: rgb(0, 62, 83); =
+font-size: 95%; font-weight: bold; margin-left: 2px;
+}
+.subhead.news span {
+	background: rgb(124, 170, 185); padding: 1px;
+}
+.box.news {
+	padding: 4px; border: 1px solid rgb(224, 224, 224); border-image: none; =
+margin-bottom: 8px;
+}
+.head.resource {
+	background: rgb(204, 204, 204); margin: 0px 0px 3px; padding: 3px; =
+color: rgb(51, 51, 51); font-size: 90%; font-weight: bold;
+}
+#comments {
+	margin: 10px 0px; padding: 10px; width: 100%;
+}
+body.dev #comments {
+	background: rgb(227, 235, 226);
+}
+body.solutions #comments {
+	background: rgb(255, 251, 201);
+}
+.commentdetails {
+	padding: 4px 0px 8px; width: 100%; font-weight: bold;
+}
+body.dev .commentdetails {
+	border-top-color: rgb(102, 102, 102); border-top-width: 1px; =
+border-top-style: solid;
+}
+body.solutions .commentdetails {
+	border-top-color: rgb(255, 222, 132); border-top-width: 1px; =
+border-top-style: solid;
+}
+#toc .top {
+	list-style: url("../images/nav/top.png");
+}
+#toc .gp {
+	list-style: url("../images/nav/up.png");
+}
+#toc .p {
+	list-style: url("../images/nav/up.png");
+}
+#toc .back {
+	list-style: url("../images/nav/left.png");
+}
+body.forums .toplogin {
+	margin: 0px; top: 44px; right: 20px; position: absolute;
+}
+body.doc {
+	color: rgb(85, 85, 85); font-family: verdana, arial, helvetica, =
+sans-serif; font-size: small;
+}
+body.doc #page {
+	color: rgb(0, 0, 0); font-family: Helvetica, Arial, sans-serif; =
+font-size: 14px;
+}
+.form03 label {
+	font-size: 95%;
+}
+.form03 select {
+	font-size: 115%;
+}
+.form03 select.stacked {
+	width: 30%;
+}
+.selfContainedWindow {
+	margin: 25px; padding: 15px; border: 1px solid rgb(51, 51, 51); =
+border-image: none;
+}
+.net_table td {
+	font-size: 11px;
+}
+.searchPageBox {
+	background: rgb(238, 238, 238); padding: 6px 10px; border: 1px solid =
+rgb(153, 153, 153); border-image: none;
+}
+.searchPageBox td {
+	padding: 5px;
+}
+.getcert {
+	background: url("../promo/getcert-bg.jpg") no-repeat rgb(255, 222, =
+132); margin: 8px 0px; width: 100%; height: 118px;
+}
+.getcerttext {
+	padding: 42px 0px 0px 114px;
+}
+.becpart {
+	background: url("../promo/becpart-bg.gif") no-repeat right top rgb(0, =
+78, 97); margin: 8px 0px; width: 100%; height: 128px; text-align: right; =
+color: rgb(255, 255, 255);
+}
+.becparttext {
+	padding: 40px 90px 0px 10px;
+}
+.tcobox {
+	background: rgb(29, 147, 182); margin: 8px 0px; padding: 12px 8px 8px =
+16px; color: rgb(255, 255, 255);
+}
+.enercon {
+	background: url("../logos/sap-partner.png") no-repeat 8px 14px rgb(255, =
+255, 255); margin: 8px 0px; padding: 12px 8px 8px 110px; border: 1px =
+solid rgb(153, 153, 153); border-image: none;
+}
+.yahoo {
+	background: url("../promo/yahoo.gif") no-repeat 16px 18px rgb(255, 255, =
+255); margin: 8px 0px; border: 1px solid rgb(208, 103, 10); =
+border-image: none;
+}
+.yahootext {
+	padding: 10px 10px 10px 110px;
+}
+.coxbox {
+	background: rgb(0, 100, 134); margin: 8px 5px 0px; padding: 12px 8px =
+8px 16px; color: rgb(255, 255, 255);
+}
+a.white:link {
+	color: rgb(255, 255, 255);
+}
+a.white:visited {
+	color: rgb(255, 255, 255);
+}
+a.white:hover {
+	color: rgb(100, 191, 219);
+}
+a.white:active {
+	color: rgb(100, 191, 219);
+}
+p.byline {
+	font-size: smaller; font-weight: bold;
+}
+.grid01 {
+	margin: 1px 0px 0px; padding: 2px 4px;
+}
+.odd.grid01 {
+	background-color: rgb(251, 251, 251);
+}
+.even.grid01 {
+	background-color: rgb(229, 229, 229);
+}
+.grid02 {
+	margin: 0px 2% 10px 0px; padding: 0px; border: 1px solid rgb(229, 229, =
+229); border-image: none; width: 45%;
+}
+.grid02 h4 {
+	margin: 0px 0px 1px; padding: 0px 0px 0px 8px; border-bottom-color: =
+rgb(229, 229, 229); border-bottom-width: 1px; border-bottom-style: =
+solid;
+}
+.grid02 ul {
+	list-style: none; margin: 0px; padding: 4px 0px 8px;
+}
+.grid02 li {
+	margin: 0px; padding: 4px 0px 2px 8px; line-height: 120%;
+}
+.odd.grid02 ul {
+	background-color: rgb(251, 251, 251);
+}
+.even.grid02 ul {
+	background-color: rgb(229, 229, 229);
+}
+body.lists #header {
+	background: url("../img/lists.jpg") repeat-y rgb(0, 78, 97);
+}
+body.lists #tag p {
+	color: rgb(189, 206, 187); letter-spacing: 0.3em; font-weight: bold; =
+margin-left: 87px;
+}
+.headerlabel {
+	background: rgb(227, 235, 226);
+}
+.headervalue {
+	background: rgb(244, 244, 238);
+}
+body.lists pre {
+	color: rgb(32, 32, 32);
+}
+.quote1 {
+	color: rgb(0, 100, 134);
+}
+.quote2 {
+	color: rgb(153, 0, 0);
+}
+.quote3 {
+	color: rgb(163, 96, 8);
+}
+.quote0 {
+	color: rgb(153, 0, 153);
+}
+.thread {
+	background: rgb(244, 244, 238); padding: 4px;
+}
+#datenav {
+	list-style: none; margin: 0px; padding: 0px; font-size: 90%; =
+font-weight: bold;
+}
+#datenav li {
+	display: inline;
+}
+.blueborder {
+	margin: 0px; padding: 10px 16px 8px 12px; border: 1px solid rgb(0, 100, =
+134); border-image: none;
+}
+.blueborder h3 {
+	margin-bottom: 2px;
+}
+.whiteborder {
+	margin: 0px; padding: 2px 8px; border: 1px solid rgb(255, 255, 255); =
+border-image: none;
+}
+.lbborder {
+	margin: 0px; padding: 2px 8px; border: 1px solid rgb(100, 191, 219); =
+border-image: none;
+}
+li.mark {
+	background: rgb(226, 233, 235); font-weight: bold;
+}
+p.price {
+	color: rgb(0, 100, 134); font-size: 110%; font-weight: bold;
+}
+.go {
+	background: rgb(0, 100, 134); padding: 3px; color: rgb(255, 255, 255); =
+font-weight: bold; float: right;
+}
+.hostingfeat {
+	background: url("../img/hosting.jpg") no-repeat right bottom rgb(29, =
+147, 182); padding: 20px 150px 16px 16px; color: rgb(255, 255, 255);
+}
+.hostingfeat2 {
+	background: rgb(29, 147, 182); padding: 20px 8px 16px 16px; color: =
+rgb(255, 255, 255);
+}
+.stamp {
+	top: -8px; float: right; position: relative;
+}
+.emh {
+	background: url("/hosting/emh-bg.jpg") no-repeat rgb(0, 100, 134); =
+margin: 0px; padding: 10px 8px 8px 12px;
+}
+.emh h3 {
+	color: rgb(255, 251, 201);
+}
+.emh p {
+	color: rgb(255, 255, 255);
+}
+strong.orange {
+	color: rgb(234, 138, 41);
+}
+.focusBox {
+	background: rgb(227, 235, 226); padding: 3px; border: 1px solid rgb(0, =
+78, 97); border-image: none;
+}
+.shadedArea {
+	background: rgb(236, 236, 236);
+}
+.notice {
+	color: rgb(153, 0, 0); font-weight: bold;
+}
+.signupTitle {
+	margin: 8px 0px; width: 99%; color: rgb(85, 85, 85); padding-bottom: =
+5px; font-size: 120%; font-weight: bold; border-bottom-color: rgb(0, =
+100, 134); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.signupContent {
+	margin-right: 20px; margin-left: 20px;
+}
+.accbillhead {
+	color: rgb(0, 0, 0); background-color: rgb(236, 236, 236);
+}
+.accdethead {
+	color: rgb(0, 0, 0); font-weight: bold; background-color: rgb(236, 236, =
+236);
+}
+.accdetprice {
+	color: rgb(0, 0, 0);
+}
+.accdettable {
+	border: rgb(236, 236, 236); border-image: none; background-color: =
+rgb(204, 204, 204);
+}
+.accdetvalue {
+	color: rgb(0, 0, 0); font-weight: bold; background-color: rgb(255, 255, =
+255);
+}
+.accfeatspec {
+	color: rgb(0, 78, 97); font-weight: bold;
+}
+.accprice {
+	color: rgb(255, 204, 0);
+}
+.accpricetable {
+	background-color: rgb(204, 204, 204);
+}
+.accspec {
+	color: rgb(204, 0, 0); font-size: 12px; font-weight: bold;
+}
+.accspecprice {
+	color: rgb(0, 153, 0); font-weight: bold;
+}
+.acctablebgc {
+	background-color: rgb(0, 78, 97);
+}
+.acctitle {
+	font-weight: bold;
+}
+.acctype {
+	color: rgb(255, 255, 255); font-weight: bold; background-color: rgb(0, =
+78, 97);
+}
+div.itemizedlist {
+	font-size: 110%;
+}
+.literal {
+	font-size: 120%;
+}
+dl.manpage {
+=09
+}
+dl.manpage dt {
+	font-size: 90%; font-weight: bold;
+}
+dl.manpage dd {
+	font-size: 85%;
+}
+.prpromo {
+	width: 234px; text-align: center;
+}
+.prpromo img {
+	border: 10px solid rgb(224, 224, 224); border-image: none;
+}
+div#openworldpromo h2 {
+	font-weight: bold;
+}
+div#openworldpromo p {
+	font-size: 14px; font-weight: bold;
+}
+div#openworldpromo a {
+	font-size: 14px; font-weight: bold;
+}
+div#dev-openworldpromo {
+	width: 600px; margin-left: 255px;
+}
+div#dev-openworldpromo h2 {
+	font-weight: bold;
+}
+div#dev-openworldpromo p {
+	font-size: 14px; font-weight: bold;
+}
+div#dev-openworldpromo a {
+	font-size: 14px; font-weight: bold;
+}
+
+------=_NextPart_000_0000_01D1096B.2E5E55E0
+Content-Type: text/css;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.mysql.com/common/css/print.css?v=20111230
+
+body {
+	font: 10pt/normal "helvetica neue", helvetica, arial, sans-serif; =
+margin: 10px; font-size-adjust: none; font-stretch: normal;
+}
+#logo {
+	margin: 0px; padding: 0px; left: 2.3%; top: 10px; position: absolute; =
+z-index: 50;
+}
+#tag {
+	margin: 0px; padding: 0px; left: 17%; top: 13px; position: absolute; =
+z-index: 50;
+}
+#tagline {
+	font-style: italic;
+}
+#menu {
+	display: none;
+}
+#submenu {
+	display: none;
+}
+#tabs {
+	display: none;
+}
+#search {
+	display: none;
+}
+#head {
+	display: none;
+}
+#footer ul {
+	display: none;
+}
+#newsletter {
+	display: none;
+}
+.toplogin {
+	display: none;
+}
+.page_sidebar {
+	display: none;
+}
+#worldwide {
+	display: none;
+}
+#header {
+	display: none;
+}
+#nav_container {
+	display: none;
+}
+.skipToContent {
+	display: none;
+}
+h1 {
+	font-size: 160%;
+}
+h2 {
+	font-size: 140%;
+}
+h3 {
+	font-size: 120%;
+}
+h4 {
+	font-size: 110%;
+}
+h5 {
+	font-size: 100%;
+}
+.border {
+	margin: 30px 0px; padding: 10px 10px 4px; border: 1px solid rgb(127, =
+127, 127); border-image: none;
+}
+dl.FAQ {
+	margin-top: 25px;
+}
+.FAQ dt {
+	margin-top: 30px;
+}
+.FAQ dd {
+	margin: 10px 0px 0px;
+}
+.FAQ dd::first-letter {
+	font-weight: bold;
+}
+.FAQ dd li {
+	margin-left: 10px;
+}
+ol.FAQ {
+	margin-left: 0px;
+}
+ol.FAQ li {
+	font-size: 12px; margin-bottom: 8px;
+}
+img {
+	border: 0px currentColor; border-image: none;
+}
+.noprint {
+	display: none;
+}
+
+------=_NextPart_000_0000_01D1096B.2E5E55E0
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.mysql.com/common/js/metrics/s_code_remote.js
+
+/* SiteCatalyst code version: H.19.BUILD DATE: 25-APR-2014 COPYRIGHT =
+ORACLE CORP 2014 [UNLESS STATED OTHERWISE] */=0A=
+/* Removed sungloal suite 25-APR-14. Fixed the issue for tracking old =
+code - lists.mysql.com */=0A=
+/************************** CONFIG SECTION =
+****************************************/=0A=
+/* Specify the Report Suite(s) */=0A=
+var s_account=3D"sunmysqldev";=0A=
+var sun_dynamicAccountSelection=3Dtrue;=0A=
+var =
+sun_dynamicAccountList=3D"sunmysql=3Dmysql.com;sunmysql=3Dmysql.de;sunmys=
+ql=3Dmysql.fr;sunmysql=3Dmysql.it;sunmysqldev=3D.";=0A=
+/* Specify the Site ID */=0A=
+var s_siteid=3D"mysql:";=0A=
+/* PageName Settings */=0A=
+if (typeof s_pageType=3D=3D'undefined') {=0A=
+	var s_pageName=3Dwindow.location.host+window.location.pathname;=0A=
+	s_pageName=3Ds_pageName.replace(/www.mysql.com/,"");=0A=
+	s_pageName=3Ds_pageName.replace(/www.mysql./,"");=0A=
+	s_pageName=3Ds_pageName.replace(/.mysql.com/,":");=0A=
+	s_pageName=3Ds_pageName.replace(/mysql.com/,"");=0A=
+}=0A=
+/* Omniture JS call  */=0A=
+var =
+sun_ssl=3D(window.location.protocol.toLowerCase().indexOf("https")!=3D-1)=
+;=0A=
+	if(sun_ssl =3D=3D true) { var fullURL =3D =
+"https://www.mysql.com/common/js/metrics/metrics_group1.js"; }=0A=
+		else { var fullURL=3D =
+"http://www.mysql.com/common/js/metrics/metrics_group1.js"; }=0A=
+document.write("<sc" + "ript type=3D\"text/javascript\" =
+src=3D\""+fullURL+"\"></sc" + "ript>");=0A=
+/************************** END CONFIG SECTION =
+**************************************/=0A=
+/* Split dev.mysql.com Path  */=0A=
+var mysql_host=3Dlocation.hostname;=0A=
+if (mysql_host=3D=3D'dev.mysql.com') {=0A=
+	var mysql_url=3Dwindow.location.pathname.toLowerCase();=0A=
+	var mysql_split=3Dmysql_url.split("/");=0A=
+}=0A=
+/* Reset PageName Settings  */=0A=
+function s_postPlugins(s) {=0A=
+/* dev.mysql.com/doc ---> prop31  */=0A=
+if (mysql_host=3D=3D'dev.mysql.com') {=0A=
+	if (mysql_split[1]=3D=3D"doc") {=0A=
+		s.prop31=3Ds.pageName;=0A=
+		s.pageName=3Ds.channel+" (site section)";=0A=
+		}=0A=
+	}=0A=
+/* lists.mysql.com ---> prop31  */=0A=
+	if (mysql_host=3D=3D'lists.mysql.com') {=0A=
+		s.prop31=3Ds.pageName;=0A=
+		s.pageName=3Ds.channel+" (site section)";=0A=
+	}=0A=
+}=0A=
+
+------=_NextPart_000_0000_01D1096B.2E5E55E0--

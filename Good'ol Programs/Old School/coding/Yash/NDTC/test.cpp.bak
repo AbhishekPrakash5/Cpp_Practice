@@ -1,0 +1,33 @@
+#include<iostream.h>
+#include<conio.h>
+void fact( int n )
+{	
+	int fact=1;
+	while(n!=0)
+	{
+		while(n!=1)
+		{
+			for(int i=n; i>1; i--)
+				{
+					fact *= i;
+					cout<<i<<" x ";	
+				}	
+				cout<<"1 = "<<fact;
+		}
+		
+			cout<<"1 factorial is 1";
+		
+		
+	}
+	
+		cout<<"0 factorial is 1";
+
+}
+void main()
+{
+	int num;
+	cout<<"enter a no. of which u want factorial ";
+	cin>>num;
+	fact(num);
+	getch();
+}

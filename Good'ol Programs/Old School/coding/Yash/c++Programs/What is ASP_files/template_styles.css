@@ -1,0 +1,84 @@
+body {
+	margin: 0px; padding: 0px; background-color: rgb(255, 255, 255);
+}
+.popupmenuact {
+	border-color: rgb(255, 255, 255); padding: 2px 10px 2px 5px; border-bottom-width: 1px; border-bottom-style: solid; background-color: rgb(199, 207, 224);
+}
+.popupmenu {
+	border-color: rgb(255, 255, 255); padding: 2px 10px 2px 5px; border-bottom-width: 1px; border-bottom-style: solid; background-color: rgb(222, 228, 237);
+}
+.popupmenutext {
+	font-family: Arial, Helvetica, sans-serif; font-size: 11px;
+}
+.popupmenuclosed {
+	font-family: Arial, Helvetica, sans-serif; font-size: 11px;
+}
+.popupmenutext {
+	color: rgb(53, 111, 162);
+}
+.popupmenuclosed {
+	color: rgb(128, 128, 128);
+}
+.leftmenu {
+	color: rgb(97, 157, 205); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-weight: bold; text-decoration: none;
+}
+.leftmenuact {
+	color: rgb(97, 157, 205); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-weight: bold; text-decoration: none;
+}
+.leftmenuact {
+	color: rgb(53, 91, 124);
+}
+.topmenu {
+	color: rgb(255, 255, 255); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-weight: normal; text-decoration: none;
+}
+.topmenuact {
+	color: rgb(255, 255, 255); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; font-weight: normal; text-decoration: none;
+}
+.topmenuact {
+	color: rgb(254, 215, 56);
+}
+.lang {
+	color: rgb(158, 158, 158); font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: normal; text-decoration: underline;
+}
+.langact {
+	color: rgb(158, 158, 158); font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: normal; text-decoration: underline;
+}
+.langact {
+	text-decoration: none;
+}
+.baskettext {
+	color: rgb(255, 255, 255);
+}
+.baskettext {
+	font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: normal;
+}
+.chain {
+	color: rgb(96, 115, 154); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; font-weight: normal;
+}
+.errortext {
+	font-family: Arial; font-size: 13px; font-weight: bold;
+}
+.oktext {
+	font-family: Arial; font-size: 13px; font-weight: bold;
+}
+.notetext {
+	font-family: Arial; font-size: 13px; font-weight: bold;
+}
+.errortext {
+	color: red;
+}
+.oktext {
+	color: rgb(0, 80, 0);
+}
+.notetext {
+	color: green;
+}
+.errormessage {
+	color: red; font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold;
+}
+.starrequired {
+	color: red; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;
+}
+.required {
+	color: red; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;
+}

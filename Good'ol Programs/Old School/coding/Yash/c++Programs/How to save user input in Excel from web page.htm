@@ -1,0 +1,1463 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0076)http://p2p.wrox.com/javascript/68041-how-save-user-input-excel-web-page.html -->
+<HTML lang=en dir=ltr><HEAD><META content="IE=7.0000" 
+http-equiv="X-UA-Compatible">
+<TITLE>How to save user input in Excel from web page</TITLE>
+<META content="text/html; charset=ISO-8859-1" http-equiv=Content-Type>
+<META name=verify-v1 content=Wl1r365ey1mInnefqedD+gNPZsxNztg6GHs6TEw3UVo=>
+<META name=GENERATOR content="MSHTML 11.00.9600.18052">
+<META name=keywords 
+content="How,save,user,input,Excel,web,page,How to save user input  in Excel from web page, Programmer Forums, Software Development, Web Development, Coding Resources, Developer Answers, Free Code Downloads, Blogs, Articles">
+<META name=description 
+content='Hi,I have added a HTML code below. Please copy pate it in NOTEPAD and sait it with extention as " .HTML ". **This web page is not uploaded . '><!-- CSS Stylesheet -->
+<STYLE id=vbulletin_css type=text/css>@import url( clientscript/vbulletin_css/style-6534b81b-00018.css );
+</STYLE>
+<LINK rel=stylesheet type=text/css 
+href="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/vbulletin_important.css"><!-- / CSS Stylesheet -->
+<SCRIPT type=text/javascript 
+src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/yahoo-dom-event.js"></SCRIPT>
+
+<SCRIPT type=text/javascript 
+src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/connection-min.js"></SCRIPT>
+
+<SCRIPT type=text/javascript>
+<!--
+var SESSIONURL = "";
+var SECURITYTOKEN = "c7532b1771458b4457b633d8a34a96d2be61faf0";
+var IMGDIR_MISC = "images/misc";
+var vb_disable_ajax = parseInt("0", 10);
+// -->
+</SCRIPT>
+
+<SCRIPT type=text/javascript 
+src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/vbulletin_global.js"></SCRIPT>
+
+<SCRIPT type=text/javascript 
+src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/jquery.js" 
+langauge="JavaScript"></SCRIPT>
+<LINK title="Wrox Programmer Forums RSS Feed" rel=alternate 
+type=application/rss+xml href="http://p2p.wrox.com/external.php?type=RSS2"><LINK 
+title="Wrox Programmer Forums - Javascript - RSS Feed" rel=alternate 
+type=application/rss+xml 
+href="http://p2p.wrox.com/external.php?type=RSS2&amp;forumids=85">
+<STYLE type=text/css>TABLE.wroxp2pmenu {
+	BACKGROUND: url(images/header/background.gif) #666666 repeat-x
+}
+.wroxmenu {
+	BORDER-LEFT-WIDTH: 0px; LIST-STYLE-TYPE: none; BORDER-RIGHT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; DISPLAY: block; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px
+}
+.wroxmenu UL {
+	BORDER-LEFT-WIDTH: 0px; LIST-STYLE-TYPE: none; BORDER-RIGHT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; DISPLAY: block; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px
+}
+.wroxmenu LI {
+	BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; POSITION: relative; FLOAT: left; FONT-WEIGHT: bold; PADDING-BOTTOM: 4px; PADDING-TOP: 3px; PADDING-LEFT: 5px; MARGIN: 0px 25px 0px 10px; Z-INDEX: 5; DISPLAY: block; PADDING-RIGHT: 5px; BORDER-TOP-WIDTH: 0px
+}
+.wroxmenu LI:hover {
+	WHITE-SPACE: normal; Z-INDEX: 10000
+}
+.wroxmenu LI LI {
+	FLOAT: none; PADDING-BOTTOM: 3px; PADDING-TOP: 3px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px
+}
+.wroxmenu UL {
+	POSITION: absolute; LEFT: 0px; Z-INDEX: 10; TOP: 0px; VISIBILITY: hidden
+}
+.wroxmenu LI:hover > UL {
+	TOP: 100%; VISIBILITY: visible
+}
+.wroxmenu LI LI:hover > UL {
+	LEFT: 100%; TOP: 0px
+}
+.wroxmenu:after {
+	OVERFLOW: hidden; HEIGHT: 0px; CONTENT: "."; CLEAR: both; DISPLAY: block; VISIBILITY: hidden
+}
+.wroxmenu UL:after {
+	OVERFLOW: hidden; HEIGHT: 0px; CONTENT: "."; CLEAR: both; DISPLAY: block; VISIBILITY: hidden
+}
+.wroxmenu {
+	MIN-HEIGHT: 0px
+}
+.wroxmenu UL {
+	MIN-HEIGHT: 0px
+}
+.wroxmenu UL {
+	BACKGROUND-IMAGE: url(images/header/spacer.gif); PADDING-BOTTOM: 30px; PADDING-TOP: 10px; PADDING-LEFT: 30px; MARGIN: -10px 0px 0px -30px; PADDING-RIGHT: 30px
+}
+.wroxmenu UL UL {
+	PADDING-BOTTOM: 30px; PADDING-TOP: 30px; PADDING-LEFT: 10px; MARGIN: -30px 0px 0px -10px; PADDING-RIGHT: 30px
+}
+.wroxmenu {
+	FONT-SIZE: 13px; FONT-FAMILY: Helvetica, Arial, sans-serif; FONT-WEIGHT: bold; COLOR: #fff
+}
+.wroxmenu UL LI {
+	FONT-SIZE: 13px; FONT-FAMILY: Helvetica, Arial, sans-serif; FONT-WEIGHT: bold; COLOR: #fff
+}
+.wroxmenu UL LI {
+	BACKGROUND: #878787; COLOR: #fff
+}
+.wroxmenu UL {
+	WIDTH: 155px
+}
+.wroxmenu A {
+	TEXT-DECORATION: none; POSITION: relative; COLOR: #fff; DISPLAY: block
+}
+.wroxmenu A:hover {
+	COLOR: #fff
+}
+.wroxmenu LI LI A {
+	TEXT-DECORATION: underline; POSITION: relative; COLOR: #fff; PADDING-BOTTOM: 3px; PADDING-TOP: 3px; PADDING-LEFT: 10px; DISPLAY: block; PADDING-RIGHT: 5px
+}
+.wroxmenu LI:hover > A {
+	TEXT-DECORATION: none; COLOR: #fff
+}
+.wroxmenu LI LI:hover > A {
+	TEXT-DECORATION: none; BACKGROUND: #666666; COLOR: #fff
+}
+.wroxmenu LI LI {
+	FONT-SIZE: 11px; FONT-FAMILY: Helvetica, Arial, sans-serif
+}
+.wroxmenu UL > LI + LI {
+	BORDER-TOP-WIDTH: 0px
+}
+.wroxmenu LI LI:hover > UL {
+	LEFT: 90%; TOP: 5px
+}
+</STYLE>
+<!--[if lte IE 6]>
+<style type="text/css">
+/*<![CDATA[*/
+
+/* topnavenu: IE6 styles */
+
+/.wroxmenu ul {
+	visibility: visible;
+	position: static;
+}
+
+.wroxmenu, .wroxmenu ul {	
+	zoom: 1;
+}
+
+.wroxmenu li.topnavhover {
+	z-index: 10000;
+}
+
+.wroxmenu .topnavhoverUL {	
+	visibility: visible;
+}
+
+.wroxmenu .topnavhoverUL {	
+	top: 100%;
+	left: 0;
+}
+
+.wroxmenu .topnavhoverUL .topnavhoverUL {	
+	top: 0;
+	left: 100%;
+}
+
+/* topnav menu styles */
+
+.wroxmenu ul a {	
+	zoom: 1;
+}
+
+.wroxmenu li li {	
+	float: left;
+	width: 100%;
+}
+
+.wroxmenu li li {	
+	margin-top: -1px;
+}
+
+.wroxmenu li li a {
+	text-decoration: none;
+	background: #878787;
+}
+
+
+.wroxmenu li li a:hover, .wroxmenu .topnavhoverA {		
+	text-decoration: none;
+	background: #666666;
+}
+
+.wroxmenu .topnavhoverUL .topnavhoverUL {	
+	top: 5px;
+	left: 90%;
+}
+
+/*]]>*/
+</style>
+
+<script type="text/javascript" src="http://p2p.wrox.com/clientscript/wroxMenu.js"></script>
+<![endif]-->
+<SCRIPT type=text/javascript 
+src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/post_thanks.js"></SCRIPT>
+
+<SCRIPT type=text/javascript 
+src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/vbulletin_post_loader.js"></SCRIPT>
+</HEAD>
+<BODY 
+onload="if (is_ie || is_moz) { var cpost=document.location.hash;if(cpost){ if(cobj = fetch_object(cpost.substring(1,cpost.length)))cobj.scrollIntoView(true); }}"><!-- Omniture Code Start Block -->
+<SCRIPT type=text/javascript>
+     var Wiley = Wiley || {};  Wiley.Events = Wiley.Events || []; Wiley.Vars = Wiley.Vars || {}; Wiley.Props = Wiley.Props || {};
+     var WRInitTime=(new Date()).getTime();
+</SCRIPT>
+<!-- / Omniture Code Start Block --><!-- Leaderboard 728x90 Ad -->
+<DIV class=leaderboard-ad>
+<DIV style="WIDTH: 728px; MARGIN: 5px 18px">
+<SCRIPT type=text/javascript>
+// Generate random number for DART cache busting
+ var ordDart=Math.random()*10000000000000000;
+</SCRIPT>
+<!-- begin ad tag (tile=1) -->
+<SCRIPT language=JavaScript type=text/javascript>
+//<![CDATA[
+ord=Math.random()*10000000000000000;
+document.write('<script language="JavaScript" src="http://ad.doubleclick.net/adj/WroxP2P/;tile=1;dcopt=ist;sz=728x90;ord=' + ordDart + '?" type="text/javascript"><\/script>');
+//]]>
+</SCRIPT>
+<NOSCRIPT></NOSCRIPT><!-- End ad tag --></DIV></DIV><!--/ Leaderboard 728x90 Ad  --><!-- logo --><A 
+name=top></A>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" align=center bgColor=#c40d42 
+border=0>
+  <TBODY>
+  <TR>
+    <TD align=left><A href="http://p2p.wrox.com/"><IMG border=0 
+      alt="Wrox Programmer Forums" 
+      src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/wrox_logo.gif"></A></TD>
+    <TD style="PADDING-RIGHT: 30px" align=right>
+      <DIV class=download-box>
+      <DIV class=download-box_top></DIV>
+      <DIV class=download-box_wrapper>
+      <H3>Need to download code?</H3>
+      <P><A href="http://www.wrox.com/go/downloadcode">View our list of code 
+      downloads.</A></P></DIV>
+      <DIV class=download-box_bottom></DIV></DIV></TD></TR></TBODY></TABLE><!-- /logo --><!-- content table --><!-- open content container -->
+<DIV align=center>
+<DIV class=page style="WIDTH: 100%; TEXT-ALIGN: left">
+<DIV 
+style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px" 
+align=left><!-- New Nav 06/19/09 -->
+<TABLE class=nav-wrapper cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top>
+      <DIV class=nav align=left>
+      <UL>
+        <LI><A href="http://www.wrox.com/go/home">Home</A> </LI>
+        <LI><A href="http://www.wrox.com/go/browsebooks">Bookstore/E-Books</A> 
+        </LI>
+        <LI class=current><A href="http://www.wrox.com/go/p2p">P2P Programmer 
+        Forums</A> </LI>
+        <LI><A href="http://www.wrox.com/go/blogs">Wrox Blogs</A> </LI>
+        <LI><A href="http://www.wrox.com/go/connect">Connect with Wrox</A> </LI>
+        <LI><A href="http://www.wrox.com/go/code_resources">Code Resources</A> 
+        </LI>
+        <LI><A href="http://www.wrox.com/go/certification">International IT 
+        Certifications</A> </LI></UL></DIV>
+      <DIV class=subnav-wrapper><!-- no p2p subnav --></DIV></TD></TR></TBODY></TABLE><!--/ New Nav 06/19/09 -->
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD class=leftcolumn vAlign=top width=175><!-- left column links -->
+      <DIV id=leftnav>
+      <DIV class=leftheader>
+      <H3>Navigation</H3></DIV>
+      <DIV class=navigation>
+      <DIV class=nav-link><A href="http://p2p.wrox.com/register.php">Register 
+      Now</A></DIV>
+      <DIV class=nav-link><A 
+      href="http://p2p.wrox.com/search.php?do=getdaily">View Active 
+      Topics</A></DIV>
+      <DIV class=nav-link><A href="http://p2p.wrox.com/archives/index.php">View 
+      Archives</A></DIV>
+      <DIV class=nav-link><A 
+      href="http://p2p.wrox.com/search.php?do=process&amp;replylimit=0&amp;replyless=1&amp;searchdate=30&amp;beforeafter=after" 
+      rel=nofollow>View Unanswered Topics</A></DIV></DIV></DIV>
+      <DIV></DIV><!--/ left column links -->
+      <DIV class=leftnav-ad><!-- begin ad tag (tile=2) -->
+      <SCRIPT language=JavaScript type=text/javascript>
+//<![CDATA[
+ord=Math.random()*10000000000000000;
+document.write('<script language="JavaScript" src="http://ad.doubleclick.net/adj/WroxP2P/;tile=2;dcopt=ist;sz=160x600;ord=' + ordDart + '?" type="text/javascript"><\/script>');
+//]]>
+</SCRIPT>
+      <NOSCRIPT></NOSCRIPT><!-- End ad tag --></DIV><!--/ left column ads --><!--<div style="padding: 8px">
+<iframe src="about:blank" id="PleistyWidget_W_667fce5b68ea4f5d8e8d266f00582379" style="display:none;" frameborder="0" marginheight="0" marginwidth="0" scrolling="no"></iframe>
+</div>--></TD>
+    <TD width=10><IMG border=0 
+      src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/spacer.gif" 
+      width=10 height=1></TD>
+    <TD vAlign=top><!-- breadcrumb, login, pm info -->
+      <DIV id=curvebox>
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD vAlign=top><IMG alt="" 
+            src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/curvebox-topcorner_left.gif" 
+            width=10 height=10></TD>
+          <TD class=curvebox-top vAlign=top></TD>
+          <TD vAlign=top><IMG alt="" 
+            src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/curvebox-topcorner_right.gif" 
+            width=10 height=10></TD></TR></TBODY></TABLE>
+      <DIV class=curvebox-main>
+      <TABLE cellSpacing=1 cellPadding=3 width="100%" align=center border=0>
+        <TBODY>
+        <TR>
+          <TD width="100%">
+            <TABLE cellSpacing=0 cellPadding=0 border=0>
+              <TBODY>
+              <TR vAlign=bottom>
+                <TD><A onclick="history.back(1); return false;" 
+                  href="http://p2p.wrox.com/javascript/68041-how-save-user-input-excel-web-page.html#"><IMG 
+                  border=0 alt="Go Back" 
+                  src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/navbits_start.gif"></A></TD>
+                <TD>&nbsp;</TD>
+                <TD width="100%"><SPAN class=navbar><A accessKey=1 
+                  href="http://p2p.wrox.com/">Wrox Programmer Forums</A></SPAN> 
+                  <SPAN class=navbar>&gt; <A 
+                  href="http://p2p.wrox.com/web-programming-16/">Web 
+                  Programming</A></SPAN> <SPAN class=navbar>&gt; <A 
+                  href="http://p2p.wrox.com/javascript-446/">JavaScript</A></SPAN> 
+                  <SPAN class=navbar>&gt; <A 
+                  href="http://p2p.wrox.com/javascript-85/">Javascript</A></SPAN> 
+                </TD></TR>
+              <TR>
+                <TD class=navbar style="FONT-SIZE: 10pt; PADDING-TOP: 1px" 
+                colSpan=3><A 
+                  href="http://p2p.wrox.com/javascript/68041-how-save-user-input-excel-web-page.html"><IMG 
+                  class=inlineimg border=0 alt="Reload this Page" 
+                  src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/navbits_finallink_ltr.gif"></A> 
+                  <STRONG>How to save user input in Excel from web page 
+                </STRONG></TD></TR></TBODY></TABLE></TD>
+          <TD 
+          style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px" 
+          width=300 noWrap><!-- login form -->
+            <FORM 
+            onsubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)" 
+            method=post action=http://p2p.wrox.com/login.php?do=login>
+            <SCRIPT type=text/javascript 
+            src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/vbulletin_md5.js"></SCRIPT>
+
+            <TABLE cellSpacing=3 cellPadding=0 border=0>
+              <TBODY>
+              <TR>
+                <TD class=smallfont><LABEL for=navbar_username>User 
+                  Name</LABEL></TD>
+                <TD><INPUT tabIndex=101 
+                  onfocus="if (this.value == 'User Name') this.value = '';" 
+                  id=navbar_username class=bginput style="FONT-SIZE: 11px" 
+                  accessKey=u size=10 value="User Name" 
+                name=vb_login_username></TD>
+                <TD class=smallfont colSpan=2 noWrap><LABEL 
+                  for=cb_cookieuser_navbar><INPUT tabIndex=103 
+                  id=cb_cookieuser_navbar accessKey=c type=checkbox value=1 
+                  name=cookieuser>Remember Me?</LABEL></TD>
+                <TD class=smallfont colSpan=2><A 
+                  href="http://p2p.wrox.com/login.php?do=lostpw" 
+                  rel=nofollow>Password Reminder</A></TD></TR>
+              <TR>
+                <TD class=smallfont><LABEL 
+                for=navbar_password>Password</LABEL></TD>
+                <TD><INPUT tabIndex=102 id=navbar_password class=bginput 
+                  style="FONT-SIZE: 11px" size=10 type=password 
+                  name=vb_login_password></TD>
+                <TD><INPUT tabIndex=104 title="Enter your username and password in the boxes provided to login, or click the 'register' button to create a profile for yourself." class=button accessKey=s type=submit value="Log in"></TD>
+                <TD class=smallfont colSpan=3><A 
+                  href="http://p2p.wrox.com/register.php">Register</A></TD></TR></TBODY></TABLE><INPUT 
+            type=hidden name=s> <INPUT type=hidden 
+            value=c7532b1771458b4457b633d8a34a96d2be61faf0 name=securitytoken> 
+            <INPUT type=hidden value=login name=do> <INPUT type=hidden 
+            name=vb_login_md5password> <INPUT type=hidden 
+            name=vb_login_md5password_utf> 
+        </FORM><!-- / login form --></TD></TR></TBODY></TABLE></DIV></DIV><!-- / breadcrumb, login, pm info --><!-- nav buttons bar -->
+      <TABLE id=p2p-menu class=tborder style="BORDER-TOP-WIDTH: 0px" 
+      cellSpacing=0 cellPadding=3 width="100%" align=center border=0>
+        <TBODY>
+        <TR align=center>
+          <TD class=vbmenu_control><A href="http://p2p.wrox.com/register.php" 
+            rel=nofollow>Register</A></TD>
+          <TD class=vbmenu_control>|</TD>
+          <TD class=vbmenu_control><A accessKey=5 
+            href="http://p2p.wrox.com/faq.php">FAQ</A></TD>
+          <TD class=vbmenu_control>|</TD>
+          <TD class=vbmenu_control><A 
+            href="http://p2p.wrox.com/members/list/">Members List</A></TD>
+          <TD class=vbmenu_control>|</TD>
+          <TD class=vbmenu_control><A 
+            href="http://p2p.wrox.com/calendar.php">Calendar</A></TD>
+          <TD class=vbmenu_control>|</TD>
+          <TD class=vbmenu_control><A accessKey=4 
+            href="http://p2p.wrox.com/search.php">Search</A></TD>
+          <TD class=vbmenu_control>|</TD>
+          <TD class=vbmenu_control><A accessKey=2 
+            href="http://p2p.wrox.com/search.php?do=getdaily">Today's 
+          Posts</A></TD>
+          <TD class=vbmenu_control>|</TD>
+          <TD class=vbmenu_control><A 
+            href="http://p2p.wrox.com/forumdisplay.php?do=markread" 
+            rel=nofollow>Mark Forums Read</A></TD></TR></TBODY></TABLE><!-- / nav buttons bar -->
+      <TABLE class=tborder cellSpacing=1 cellPadding=3 width="100%" align=center 
+      border=0>
+        <TBODY>
+        <TR>
+          <TD class=alt1 width="100%"><STRONG>Javascript</STRONG> <SPAN 
+            class=smallfont>General Javascript 
+      discussions.</SPAN></TD></TR></TBODY></TABLE><!-- // Start Welcome Headers // --><!-- google_ad_section_start(weight=ignore) --><!-- guest welcome message -->
+      <TABLE class=welcome-content cellSpacing=1 cellPadding=3 width="100%" 
+      align=center border=0>
+        <TBODY>
+        <TR>
+          <TD>
+            <TABLE class=ad cellSpacing=1 cellPadding=3 width="100%" 
+            align=center border=0>
+              <TBODY>
+              <TR>
+                <TD>Welcome to the <STRONG>p2p.wrox.com Forums</STRONG>. 
+                  <BR><BR>You are currently viewing the <B>Javascript</B> 
+                  section of the Wrox Programmer to Programmer discussions. This 
+                  is a community of tens of thousands of software programmers 
+                  and website developers including Wrox book authors and 
+                  readers. As a guest, you can read any forum posting. By <A 
+                  href="http://p2p.wrox.com/register.php"><STRONG>joining 
+                  today</STRONG></A> you can post your own programming 
+                  questions, respond to other developers’ questions, and 
+                  eliminate the ads that are displayed to guests. Registration 
+                  is fast, simple and absolutely free .<BR></TD></TR>
+              <TR>
+                <TD><A 
+                  href="http://p2p.wrox.com/content/blogs/jminatel/wrox-drm-free-ebooks-now-lower-priced-print"><IMG 
+                  border=0 alt="DRM-free e-books 300x50" 
+                  src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/wroxdrmfree_300x50_rev.gif" 
+                  width=300 height=50></A></TD></TR></TBODY></TABLE></TD>
+          <TD><!-- begin ad tag (tile=3) -->
+            <SCRIPT language=JavaScript type=text/javascript>
+//<![CDATA[
+ord=Math.random()*10000000000000000;
+document.write('<script language="JavaScript" src="http://ad.doubleclick.net/adj/WroxP2P/;tile=3;dcopt=ist;sz=300x250;ord=' + ordDart + '?" type="text/javascript"><\/script>');
+//]]>
+</SCRIPT>
+            <NOSCRIPT></NOSCRIPT><!-- End ad tag --></TD></TR></TBODY></TABLE><!-- / guest welcome message --><!--welcome headers for home page --><!-- google_ad_section_end --><!-- // End Welcome Headers // --><A 
+      id=poststop name=poststop></A><!-- controls above postbits -->
+      <TABLE style="MARGIN-BOTTOM: 3px" cellSpacing=0 cellPadding=0 width="100%" 
+      border=0>
+        <TBODY>
+        <TR vAlign=bottom>
+          <TD class=smallfont><A 
+            href="http://p2p.wrox.com/newreply.php?do=newreply&amp;noquote=1&amp;p=68041" 
+            rel=nofollow><IMG border=0 alt=Reply 
+            src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/reply.gif"></A></TD></TR></TBODY></TABLE><!-- / controls above postbits --><!-- toolbar -->
+      <TABLE class=tborder style="BORDER-BOTTOM-WIDTH: 0px" cellSpacing=1 
+      cellPadding=3 width="100%" align=center border=0>
+        <TBODY>
+        <TR>
+          <TD class=tcat width="100%">
+            <DIV class=smallfont> </DIV></TD>
+          <TD id=threadtools class=vbmenu_control noWrap><A 
+            href="http://p2p.wrox.com/javascript/68041-how-save-user-input-excel-web-page.html#goto_threadtools">Thread 
+            Tools</A> </TD>
+          <TD id=displaymodes class=vbmenu_control noWrap><A 
+            href="http://p2p.wrox.com/javascript/68041-how-save-user-input-excel-web-page.html#goto_displaymodes">Display 
+            Modes</A> </TD></TR></TBODY></TABLE><!-- / toolbar --><!-- end content table -->
+      <DIV></DIV>
+      <DIV></DIV>
+      <DIV></DIV><!-- / close content container --><!-- / end content table -->
+      <DIV id=posts><!-- post #68041 --><!-- open content container -->
+      <DIV align=center>
+      <DIV class=page style="WIDTH: 100%; TEXT-ALIGN: left">
+      <DIV 
+      style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px" 
+      align=left>
+      <DIV id=edit68041 
+      style="PADDING-BOTTOM: 3px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px"><!-- this is not the last post shown on the page -->
+      <TABLE id=post68041 class=tborder cellSpacing=1 cellPadding=3 width="100%" 
+      align=center border=0>
+        <TBODY>
+        <TR>
+          <TD class=thead>
+            <DIV class=normal style="FLOAT: right">&nbsp; #<A id=postcount68041 
+            href="http://p2p.wrox.com/68041-post1.html" name=1 
+            target=new><STRONG>1</STRONG></A> (<B><A title="Link to this Post" 
+            href="http://p2p.wrox.com/javascript/68041-how-save-user-input-excel-web-page.html#post68041">permalink</A></B>) 
+            &nbsp; <!-- BNJ --><!-- akismet --><!-- /akismet --><!-- BNJ --><!--  --></DIV>
+            <DIV class=normal><!-- status icon and date --><A 
+            name=post68041><IMG class=inlineimg border=0 alt=Old 
+            src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/post_old.gif"></A> 
+            May 11th, 2008, 04:44 AM <!-- / status icon and date --></DIV></TD></TR>
+        <TR>
+          <TD class=alt2 
+          style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px"><!-- user info -->
+            <TABLE cellSpacing=3 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD noWrap>
+                  <DIV id=postmenu_68041><A class=bigusername 
+                  href="http://p2p.wrox.com/members/onlyshails.html" 
+                  rel=nofollow>onlyshails</A> <IMG class=inlineimg border=0 
+                  alt="onlyshails is offline" 
+                  src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/user_offline.gif"> 
+                  </DIV>
+                  <DIV class=smallfont>Registered User</DIV></TD>
+                <TD width="100%">&nbsp;</TD>
+                <TD vAlign=top noWrap>
+                  <DIV class=smallfont>
+                  <DIV>Join Date: May 2008</DIV>
+                  <DIV>Location: , , .</DIV>
+                  <DIV>Posts: 3 </DIV>
+                  <DIV>Thanks: 0</DIV>
+                  <DIV>Thanked 0 Times in 0 Posts </DIV>
+                  <DIV><A 
+                  onclick="imwindow('aim', '41697', 400, 200); return false;" 
+                  href="http://p2p.wrox.com/javascript/68041-how-save-user-input-excel-web-page.html#"><IMG 
+                  border=0 alt="Send a message via AIM to onlyshails" 
+                  src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/im_aim.gif"></A> 
+                  </DIV></DIV></TD></TR></TBODY></TABLE><!-- / user info --></TD></TR>
+        <TR>
+          <TD id=td_post_68041 class=alt1><!-- message, attachments, sig --><!-- icon and title -->
+            <DIV class=smallfont><IMG class=inlineimg border=0 alt=Default 
+            src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/icon1.gif"> 
+            <STRONG>How to save user input in Excel from web page</STRONG> 
+</DIV>
+            <HR style="COLOR: #d1d1e1" SIZE=1>
+<!-- / icon and title --><!-- message -->
+            <DIV id=post_message_68041>Hi,I have added a HTML code below. Please 
+            copy pate it in NOTEPAD and sait it with extention as " .HTML 
+            ".<BR><BR>**This web page is not uploaded . i AM GOING TO USE IT 
+            OFFLINE ***<BR><BR>open the the web page and pleae have a look at it 
+            and advise me once we fill up the form , how do we save the user 
+            input to a MS excel 
+            sheet.<BR><BR><BR>***************************************<BR><BR>&lt;HTML&gt;<BR>&lt;HEAD&gt;<BR>&lt;TITLE&gt; 
+            New Document &lt;/TITLE&gt;<BR>&lt;META NAME="Generator" 
+            CONTENT="EditPlus"&gt;<BR>&lt;META NAME="Author" 
+            CONTENT=""&gt;<BR>&lt;META NAME="Keywords" 
+            CONTENT=""&gt;<BR>&lt;META NAME="Description" 
+            CONTENT=""&gt;<BR>&lt;/HEAD&gt;<BR><BR>&lt;SCRIPT 
+            LANGUAGE=JAVASCRIPT&gt;<BR>var currentDate = new Date();<BR>var 
+            date1 = currentDate.getDate();<BR>var mon = 
+            currentDate.getMonth()+1;<BR>var year = 
+            currentDate.getYear();<BR>var today = date1+"/"+mon+"/"+year;<BR>var 
+            filePath = "C:\Users\Izzy\Desktop\123456.xlsx";<BR>function 
+            setDate()<BR>{<BR>f1.tDate.value=today;<BR>}<BR><BR>function 
+            saveToExcel()<BR>{<BR>var myApp = new 
+            ActiveXObject("Excel.Application");<BR>myApp.visible = true;<BR>var 
+            xlCellTypeLastCell = 11;<BR><BR>var myWorkbook = 
+            myApp.Workbooks.Open(C:\Users\Izzy\Desktop\123456. xlsx);<BR>var 
+            myWorksheet = 
+            myWorkbook.Worksheets(1);<BR>myWorksheet.Activate;<BR>objRange = 
+            myWorksheet.UsedRange;<BR><BR><BR>objRange.SpecialCells(xlCellTypeLastCell).Activate 
+            ;<BR>newRow = myApp.ActiveCell.Row + 1;<BR>alert('newRow : 
+            '+newRow);<BR>strNewCell = "A" + newRow;<BR>alert('strNewCell : '+ 
+            strNewCell);<BR>myApp.Range(strNewCell).Activate;<BR>myWorksheet.Cells(newRow,1).value 
+            = f1.tDate.value;<BR>myWorksheet.Cells(newRow,2).value = 
+            f1.tCaller.value;<BR>myWorksheet.Cells(newRow,3).value = 
+            f1.tProduct.value;<BR>myWorksheet.Cells(newRow,4).value = 
+            f1.tNatureOfProblem.value;<BR>myWorksheet.Cells(newRow,5).value = 
+            f1.tSolutions.value;<BR>myWorksheet.Cells(newRow,6).value = 
+            f1.tStatus.value;<BR>myWorksheet.Cells(newRow,7).value = 
+            f1.tRemark.value;<BR>myApp.Workbooks.Close;<BR>myApp.Close;<BR>alert('Data 
+            successfully saved');<BR>} <BR><BR><BR>&lt;/SCRIPT&gt;<BR>&lt;BODY 
+            onLoad='setDate();'&gt; <BR>&lt;form name="f1" 
+            method="post"&gt;<BR>&lt;h align="center"&gt;&lt;b&gt;Daily 
+            Report&lt;/b&gt;&lt;/h&gt;<BR><BR>&lt;table border="1" 
+            width="1000"&gt;<BR>&lt;tr&gt;<BR>&lt;td width="250" 
+            height="25"&gt;&lt;/td&gt;<BR>&lt;td width="200" class="tb_bor" 
+            align="center"&gt;&lt;b&gt;Date&lt;/b&gt;&lt;/td&gt;<BR>&lt;td 
+            width="100" class="tb_bor" 
+            align="center"&gt;&lt;b&gt;Caller&lt;/b&gt;&lt;/td&gt;<BR>&lt;td 
+            width="100" class="tb_bor" 
+            align="center"&gt;&lt;b&gt;Product&lt;/b&gt;&lt;/td&gt;<BR>&lt;td 
+            width="150" class="tb_bor" align="center"&gt;&lt;b&gt;Nature Of 
+            Problem&lt;/b&gt;&lt;/b&gt;&lt;/td&gt;<BR>&lt;td width="100" 
+            class="tb_bor" 
+            align="center"&gt;&lt;b&gt;Solutions&lt;/b&gt;&lt;/td&gt;<BR>&lt;td 
+            width="100" class="tb_bor" 
+            align="center"&gt;&lt;b&gt;Status&lt;/b&gt;&lt;/td&gt;<BR>&lt;td 
+            width="100" class="tb_bor" 
+            align="center"&gt;&lt;b&gt;Remark&lt;/b&gt;&lt;/td&gt;<BR>&lt;td 
+            width="250"&gt;&lt;/td&gt;<BR>&lt;/tr&gt;<BR>&lt;tr&gt;<BR>&lt;td 
+            width="250" height="25"&gt;&lt;/td&gt;<BR>&lt;td width="200" 
+            class="tb_bor" align="center"&gt;&lt;input type=text name=tDate 
+            &gt;&lt;/td&gt;<BR>&lt;td width="100" class="tb_bor" 
+            align="center"&gt;&lt;input type=text name="tCaller" 
+            &gt;&lt;/td&gt;<BR>&lt;td width="100" class="tb_bor" 
+            align="center"&gt;&lt;input type=text name="tProduct" 
+            &gt;&lt;/td&gt;<BR>&lt;td width="150" class="tb_bor" 
+            align="center"&gt;&lt;input type=text name="tNOP" 
+            &gt;&lt;/td&gt;<BR>&lt;td width="100" class="tb_bor" 
+            align="center"&gt;&lt;input type=text name="tSolutions" 
+            &gt;&lt;/td&gt;<BR>&lt;td width="100" class="tb_bor" 
+            align="center"&gt;&lt;input type=text name="tStatus" 
+            &gt;&lt;/td&gt;<BR>&lt;td width="100" class="tb_bor" 
+            align="center"&gt;&lt;input type=text name="tRemark" 
+            &gt;&lt;/td&gt;<BR>&lt;td 
+            width="250"&gt;&lt;/td&gt;<BR>&lt;/tr&gt;<BR>&lt;/table&gt;<BR>&lt;br&gt;<BR>&lt;table 
+            align="center"&gt;<BR>&lt;input type="button" name="next" 
+            value="Next"&gt;<BR>&lt;input type="reset" name="clear" 
+            value="Clear"&gt;<BR>&lt;input type="button" name=save value="Save" 
+            onClick='saveToExcel();'&gt;<BR>&lt;/table&gt;<BR>&lt;/form&gt;<BR>&lt;/BODY&gt;<BR>&lt;/HTML&gt;<BR>***************************************<BR><BR></DIV><!-- / message -->
+            <DIV style="MARGIN-TOP: 10px" align=right><!-- controls --><A 
+            href="http://p2p.wrox.com/newreply.php?do=newreply&amp;p=68041" 
+            rel=nofollow><IMG border=0 alt="Reply With Quote" 
+            src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/quote.gif"></A> 
+<!-- / controls --></DIV><!-- message, attachments, sig --></TD></TR></TBODY></TABLE>
+      <DIV id=post_thanks_box_68041></DIV><!-- post 68041 popup menu --><!-- / post 68041 popup menu --></DIV></DIV></DIV></DIV><!-- / close content container --><!-- / post #68041 --><!-- post #222522 --><!-- open content container -->
+      <DIV align=center>
+      <DIV class=page style="WIDTH: 100%; TEXT-ALIGN: left">
+      <DIV 
+      style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px" 
+      align=left>
+      <DIV id=edit222522 
+      style="PADDING-BOTTOM: 3px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px"><!-- this is not the last post shown on the page --><!--//-->
+      <TABLE id=post222522 class=tborder cellSpacing=1 cellPadding=3 
+      width="100%" align=center border=0>
+        <TBODY>
+        <TR>
+          <TD class=thead>
+            <DIV class=normal style="FLOAT: right">&nbsp; #<A id=postcount222522 
+            href="http://p2p.wrox.com/222522-post2.html" name=2 
+            target=new><STRONG>2</STRONG></A> (<B><A title="Link to this Post" 
+            href="http://p2p.wrox.com/javascript/68041-how-save-user-input-excel-web-page.html#post222522">permalink</A></B>) 
+            &nbsp; <!-- BNJ --><!-- akismet --><!-- /akismet --><!-- BNJ --><!--  --></DIV>
+            <DIV class=normal><!-- status icon and date --><A 
+            name=post222522><IMG class=inlineimg border=0 alt=Old 
+            src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/post_old.gif"></A> 
+            May 11th, 2008, 04:58 AM <!-- / status icon and date --></DIV></TD></TR>
+        <TR>
+          <TD class=alt2 
+          style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px"><!-- user info -->
+            <TABLE cellSpacing=3 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD class=alt2><A 
+                  href="http://p2p.wrox.com/members/joefawcett.html" 
+                  rel=nofollow><IMG border=0 alt="joefawcett's Avatar" 
+                  src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/0470114878.jpg" 
+                  width=100 height=126></A></TD>
+                <TD noWrap>
+                  <DIV id=postmenu_222522><A class=bigusername 
+                  href="http://p2p.wrox.com/members/joefawcett.html" 
+                  rel=nofollow>joefawcett</A> <IMG class=inlineimg border=0 
+                  alt="joefawcett is offline" 
+                  src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/user_offline.gif"> 
+                  </DIV>
+                  <DIV class=smallfont>Wrox Author</DIV>
+                  <DIV align=left>
+                  <TABLE cellSpacing=0 cellPadding=0 width="100%">
+                    <TBODY>
+                    <TR>
+                      <TD colSpan=3>
+                        <DIV class=smallfont>Points: 9,755, Level: 
+                    42</DIV></TD></TR></TBODY></TABLE>
+                  <TABLE cellSpacing=0 cellPadding=0 width="100%">
+                    <TBODY>
+                    <TR 
+                    style="BACKGROUND-IMAGE: url(images/misc/level/red_faded.gif)">
+                      <TD height=11 width=5><IMG 
+                        alt="Points: 9,755, Level: 42" 
+                        src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/red_left.gif" 
+                        height=11></TD>
+                      <TD height=11 width="100%"><IMG 
+                        alt="Points: 9,755, Level: 42" 
+                        src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/red.gif" 
+                        width="42%" height=11></TD>
+                      <TD height=11 width=1><IMG 
+                        alt="Points: 9,755, Level: 42" 
+                        src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/red_right.gif" 
+                        height=11></TD></TR></TBODY></TABLE>
+                  <TABLE cellSpacing=0 cellPadding=0 width="100%">
+                    <TBODY>
+                    <TR>
+                      <TD colSpan=3>
+                        <DIV class=smallfont>Activity: 
+                  0%</DIV></TD></TR></TBODY></TABLE>
+                  <TABLE cellSpacing=0 cellPadding=0 width="100%">
+                    <TBODY>
+                    <TR 
+                    style="BACKGROUND-IMAGE: url(images/misc/level/green_faded.gif)">
+                      <TD height=11 width=5><IMG alt="Activity: 0%" 
+                        src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/green_left.gif" 
+                        height=11>
+                      <TD>
+                      <TD height=11 width="100%"><IMG alt="Activity: 0%" 
+                        src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/green.gif" 
+                        width="0%" height=11>
+                      <TD>
+                      <TD height=11 width=1><IMG alt="Activity: 0%" 
+                        src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/green_right.gif"></TD></TR></TBODY></TABLE></DIV></TD>
+                <TD width="100%">&nbsp;</TD>
+                <TD vAlign=top noWrap>
+                  <DIV class=smallfont>
+                  <DIV>Join Date: Jun 2003</DIV>
+                  <DIV>Location: Exeter, , United Kingdom.</DIV>
+                  <DIV>Posts: 3,072 </DIV>
+                  <DIV>Thanks: 1</DIV>
+                  <DIV>Thanked 38 Times in 37 Posts </DIV>
+                  <DIV></DIV></DIV></TD></TR></TBODY></TABLE><!-- / user info --></TD></TR>
+        <TR>
+          <TD id=td_post_222522 class=alt1><!-- message, attachments, sig --><!-- icon and title -->
+            <DIV class=smallfont><IMG class=inlineimg border=0 alt=Default 
+            src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/icon1.gif"> 
+            </DIV>
+            <HR style="COLOR: #d1d1e1" SIZE=1>
+<!-- / icon and title --><!-- message -->
+            <DIV id=post_message_222522>I can see three problems
+            <UL>
+              <LI>Your path: 
+              <DIV style="MARGIN: 5px 20px 20px">
+              <DIV class=smallfont style="MARGIN-BOTTOM: 2px">Code:</DIV><PRE class=alt2 style="OVERFLOW: auto; BORDER-TOP: 1px inset; HEIGHT: 34px; BORDER-RIGHT: 1px inset; WIDTH: auto; BORDER-BOTTOM: 1px inset; PADDING-BOTTOM: 3px; TEXT-ALIGN: left; PADDING-TOP: 3px; PADDING-LEFT: 3px; MARGIN: 0px; BORDER-LEFT: 1px inset; PADDING-RIGHT: 3px" dir=ltr>var filePath = "C:\Users\Izzy\Desktop\123456.xlsx";</PRE></DIV>should 
+              be 
+              <DIV style="MARGIN: 5px 20px 20px">
+              <DIV class=smallfont style="MARGIN-BOTTOM: 2px">Code:</DIV><PRE class=alt2 style="OVERFLOW: auto; BORDER-TOP: 1px inset; HEIGHT: 34px; BORDER-RIGHT: 1px inset; WIDTH: auto; BORDER-BOTTOM: 1px inset; PADDING-BOTTOM: 3px; TEXT-ALIGN: left; PADDING-TOP: 3px; PADDING-LEFT: 3px; MARGIN: 0px; BORDER-LEFT: 1px inset; PADDING-RIGHT: 3px" dir=ltr>var filePath = "C:\\Users\\Izzy\\Desktop\\123456.xlsx";</PRE></DIV>and 
+              then you don't use the variable later: 
+              <DIV style="MARGIN: 5px 20px 20px">
+              <DIV class=smallfont style="MARGIN-BOTTOM: 2px">Code:</DIV><PRE class=alt2 style="OVERFLOW: auto; BORDER-TOP: 1px inset; HEIGHT: 34px; BORDER-RIGHT: 1px inset; WIDTH: auto; BORDER-BOTTOM: 1px inset; PADDING-BOTTOM: 3px; TEXT-ALIGN: left; PADDING-TOP: 3px; PADDING-LEFT: 3px; MARGIN: 0px; BORDER-LEFT: 1px inset; PADDING-RIGHT: 3px" dir=ltr>var myWorkbook = myApp.Workbooks.Open(C:\Users\Izzy\Desktop\123456.xlsx);</PRE></DIV>&nbsp; 
+
+              <LI>You don't specify to save changes: 
+              <DIV style="MARGIN: 5px 20px 20px">
+              <DIV class=smallfont style="MARGIN-BOTTOM: 2px">Code:</DIV><PRE class=alt2 style="OVERFLOW: auto; BORDER-TOP: 1px inset; HEIGHT: 34px; BORDER-RIGHT: 1px inset; WIDTH: auto; BORDER-BOTTOM: 1px inset; PADDING-BOTTOM: 3px; TEXT-ALIGN: left; PADDING-TOP: 3px; PADDING-LEFT: 3px; MARGIN: 0px; BORDER-LEFT: 1px inset; PADDING-RIGHT: 3px" dir=ltr>myWorkbook.Close(true);</PRE></DIV>
+              <LI>Security permissions must be altered to allow saving to a 
+              local folder. If you are running this file directly from your 
+              machine consider renaming it to .HTA and look at HTML Applications 
+              on msdn.com. </LI></UL><BR><BR>--<BR><BR>Joe (<A 
+            href="http://joe.fawcett.name/" target=_blank>Microsoft MVP - 
+            XML</A>)</DIV><!-- / message -->
+            <DIV style="MARGIN-TOP: 10px" align=right><!-- controls --><A 
+            href="http://p2p.wrox.com/newreply.php?do=newreply&amp;p=222522" 
+            rel=nofollow><IMG border=0 alt="Reply With Quote" 
+            src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/quote.gif"></A> 
+<!-- / controls --></DIV><!-- message, attachments, sig --></TD></TR></TBODY></TABLE>
+      <DIV id=post_thanks_box_222522></DIV><!-- post 222522 popup menu --><!-- / post 222522 popup menu --></DIV></DIV></DIV></DIV><!-- / close content container --><!-- / post #222522 --><!-- post #222523 --><!-- open content container -->
+      <DIV align=center>
+      <DIV class=page style="WIDTH: 100%; TEXT-ALIGN: left">
+      <DIV 
+      style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px" 
+      align=left>
+      <DIV id=edit222523 
+      style="PADDING-BOTTOM: 3px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px"><!-- this is not the last post shown on the page -->
+      <TABLE id=post222523 class=tborder cellSpacing=1 cellPadding=3 
+      width="100%" align=center border=0>
+        <TBODY>
+        <TR>
+          <TD class=thead>
+            <DIV class=normal style="FLOAT: right">&nbsp; #<A id=postcount222523 
+            href="http://p2p.wrox.com/222523-post3.html" name=3 
+            target=new><STRONG>3</STRONG></A> (<B><A title="Link to this Post" 
+            href="http://p2p.wrox.com/javascript/68041-how-save-user-input-excel-web-page.html#post222523">permalink</A></B>) 
+            &nbsp; <!-- BNJ --><!-- akismet --><!-- /akismet --><!-- BNJ --><!--  --></DIV>
+            <DIV class=normal><!-- status icon and date --><A 
+            name=post222523><IMG class=inlineimg border=0 alt=Old 
+            src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/post_old.gif"></A> 
+            May 11th, 2008, 05:13 AM <!-- / status icon and date --></DIV></TD></TR>
+        <TR>
+          <TD class=alt2 
+          style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px"><!-- user info -->
+            <TABLE cellSpacing=3 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD noWrap>
+                  <DIV id=postmenu_222523><A class=bigusername 
+                  href="http://p2p.wrox.com/members/onlyshails.html" 
+                  rel=nofollow>onlyshails</A> <IMG class=inlineimg border=0 
+                  alt="onlyshails is offline" 
+                  src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/user_offline.gif"> 
+                  </DIV>
+                  <DIV class=smallfont>Registered User</DIV></TD>
+                <TD width="100%">&nbsp;</TD>
+                <TD vAlign=top noWrap>
+                  <DIV class=smallfont>
+                  <DIV>Join Date: May 2008</DIV>
+                  <DIV>Location: , , .</DIV>
+                  <DIV>Posts: 3 </DIV>
+                  <DIV>Thanks: 0</DIV>
+                  <DIV>Thanked 0 Times in 0 Posts </DIV>
+                  <DIV><A 
+                  onclick="imwindow('aim', '41697', 400, 200); return false;" 
+                  href="http://p2p.wrox.com/javascript/68041-how-save-user-input-excel-web-page.html#"><IMG 
+                  border=0 alt="Send a message via AIM to onlyshails" 
+                  src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/im_aim.gif"></A> 
+                  </DIV></DIV></TD></TR></TBODY></TABLE><!-- / user info --></TD></TR>
+        <TR>
+          <TD id=td_post_222523 class=alt1><!-- message, attachments, sig --><!-- icon and title -->
+            <DIV class=smallfont><IMG class=inlineimg border=0 alt=Default 
+            src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/icon1.gif"> 
+            </DIV>
+            <HR style="COLOR: #d1d1e1" SIZE=1>
+<!-- / icon and title --><!-- message -->
+            <DIV id=post_message_222523>HI, Thanks for the INSTANT REPLY ..i 
+            really appreciate that ..i am not too good with java script ...but 
+            good with html ..is there any example that u could post or a link 
+            that i can visit that explains how it is done as i am working on 
+            this since morning ..and there's NO luck and have to make sure this 
+            is done by next day morning ..thanks for the help.<BR><BR></DIV><!-- / message -->
+            <DIV style="MARGIN-TOP: 10px" align=right><!-- controls --><A 
+            href="http://p2p.wrox.com/newreply.php?do=newreply&amp;p=222523" 
+            rel=nofollow><IMG border=0 alt="Reply With Quote" 
+            src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/quote.gif"></A> 
+<!-- / controls --></DIV><!-- message, attachments, sig --></TD></TR></TBODY></TABLE>
+      <DIV id=post_thanks_box_222523></DIV><!-- post 222523 popup menu --><!-- / post 222523 popup menu --></DIV></DIV></DIV></DIV><!-- / close content container --><!-- / post #222523 --><!-- post #222524 --><!-- open content container -->
+      <DIV align=center>
+      <DIV class=page style="WIDTH: 100%; TEXT-ALIGN: left">
+      <DIV 
+      style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px" 
+      align=left>
+      <DIV id=edit222524 
+      style="PADDING-BOTTOM: 3px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px"><!-- this is not the last post shown on the page -->
+      <TABLE id=post222524 class=tborder cellSpacing=1 cellPadding=3 
+      width="100%" align=center border=0>
+        <TBODY>
+        <TR>
+          <TD class=thead>
+            <DIV class=normal style="FLOAT: right">&nbsp; #<A id=postcount222524 
+            href="http://p2p.wrox.com/222524-post4.html" name=4 
+            target=new><STRONG>4</STRONG></A> (<B><A title="Link to this Post" 
+            href="http://p2p.wrox.com/javascript/68041-how-save-user-input-excel-web-page.html#post222524">permalink</A></B>) 
+            &nbsp; <!-- BNJ --><!-- akismet --><!-- /akismet --><!-- BNJ --><!--  --></DIV>
+            <DIV class=normal><!-- status icon and date --><A 
+            name=post222524><IMG class=inlineimg border=0 alt=Old 
+            src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/post_old.gif"></A> 
+            May 11th, 2008, 06:25 AM <!-- / status icon and date --></DIV></TD></TR>
+        <TR>
+          <TD class=alt2 
+          style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px"><!-- user info -->
+            <TABLE cellSpacing=3 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD class=alt2><A 
+                  href="http://p2p.wrox.com/members/joefawcett.html" 
+                  rel=nofollow><IMG border=0 alt="joefawcett's Avatar" 
+                  src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/0470114878.jpg" 
+                  width=100 height=126></A></TD>
+                <TD noWrap>
+                  <DIV id=postmenu_222524><A class=bigusername 
+                  href="http://p2p.wrox.com/members/joefawcett.html" 
+                  rel=nofollow>joefawcett</A> <IMG class=inlineimg border=0 
+                  alt="joefawcett is offline" 
+                  src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/user_offline.gif"> 
+                  </DIV>
+                  <DIV class=smallfont>Wrox Author</DIV>
+                  <DIV align=left>
+                  <TABLE cellSpacing=0 cellPadding=0 width="100%">
+                    <TBODY>
+                    <TR>
+                      <TD colSpan=3>
+                        <DIV class=smallfont>Points: 9,755, Level: 
+                    42</DIV></TD></TR></TBODY></TABLE>
+                  <TABLE cellSpacing=0 cellPadding=0 width="100%">
+                    <TBODY>
+                    <TR 
+                    style="BACKGROUND-IMAGE: url(images/misc/level/red_faded.gif)">
+                      <TD height=11 width=5><IMG 
+                        alt="Points: 9,755, Level: 42" 
+                        src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/red_left.gif" 
+                        height=11></TD>
+                      <TD height=11 width="100%"><IMG 
+                        alt="Points: 9,755, Level: 42" 
+                        src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/red.gif" 
+                        width="42%" height=11></TD>
+                      <TD height=11 width=1><IMG 
+                        alt="Points: 9,755, Level: 42" 
+                        src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/red_right.gif" 
+                        height=11></TD></TR></TBODY></TABLE>
+                  <TABLE cellSpacing=0 cellPadding=0 width="100%">
+                    <TBODY>
+                    <TR>
+                      <TD colSpan=3>
+                        <DIV class=smallfont>Activity: 
+                  0%</DIV></TD></TR></TBODY></TABLE>
+                  <TABLE cellSpacing=0 cellPadding=0 width="100%">
+                    <TBODY>
+                    <TR 
+                    style="BACKGROUND-IMAGE: url(images/misc/level/green_faded.gif)">
+                      <TD height=11 width=5><IMG alt="Activity: 0%" 
+                        src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/green_left.gif" 
+                        height=11>
+                      <TD>
+                      <TD height=11 width="100%"><IMG alt="Activity: 0%" 
+                        src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/green.gif" 
+                        width="0%" height=11>
+                      <TD>
+                      <TD height=11 width=1><IMG alt="Activity: 0%" 
+                        src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/green_right.gif"></TD></TR></TBODY></TABLE></DIV></TD>
+                <TD width="100%">&nbsp;</TD>
+                <TD vAlign=top noWrap>
+                  <DIV class=smallfont>
+                  <DIV>Join Date: Jun 2003</DIV>
+                  <DIV>Location: Exeter, , United Kingdom.</DIV>
+                  <DIV>Posts: 3,072 </DIV>
+                  <DIV>Thanks: 1</DIV>
+                  <DIV>Thanked 38 Times in 37 Posts </DIV>
+                  <DIV></DIV></DIV></TD></TR></TBODY></TABLE><!-- / user info --></TD></TR>
+        <TR>
+          <TD id=td_post_222524 class=alt1><!-- message, attachments, sig --><!-- icon and title -->
+            <DIV class=smallfont><IMG class=inlineimg border=0 alt=Default 
+            src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/icon1.gif"> 
+            </DIV>
+            <HR style="COLOR: #d1d1e1" SIZE=1>
+<!-- / icon and title --><!-- message -->
+            <DIV id=post_message_222524>Firstly, what did you change, what 
+            suggestions did you try?<BR>Try searching this forum, for example: 
+            <A href="http://p2p.wrox.com/topic.asp?TOPIC_ID=28026" rel=nofollow 
+            target=_blank>http://p2p.wrox.com/topic.asp?TOPIC_ID=28026</A><BR><BR>--<BR><BR>Joe 
+            (<A href="http://joe.fawcett.name/" target=_blank>Microsoft MVP - 
+            XML</A>)</DIV><!-- / message -->
+            <DIV style="MARGIN-TOP: 10px" align=right><!-- controls --><A 
+            href="http://p2p.wrox.com/newreply.php?do=newreply&amp;p=222524" 
+            rel=nofollow><IMG border=0 alt="Reply With Quote" 
+            src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/quote.gif"></A> 
+<!-- / controls --></DIV><!-- message, attachments, sig --></TD></TR></TBODY></TABLE>
+      <DIV id=post_thanks_box_222524></DIV><!-- post 222524 popup menu --><!-- / post 222524 popup menu --></DIV></DIV></DIV></DIV><!-- / close content container --><!-- / post #222524 --><!-- post #222526 --><!-- open content container -->
+      <DIV align=center>
+      <DIV class=page style="WIDTH: 100%; TEXT-ALIGN: left">
+      <DIV 
+      style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px" 
+      align=left>
+      <DIV id=edit222526 
+      style="PADDING-BOTTOM: 3px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px"><!-- this is not the last post shown on the page -->
+      <TABLE id=post222526 class=tborder cellSpacing=1 cellPadding=3 
+      width="100%" align=center border=0>
+        <TBODY>
+        <TR>
+          <TD class=thead>
+            <DIV class=normal style="FLOAT: right">&nbsp; #<A id=postcount222526 
+            href="http://p2p.wrox.com/222526-post5.html" name=5 
+            target=new><STRONG>5</STRONG></A> (<B><A title="Link to this Post" 
+            href="http://p2p.wrox.com/javascript/68041-how-save-user-input-excel-web-page.html#post222526">permalink</A></B>) 
+            &nbsp; <!-- BNJ --><!-- akismet --><!-- /akismet --><!-- BNJ --><!--  --></DIV>
+            <DIV class=normal><!-- status icon and date --><A 
+            name=post222526><IMG class=inlineimg border=0 alt=Old 
+            src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/post_old.gif"></A> 
+            May 11th, 2008, 06:42 AM <!-- / status icon and date --></DIV></TD></TR>
+        <TR>
+          <TD class=alt2 
+          style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px"><!-- user info -->
+            <TABLE cellSpacing=3 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD noWrap>
+                  <DIV id=postmenu_222526><A class=bigusername 
+                  href="http://p2p.wrox.com/members/onlyshails.html" 
+                  rel=nofollow>onlyshails</A> <IMG class=inlineimg border=0 
+                  alt="onlyshails is offline" 
+                  src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/user_offline.gif"> 
+                  </DIV>
+                  <DIV class=smallfont>Registered User</DIV></TD>
+                <TD width="100%">&nbsp;</TD>
+                <TD vAlign=top noWrap>
+                  <DIV class=smallfont>
+                  <DIV>Join Date: May 2008</DIV>
+                  <DIV>Location: , , .</DIV>
+                  <DIV>Posts: 3 </DIV>
+                  <DIV>Thanks: 0</DIV>
+                  <DIV>Thanked 0 Times in 0 Posts </DIV>
+                  <DIV><A 
+                  onclick="imwindow('aim', '41697', 400, 200); return false;" 
+                  href="http://p2p.wrox.com/javascript/68041-how-save-user-input-excel-web-page.html#"><IMG 
+                  border=0 alt="Send a message via AIM to onlyshails" 
+                  src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/im_aim.gif"></A> 
+                  </DIV></DIV></TD></TR></TBODY></TABLE><!-- / user info --></TD></TR>
+        <TR>
+          <TD id=td_post_222526 class=alt1><!-- message, attachments, sig --><!-- icon and title -->
+            <DIV class=smallfont><IMG class=inlineimg border=0 alt=Default 
+            src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/icon1.gif"> 
+            </DIV>
+            <HR style="COLOR: #d1d1e1" SIZE=1>
+<!-- / icon and title --><!-- message -->
+            <DIV id=post_message_222526>The excel file that i have saved on my 
+            machine does not open nor any user input from the web page is 
+            tranferred to it.<BR><BR>If u have any altogether different code or 
+            a way please advise on it .<BR><BR>About ur suggestions 
+            ....<BR><BR>Your path: <BR>var filePath = 
+            "C:\Users\Izzy\Desktop\123456.xlsx";<BR><BR>should be <BR>var 
+            filePath = "C:\\Users\\Izzy\\Desktop\\123456.xlsx";<BR><BR><B>*** I 
+            have made the above change ***</B><BR><BR>and then you don't use the 
+            variable later: <BR>var myWorkbook = 
+            myApp.Workbooks.Open(C:\Users\Izzy\Desktop\123456. 
+            xlsx);<BR><BR><B>***as i informed i am not god with javascript , i 
+            am unable to understand the above suggestion ****<BR><BR></B><BR>You 
+            don't specify to save changes: 
+            <BR>myWorkbook.Close(true);<BR><BR><B>***as i informed i am not god 
+            with javascript , i am unable to understand the above suggestion 
+            ****<BR></B><BR><BR></DIV><!-- / message -->
+            <DIV style="MARGIN-TOP: 10px" align=right><!-- controls --><A 
+            href="http://p2p.wrox.com/newreply.php?do=newreply&amp;p=222526" 
+            rel=nofollow><IMG border=0 alt="Reply With Quote" 
+            src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/quote.gif"></A> 
+<!-- / controls --></DIV><!-- message, attachments, sig --></TD></TR></TBODY></TABLE>
+      <DIV id=post_thanks_box_222526></DIV><!-- post 222526 popup menu --><!-- / post 222526 popup menu --></DIV></DIV></DIV></DIV><!-- / close content container --><!-- / post #222526 --><!-- post #222529 --><!-- open content container -->
+      <DIV align=center>
+      <DIV class=page style="WIDTH: 100%; TEXT-ALIGN: left">
+      <DIV 
+      style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px" 
+      align=left>
+      <DIV id=edit222529 
+      style="PADDING-BOTTOM: 3px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px"><!-- this is not the last post shown on the page -->
+      <TABLE id=post222529 class=tborder cellSpacing=1 cellPadding=3 
+      width="100%" align=center border=0>
+        <TBODY>
+        <TR>
+          <TD class=thead>
+            <DIV class=normal style="FLOAT: right">&nbsp; #<A id=postcount222529 
+            href="http://p2p.wrox.com/222529-post6.html" name=6 
+            target=new><STRONG>6</STRONG></A> (<B><A title="Link to this Post" 
+            href="http://p2p.wrox.com/javascript/68041-how-save-user-input-excel-web-page.html#post222529">permalink</A></B>) 
+            &nbsp; <!-- BNJ --><!-- akismet --><!-- /akismet --><!-- BNJ --><!--  --></DIV>
+            <DIV class=normal><!-- status icon and date --><A 
+            name=post222529><IMG class=inlineimg border=0 alt=Old 
+            src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/post_old.gif"></A> 
+            May 11th, 2008, 06:54 AM <!-- / status icon and date --></DIV></TD></TR>
+        <TR>
+          <TD class=alt2 
+          style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px"><!-- user info -->
+            <TABLE cellSpacing=3 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD class=alt2><A 
+                  href="http://p2p.wrox.com/members/joefawcett.html" 
+                  rel=nofollow><IMG border=0 alt="joefawcett's Avatar" 
+                  src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/0470114878.jpg" 
+                  width=100 height=126></A></TD>
+                <TD noWrap>
+                  <DIV id=postmenu_222529><A class=bigusername 
+                  href="http://p2p.wrox.com/members/joefawcett.html" 
+                  rel=nofollow>joefawcett</A> <IMG class=inlineimg border=0 
+                  alt="joefawcett is offline" 
+                  src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/user_offline.gif"> 
+                  </DIV>
+                  <DIV class=smallfont>Wrox Author</DIV>
+                  <DIV align=left>
+                  <TABLE cellSpacing=0 cellPadding=0 width="100%">
+                    <TBODY>
+                    <TR>
+                      <TD colSpan=3>
+                        <DIV class=smallfont>Points: 9,755, Level: 
+                    42</DIV></TD></TR></TBODY></TABLE>
+                  <TABLE cellSpacing=0 cellPadding=0 width="100%">
+                    <TBODY>
+                    <TR 
+                    style="BACKGROUND-IMAGE: url(images/misc/level/red_faded.gif)">
+                      <TD height=11 width=5><IMG 
+                        alt="Points: 9,755, Level: 42" 
+                        src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/red_left.gif" 
+                        height=11></TD>
+                      <TD height=11 width="100%"><IMG 
+                        alt="Points: 9,755, Level: 42" 
+                        src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/red.gif" 
+                        width="42%" height=11></TD>
+                      <TD height=11 width=1><IMG 
+                        alt="Points: 9,755, Level: 42" 
+                        src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/red_right.gif" 
+                        height=11></TD></TR></TBODY></TABLE>
+                  <TABLE cellSpacing=0 cellPadding=0 width="100%">
+                    <TBODY>
+                    <TR>
+                      <TD colSpan=3>
+                        <DIV class=smallfont>Activity: 
+                  0%</DIV></TD></TR></TBODY></TABLE>
+                  <TABLE cellSpacing=0 cellPadding=0 width="100%">
+                    <TBODY>
+                    <TR 
+                    style="BACKGROUND-IMAGE: url(images/misc/level/green_faded.gif)">
+                      <TD height=11 width=5><IMG alt="Activity: 0%" 
+                        src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/green_left.gif" 
+                        height=11>
+                      <TD>
+                      <TD height=11 width="100%"><IMG alt="Activity: 0%" 
+                        src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/green.gif" 
+                        width="0%" height=11>
+                      <TD>
+                      <TD height=11 width=1><IMG alt="Activity: 0%" 
+                        src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/green_right.gif"></TD></TR></TBODY></TABLE></DIV></TD>
+                <TD width="100%">&nbsp;</TD>
+                <TD vAlign=top noWrap>
+                  <DIV class=smallfont>
+                  <DIV>Join Date: Jun 2003</DIV>
+                  <DIV>Location: Exeter, , United Kingdom.</DIV>
+                  <DIV>Posts: 3,072 </DIV>
+                  <DIV>Thanks: 1</DIV>
+                  <DIV>Thanked 38 Times in 37 Posts </DIV>
+                  <DIV></DIV></DIV></TD></TR></TBODY></TABLE><!-- / user info --></TD></TR>
+        <TR>
+          <TD id=td_post_222529 class=alt1><!-- message, attachments, sig --><!-- icon and title -->
+            <DIV class=smallfont><IMG class=inlineimg border=0 alt=Default 
+            src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/icon1.gif"> 
+            </DIV>
+            <HR style="COLOR: #d1d1e1" SIZE=1>
+<!-- / icon and title --><!-- message -->
+            <DIV id=post_message_222529>Okay, but the forum is for people trying 
+            to learn, not to do the work for someone because they're under time 
+            pressure.<BR><BR>Change: 
+            <DIV style="MARGIN: 5px 20px 20px">
+            <DIV class=smallfont style="MARGIN-BOTTOM: 2px">Code:</DIV><PRE class=alt2 style="OVERFLOW: auto; BORDER-TOP: 1px inset; HEIGHT: 34px; BORDER-RIGHT: 1px inset; WIDTH: auto; BORDER-BOTTOM: 1px inset; PADDING-BOTTOM: 3px; TEXT-ALIGN: left; PADDING-TOP: 3px; PADDING-LEFT: 3px; MARGIN: 0px; BORDER-LEFT: 1px inset; PADDING-RIGHT: 3px" dir=ltr>var myWorkbook = myApp.Workbooks.Open(C:\Users\Izzy\Desktop\123456.xlsx);</PRE></DIV>to: 
+
+            <DIV style="MARGIN: 5px 20px 20px">
+            <DIV class=smallfont style="MARGIN-BOTTOM: 2px">Code:</DIV><PRE class=alt2 style="OVERFLOW: auto; BORDER-TOP: 1px inset; HEIGHT: 34px; BORDER-RIGHT: 1px inset; WIDTH: auto; BORDER-BOTTOM: 1px inset; PADDING-BOTTOM: 3px; TEXT-ALIGN: left; PADDING-TOP: 3px; PADDING-LEFT: 3px; MARGIN: 0px; BORDER-LEFT: 1px inset; PADDING-RIGHT: 3px" dir=ltr>var myWorkbook = myApp.Workbooks.Open(filePath);</PRE></DIV>Add: 
+
+            <DIV style="MARGIN: 5px 20px 20px">
+            <DIV class=smallfont style="MARGIN-BOTTOM: 2px">Code:</DIV><PRE class=alt2 style="OVERFLOW: auto; BORDER-TOP: 1px inset; HEIGHT: 34px; BORDER-RIGHT: 1px inset; WIDTH: auto; BORDER-BOTTOM: 1px inset; PADDING-BOTTOM: 3px; TEXT-ALIGN: left; PADDING-TOP: 3px; PADDING-LEFT: 3px; MARGIN: 0px; BORDER-LEFT: 1px inset; PADDING-RIGHT: 3px" dir=ltr>myWorkbook.Close(true);</PRE></DIV>here: 
+
+            <DIV style="MARGIN: 5px 20px 20px">
+            <DIV class=smallfont style="MARGIN-BOTTOM: 2px">Code:</DIV><PRE class=alt2 style="OVERFLOW: auto; BORDER-TOP: 1px inset; HEIGHT: 82px; BORDER-RIGHT: 1px inset; WIDTH: auto; BORDER-BOTTOM: 1px inset; PADDING-BOTTOM: 3px; TEXT-ALIGN: left; PADDING-TOP: 3px; PADDING-LEFT: 3px; MARGIN: 0px; BORDER-LEFT: 1px inset; PADDING-RIGHT: 3px" dir=ltr>myWorksheet.Cells(newRow,7).value = f1.tRemark.value;
+myWorkbook.Close(true);
+myApp.Workbooks.Close;
+myApp.Close;</PRE></DIV>--<BR><BR>Joe (<A 
+            href="http://joe.fawcett.name/" target=_blank>Microsoft MVP - 
+            XML</A>)</DIV><!-- / message -->
+            <DIV style="MARGIN-TOP: 10px" align=right><!-- controls --><A 
+            href="http://p2p.wrox.com/newreply.php?do=newreply&amp;p=222529" 
+            rel=nofollow><IMG border=0 alt="Reply With Quote" 
+            src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/quote.gif"></A> 
+<!-- / controls --></DIV><!-- message, attachments, sig --></TD></TR></TBODY></TABLE>
+      <DIV id=post_thanks_box_222529></DIV><!-- post 222529 popup menu --><!-- / post 222529 popup menu --></DIV></DIV></DIV></DIV><!-- / close content container --><!-- / post #222529 --><!-- post #300777 --><!-- open content container -->
+      <DIV align=center>
+      <DIV class=page style="WIDTH: 100%; TEXT-ALIGN: left">
+      <DIV 
+      style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px" 
+      align=left>
+      <DIV id=edit300777 
+      style="PADDING-BOTTOM: 3px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px">
+      <TABLE id=post300777 class=tborder cellSpacing=1 cellPadding=3 
+      width="100%" align=center border=0>
+        <TBODY>
+        <TR>
+          <TD class=thead>
+            <DIV class=normal style="FLOAT: right">&nbsp; #<A id=postcount300777 
+            href="http://p2p.wrox.com/300777-post7.html" name=7 
+            target=new><STRONG>7</STRONG></A> (<B><A title="Link to this Post" 
+            href="http://p2p.wrox.com/javascript/68041-how-save-user-input-excel-web-page.html#post300777">permalink</A></B>) 
+            &nbsp; <!-- BNJ --><!-- akismet --><!-- /akismet --><!-- BNJ --><!--  --></DIV>
+            <DIV class=normal><!-- status icon and date --><A 
+            name=post300777><IMG class=inlineimg border=0 alt=Old 
+            src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/post_old.gif"></A> 
+            March 25th, 2015, 11:02 AM 
+        <!-- / status icon and date --></DIV></TD></TR>
+        <TR>
+          <TD class=alt2 
+          style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px"><!-- user info -->
+            <TABLE cellSpacing=3 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD noWrap>
+                  <DIV id=postmenu_300777><A class=bigusername 
+                  href="http://p2p.wrox.com/members/rbchennoju.html" 
+                  rel=nofollow>rbchennoju</A> <IMG class=inlineimg border=0 
+                  alt="rbchennoju is offline" 
+                  src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/user_offline.gif"> 
+                  </DIV>
+                  <DIV class=smallfont>Registered User</DIV>
+                  <DIV align=left>
+                  <TABLE cellSpacing=0 cellPadding=0 width="100%">
+                    <TBODY>
+                    <TR>
+                      <TD colSpan=3>
+                        <DIV class=smallfont>Points: 3, Level: 
+                    1</DIV></TD></TR></TBODY></TABLE>
+                  <TABLE cellSpacing=0 cellPadding=0 width="100%">
+                    <TBODY>
+                    <TR 
+                    style="BACKGROUND-IMAGE: url(images/misc/level/red_faded.gif)">
+                      <TD height=11 width=5><IMG alt="Points: 3, Level: 1" 
+                        src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/red_left.gif" 
+                        height=11></TD>
+                      <TD height=11 width="100%"><IMG 
+                        alt="Points: 3, Level: 1" 
+                        src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/red.gif" 
+                        width="1%" height=11></TD>
+                      <TD height=11 width=1><IMG alt="Points: 3, Level: 1" 
+                        src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/red_right.gif" 
+                        height=11></TD></TR></TBODY></TABLE>
+                  <TABLE cellSpacing=0 cellPadding=0 width="100%">
+                    <TBODY>
+                    <TR>
+                      <TD colSpan=3>
+                        <DIV class=smallfont>Activity: 
+                  0%</DIV></TD></TR></TBODY></TABLE>
+                  <TABLE cellSpacing=0 cellPadding=0 width="100%">
+                    <TBODY>
+                    <TR 
+                    style="BACKGROUND-IMAGE: url(images/misc/level/green_faded.gif)">
+                      <TD height=11 width=5><IMG alt="Activity: 0%" 
+                        src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/green_left.gif" 
+                        height=11>
+                      <TD>
+                      <TD height=11 width="100%"><IMG alt="Activity: 0%" 
+                        src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/green.gif" 
+                        width="0%" height=11>
+                      <TD>
+                      <TD height=11 width=1><IMG alt="Activity: 0%" 
+                        src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/green_right.gif"></TD></TR></TBODY></TABLE></DIV></TD>
+                <TD width="100%">&nbsp;</TD>
+                <TD vAlign=top noWrap>
+                  <DIV class=smallfont>
+                  <DIV>Join Date: Mar 2015</DIV>
+                  <DIV>Posts: 1 </DIV>
+                  <DIV>Thanks: 0</DIV>
+                  <DIV>Thanked 0 Times in 0 Posts </DIV>
+                  <DIV></DIV></DIV></TD></TR></TBODY></TABLE><!-- / user info --></TD></TR>
+        <TR>
+          <TD id=td_post_300777 class=alt1><!-- message, attachments, sig --><!-- icon and title -->
+            <DIV class=smallfont><IMG class=inlineimg border=0 alt=Default 
+            src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/icon1.gif"> 
+            </DIV>
+            <HR style="COLOR: #d1d1e1" SIZE=1>
+<!-- / icon and title --><!-- message -->
+            <DIV id=post_message_300777>Did this resolve the issue? <BR>It 
+            didn't work for me.</DIV><!-- / message --><!-- edit note -->
+            <DIV class=smallfont>
+            <HR style="COLOR: #d1d1e1" SIZE=1>
+            <EM>Last edited by rbchennoju; March 25th, 2015 at <SPAN 
+            class=time>11:05 AM</SPAN>. </EM></DIV><!-- / edit note -->
+            <DIV style="MARGIN-TOP: 10px" align=right><!-- controls --><A 
+            href="http://p2p.wrox.com/newreply.php?do=newreply&amp;p=300777" 
+            rel=nofollow><IMG border=0 alt="Reply With Quote" 
+            src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/quote.gif"></A> 
+<!-- / controls --></DIV><!-- message, attachments, sig --></TD></TR></TBODY></TABLE>
+      <DIV id=post_thanks_box_300777></DIV><!-- post 300777 popup menu --><!-- / post 300777 popup menu --><!-- Lake Quincy Hosting Text Ad --><!--/ Lake Quincy Hosting Text Ad --></DIV></DIV></DIV></DIV><!-- / close content container --><!-- / post #300777 -->
+      <DIV id=lastpost></DIV></DIV><!-- start content table --><!-- open content container -->
+      <DIV align=center>
+      <DIV class=page style="WIDTH: 100%; TEXT-ALIGN: left">
+      <DIV 
+      style="PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px" 
+      align=left><!-- / start content table --><!-- controls below postbits -->
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR vAlign=top>
+          <TD class=smallfont><A 
+            href="http://p2p.wrox.com/newreply.php?do=newreply&amp;noquote=1&amp;p=300777" 
+            rel=nofollow><IMG border=0 alt=Reply 
+            src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/reply.gif"></A></TD></TR></TBODY></TABLE><!-- / controls below postbits --><BR>
+      <DIV class=smallfont align=center><STRONG>«</STRONG> <A 
+      href="http://p2p.wrox.com/javascript/68041-how-save-user-input-excel-web-page-prev-thread.html" 
+      rel=nofollow>Previous Thread</A> | <A 
+      href="http://p2p.wrox.com/javascript/68041-how-save-user-input-excel-web-page-next-thread.html" 
+      rel=nofollow>Next Thread</A> <STRONG>»</STRONG> </DIV><BR><!-- currently active users --><!-- end currently active users --><!-- controls for non-popup browsers -->
+      <TABLE class=tborder style="BORDER-TOP-WIDTH: 0px" cellSpacing=1 
+      cellPadding=3 width="100%" align=center border=0>
+        <TBODY>
+        <TR>
+          <TD class=thead colSpan=2>Thread Tools<A 
+          name=goto_threadtools></A></TD></TR>
+        <TR vAlign=top>
+          <TD class=alt1 colSpan=2><!-- thread tools -->
+            <DIV class=smallfont>
+            <DIV><IMG class=inlineimg alt="Show Printable Version" vspace=1 
+            src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/printer.gif"> 
+            <A href="http://p2p.wrox.com/printthread.php?t=68041" 
+            rel=nofollow>Show Printable Version</A></DIV>
+            <DIV><IMG class=inlineimg alt="Email this Page" vspace=1 
+            src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/sendtofriend.gif"> 
+            <A 
+            href="http://p2p.wrox.com/sendmessage.php?do=sendtofriend&amp;t=68041" 
+            rel=nofollow>Email this 
+          Page</A></DIV></DIV><!-- / thread tools --></TD></TR>
+        <TR>
+          <TD class=thead colSpan=2>Display Modes<A 
+          name=goto_displaymodes></A></TD></TR>
+        <TR vAlign=top>
+          <TD class=alt2 colSpan=2><!-- thread display modes -->
+            <DIV class=smallfont>
+            <DIV><IMG class=inlineimg alt="Linear Mode" vspace=1 
+            src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/mode_linear.gif"> 
+            <STRONG>Linear Mode</STRONG></DIV>
+            <DIV><IMG class=inlineimg alt="Hybrid Mode" vspace=1 
+            src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/mode_hybrid.gif"> 
+            <A 
+            href="http://p2p.wrox.com/javascript/68041-how-save-user-input-excel-web-page.html?mode=hybrid" 
+            rel=nofollow>Switch to Hybrid Mode</A></DIV>
+            <DIV><IMG class=inlineimg alt="Threaded Mode" vspace=1 
+            src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/mode_threaded.gif"> 
+            <A 
+            href="http://p2p.wrox.com/javascript/68041-how-save-user-input-excel-web-page.html?mode=threaded#post68041" 
+            rel=nofollow>Switch to Threaded Mode</A></DIV></DIV><!-- / thread display modes --></TD></TR></TBODY></TABLE><BR><!-- / controls for non-popup browsers --><!-- forum rules and admin links -->
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" align=center border=0>
+        <TBODY>
+        <TR vAlign=bottom>
+          <TD class=smallfont align=left>
+            <TABLE class=tborder cellSpacing=1 cellPadding=3 width=210 
+              border=0><THEAD>
+              <TR>
+                <TD class=thead><A 
+                  onclick="return toggle_collapse('forumrules')" 
+                  style="FLOAT: right" 
+                  href="http://p2p.wrox.com/javascript/68041-how-save-user-input-excel-web-page.html#top"><IMG 
+                  id=collapseimg_forumrules border=0 alt="" 
+                  src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/collapse_thead.gif"></A> 
+                  Posting Rules </TD></TR></THEAD>
+              <TBODY id=collapseobj_forumrules>
+              <TR>
+                <TD class=alt1 noWrap>
+                  <DIV class=smallfont>
+                  <DIV>You <STRONG>may not</STRONG> post new threads</DIV>
+                  <DIV>You <STRONG>may not</STRONG> post replies</DIV>
+                  <DIV>You <STRONG>may not</STRONG> post attachments</DIV>
+                  <DIV>You <STRONG>may not</STRONG> edit your posts</DIV>
+                  <HR>
+
+                  <DIV><A href="http://p2p.wrox.com/misc.php?do=bbcode" 
+                  rel=nofollow target=_blank>BB code</A> is 
+                  <STRONG>On</STRONG></DIV>
+                  <DIV><A href="http://p2p.wrox.com/misc.php?do=showsmilies" 
+                  rel=nofollow target=_blank>Smilies</A> are 
+                  <STRONG>On</STRONG></DIV>
+                  <DIV><A href="http://p2p.wrox.com/misc.php?do=bbcode#imgcode" 
+                  rel=nofollow target=_blank>[IMG]</A> code is 
+                  <STRONG>Off</STRONG></DIV>
+                  <DIV>HTML code is <STRONG>Off</STRONG></DIV>
+                  <DIV><A 
+                  href="http://p2p.wrox.com/misc.php?do=linkbacks#trackbacks" 
+                  rel=nofollow target=_blank>Trackbacks</A> are 
+                  <STRONG>Off</STRONG></DIV>
+                  <DIV><A 
+                  href="http://p2p.wrox.com/misc.php?do=linkbacks#pingbacks" 
+                  rel=nofollow target=_blank>Pingbacks</A> are 
+                  <STRONG>On</STRONG></DIV>
+                  <DIV><A 
+                  href="http://p2p.wrox.com/misc.php?do=linkbacks#refbacks" 
+                  rel=nofollow target=_blank>Refbacks</A> are 
+                  <STRONG>Off</STRONG></DIV></DIV></TD></TR></TBODY></TABLE></TD>
+          <TD class=smallfont align=right>
+            <TABLE cellSpacing=0 cellPadding=0 border=0>
+              <TBODY>
+              <TR>
+                <TD></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE><!-- /forum rules and admin links --><BR>
+      <TABLE class=tborder cellSpacing=1 cellPadding=3 width="100%" align=center 
+      border=0>
+        <THEAD>
+        <TR>
+          <TD class=tcat width="100%" colSpan=5><A 
+            onclick="return toggle_collapse('similarthreads')" 
+            style="FLOAT: right" 
+            href="http://p2p.wrox.com/javascript/68041-how-save-user-input-excel-web-page.html#top"><IMG 
+            id=collapseimg_similarthreads border=0 alt="" 
+            src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/collapse_tcat.gif"></A> 
+            Similar Threads<A name=similarthreads></A> </TD></TR></THEAD>
+        <TBODY id=collapseobj_similarthreads>
+        <TR class=thead align=center>
+          <TD class=thead width="40%">Thread</TD>
+          <TD class=thead width="15%" noWrap>Thread Starter</TD>
+          <TD class=thead width="20%">Forum</TD>
+          <TD class=thead width="5%">Replies</TD>
+          <TD class=thead width="20%">Last Post</TD></TR>
+        <TR>
+          <TD class=alt1 align=left><SPAN class=smallfont><A 
+            title="Hi experts,&#10;I need some sample codes and websites links to convert an excel sheet into a web page.please help me.I have tried many websites but not..." 
+            href="http://p2p.wrox.com/asp-net-2-0-basics/70192-how-convert-excel-sheet-into-web-page.html">How 
+            to convert an excel sheet into a web page</A></SPAN></TD>
+          <TD class=alt2 noWrap><SPAN 
+          class=smallfont>ashfaqshariff2007</SPAN></TD>
+          <TD class=alt1><SPAN class=smallfont>ASP.NET 2.0 Basics</SPAN></TD>
+          <TD class=alt2 align=center><SPAN class=smallfont>1</SPAN></TD>
+          <TD class=alt1 align=right><SPAN class=smallfont>August 22nd, 2008 
+            <SPAN class=time>05:00 PM</SPAN></SPAN></TD></TR>
+        <TR>
+          <TD class=alt1 align=left><SPAN class=smallfont><A 
+            title="Hi All,&#10; &#10;I have some web page(asp.net) data(coming from text boxes,dropdownlist etc) which is been stored as HTML output.Then in a button click the..." 
+            href="http://p2p.wrox.com/asp-net-2-0-professional/63753-how-save-web-page-content-into-rtf-text-file.html">How 
+            to save an web page content into RTF/text file</A></SPAN></TD>
+          <TD class=alt2 noWrap><SPAN class=smallfont>khatu_jec</SPAN></TD>
+          <TD class=alt1><SPAN class=smallfont>ASP.NET 2.0 
+          Professional</SPAN></TD>
+          <TD class=alt2 align=center><SPAN class=smallfont>4</SPAN></TD>
+          <TD class=alt1 align=right><SPAN class=smallfont>November 27th, 2007 
+            <SPAN class=time>03:52 AM</SPAN></SPAN></TD></TR>
+        <TR>
+          <TD class=alt1 align=left><SPAN class=smallfont><A 
+            title="hello everybody,&#10;&#10;I have a simple form which accepts information from the user. Once the user clicks on the submit button the form page A It gets..." 
+            href="http://p2p.wrox.com/asp-net-1-0-1-1-professional/44561-submit-button-shows-user-input-another-page.html">submit 
+            button shows the user input in another page</A></SPAN></TD>
+          <TD class=alt2 noWrap><SPAN class=smallfont>debjanib</SPAN></TD>
+          <TD class=alt1><SPAN class=smallfont>ASP.NET 1.0 and 1.1 
+            Professional</SPAN></TD>
+          <TD class=alt2 align=center><SPAN class=smallfont>3</SPAN></TD>
+          <TD class=alt1 align=right><SPAN class=smallfont>June 30th, 2006 
+            <SPAN class=time>09:40 AM</SPAN></SPAN></TD></TR>
+        <TR>
+          <TD class=alt1 align=left><SPAN class=smallfont><A 
+            title="My user controls will not runat server they appear but only as if standard HTML. Datagrid does not appear at all. Radio buttons only show labels and..." 
+            href="http://p2p.wrox.com/asp-net-1-0-1-1-basics/32356-user-controls-not-showing-web-page.html">User 
+            controls not showing on web page</A></SPAN></TD>
+          <TD class=alt2 noWrap><SPAN class=smallfont>pdr</SPAN></TD>
+          <TD class=alt1><SPAN class=smallfont>ASP.NET 1.0 and 1.1 
+            Basics</SPAN></TD>
+          <TD class=alt2 align=center><SPAN class=smallfont>0</SPAN></TD>
+          <TD class=alt1 align=right><SPAN class=smallfont>August 10th, 2005 
+            <SPAN class=time>09:02 AM</SPAN></SPAN></TD></TR>
+        <TR>
+          <TD class=alt1 align=left><SPAN class=smallfont><A 
+            title="How can save the html page to Excel format ?&#10;so the html page can be open in Excel and can implement&#10;function etc..&#10;&#10;Excel data file can import into..." 
+            href="http://p2p.wrox.com/javascript/8029-html-page-save-excel-format.html">html 
+            page save to excel format</A></SPAN></TD>
+          <TD class=alt2 noWrap><SPAN class=smallfont>mateenmohd</SPAN></TD>
+          <TD class=alt1><SPAN class=smallfont>Javascript</SPAN></TD>
+          <TD class=alt2 align=center><SPAN class=smallfont>2</SPAN></TD>
+          <TD class=alt1 align=right><SPAN class=smallfont>January 17th, 2004 
+            <SPAN class=time>04:48 AM</SPAN></SPAN></TD></TR></TBODY></TABLE><BR><!-- Code for this is located in the Wrox folder within Vertical Websites folder under Wrox Ad Code --><BR></DIV></DIV></DIV></TD>
+    <TD width=10><IMG border=0 
+      src="How%20to%20save%20user%20input%20in%20Excel%20from%20web%20page_files/spacer.gif" 
+      width=10 height=1></TD></TR></TBODY></TABLE>
+<DIV class=gradient_bottom_stretch></DIV><BR>
+<DIV class=smallfont align=center>All times are GMT -4. The time now is <SPAN 
+class=time>09:39 PM</SPAN>.</DIV><BR></DIV></DIV></DIV><!-- / close content container --><!-- /content area table -->
+<FORM method=get action=http://p2p.wrox.com/>
+<TABLE class=page cellSpacing=0 cellPadding=3 width="100%" align=center 
+border=0>
+  <TBODY>
+  <TR>
+    <TD class=tfoot width="100%" align=right>
+      <DIV class=smallfont><STRONG><A accessKey=9 
+      href="mailto:p2padmin@wrox.com" rel=nofollow>Contact Us</A> - <A 
+      href="http://p2p.wrox.com/">Wrox</A> - <A 
+      href="http://www.wrox.com/WileyCDA/Section/id-105117.html">Privacy 
+      Statement</A> - <A onclick="self.scrollTo(0, 0); return false;" 
+      href="http://p2p.wrox.com/javascript/68041-how-save-user-input-excel-web-page.html#top">Top</A> 
+      </STRONG></DIV></TD></TR></TBODY></TABLE><BR>
+<DIV align=center>
+<DIV class=smallfont 
+align=center><!-- Do not remove this copyright notice -->Powered by vBulletin® 
+<BR>Copyright ©2000 - 2015, Jelsoft Enterprises Ltd. <!-- Do not remove this copyright notice --></DIV>
+<DIV class=smallfont align=center><!-- Do not remove  or your scheduled tasks will cease to function --><!-- Do not remove  or your scheduled tasks will cease to function -->© 
+2013 John Wiley &amp; Sons, Inc. </DIV></DIV></FORM>
+<SCRIPT type=text/javascript>
+<!--
+	// Main vBulletin Javascript Initialization
+	vBulletin_init();
+//-->
+</SCRIPT>
+<!-- Omniture Code End Block --><!-- Adobe Marketing Cloud Tag Management code
+Copyright 1996-2013 Adobe, Inc. All Rights Reserved
+More info available at http://www.adobe.com -->
+<SCRIPT type=text/javascript>//<![CDATA[
+var amc=amc||{};if(!amc.on){amc.on=amc.call=function(){}};
+document.write("<scr"+"ipt type=\"text/javascript\" src=\"//www.adobetag.com/d1/v2/ZDEtd2lsZXlwdWJsaXNoaW5nLTE0NTYtMjE3OC0=/amc.js\"></sc"+"ript>");
+//]]></SCRIPT>
+
+<SCRIPT type=text/javascript>//<![CDATA[
+if(s){
+	s.pageName = ""
+	s.server = ""
+	s.channel = ""
+	s.t()
+}
+//]]></SCRIPT>
+<!-- End Adobe Marketing Cloud Tag Management code -->
+<SCRIPT type=text/javascript>
+s.channel='Forums'; 
+s.pageName='Forums | ' + document.title; 
+</SCRIPT>
+<!-- / Omniture Code End Block --><!-- temp -->
+<DIV style="DISPLAY: none"><!-- thread rate --><!-- / thread rate --></DIV>
+<DIV id=tracking-forum-content></DIV>
+<SCRIPT type=text/javascript><!--
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+//-->
+</SCRIPT>
+
+<SCRIPT type=text/javascript><!--
+var pageTracker = _gat._getTracker("UA-789257-32");
+pageTracker._initData();
+
+pageTracker._trackPageview();
+//-->
+</SCRIPT>
+</BODY></HTML>

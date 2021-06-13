@@ -1,0 +1,568 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0039)http://www.aspupload.com/manual_db.html -->
+<HTML><HEAD><META content="IE=5.0000" http-equiv="X-UA-Compatible">
+ 
+<META name="GENERATOR" content="MSHTML 11.00.9600.17963"> 
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+<META name="KEYWORDS" content="ASP UPLOAD ASPUPLOAD PWS BLOB Personal Web Server IIS Internet Information Server ASP UPLOADING UPLOAD DEC ALPHA AlphaServer AspUpload Persits Software Persits Web ASP Active Server Pages Active Server Component Upload browser TYPE=FILE TYPE FILE Windows NT Web ACL ACE Access Control List Directory Listing Export Attribute FILE FREE RFC ie3 ie4 posting acceptor posting acceptor RFC1867 RFC-1867 1867 Component ENCTYPE multipart/form-data multipart SA-FileUp ActiveFile Database Multiple software artisans activefile vbscript activex jscript netscape internet explorer download downloading unique form limit size"> 
+<META name="KEYWORDS" content="ASP, UPLOAD, ASPUPLOAD, PWS, BLOB, Personal Web Server, IIS, Internet Information Server, ASP, UPLOADING, UPLOAD, DEC, ALPHA, AlphaServer, AspUpload, Persits Software, Persits, Web, ASP, Active Server Pages, Active Server Component, Upload, browser, TYPE=FILE, TYPE, FILE, Windows, NT, Web, ACL, ACE, Access Control List, Directory, Listing, Export, Attribute, FILE, FREE, RFC, ie3, ie4, posting acceptor, posting, acceptor, RFC1867, RFC-1867, 1867, Component, ENCTYPE, multipart/form-data, multipart, SA-FileUp, ActiveFile, Database, Multiple, software, artisans, activefile, vbscript, activex, jscript, netscape, internet, explorer, download, downloading, unique, form, limit, size"> 
+<META name="DESCRIPTION" content="AspUpload.com - the home of the most advanced upload solution for a Windows NT/ASP-based Web environment"> 
+<TITLE>AspUpload.com - User Manual. Chapter 4 -- Saving Files and/or Filenames 
+in the Database</TITLE> <LINK href="AspUpload_com%20-%20User%20Manual_%20Chapter%204%20--%20Saving%20Files%20and-or%20Filenames%20in%20the%20Database_files/aspupload.css" 
+rel="stylesheet" type="text/css"> </HEAD> 
+<BODY>
+<TABLE width="1000" align="center" border="0" cellspacing="0" cellpadding="0" 
+xbgcolor="#FFFFFF">
+  <TBODY>
+  <TR>
+    <TD width="7" background="AspUpload_com%20-%20User%20Manual_%20Chapter%204%20--%20Saving%20Files%20and-or%20Filenames%20in%20the%20Database_files/blue_left.gif">&nbsp;</TD>
+    <TD width="1000">
+      <TABLE width="1000" bgcolor="#ffffff" border="0" cellspacing="0" 
+      cellpadding="0">
+        <TBODY>
+        <TR>
+          <TD valign="top">
+            <TABLE width="1000" bgcolor="#f0a40b" border="0" cellspacing="0" 
+            cellpadding="0">
+              <TBODY>
+              <TR>
+                <TD height="4" bgcolor="#f0a40b"></TD></TR></TBODY></TABLE>
+            <TABLE width="1000" border="0" cellspacing="0" cellpadding="0">
+              <TBODY>
+              <TR>
+                <TD valign="top"><IMG width="1000" height="63" align="top" 
+                  src="AspUpload_com%20-%20User%20Manual_%20Chapter%204%20--%20Saving%20Files%20and-or%20Filenames%20in%20the%20Database_files/banner.gif"></TD></TR></TBODY></TABLE>
+            <TABLE width="1000" class="top_space" border="0" cellspacing="0" 
+            cellpadding="0">
+              <TBODY>
+              <TR>
+                <TD>&nbsp;</TD></TR></TBODY></TABLE>
+            <TABLE width="1000" border="0" cellspacing="0" cellpadding="0">
+              <TBODY>
+              <TR>
+                <TD width="56" rowspan="2">&nbsp;</TD>
+                <TD width="170" valign="top" rowspan="2">
+                  <DIV class="menu"><A href="http://www.aspupload.com/index.html">Home</A></DIV>
+                  <DIV class="menu"><A href="http://www.aspupload.com/whatsnew.html">What's 
+                  New</A></DIV>
+                  <DIV class="separator"></DIV>
+                  <DIV class="menu_act"><A href="http://www.aspupload.com/manual.html">User 
+                  Manual</A></DIV>
+                  <DIV class="vip_menu"><A href="http://www.aspupload.com/manual_intro.html">1. 
+                  Introduction</A></DIV>
+                  <DIV class="vip_menu"><A href="http://www.aspupload.com/manual_simple.html">2. 
+                  Simple Uploads</A></DIV>
+                  <DIV class="vip_menu"><A href="http://www.aspupload.com/manual_memory.html">3. 
+                  Memory Uploads</A></DIV>
+                  <DIV class="vip_menu_act">4. Database</DIV>
+                  <DIV class="vip_menu"><A href="http://www.aspupload.com/manual_progress.html">5. 
+                  Progress Bar</A></DIV>
+                  <DIV class="vip_menu"><A href="http://www.aspupload.com/manual_security.html">6. 
+                  Security</A></DIV>
+                  <DIV class="vip_menu"><A href="http://www.aspupload.com/manual_image.html">7. 
+                  Images</A></DIV>
+                  <DIV class="vip_menu"><A href="http://www.aspupload.com/manual_unicode.html">8. 
+                  Unicode</A></DIV>
+                  <DIV class="vip_menu"><A href="http://www.aspupload.com/manual_misc.html">9. 
+                  Miscellaneous</A></DIV>
+                  <DIV class="vip_menu"><A href="http://www.aspupload.com/manual_share.html">10. 
+                  Hosting Issues</A></DIV>
+                  <P>
+                  <DIV class="menu"><A href="http://www.aspupload.com/objectreference.html">Object 
+                  Reference</A></DIV>
+                  <DIV class="menu_top"><A href="http://www.aspupload.com/livedemo.html">Live 
+                  Demos</A></DIV>
+                  <DIV class="menu"><A href="http://www.aspupload.com/support.html">Support</A></DIV>
+                  <DIV class="separator"></DIV>
+                  <DIV class="menu"><A href="http://www.aspupload.com/xupload.html">XUpload</A></DIV>
+                  <DIV class="menu"><A href="http://www.aspupload.com/jupload.html">JUpload</A></DIV>
+                  <DIV class="menu"><A href="http://www.aspupload.com/aspjpeg.html">AspJpeg</A></DIV>
+                  <DIV class="separator"></DIV>
+                  <DIV class="menu"><A href="http://www.aspupload.com/download.html">Download</A></DIV>
+                  <DIV class="menu"><A href="http://www.aspupload.com/purchase.html">Purchase</A></DIV>
+                  <DIV class="separator"></DIV>
+                  <DIV class="menu"><A href="http://www.aspupload.com/clients.html">Clients</A></DIV>
+                  <DIV class="menu"><A href="http://www.aspupload.com/otherproducts.html">Other 
+                  Products</A></DIV>
+                  <DIV class="menu"><A href="http://www.aspupload.com/contact.html">Contact 
+                  Us</A></DIV>
+                  <DIV class="separator"></DIV><BR>
+                  <FORM action="http://support.persits.com/emails/signup.asp" 
+                  target="_new">
+                  <DIV class="news_text">Newsletter Signup</DIV><INPUT name="email" class="newsletter" onfocus="if( email.value == 'e-mail address') email.value = '';" type="text" size="30" value="e-mail address"></FORM>
+                  <P></P></TD>
+                <TD width="34" rowspan="2">&nbsp;</TD>
+                <TD width="36" class="yellow_border" rowspan="2">&nbsp;</TD>
+                <TD width="650" class="middle_text">
+                  <P><IMG src="AspUpload_com%20-%20User%20Manual_%20Chapter%204%20--%20Saving%20Files%20and-or%20Filenames%20in%20the%20Database_files/user_manual.gif">
+                  				 
+                  <P><A 
+                  href="http://www.aspupload.com/manual_progress.html"><IMG 
+                  align="RIGHT" alt="Chapter 5: Progress Bar" src="AspUpload_com%20-%20User%20Manual_%20Chapter%204%20--%20Saving%20Files%20and-or%20Filenames%20in%20the%20Database_files/next.gif" 
+                  border="0"></A>						 <A href="http://www.aspupload.com/manual_memory.html"><IMG 
+                  align="RIGHT" alt="Chapter 3: Uploading to Memory" src="AspUpload_com%20-%20User%20Manual_%20Chapter%204%20--%20Saving%20Files%20and-or%20Filenames%20in%20the%20Database_files/previous.gif" 
+                  border="0"></A>												 
+                  <DIV class="chapter_header">Chapter 4. Saving Files and/or 
+                  Filenames in the Database</DIV>
+                  <P><A href="http://www.aspupload.com/manual_db.html#4_1">4.1 
+                  Why Upload to the Database</A><BR><A href="http://www.aspupload.com/manual_db.html#4_2">4.2 
+                  Sample Database</A><BR><A href="http://www.aspupload.com/manual_db.html#4_3">4.3 
+                  ODBC-based File Uploads</A><BR><A href="http://www.aspupload.com/manual_db.html#4_4">4.4 
+                  ODBC-based File Exporting from the Database</A><BR><A href="http://www.aspupload.com/manual_db.html#4_5">4.5 
+                  ADO-based File Uploads</A><BR><A href="http://www.aspupload.com/manual_db.html#4_6">4.6 
+                  ADO-based File Exporting From the Database</A><BR><A href="http://www.aspupload.com/manual_db.html#4_7">4.7 
+                  Exporting Files from the Database to a Client Browser</A><BR>
+                  <P><A name="4_1"></A>						 <FONT class="Header">4.1 Why 
+                  Upload to the Database</FONT>						 
+                  <BLOCKQUOTE>						Most modern database management systems 
+                    allow for storing 						arbitrary binary files in database 
+                    records as "BLOBs" (binary large objects).						In Microsoft 
+                    Access, a file can be stored in a field of the type <B>OLE 
+                    Object</B>,						in SQL Server, the corresponding data type 
+                    is <B>IMAGE</B>, and in Oracle <B>Long Raw</B>.						 
+                    <P>						If you are implementing a file storage application
+                    						such as a document archive or image repository, 
+                    storing the files in the database is						a sensible 
+                    alternative to keeping them in a folder. The advantages of 
+                    the database						approach are:						 
+                    <UL>
+                      <LI><B>Data consolidation</B>. Your repository will 
+                      probably need a database						anyway, so why not keep all 
+                      the data pieces in one place.						 
+                      <LI><B>No filename collisions</B>. You no longer need
+                      						to worry about multiple files having the same name, 
+                      						since the files are now identified by their	record 
+                      IDs rather than filenames.						 
+                      <LI><B>Simplified backup</B>. Backing up your database
+                      						will backup both your data and files in a single 
+                      step. 						 </LI></UL>						The main disadvantage of this 
+                    approach is that the database storage and retrieval						of 
+                    files is somewhat slower than with the regular file system.
+                    						 </BLOCKQUOTE><A name="4_2"></A>						 <FONT class="Header">4.2 
+                  Sample Database</FONT>						 
+                  <BLOCKQUOTE>						To demonstrate AspUpload's database 
+                    features, a sample MS Access database,
+                    						 <B>aspupload.mdb</B>, has been included in the 
+                    installation. It can						be found in the folder 
+                    \Samples\04_db together with the sample ASP files that use 
+                    it.						 
+                    <P>						The database contains a single table, 
+                    <B>MYIMAGES</B>, with the following columns:						 
+                    <P>
+                    <TABLE border="1" cellspacing="0" cellpadding="1">
+                      <TBODY>
+                      <TR>
+                        <TH bgcolor="#a0a0a0"><FONT face="Arial" 
+                          size="2">Column</FONT></TH>
+                        <TH bgcolor="#a0a0a0"><FONT face="Arial" 
+                          size="2">Type</FONT></TH>
+                        <TH bgcolor="#a0a0a0"><FONT face="Arial" 
+                          size="2">Description</FONT></TH></TR>
+                      <TR>
+                        <TD><FONT face="Arial" size="2"><B>id</B></FONT></TD>
+                        <TD><FONT face="Arial" size="2">Autonumber</FONT></TD>
+                        <TD><FONT face="Arial" size="2">Unique record 
+                        ID</FONT></TD></TR>
+                      <TR>
+                        <TD><FONT face="Arial" 
+                          size="2"><B>image_blob</B></FONT></TD>
+                        <TD><FONT face="Arial" size="2">OLE Object</FONT></TD>
+                        <TD><FONT face="Arial" size="2">Stores file 
+                        BLOB</FONT></TD></TR>
+                      <TR>
+                        <TD><FONT face="Arial" 
+                        size="2"><B>filename</B></FONT></TD>
+                        <TD><FONT face="Arial" size="2">Text (50)</FONT></TD>
+                        <TD><FONT face="Arial" size="2">Stores file 
+                        name</FONT></TD></TR>
+                      <TR>
+                        <TD><FONT face="Arial" 
+                        size="2"><B>filesize</B></FONT></TD>
+                        <TD><FONT face="Arial" size="2">Number</FONT></TD>
+                        <TD><FONT face="Arial" size="2">Stores file 
+                        size</FONT></TD></TR>
+                      <TR>
+                        <TD><FONT face="Arial" 
+                          size="2"><B>description</B></FONT></TD>
+                        <TD><FONT face="Arial" size="2">Text (255)</FONT></TD>
+                        <TD><FONT face="Arial" size="2">Stores file 
+                          description</FONT></TD></TR>
+                      <TR>
+                        <TD><FONT face="Arial" size="2"><B>hash</B></FONT></TD>
+                        <TD><FONT face="Arial" size="2">Text (50)</FONT></TD>
+                        <TD><FONT face="Arial" size="2">Stores one-way hash 
+                          value of file</FONT></TD></TR></TBODY></TABLE>
+                    <P><FONT color="#ff0000"><B>Before running the code samples, 
+                    make sure						the NTFS permissions on the database file 
+                    aspupload.mdb are to set to Everyone/Full Control using
+                    						Windows Explorer.</B></FONT>						 
+                    <P>						If you prefer to work with SQL Server, you can 
+                    recreate this table						in SQL Server using the SQL script 
+                    <B>CreateTable.sql</B> located in the same folder.
+                  						 </P></BLOCKQUOTE><A name="4_3"></A>						 <FONT class="Header">4.3 
+                  ODBC-based File Uploads</FONT>						 
+                  <BLOCKQUOTE>						With AspUpload, an uploaded file can be 
+                    saved in an ODBC-enabled database						in just one line of 
+                    code via the method <B>File.ToDatabase</B>. This method 
+                    accepts two						arguments: an ODBC connection string, and 
+                    an INSERT or UPDATE SQL statement						which must contain 
+                    one question mark sign (?) as a placeholder						for the 
+                    file being saved in the database, for example:						 
+                    <P><FONT face="Courier New"><B>File.ToDatabase 
+                    "DSN=mydb;UID=jsmth;PWD=xxx",_<BR>
+                    						&nbsp;&nbsp;&nbsp;"INSERT INTO IMAGES(img, name) 
+                    VALUES(?, 'name.ext')"</B>						 </FONT>						 
+                    <P>						This statement inserts the current file into the 
+                    field 						 <I>img</I> of the table <I>IMAGES</I>, and the 
+                    string 'name.ext' into the field <I>name</I>.						The DSN 
+                    parameter in the first argument points to a system DSN 
+                    creatable 						via the ODBC control panel. A DSNless 
+                    connection string for MS Access						must explicitly 
+                    reference the full path to the MDB file, as follows:						 
+                    <P><FONT face="Courier New"><B>File.ToDatabase 
+                    "Driver={Microsoft Access Driver 
+                    (*.mdb)};DBQ=c:\path\db.mdb", ...</B>						 </FONT>						 
+                    <P>						For SQL Server, your connection string may look as 
+                    follows:						 
+                    <P><FONT face="Courier New"><B>"Driver=SQL 
+                    Server;Server=MYSERVER;UID=sa;PWD=xxxxxx"</B>						 </FONT>
+                    						 
+                    <P>						If you need to replace an existing file in a 
+                    record, you should use an UPDATE						statement instead of 
+                    INSERT, for example:						 
+                    <P><FONT face="Courier New"><B>"UPDATE MYIMAGES SET img=?, 
+                    name='newname.ext' WHERE id=3"</B>						 </FONT>						 
+                    <P>						The sample files <B>odbc.asp</B> and 
+                    <B>odbc_upload.asp</B>						demonstrate the use of the 
+                    <B>ToDatabase</B> method. The form						located in the file 
+                    odbc.asp (not shown here) contains a file item THEFILE
+                    						and a text item DESCR. Here is what 
+                    <B>odbc_upload.asp</B> looks like:						 
+                    <P>
+                    <TABLE class="yellow_box">
+                      <TBODY>
+                      <TR>
+                        <TD>						&lt;HTML&gt;<BR>						&lt;BODY&gt;<BR>
+                          						&lt;%<BR>						Set Upload = 
+                          Server.CreateObject("Persits.Upload")
+                          <P>						' Capture files<BR>						Upload.Save 
+                          "c:\upload"
+                          <P>						' Obtain file object<BR>						Set File = 
+                          Upload.Files("THEFILE")
+                          <P>						If Not File Is Nothing Then<BR>
+                          						&nbsp;&nbsp;' Build ODBC connection string<BR>
+                          						&nbsp;&nbsp;Connect = "Driver={Microsoft Access 
+                          Driver (*.mdb)};DBQ=" &amp; 
+                          Server.MapPath(".\aspupload.mdb")
+                          <P>						&nbsp;&nbsp;' If you use SQL Server, the 
+                          connecton string must look as follows:<BR>
+                          						&nbsp;&nbsp;' Connect = "Driver=SQL 
+                          Server;Server=MYSERVER;UID=sa;PWD=xxxxxxxxx"
+                          <P>						&nbsp;&nbsp;' Build SQL INSERT statement<BR>
+                          						&nbsp;&nbsp;SQL = "INSERT INTO 
+                          MYIMAGES(image_blob, filename, description, filesize) 
+                          VALUES(?, '"<BR>						&nbsp;&nbsp;SQL = SQL &amp; 
+                          File.Filename &amp; "', '"<BR>						&nbsp;&nbsp;SQL = 
+                          SQL &amp; Replace(Upload.Form("DESCR"), "'", "''") 
+                          &amp; "', "<BR>						&nbsp;&nbsp;SQL = SQL &amp; 
+                          File.Size &amp; ")"
+                          <P>						&nbsp;&nbsp;' Save to database<BR>
+                          						&nbsp;&nbsp;File.ToDatabase Connect, SQL<BR>
+                          						&nbsp;&nbsp;Response.Write "File saved."<BR>
+                          						Else<BR>						&nbsp;&nbsp;Response.Write "File 
+                          not selected."<BR>						End If<BR>						%&gt;<BR>
+                          						&lt;/BODY&gt;<BR>						&lt;/HTML&gt;
+                        						 </P></TD></TR></TBODY></TABLE>
+                    <P>						Note the use of the built-in <B>Replace</B> 
+                    function which replaces all occurrences						of the ' 
+                    character (single quote) by two single quotes to avoid
+                    						a run-time error if the description contains single 
+                    quotes.						 
+                    <P>						Click the link below to run this code sample:
+                    						 <P><B><A href="http://localhost/aspupload/04_db/odbc.asp" 
+                    target="_new">http://localhost/aspupload/04_db/odbc.asp</A></B>
+                    						&nbsp; <A onclick="open('helppopup.html','','width=400,height=400');" 
+                    href="javascript:;"><IMG alt="Why is this link not working?" 
+                    src="AspUpload_com%20-%20User%20Manual_%20Chapter%204%20--%20Saving%20Files%20and-or%20Filenames%20in%20the%20Database_files/help.gif" 
+                    border="0"></A>						 
+                    <P>						AspUpload also provides the top-level method 
+                    <B>Upload.ToDatabaseEx</B>						which enables you to save an 
+                    arbitrary file on your system in the database, not just an 
+                    uploaded file.						The first argument for this method is a 
+                    file path, the other two are the same as for						the method 
+                    File.ToDatabase.						 </P></BLOCKQUOTE><A name="4_4"></A>
+                  						 <FONT class="Header">4.4 ODBC-based File Exporting from 
+                  the Database</FONT>						 
+                  <BLOCKQUOTE>						The <B>File.ToDatabase</B> method has a 
+                    counterpart, <B>Upload.FromDatabase</B>,						which performs 
+                    the opposite operation: exports a file from a database 
+                    record back to the hard drive.						This method expects 
+                    three arguments.						The first argument is an ODBC 
+                    connection string. The second argument						is a SELECT 
+                    statement that must return one record containing a BLOB. 
+                    						The BLOB data field name must immediately follow the 
+                    SELECT keyword.						 
+                    <P>						The following code (sample file 
+                    <B>odbcexport.asp</B>) exports all files from our sample 
+                    database that were placed						there by the previous code 
+                    sample:						 
+                    <P>
+                    <TABLE class="yellow_box">
+                      <TBODY>
+                      <TR>
+                        <TD>						&lt;HTML&gt;<BR>						&lt;BODY&gt;<BR>
+                          						&lt;%<BR>						' Build ODBC connection 
+                          string<BR>						Connect = "Driver={Microsoft Access 
+                          Driver (*.mdb)};DBQ=" &amp; 
+                          Server.MapPath(".\aspupload.mdb")
+                          <P>												' For SQL Server use a string simlar to 
+                          this:<BR>						' Connect = "Driver=SQL 
+                          Server;Server=MYSERVER;UID=sa;PWD=xxxxx"<BR>						Set 
+                          rs = Server.CreateObject("adodb.recordset")
+                          <P>						Set Upload = 
+                          Server.CreateObject("Persits.Upload")
+                          <P>												' Open MYIMAGES table<BR>						rs.Open 
+                          "MYIMAGES", Connect, 2, 3
+                          <P>						' Scroll through records<BR>						Count = 
+                          0<BR>						While Not rs.EOF<BR>
+                          						&nbsp;&nbsp;&nbsp;Filename = 
+Trim(rs("filename"))
+                          <P>													&nbsp;&nbsp;&nbsp;SQL = "select 
+                          image_blob from myimages where id=" &amp; rs("id")<BR>
+                          						&nbsp;&nbsp;&nbsp;Upload.FromDatabase Connect, 
+                          SQL, "c:\upload\" &amp; Filename<BR>
+                          						&nbsp;&nbsp;&nbsp;Response.Write "File exported: 
+                          c:\upload\" &amp; Filename &amp; "&lt;BR&gt;"<BR>
+                          						&nbsp;&nbsp;&nbsp;Count = Count + 1<BR>
+                          						&nbsp;&nbsp;&nbsp;rs.MoveNext<BR>						Wend
+                          <P>						Response.Write "&lt;P&gt;" &amp; Count &amp; 
+                          " files exported."<BR>						%&gt;<BR>
+                          						&lt;/BODY&gt;<BR>
+                      						&lt;/HTML&gt;<BR></P></TD></TR></TBODY></TABLE>
+                    <P>						Here, we have to employ ADO to scroll through all 
+                    the records of our sample table						and call FromDatabase 
+                    on each individual record.						 
+                    <P>
+                    <P>						Downloading a file from the database directly to a 
+                    client browser						is possible without using AspUpload or 
+                    any other third-party component,						it can be achieved 
+                    with ADO alone. This will be covered later in this chapter.
+                    						 
+                    <P>						Click the link below to run this code sample:
+                    						 <P><B><A href="http://localhost/aspupload/04_db/odbcexport.asp" 
+                    target="_new">http://localhost/aspupload/04_db/odbcexport.asp</A></B>
+                    						&nbsp; <A onclick="open('helppopup.html','','width=400,height=400');" 
+                    href="javascript:;"><IMG alt="Why is this link not working?" 
+                    src="AspUpload_com%20-%20User%20Manual_%20Chapter%204%20--%20Saving%20Files%20and-or%20Filenames%20in%20the%20Database_files/help.gif" 
+                    border="0"></A>						 </P></BLOCKQUOTE><A name="4_5"></A>
+                  						 <FONT class="Header">4.5 ADO-based File Uploads</FONT>
+                  						 
+                  <BLOCKQUOTE>						File.ToDatabase is not the only way to 
+                    save files in the database						with AspUpload. Instead of 
+                    ODBC, you can use the ADO Recordset object						in 
+                    conjunction with the <B>File.Binary</B> property. Using the 
+                    <B>Binary</B> property,						a file can be assigned to the 
+                    recordset much the same way as a regular numeric or string 
+                    value,						for example:						 
+                    <P><FONT face="Courier New" size="2"><B>						rs.Open 
+                    "MYIMAGES", Connect, 2, 3<BR>						rs.AddNew<BR>						Set 
+                    File = Upload.Files("FILE1")<BR><FONT 
+                    color="#ff0000">rs("image_blob").Value = 
+                    File.Binary</FONT><BR>						rs("filename").Value = 
+                    File.FileName<BR>						rs("filesize").Value = File.Size<BR>
+                    						rs.Update<BR></B></FONT>						 
+                    <P>						This code is more intuitive as it does not require 
+                    building complex						SQL statements. Instead, the 
+                    traditional ADO objects are used. This approach						works 
+                    equally well for inserts and updates.						 
+                    <P>						If the ultimate destination of a file is the 
+                    database, you may consider						using uploads to memory 
+                    (described in the <A href="http://www.aspupload.com/manual_memory.html">previous 
+                    chapter</A>)						for better security and performance. The 
+                    sample files <B>ado.asp</B>						and <B>ado_upload.asp</B> 
+                    demonstrate the combined use of memory uploads and 
+                    File.Binary						for saving files in the database.						 
+                    <P>						This code sample also utilizes <B>one-way 
+                    hashing</B> to determine whether a newly						uploaded file 
+                    already exists in the database. A one-way hash function
+                    						is an algorithm which uses a variable-length input 
+                    such as an arbitrary file						or text string, and produces 
+                    a fixed-length output (128 bit or 160 bit						for the hash 
+                    algorithms <B>MD5</B> and <B>SHA1</B>, respectively). 
+                    						AspUpload offers MD5 hash value computation via the 
+                    property <B>File.MD5Hash</B>.						 
+                    <P>						The term "one-way" is used because it is
+                    						practically impossible to come up with an input which 
+                    would						produce a given hash value. Also, it is 
+                    impossible						to come up with two different documents 
+                    which would hash to the same value.						This remarkable 
+                    feature of the one-way hash function can be used						to 
+                    determine whether a given document already exists in the 
+                    database.						We store each file's hash value along with 
+                    other information,						and before adding a new file to the 
+                    database, we look up its hash value.						If the value is 
+                    already in the database, we do not save the file.						 
+                    <P>
+                    <TABLE class="yellow_box">
+                      <TBODY>
+                      <TR>
+                        <TD>						&lt;HTML&gt;<BR>						&lt;BODY&gt;<BR>
+                          						&lt;%<BR>						Set Upload = 
+                          Server.CreateObject("Persits.Upload")
+                          <P>						' we use memory uploads, so we must limit 
+                          file size<BR>						Upload.SetMaxSize 100000, True
+                          <P>						' Save to memory. Path parameter is 
+                          omitted<BR>						Count = Upload.Save
+                          <P>						' Obtain file object<BR>						Set File = 
+                          Upload.Files("THEFILE")
+                          <P>						If Not File Is Nothing Then<BR>
+                          						&nbsp;&nbsp;&nbsp;' Build ADO connection 
+                          string<BR>						&nbsp;&nbsp;&nbsp;Connect = 
+                          "Driver={Microsoft Access Driver (*.mdb)};DBQ=" &amp; 
+                          Server.MapPath(".\aspupload.mdb")<BR>
+                          						&nbsp;&nbsp;&nbsp;' If you use SQL Server, the 
+                          connecton string may look like this:<BR>
+                          						&nbsp;&nbsp;&nbsp;' Connect = 
+                          "Provider=SQLOLEDB;Server=SRV;Database=mydb;UID=sa;PWD=xxx"<BR>
+                          						&nbsp;&nbsp;&nbsp;' Use ADO Recordset object<BR>
+                          						&nbsp;&nbsp;&nbsp;Set rs = 
+                          Server.CreateObject("adodb.recordset")
+                          <P>						&nbsp;&nbsp;&nbsp;' Optional: check whether 
+                          this file already exists using MD5 hash<BR>
+                          						&nbsp;&nbsp;&nbsp;Hash = File.MD5Hash<BR>
+                          						&nbsp;&nbsp;&nbsp;rs.Open "SELECT * from 
+                          MYIMAGES WHERE Hash='" &amp; Hash &amp; "'", Connect, 
+                          2, 3<BR>						&nbsp;&nbsp;&nbsp;If Not rs.EOF Then<BR>
+                          						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Response.Write 
+                          "This file already exists in the database."<BR>
+                          						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Response.End<BR>
+                          						&nbsp;&nbsp;&nbsp;End If<BR>
+                          						&nbsp;&nbsp;&nbsp;rs.Close
+                          <P>						&nbsp;&nbsp;&nbsp;' Reopen recordset to 
+                          insert file<BR>						&nbsp;&nbsp;&nbsp;rs.Open 
+                          "MYIMAGES", Connect, 2, 3
+                          <P>						&nbsp;&nbsp;&nbsp;rs.AddNew<BR>
+                          						&nbsp;&nbsp;&nbsp;rs("image_blob") = 
+                          File.Binary<BR>						&nbsp;&nbsp;&nbsp;rs("filename") 
+                          = File.FileName<BR>
+                          						&nbsp;&nbsp;&nbsp;rs("filesize") = File.Size<BR>
+                          						&nbsp;&nbsp;&nbsp;rs("hash") = Hash<BR>
+                          						&nbsp;&nbsp;&nbsp;rs("description") = 
+                          Upload.Form("DESCR")<BR>
+                          						&nbsp;&nbsp;&nbsp;rs.Update
+                          <P>						&nbsp;&nbsp;&nbsp;Response.Write "File 
+                          saved."<BR>						Else<BR>
+                          						&nbsp;&nbsp;&nbsp;Response.Write "File not 
+                          selected."<BR>						End If<BR>						%&gt;<BR>
+                          						&lt;/BODY&gt;<BR>
+                      						&lt;/HTML&gt;<BR></P></TD></TR></TBODY></TABLE>
+                    <P>						Click the link below to run this code sample:
+                    						 <P><B><A href="http://localhost/aspupload/04_db/ado.asp" 
+                    target="_new">http://localhost/aspupload/04_db/ado.asp</A></B>
+                    						&nbsp; <A onclick="open('helppopup.html','','width=400,height=400');" 
+                    href="javascript:;"><IMG alt="Why is this link not working?" 
+                    src="AspUpload_com%20-%20User%20Manual_%20Chapter%204%20--%20Saving%20Files%20and-or%20Filenames%20in%20the%20Database_files/help.gif" 
+                    border="0"></A><BR><B><A href="http://localhost/aspupload/04_db/ado.aspx" 
+                    target="_new">http://localhost/aspupload/04_db/ado.aspx</A></B> 
+                    <IMG src="AspUpload_com%20-%20User%20Manual_%20Chapter%204%20--%20Saving%20Files%20and-or%20Filenames%20in%20the%20Database_files/dotnet.gif">
+                    						 
+                    <P></P></BLOCKQUOTE><A name="4_6"></A>						 <FONT class="Header">4.6 
+                  ADO-based File Exporting From the Database</FONT>						 
+                  <BLOCKQUOTE>						Needless to say, AspUpload offers an 
+                    ADO-based method for exporting						files from the database 
+                    to hard drive. The method						is called 
+                    <B>Upload.FromRecordset</B>						which accepts a recordset 
+                    value and a local path as parameters.						The usage of this 
+                    method is demonstrated by the code sample 
+                    <B>adoexport.asp</B>.						 
+                    <P>						Click the link below to run this code sample:
+                    						 <P><B><A href="http://localhost/aspupload/04_db/adoexport.asp" 
+                    target="_new">http://localhost/aspupload/04_db/adoexport.asp</A></B>
+                    						&nbsp; <A onclick="open('helppopup.html','','width=400,height=400');" 
+                    href="javascript:;"><IMG alt="Why is this link not working?" 
+                    src="AspUpload_com%20-%20User%20Manual_%20Chapter%204%20--%20Saving%20Files%20and-or%20Filenames%20in%20the%20Database_files/help.gif" 
+                    border="0"></A>												</P></BLOCKQUOTE><A name="4_7"></A>
+                  						 <FONT class="Header">4.7 Exporting Files from the 
+                  Database to a Client Browser</FONT>						 
+                  <BLOCKQUOTE>						A file saved in the database can be 
+                    downloaded to the client browser						directly without 
+                    saving it to the hard drive first. No third-party components
+                    						are necessary, downloading from the database can be 
+                    achieved with						ADO alone.						 
+                    <P>						To download a file from the database, you need to 
+                    provide a link						on your web page pointing to an ASP 
+                    script that calls Response.BinaryWrite.						For example, 
+                    your HTML page contains the following link:						 
+                    <P><FONT face="Courier New" size="2"><B>						&lt;A 
+                    HREF="download.asp?id=2"&gt;Click here to download&lt;/A&gt;
+                    						 </B></FONT>						 
+                    <P>						The file <B>download.asp</B> may look as follows:
+                    						 
+                    <P>
+                    <TABLE class="yellow_box">
+                      <TBODY>
+                      <TR>
+                        <TD>						&lt;%<BR>						Set db = 
+                          Server.CreateObject("ADODB.Connection")<BR>
+                          						db.Open Connect<BR>						SQL = "SELECT * FROM 
+                          MYIMAGES where id = " &amp; Request("id")<BR>						Set 
+                          rs =db.Execute( SQL )<BR>						Response.ContentType = 
+                          "application/octet-stream"<BR>						' let the browser 
+                          know the file name<B><BR>						Response.AddHeader 
+                          "Content-Disposition", "attachment;filename=" &amp; 
+                          Trim(rs("filename"))<BR></B>' let the browser know the 
+                          file size<B><BR>						Response.AddHeader 
+                          "Content-Length", rs("filesize")<BR>
+                          						Response.BinaryWrite rs("image_blob")<BR>
+                          						%&gt;						 </B></TD></TR></TBODY></TABLE>
+                    <P>						To display an image stored in the database, you 
+                    should use an &lt;IMG&gt; tag instead						of &lt;A&gt;, as 
+                    follows:						 
+                    <P><FONT face="Courier New" size="2"><B>&lt;IMG 
+                    SRC="download.asp?id=3"&gt;</B></FONT>						 
+                    <P>						Note that the download script must not contain any 
+                    HTML tags such as &lt;HTML&gt; or &lt;BODY&gt;, just pure 
+                    ASP script.						 
+                    <P>						The sample files <B>filelist.asp</B> and 
+                    <B>filelist_download.asp</B>						demonstrate this 
+                    technique. The script <B>filelist.asp</B> lists all files 
+                    previously uploaded to						the database and generates 
+                    download links for them. The links invoke the file 
+                    <B>filelist_download.asp</B>						similar to the download 
+                    script shown above.						 
+                    <P>						Click the link below to run this code sample:
+                    						 <P><B><A href="http://localhost/aspupload/04_db/filelist.asp" 
+                    target="_new">http://localhost/aspupload/04_db/filelist.asp</A></B>
+                    						&nbsp; <A onclick="open('helppopup.html','','width=400,height=400');" 
+                    href="javascript:;"><IMG alt="Why is this link not working?" 
+                    src="AspUpload_com%20-%20User%20Manual_%20Chapter%204%20--%20Saving%20Files%20and-or%20Filenames%20in%20the%20Database_files/help.gif" 
+                    border="0"></A>						 
+                    <P><A 
+                    href="http://www.aspupload.com/manual_progress.html"><IMG 
+                    align="RIGHT" alt="Chapter 5: Progress Bar" src="AspUpload_com%20-%20User%20Manual_%20Chapter%204%20--%20Saving%20Files%20and-or%20Filenames%20in%20the%20Database_files/next.gif" 
+                    border="0"></A>						 <A href="http://www.aspupload.com/manual_memory.html"><IMG 
+                    align="RIGHT" alt="Chapter 3: Uploading to Memory" src="AspUpload_com%20-%20User%20Manual_%20Chapter%204%20--%20Saving%20Files%20and-or%20Filenames%20in%20the%20Database_files/previous.gif" 
+                    border="0"></A>						 
+                    <P>&nbsp;						</P></BLOCKQUOTE></TD>
+                <TD rowspan="2">&nbsp;</TD></TR><!-- bottom with logo -->			   
+              <TR>
+                <TD valign="bottom" xwidth="529">
+                  <TABLE width="100%" border="0" cellspacing="0" 
+cellpadding="0">
+                    <TBODY>
+                    <TR>
+                      <TD width="200" class="copy"><A href="http://www.aspupload.com/index.html"><IMG 
+                        width="169" height="63" alt="AspUpload.com Home Page" 
+                        src="AspUpload_com%20-%20User%20Manual_%20Chapter%204%20--%20Saving%20Files%20and-or%20Filenames%20in%20the%20Database_files/logo_bottom.gif" 
+                        border="0"></A></TD>
+                      <TD width="450" class="copy" valign="top">Copyright © 
+                        1998 - 2013 <A href="http://www.persits.com/" target="_blank">Persits 
+                        Software, Inc</A>.<BR>                    All Rights 
+                        Reserved<BR>                    AspUpload® is a 
+                        registered trademark of Persits Software, 
+                    Inc.</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD>
+    <TD width="7" background="AspUpload_com%20-%20User%20Manual_%20Chapter%204%20--%20Saving%20Files%20and-or%20Filenames%20in%20the%20Database_files/blue_wr.gif">&nbsp;</TD></TR>
+  <TR class="bottom_space">
+    <TD width="7" background="AspUpload_com%20-%20User%20Manual_%20Chapter%204%20--%20Saving%20Files%20and-or%20Filenames%20in%20the%20Database_files/blue_left.gif">&nbsp;</TD>
+    <TD bgcolor="white" xheight="30">&nbsp;</TD>
+    <TD width="7" background="AspUpload_com%20-%20User%20Manual_%20Chapter%204%20--%20Saving%20Files%20and-or%20Filenames%20in%20the%20Database_files/blue_wr.gif">&nbsp;</TD></TR></TBODY></TABLE></BODY></HTML>

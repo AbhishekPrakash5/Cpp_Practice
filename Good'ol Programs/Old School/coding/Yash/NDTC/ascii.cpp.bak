@@ -1,0 +1,13 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	int ascno;
+	char asc;
+	cout<<"enter character to get its ASCII code";
+	cin>>asc;
+	ascno=asc;
+	cout<<"ASCII code of "<<asc<<" is "<<ascno;
+	getch();
+	
+}

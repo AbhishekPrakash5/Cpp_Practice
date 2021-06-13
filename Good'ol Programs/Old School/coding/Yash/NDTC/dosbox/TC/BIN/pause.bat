@@ -1,0 +1,3 @@
+%1.EXE
+PAUSE
+EXIT

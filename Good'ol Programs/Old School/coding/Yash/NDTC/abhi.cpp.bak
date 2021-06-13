@@ -1,0 +1,18 @@
+#include<iostream.h>
+#include<conio.h>
+void patt()
+{
+	for(int i=65; i<=70; i++)
+	{
+		for(int j=65; j<=i; j++)
+		cout<<" * ";
+	
+		cout<<endl;
+	}
+	
+}
+void main()
+{
+	patt();
+	getch();
+}

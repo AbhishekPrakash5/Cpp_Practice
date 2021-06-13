@@ -1,0 +1,8 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	int a=2;
+	cout<<a++ + a-- + a + a++;
+	getch();
+	}

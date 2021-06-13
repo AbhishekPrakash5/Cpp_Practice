@@ -1,0 +1,2223 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0048)http://www.w3.org/TR/html401/interact/forms.html -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" ""><HTML lang="en"><HEAD><META 
+content="IE=5.0000" http-equiv="X-UA-Compatible">
+ 
+<META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"> 
+<TITLE>Forms in HTML documents</TITLE> <LINK href="../present/frames.html" rel="previous"> 
+<LINK href="scripts.html" rel="next"> <LINK href="../cover.html#toc" rel="contents"> 
+<LINK href="Forms%20in%20HTML%20documents_files/W3C-REC.css" rel="stylesheet" 
+type="text/css"> <LINK href="Forms%20in%20HTML%20documents_files/default.css" 
+rel="STYLESHEET" type="text/css"> 
+<META name="GENERATOR" content="MSHTML 11.00.9600.17963"></HEAD> 
+<BODY>
+<DIV align="center" class="navbar">&nbsp;<A href="http://www.w3.org/TR/html401/present/frames.html">
+previous</A> &nbsp; <A 
+href="http://www.w3.org/TR/html401/interact/scripts.html">next</A> &nbsp; <A 
+href="http://www.w3.org/TR/html401/cover.html#minitoc">contents</A> &nbsp; <A 
+href="http://www.w3.org/TR/html401/index/elements.html">elements</A> &nbsp; <A 
+href="http://www.w3.org/TR/html401/index/attributes.html">attributes</A> &nbsp; 
+<A href="http://www.w3.org/TR/html401/index/list.html">index</A> 
+<HR>
+</DIV>
+<H1 align="center"><A name="h-17">17</A> <A name="forms">Forms</A></H1>
+<DIV class="subtoc">
+<P><STRONG>Contents</STRONG></P>
+<OL>
+  <LI><A class="tocxref" href="http://www.w3.org/TR/html401/interact/forms.html#h-17.1">Introduction 
+  to forms</A></LI>
+  <LI><A class="tocxref" href="http://www.w3.org/TR/html401/interact/forms.html#h-17.2">Controls</A> 
+  
+  <OL>
+    <LI><A class="tocxref" href="http://www.w3.org/TR/html401/interact/forms.html#h-17.2.1">Control 
+    types</A></LI></OL></LI>
+  <LI><A class="tocxref" href="http://www.w3.org/TR/html401/interact/forms.html#h-17.3">The 
+  <SAMP class="einst2">FORM</SAMP> element</A></LI>
+  <LI><A class="tocxref" href="http://www.w3.org/TR/html401/interact/forms.html#h-17.4">The 
+  <SAMP class="einst2">INPUT</SAMP> element</A> 
+  <OL>
+    <LI><A class="tocxref" href="http://www.w3.org/TR/html401/interact/forms.html#h-17.4.1">Control 
+    types created with INPUT</A></LI>
+    <LI><A class="tocxref" href="http://www.w3.org/TR/html401/interact/forms.html#h-17.4.2">Examples 
+    of forms containing INPUT controls</A></LI></OL></LI>
+  <LI><A class="tocxref" href="http://www.w3.org/TR/html401/interact/forms.html#h-17.5">The 
+  <SAMP class="einst2">BUTTON</SAMP> element</A></LI>
+  <LI><A class="tocxref" href="http://www.w3.org/TR/html401/interact/forms.html#h-17.6">The 
+  <SAMP class="einst2">SELECT</SAMP>, <SAMP class="einst2">OPTGROUP</SAMP>, and 
+  <SAMP class="einst2">OPTION</SAMP> elements</A> 
+  <OL>
+    <LI><A class="tocxref" href="http://www.w3.org/TR/html401/interact/forms.html#h-17.6.1">Pre-selected 
+    options</A></LI></OL></LI>
+  <LI><A class="tocxref" href="http://www.w3.org/TR/html401/interact/forms.html#h-17.7">The 
+  <SAMP class="einst2">TEXTAREA</SAMP> element</A></LI>
+  <LI><A class="tocxref" href="http://www.w3.org/TR/html401/interact/forms.html#h-17.8">The 
+  <SAMP class="einst2">ISINDEX</SAMP> element</A></LI>
+  <LI><A class="tocxref" href="http://www.w3.org/TR/html401/interact/forms.html#h-17.9">Labels</A> 
+  
+  <OL>
+    <LI><A class="tocxref" href="http://www.w3.org/TR/html401/interact/forms.html#h-17.9.1">The 
+    <SAMP class="einst2">LABEL</SAMP> element</A></LI></OL></LI>
+  <LI><A class="tocxref" href="http://www.w3.org/TR/html401/interact/forms.html#h-17.10">Adding 
+  structure to forms: the <SAMP class="einst2">FIELDSET</SAMP> and <SAMP class="einst2">LEGEND</SAMP>
+   elements</A></LI>
+  <LI><A class="tocxref" href="http://www.w3.org/TR/html401/interact/forms.html#h-17.11"><SPAN 
+  title="focus|control::giving focus to" class="index-def">Giving focus to an 
+  element</SPAN></A> 
+  <OL>
+    <LI><A class="tocxref" href="http://www.w3.org/TR/html401/interact/forms.html#h-17.11.1"><SPAN 
+    title="control::tabbing navigation|tabbing navigation|form::navigating through &#10;controls" 
+    class="index-def">Tabbing navigation</SPAN></A></LI>
+    <LI><A class="tocxref" href="http://www.w3.org/TR/html401/interact/forms.html#h-17.11.2"><SPAN 
+    title="access &#10;key|control::access key for|accessibility::access keys" 
+    class="index-def">Access keys</SPAN></A></LI></OL></LI>
+  <LI><A class="tocxref" href="http://www.w3.org/TR/html401/interact/forms.html#h-17.12">Disabled 
+  and read-only controls</A> 
+  <OL>
+    <LI><A class="tocxref" href="http://www.w3.org/TR/html401/interact/forms.html#h-17.12.1">Disabled 
+    controls</A></LI>
+    <LI><A class="tocxref" href="http://www.w3.org/TR/html401/interact/forms.html#h-17.12.2">Read-only 
+    controls</A></LI></OL></LI>
+  <LI><A class="tocxref" href="http://www.w3.org/TR/html401/interact/forms.html#h-17.13">Form 
+  submission</A> 
+  <OL>
+    <LI><A class="tocxref" href="http://www.w3.org/TR/html401/interact/forms.html#h-17.13.1">Form 
+    submission method</A></LI>
+    <LI><A class="tocxref" href="http://www.w3.org/TR/html401/interact/forms.html#h-17.13.2">Successful 
+    controls</A></LI>
+    <LI><A class="tocxref" href="http://www.w3.org/TR/html401/interact/forms.html#h-17.13.3">Processing 
+    form data</A> 
+    <UL>
+      <LI><A class="tocxref" href="http://www.w3.org/TR/html401/interact/forms.html#h-17.13.3.1">Step 
+      one: Identify the successful controls</A></LI>
+      <LI><A class="tocxref" href="http://www.w3.org/TR/html401/interact/forms.html#h-17.13.3.2">Step 
+      two: Build a form data set</A></LI>
+      <LI><A class="tocxref" href="http://www.w3.org/TR/html401/interact/forms.html#h-17.13.3.3">Step 
+      three: Encode the form data set</A></LI>
+      <LI><A class="tocxref" href="http://www.w3.org/TR/html401/interact/forms.html#h-17.13.3.4">Step 
+      four: Submit the encoded form data set</A></LI></UL></LI>
+    <LI><A class="tocxref" href="http://www.w3.org/TR/html401/interact/forms.html#h-17.13.4">Form 
+    content types</A> 
+    <UL>
+      <LI><A class="tocxref" href="http://www.w3.org/TR/html401/interact/forms.html#h-17.13.4.1"><SPAN 
+      title="application/x-www-form-urlencoded|content &#10;type::application/x-www-form-urlencoded" 
+      class="index-def">application/x-www-form-urlencoded</SPAN></A></LI>
+      <LI><A class="tocxref" href="http://www.w3.org/TR/html401/interact/forms.html#h-17.13.4.2"><SPAN 
+      title="multipart/form-data|content type::multipart/form-data" class="index-def">
+      multipart/form-data</SPAN></A></LI></UL></LI></OL></LI></OL></DIV>
+<H2><A name="h-17.1">17.1</A> Introduction to forms</H2>
+<P>An HTML form is a section of a document containing normal content, markup,
+ special elements called <A href="http://www.w3.org/TR/html401/interact/forms.html#form-controls"><EM>controls</EM></A>
+ (checkboxes, radio buttons, menus, etc.), and labels on those controls. Users
+ generally "complete" a form by modifying its controls (entering text, selecting
+ menu items, etc.), before submitting the form to an agent for processing (e.g.,
+ to a Web server, to a mail server, etc.)</P>
+<DIV class="example">
+<P>Here's a simple form that includes labels, radio buttons, and push buttons
+ (reset the form or submit it):</P>
+<PRE> &lt;FORM action="http://somesite.com/prog/adduser" method="post"&gt;
+    &lt;P&gt;
+    &lt;LABEL for="firstname"&gt;First name: &lt;/LABEL&gt;
+              &lt;INPUT type="text" id="firstname"&gt;&lt;BR&gt;
+    &lt;LABEL for="lastname"&gt;Last name: &lt;/LABEL&gt;
+              &lt;INPUT type="text" id="lastname"&gt;&lt;BR&gt;
+    &lt;LABEL for="email"&gt;email: &lt;/LABEL&gt;
+              &lt;INPUT type="text" id="email"&gt;&lt;BR&gt;
+    &lt;INPUT type="radio" name="sex" value="Male"&gt; Male&lt;BR&gt;
+    &lt;INPUT type="radio" name="sex" value="Female"&gt; Female&lt;BR&gt;
+    &lt;INPUT type="submit" value="Send"&gt; &lt;INPUT type="reset"&gt;
+    &lt;/P&gt;
+ &lt;/FORM&gt;
+</PRE></DIV>
+<DIV class="note">
+<P><EM><STRONG>Note.</STRONG> This specification includes more detailed
+ information about forms in the subsections on <A href="http://www.w3.org/TR/html401/appendix/notes.html#notes-forms">form 
+display issues</A>.</EM></P></DIV>
+<H2><A name="h-17.2">17.2</A> <A name="form-controls">Controls</A></H2>
+<P><SPAN title="control|form::controls in" class="index-def"><A name="didx-control">Users 
+interact with forms through named <DFN>controls</DFN>.</A></SPAN></P>
+<P>A control's <SPAN title="control::control name" class="index-def"><A name="control-name"><DFN>"control 
+name"</DFN></A></SPAN> is given by its <SAMP>name</SAMP> attribute. The scope of 
+the <SAMP>name</SAMP> attribute for a control within a <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-FORM"><SAMP 
+class="einst">FORM</SAMP></A> element is the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-FORM"><SAMP 
+class="einst">FORM</SAMP></A> element.</P>
+<P>Each control has both an initial value and a current value, both of which are 
+character strings. Please consult the definition of each control for information 
+about initial values and possible constraints on values imposed by the control. 
+In general, a control's <SPAN title="control::initial value" 
+class="index-def"><A name="initial-value"><DFN>"initial value"</DFN></A></SPAN> 
+may be specified with the control element's <SAMP>value</SAMP> attribute. 
+However, the initial value of a <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-TEXTAREA"><SAMP 
+class="einst">TEXTAREA</SAMP></A> element is given by its contents, and the 
+initial value of an <A class="noxref" href="http://www.w3.org/TR/html401/struct/objects.html#edef-OBJECT"><SAMP 
+class="einst">OBJECT</SAMP></A> element in a form is determined by the object
+ implementation (i.e., it lies outside the scope of this specification).</P>
+<P>The control's <SPAN title="control::control value" class="index-def"><A name="current-value"><DFN>"current 
+value"</DFN></A></SPAN> is first set to the initial value. Thereafter, the 
+control's current value may be modified through user interaction and <A href="http://www.w3.org/TR/html401/interact/scripts.html">scripts.</A></P>
+<P><SPAN title="form::reset of|resetting a form" class="index-def"><A name="didx-form-1">A 
+control's initial value does not change.</A></SPAN> Thus, when a form is reset, 
+each control's current value is reset to its initial value. If a control does 
+not have an initial value, the effect of a form reset on that control is 
+undefined.</P>
+<P>When a form is submitted for processing, some controls have their name paired 
+with their current value and these pairs are <A href="http://www.w3.org/TR/html401/interact/forms.html#submit-format">
+submitted</A> with the form. Those controls for which name/value pairs are
+ submitted are called <A href="http://www.w3.org/TR/html401/interact/forms.html#successful-controls">successful
+ controls</A>.</P>
+<H3><A name="h-17.2.1">17.2.1</A> <SPAN title="control::types of|form::control types" 
+class="index-inst"><A name="idx-control-7">Control types</A></SPAN></H3>
+<P>HTML defines the following control types:</P>
+<DL>
+  <DT><A name="buttons"><STRONG>buttons</STRONG></A></DT>
+  <DD>Authors may create three types of buttons:  
+  <UL>
+    <LI><SPAN title="submit button" class="index-def"><A name="submit-button">
+    submit buttons</A></SPAN>: When activated, a submit button <A href="http://www.w3.org/TR/html401/interact/forms.html#submit-format">submits 
+    a form.</A> A form may contain more than one submit button.</LI>
+    <LI><SPAN title="reset button" class="index-def"><A 
+    name="reset-button">reset buttons</A></SPAN>: When activated, a reset button 
+    resets all controls to their <A href="http://www.w3.org/TR/html401/interact/forms.html#initial-value">initial 
+    values.</A></LI>
+    <LI><SPAN title="push button" class="index-def"><A name="push-button">push
+     buttons</A></SPAN>: Push buttons have no default behavior. Each push button 
+    may have <A 
+    href="http://www.w3.org/TR/html401/interact/scripts.html">client-side 
+    scripts</A> associated with the element's <A href="http://www.w3.org/TR/html401/interact/scripts.html#events">event</A> 
+    attributes. When an event occurs (e.g., the user presses the button, 
+    releases it, etc.), the associated script is triggered.  
+    <P>Authors should specify the scripting language of a push button script
+     through a <A href="http://www.w3.org/TR/html401/interact/scripts.html#default-script">default 
+    script declaration</A> (with the <A class="noxref" href="http://www.w3.org/TR/html401/struct/global.html#edef-META"><SAMP 
+    class="einst">META</SAMP></A> element).</P></LI></UL>
+  <P>Authors create buttons with the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-BUTTON"><SAMP 
+  class="einst">BUTTON</SAMP></A> element or the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-INPUT"><SAMP 
+  class="einst">INPUT</SAMP></A> element. Please consult the definitions of 
+  these elements for details about specifying different button types.</P>
+  <DIV class="note">
+  <P><EM><STRONG>Note.</STRONG> Authors should note that the <A class="noxref" 
+  href="http://www.w3.org/TR/html401/interact/forms.html#edef-BUTTON"><SAMP 
+  class="einst">BUTTON</SAMP></A> element offers richer rendering capabilities 
+  than the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-INPUT"><SAMP 
+  class="einst">INPUT</SAMP></A> element.</EM></P></DIV></DD>
+  <DT><SPAN title="checkbox" class="index-def"><A name="checkbox"><STRONG>
+  checkboxes</STRONG></A></SPAN></DT>
+  <DD>Checkboxes (and radio buttons) are on/off switches that may be toggled by
+   the user. A switch is "on" when the control element's <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-checked"><SAMP 
+  class="ainst">checked</SAMP></A> attribute is set. When a form is submitted, 
+  only "on" checkbox controls can become <A href="http://www.w3.org/TR/html401/interact/forms.html#successful-controls">successful</A>. 
+   
+  <P>Several checkboxes in a form may share the same <A href="http://www.w3.org/TR/html401/interact/forms.html#control-name">
+  control name.</A> Thus, for example, checkboxes allow users to select several
+   values for the same property. The <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-INPUT"><SAMP 
+  class="einst">INPUT</SAMP></A> element is used to create a checkbox 
+  control.</P></DD>
+  <DT><SPAN title="radio button" class="index-def"><A name="radio"><STRONG>radio
+   buttons</STRONG></A></SPAN></DT>
+  <DD>Radio buttons are like checkboxes except that when several share the same 
+  <A 
+  href="http://www.w3.org/TR/html401/interact/forms.html#control-name">control 
+  name</A>, they are mutually exclusive: when one is switched "on", all others 
+  with the same name are switched "off". The <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-INPUT"><SAMP 
+  class="einst">INPUT</SAMP></A> element is used to create a radio button 
+  control.</DD>
+  <DD>If no radio button in a set sharing the same control name is initially
+   "on", user agent behavior for choosing which control is initially "on" is
+   undefined. <STRONG>Note.</STRONG> Since existing implementations handle this
+   case differently, the current specification differs from RFC 1866 (<A class="normref" 
+  href="http://www.w3.org/TR/html401/references.html#ref-RFC1866" rel="biblioentry">[RFC1866]</A> 
+  section 8.1.2.4), which states:  
+  <BLOCKQUOTE>At all times, exactly one of the radio buttons in a set is 
+    checked. If none of the &lt;INPUT&gt; elements of a set of radio buttons 
+    specifies `CHECKED', then the user agent must check the first radio button 
+    of the set initially.</BLOCKQUOTE>
+  <P>Since user agent behavior differs, authors should ensure that in each set 
+  of radio buttons that one is initially "on".</P></DD>
+  <DT><SPAN title="menu" class="index-def"><A name="menu"><STRONG>
+  menus</STRONG></A></SPAN></DT>
+  <DD>Menus offer users options from which to choose. The <A class="noxref" 
+  href="http://www.w3.org/TR/html401/interact/forms.html#edef-SELECT"><SAMP 
+  class="einst">SELECT</SAMP></A> element creates a menu, in combination with 
+  the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-OPTGROUP"><SAMP 
+  class="einst">OPTGROUP</SAMP></A> and <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-OPTION"><SAMP 
+  class="einst">OPTION</SAMP></A> elements.</DD>
+  <DT><SPAN title="text input control" class="index-def"><A 
+  name="text-input"><STRONG>text input</STRONG></A></SPAN></DT>
+  <DD>Authors may create two types of controls that allow users to input text.
+   The <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-INPUT"><SAMP 
+  class="einst">INPUT</SAMP></A> element creates a single-line input control and 
+  the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-TEXTAREA"><SAMP 
+  class="einst">TEXTAREA</SAMP></A> element creates a multi-line input control. 
+  In both cases, the input text becomes the control's <A href="http://www.w3.org/TR/html401/interact/forms.html#current-value">current
+   value</A>.</DD>
+  <DT><SPAN title="file select control" class="index-def"><A 
+  name="file-select"><STRONG>file select</STRONG></A></SPAN></DT>
+  <DD>This control type allows the user to select files so that their contents
+   may be submitted with a form. The <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-INPUT"><SAMP 
+  class="einst">INPUT</SAMP></A> element is used to create a file select 
+  control.</DD>
+  <DT><SPAN title="hidden control" class="index-def"><A 
+  name="hidden-control"><STRONG>hidden controls</STRONG></A></SPAN></DT>
+  <DD>Authors may create controls that are not rendered but whose values are
+   submitted with a form. Authors generally use this control type to store
+   information between client/server exchanges that would otherwise be lost due 
+  to the stateless nature of HTTP (see <A class="informref" href="http://www.w3.org/TR/html401/references.html#ref-RFC2616" 
+  rel="biblioentry">[RFC2616]</A>). The <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-INPUT"><SAMP 
+  class="einst">INPUT</SAMP></A> element is used to create a hidden 
+control.</DD>
+  <DT><SPAN title="object control|object::in form" class="index-def"><A name="object-control"><STRONG>object 
+  controls</STRONG></A></SPAN></DT>
+  <DD>Authors may insert generic objects in forms such that associated values 
+  are submitted along with other controls. Authors create object controls with 
+  the <A class="noxref" href="http://www.w3.org/TR/html401/struct/objects.html#edef-OBJECT"><SAMP 
+  class="einst">OBJECT</SAMP></A> element.</DD></DL>
+<P>The elements used to create controls generally appear inside a <A class="noxref" 
+href="http://www.w3.org/TR/html401/interact/forms.html#edef-FORM"><SAMP class="einst">FORM</SAMP></A>
+ element, but may also appear outside of a <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-FORM"><SAMP 
+class="einst">FORM</SAMP></A> element declaration when they are used to build 
+user interfaces. This is discussed in the section on <A href="http://www.w3.org/TR/html401/interact/scripts.html#events">intrinsic 
+events.</A> Note that controls outside a form cannot be <A href="http://www.w3.org/TR/html401/interact/forms.html#successful-controls">successful 
+controls</A>.</P>
+<H2><A name="h-17.3">17.3</A> The <A name="edef-FORM"><SAMP class="edef">
+FORM</SAMP></A> element</H2>
+<DIV class="dtd-fragment">
+<PRE class="dtd-fragment">&lt;!ELEMENT <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-FORM"><SAMP class="einst">FORM</SAMP></A> - - (<A href="http://www.w3.org/TR/html401/sgml/dtd.html#block">%block;</A>|SCRIPT)+ -(FORM) -- interactive form --&gt;
+&lt;!ATTLIST FORM
+  <A href="http://www.w3.org/TR/html401/sgml/dtd.html#attrs">%attrs;</A>                              -- <A href="http://www.w3.org/TR/html401/sgml/dtd.html#coreattrs">%coreattrs</A>, <A href="http://www.w3.org/TR/html401/sgml/dtd.html#i18n">%i18n</A>, <A href="http://www.w3.org/TR/html401/sgml/dtd.html#events">%events</A> --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-action"><SAMP class="ainst-FORM">action</SAMP></A>      <A href="http://www.w3.org/TR/html401/sgml/dtd.html#URI">%URI;</A>          #REQUIRED -- server-side form handler --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-method"><SAMP class="ainst-FORM">method</SAMP></A>      (GET|POST)     GET       -- HTTP method used to submit the form--
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-enctype"><SAMP class="ainst-FORM">enctype</SAMP></A>     <A href="http://www.w3.org/TR/html401/sgml/dtd.html#ContentType">%ContentType;</A>  "application/x-www-form-urlencoded"
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-accept"><SAMP class="ainst">accept</SAMP></A>      <A href="http://www.w3.org/TR/html401/sgml/dtd.html#ContentTypes">%ContentTypes;</A> #IMPLIED  -- list of MIME types for file upload --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-name-FORM"><SAMP class="ainst-FORM">name</SAMP></A>        <A href="http://www.w3.org/TR/html401/types.html#type-cdata">CDATA</A>          #IMPLIED  -- name of form for scripting --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onsubmit"><SAMP class="ainst-FORM">onsubmit</SAMP></A>    <A href="http://www.w3.org/TR/html401/sgml/dtd.html#Script">%Script;</A>       #IMPLIED  -- the form was submitted --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onreset"><SAMP class="ainst-FORM">onreset</SAMP></A>     <A href="http://www.w3.org/TR/html401/sgml/dtd.html#Script">%Script;</A>       #IMPLIED  -- the form was reset --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-accept-charset"><SAMP class="ainst-FORM">accept-charset</SAMP></A> <A href="http://www.w3.org/TR/html401/sgml/dtd.html#Charsets">%Charsets;</A>  #IMPLIED  -- list of supported charsets --
+  &gt;
+</PRE></DIV>
+<P><EM>Start tag: <STRONG>required</STRONG>, End tag: <STRONG>
+required</STRONG></EM></P>
+<DIV class="adef-list">
+<P><EM>Attribute definitions</EM></P>
+<DL>
+  <DT><A name="adef-action"><SAMP class="adef">action</SAMP></A> = <A href="http://www.w3.org/TR/html401/types.html#type-uri"><EM>uri</EM></A> 
+  <A 
+  href="http://www.w3.org/TR/html401/types.html#see-type-for-case">[CT]</A></DT>
+  <DD>This attribute specifies a form processing agent. User agent behavior for 
+  a value other than an HTTP URI is undefined.</DD>
+  <DT><A name="adef-method"><SAMP class="adef">method</SAMP></A> = <SAMP>
+  get|post</SAMP> <A href="http://www.w3.org/TR/html401/types.html#case-insensitive">[CI]</A></DT>
+  <DD>This attribute specifies which HTTP method will be used to submit the <A 
+  href="http://www.w3.org/TR/html401/interact/forms.html#form-data-set">form 
+  data set</A>. Possible (case-insensitive) values are "get" (the default) and 
+  "post". See the section on <A href="http://www.w3.org/TR/html401/interact/forms.html#submit-format">
+  form submission</A> for usage information.</DD>
+  <DT><A name="adef-enctype"><SAMP class="adef">enctype</SAMP></A> = <A href="http://www.w3.org/TR/html401/types.html#type-content-type"><EM>content-type</EM></A> 
+  <A 
+  href="http://www.w3.org/TR/html401/types.html#case-insensitive">[CI]</A></DT>
+  <DD>This attribute specifies the <A href="http://www.w3.org/TR/html401/interact/forms.html#form-content-type">content 
+  type</A> used to submit the form to the server (when the value of <A class="noxref" 
+  href="http://www.w3.org/TR/html401/interact/forms.html#adef-method"><SAMP 
+  class="ainst">method</SAMP></A> is "post"). The default value for this 
+  attribute is <SPAN title="application/x-www-form-urlencoded" class="index-inst"><A 
+  name="idx-applicationx-www-form-urlencoded-1">
+  "application/x-www-form-urlencoded"</A></SPAN>. The value <SPAN title="multipart/form-data" 
+  class="index-inst"><A name="idx-multipartform-data-1">
+  "multipart/form-data"</A></SPAN> should be used in combination with the <A 
+  class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-INPUT"><SAMP 
+  class="einst">INPUT</SAMP></A> element, <SAMP 
+  class="ainst">type</SAMP>="file".</DD>
+  <DT><A name="adef-accept-charset"><SAMP class="adef">accept-charset</SAMP></A>
+   = <A href="http://www.w3.org/TR/html401/types.html#type-charset"><EM>charset 
+  list</EM></A> <A href="http://www.w3.org/TR/html401/types.html#case-insensitive">[CI]</A></DT>
+  <DD>This attribute specifies the list of <SPAN title="character encoding::for form submission" 
+  class="index-inst"><A name="idx-character_encoding" href="http://www.w3.org/TR/html401/charset.html#doc-char-set">character 
+  encodings</A></SPAN> for input data that is accepted by the server processing 
+  this form. The value is a space- and/or comma-delimited list of <A href="http://www.w3.org/TR/html401/types.html#type-charset">charset</A>
+   values. The client must interpret this list as an exclusive-or list, i.e., 
+  the server is able to accept any single character encoding per entity 
+  received.  
+  <P>The default value for this attribute is the reserved string "UNKNOWN". User
+   agents may interpret this value as the character encoding that was used to
+   transmit the document containing this <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-FORM"><SAMP 
+  class="einst">FORM</SAMP></A> element.</P></DD>
+  <DT><A name="adef-accept"><SAMP class="adef">accept</SAMP></A> = <A href="http://www.w3.org/TR/html401/types.html#type-content-type"><EM>content-type-list</EM></A> 
+  <A 
+  href="http://www.w3.org/TR/html401/types.html#case-insensitive">[CI]</A></DT>
+  <DD>This attribute specifies a comma-separated list of content types that a
+   server processing this form will handle correctly. User agents may use this
+   information to filter out non-conforming files when prompting a user to 
+  select files to be sent to the server (cf. the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-INPUT"><SAMP 
+  class="einst">INPUT</SAMP></A> element when <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-type-INPUT"><SAMP 
+  class="ainst-INPUT">type</SAMP></A>="file").</DD>
+  <DT><A name="adef-name-FORM"><SAMP class="adef">name</SAMP></A> = <A href="http://www.w3.org/TR/html401/types.html#type-cdata"><EM>cdata</EM></A> 
+  <A 
+  href="http://www.w3.org/TR/html401/types.html#case-insensitive">[CI]</A></DT>
+  <DD>This attribute names the element so that it may be referred to from style
+   sheets or scripts. <STRONG>Note.</STRONG> This attribute has been included 
+  for backwards compatibility. Applications should use the <A class="noxref" 
+  href="http://www.w3.org/TR/html401/struct/global.html#adef-id"><SAMP class="ainst">
+  id</SAMP></A> attribute to identify elements.</DD></DL></DIV>
+<DIV class="aref-list">
+<P><EM>Attributes defined elsewhere</EM></P>
+<UL>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/struct/global.html#adef-id"><SAMP 
+  class="ainst">id</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/struct/global.html#adef-class"><SAMP 
+  class="ainst">class</SAMP></A> (<A href="http://www.w3.org/TR/html401/struct/global.html#id-and-class">document-wide 
+  identifiers</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/struct/dirlang.html#adef-lang"><SAMP 
+  class="ainst">lang</SAMP></A> (<A href="http://www.w3.org/TR/html401/struct/dirlang.html#language-info">language 
+  information</A>), <A class="noxref" href="http://www.w3.org/TR/html401/struct/dirlang.html#adef-dir"><SAMP 
+  class="ainst">dir</SAMP></A> (<A href="http://www.w3.org/TR/html401/struct/dirlang.html#bidirection">text
+   direction</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/present/styles.html#adef-style"><SAMP 
+  class="ainst">style</SAMP></A> (<A href="http://www.w3.org/TR/html401/present/styles.html#style-element">inline
+   style information</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/struct/global.html#adef-title"><SAMP 
+  class="ainst">title</SAMP></A> (<A href="http://www.w3.org/TR/html401/struct/global.html#title">element
+   title</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/present/frames.html#adef-target"><SAMP 
+  class="ainst">target</SAMP></A> (<A href="http://www.w3.org/TR/html401/present/frames.html#target-info">target
+   frame information</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onsubmit"><SAMP 
+  class="ainst">onsubmit</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onreset"><SAMP 
+  class="ainst">onreset</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onclick"><SAMP 
+  class="ainst">onclick</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-ondblclick"><SAMP 
+  class="ainst">ondblclick</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onmousedown"><SAMP 
+  class="ainst">onmousedown</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onmouseup"><SAMP 
+  class="ainst">onmouseup</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onmouseover"><SAMP 
+  class="ainst">onmouseover</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onmousemove"><SAMP 
+  class="ainst">onmousemove</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onmouseout"><SAMP 
+  class="ainst">onmouseout</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onkeypress"><SAMP 
+  class="ainst">onkeypress</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onkeydown"><SAMP 
+  class="ainst">onkeydown</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onkeyup"><SAMP 
+  class="ainst">onkeyup</SAMP></A> (<A href="http://www.w3.org/TR/html401/interact/scripts.html#events">intrinsic 
+  events</A>)</LI></UL></DIV>
+<P>The <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-FORM"><SAMP 
+class="einst">FORM</SAMP></A> element acts as a container for <A href="http://www.w3.org/TR/html401/interact/forms.html#form-controls">
+controls</A>. It specifies:</P>
+<UL>
+  <LI>The layout of the form (given by the contents of the element).</LI>
+  <LI>The program that will handle the completed and submitted form (the <A 
+  class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-action"><SAMP 
+  class="ainst">action</SAMP></A> attribute). The receiving program must be able 
+  to parse name/value pairs in order to make use of them.</LI>
+  <LI>The method by which user data will be sent to the server (the <A class="noxref" 
+  href="http://www.w3.org/TR/html401/interact/forms.html#adef-method"><SAMP 
+  class="ainst">method</SAMP></A> attribute).</LI>
+  <LI>A character encoding that must be accepted by the server in order to 
+  handle this form (the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-accept-charset"><SAMP 
+  class="ainst">accept-charset</SAMP></A> attribute). User agents may advise the
+   user of the value of the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-accept-charset"><SAMP 
+  class="ainst">accept-charset</SAMP></A> attribute and/or restrict the user's 
+  ability to enter unrecognized characters.</LI></UL>
+<P>A form can contain text and markup (paragraphs, lists, etc.) in addition to 
+<A href="http://www.w3.org/TR/html401/interact/forms.html#form-controls">form 
+controls.</A></P>
+<DIV class="example">
+<P>The following example shows a form that is to be processed by the "adduser"
+ program when submitted. The form will be sent to the program using the HTTP
+ "post" method.</P>
+<PRE> &lt;FORM action="http://somesite.com/prog/adduser" method="post"&gt;
+ <EM>...form contents...</EM>
+ &lt;/FORM&gt;
+</PRE></DIV>
+<P>Please consult the section on <A href="http://www.w3.org/TR/html401/interact/forms.html#submit-format">form 
+submission</A> for information about how user agents must prepare form data for 
+servers and how user agents should handle expected responses.</P>
+<DIV class="note">
+<P><EM><STRONG>Note.</STRONG> Further discussion on the behavior of servers that 
+receive form data is beyond the scope of this specification.</EM></P></DIV>
+<H2><A name="h-17.4">17.4</A> The <A name="edef-INPUT"><SAMP class="edef">
+INPUT</SAMP></A> element</H2>
+<DIV class="dtd-fragment">
+<PRE class="dtd-fragment">&lt;!ENTITY % InputType
+  "(TEXT | PASSWORD | CHECKBOX |
+    RADIO | SUBMIT | RESET |
+    FILE | HIDDEN | IMAGE | BUTTON)"
+   &gt;
+
+&lt;!-- attribute name required for all but submit and reset --&gt;
+&lt;!ELEMENT <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-INPUT"><SAMP class="einst">INPUT</SAMP></A> - O EMPTY              -- form control --&gt;
+&lt;!ATTLIST INPUT
+  <A href="http://www.w3.org/TR/html401/sgml/dtd.html#attrs">%attrs;</A>                              -- <A href="http://www.w3.org/TR/html401/sgml/dtd.html#coreattrs">%coreattrs</A>, <A href="http://www.w3.org/TR/html401/sgml/dtd.html#i18n">%i18n</A>, <A href="http://www.w3.org/TR/html401/sgml/dtd.html#events">%events</A> --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-type-INPUT"><SAMP class="ainst-INPUT">type</SAMP></A>        <A href="http://www.w3.org/TR/html401/sgml/dtd.html#InputType">%InputType;</A>    TEXT      -- what kind of widget is needed --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-name-INPUT"><SAMP class="ainst-INPUT">name</SAMP></A>        <A href="http://www.w3.org/TR/html401/types.html#type-cdata">CDATA</A>          #IMPLIED  -- submit as part of form --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-value-INPUT"><SAMP class="ainst-INPUT">value</SAMP></A>       <A href="http://www.w3.org/TR/html401/types.html#type-cdata">CDATA</A>          #IMPLIED  -- Specify for radio buttons and checkboxes --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-checked"><SAMP class="ainst-INPUT">checked</SAMP></A>     (checked)      #IMPLIED  -- for radio buttons and check boxes --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-disabled"><SAMP class="ainst-INPUT">disabled</SAMP></A>    (disabled)     #IMPLIED  -- unavailable in this context --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-readonly"><SAMP class="ainst-INPUT">readonly</SAMP></A>    (readonly)     #IMPLIED  -- for text and passwd --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-size-INPUT"><SAMP class="ainst-INPUT">size</SAMP></A>        <A href="http://www.w3.org/TR/html401/types.html#type-cdata">CDATA</A>          #IMPLIED  -- specific to each type of field --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-maxlength"><SAMP class="ainst-INPUT">maxlength</SAMP></A>   <A href="http://www.w3.org/TR/html401/types.html#type-number">NUMBER</A>         #IMPLIED  -- max chars for text fields --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-src"><SAMP class="ainst-INPUT">src</SAMP></A>         <A href="http://www.w3.org/TR/html401/sgml/dtd.html#URI">%URI;</A>          #IMPLIED  -- for fields with images --
+  <A class="noxref" href="http://www.w3.org/TR/html401/struct/objects.html#adef-alt"><SAMP class="ainst-INPUT">alt</SAMP></A>         <A href="http://www.w3.org/TR/html401/types.html#type-cdata">CDATA</A>          #IMPLIED  -- short description --
+  <A class="noxref" href="http://www.w3.org/TR/html401/struct/objects.html#adef-usemap"><SAMP class="ainst-INPUT">usemap</SAMP></A>      <A href="http://www.w3.org/TR/html401/sgml/dtd.html#URI">%URI;</A>          #IMPLIED  -- use client-side image map --
+  <A class="noxref" href="http://www.w3.org/TR/html401/struct/objects.html#adef-ismap"><SAMP class="ainst">ismap</SAMP></A>       (ismap)        #IMPLIED  -- use server-side image map --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-tabindex"><SAMP class="ainst-INPUT">tabindex</SAMP></A>    <A href="http://www.w3.org/TR/html401/types.html#type-number">NUMBER</A>         #IMPLIED  -- position in tabbing order --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-accesskey"><SAMP class="ainst-INPUT">accesskey</SAMP></A>   <A href="http://www.w3.org/TR/html401/sgml/dtd.html#Character">%Character;</A>    #IMPLIED  -- accessibility key character --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onfocus"><SAMP class="ainst-INPUT">onfocus</SAMP></A>     <A href="http://www.w3.org/TR/html401/sgml/dtd.html#Script">%Script;</A>       #IMPLIED  -- the element got the focus --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onblur"><SAMP class="ainst-INPUT">onblur</SAMP></A>      <A href="http://www.w3.org/TR/html401/sgml/dtd.html#Script">%Script;</A>       #IMPLIED  -- the element lost the focus --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onselect"><SAMP class="ainst-INPUT">onselect</SAMP></A>    <A href="http://www.w3.org/TR/html401/sgml/dtd.html#Script">%Script;</A>       #IMPLIED  -- some text was selected --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onchange"><SAMP class="ainst-INPUT">onchange</SAMP></A>    <A href="http://www.w3.org/TR/html401/sgml/dtd.html#Script">%Script;</A>       #IMPLIED  -- the element value was changed --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-accept"><SAMP class="ainst">accept</SAMP></A>      <A href="http://www.w3.org/TR/html401/sgml/dtd.html#ContentTypes">%ContentTypes;</A> #IMPLIED  -- list of MIME types for file upload --
+  &gt;
+</PRE></DIV>
+<P><EM>Start tag: <STRONG>required</STRONG>, End tag: <STRONG>
+forbidden</STRONG></EM></P>
+<DIV class="adef-list">
+<P><EM>Attribute definitions</EM></P>
+<DL>
+  <DT><A name="adef-type-INPUT"><SAMP class="adef">type</SAMP></A> = <SAMP>
+  text|password|checkbox|radio|submit|reset|file|hidden|image|button</SAMP> <A 
+  href="http://www.w3.org/TR/html401/types.html#case-insensitive">[CI]</A></DT>
+  <DD>This attribute specifies the <A href="http://www.w3.org/TR/html401/interact/forms.html#input-control-types">type 
+  of control</A> to create. The default value for this attribute is "text".</DD>
+  <DT><A name="adef-name-INPUT"><SAMP class="adef">name</SAMP></A> = <A href="http://www.w3.org/TR/html401/types.html#type-cdata"><EM>cdata</EM></A> 
+  <A 
+  href="http://www.w3.org/TR/html401/types.html#case-insensitive">[CI]</A></DT>
+  <DD>This attribute assigns the <A href="http://www.w3.org/TR/html401/interact/forms.html#control-name">control 
+  name</A>.</DD>
+  <DT><A name="adef-value-INPUT"><SAMP class="adef">value</SAMP></A> = <A href="http://www.w3.org/TR/html401/types.html#type-cdata"><EM>cdata</EM></A> 
+  <A href="http://www.w3.org/TR/html401/types.html#case-attribute">[CA]</A></DT>
+  <DD>This attribute specifies the <A href="http://www.w3.org/TR/html401/interact/forms.html#initial-value">initial 
+  value</A> of the control. It is optional except when the <A class="noxref" 
+  href="http://www.w3.org/TR/html401/interact/forms.html#adef-type-INPUT"><SAMP 
+  class="ainst-INPUT">type</SAMP></A> attribute has the value "radio" or 
+  "checkbox".</DD>
+  <DT><A name="adef-size-INPUT"><SAMP class="adef">size</SAMP></A> = <A href="http://www.w3.org/TR/html401/types.html#type-cdata"><EM>cdata</EM></A> 
+  <A href="http://www.w3.org/TR/html401/types.html#case-neutral">[CN]</A></DT>
+  <DD>This attribute tells the user agent the initial width of the control. The
+   width is given in <A href="http://www.w3.org/TR/html401/types.html#type-pixels">pixels</A> 
+  except when <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-type-INPUT"><SAMP 
+  class="ainst-INPUT">type</SAMP></A> attribute has the value "text" or 
+  "password". In that case, its value refers to the (integer) number of 
+  characters.</DD>
+  <DT><A name="adef-maxlength"><SAMP class="adef">maxlength</SAMP></A> = <A 
+  href="http://www.w3.org/TR/html401/types.html#type-number"><EM>number</EM></A> 
+  <A href="http://www.w3.org/TR/html401/types.html#case-neutral">[CN]</A></DT>
+  <DD>When the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-type-INPUT"><SAMP 
+  class="ainst-INPUT">type</SAMP></A> attribute has the value "text" or 
+  "password", this attribute specifies the maximum number of characters the user 
+  may enter. This number may exceed the specified <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-size-INPUT"><SAMP 
+  class="ainst-INPUT">size</SAMP></A>, in which case the user agent should offer 
+  a scrolling mechanism. The default value for this attribute is an unlimited 
+  number.</DD>
+  <DT><A name="adef-checked"><SAMP class="adef">checked</SAMP></A> <A href="http://www.w3.org/TR/html401/types.html#case-insensitive">[CI]</A></DT>
+  <DD>When the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-type-INPUT"><SAMP 
+  class="ainst-INPUT">type</SAMP></A> attribute has the value "radio" or 
+  "checkbox", this boolean attribute specifies that the button is on. User 
+  agents must ignore this attribute for other control types.</DD>
+  <DT><A name="adef-src"><SAMP class="adef">src</SAMP></A> = <A href="http://www.w3.org/TR/html401/types.html#type-uri"><EM>uri</EM></A> 
+  <A 
+  href="http://www.w3.org/TR/html401/types.html#see-type-for-case">[CT]</A></DT>
+  <DD>When the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-type-INPUT"><SAMP 
+  class="ainst-INPUT">type</SAMP></A> attribute has the value "image", this 
+  attribute specifies the location of the image to be used to decorate the 
+  graphical submit button.</DD></DL></DIV>
+<DIV class="aref-list">
+<P><EM>Attributes defined elsewhere</EM></P>
+<UL>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/struct/global.html#adef-id"><SAMP 
+  class="ainst">id</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/struct/global.html#adef-class"><SAMP 
+  class="ainst">class</SAMP></A> (<A href="http://www.w3.org/TR/html401/struct/global.html#id-and-class">document-wide 
+  identifiers</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/struct/dirlang.html#adef-lang"><SAMP 
+  class="ainst">lang</SAMP></A> (<A href="http://www.w3.org/TR/html401/struct/dirlang.html#language-info">language 
+  information</A>), <A class="noxref" href="http://www.w3.org/TR/html401/struct/dirlang.html#adef-dir"><SAMP 
+  class="ainst">dir</SAMP></A> (<A href="http://www.w3.org/TR/html401/struct/dirlang.html#bidirection">text
+   direction</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/struct/global.html#adef-title"><SAMP 
+  class="ainst">title</SAMP></A> (<A href="http://www.w3.org/TR/html401/struct/global.html#title">element
+   title</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/present/styles.html#adef-style"><SAMP 
+  class="ainst">style</SAMP></A> (<A href="http://www.w3.org/TR/html401/present/styles.html#style-element">inline
+   style information</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/struct/objects.html#adef-alt"><SAMP 
+  class="ainst">alt</SAMP></A> (<A href="http://www.w3.org/TR/html401/struct/objects.html#alternate-text">alternate 
+  text</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/present/graphics.html#adef-align"><SAMP 
+  class="ainst">align</SAMP></A> (<A href="http://www.w3.org/TR/html401/present/graphics.html#alignment">alignment</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-accept"><SAMP 
+  class="ainst">accept</SAMP></A> (<A href="http://www.w3.org/TR/html401/interact/forms.html#edef-FORM">legal 
+  content types for a server</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-readonly"><SAMP 
+  class="ainst">readonly</SAMP></A> (<A href="http://www.w3.org/TR/html401/interact/forms.html#read-only">read-only 
+  input controls</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-disabled"><SAMP 
+  class="ainst">disabled</SAMP></A> (<A href="http://www.w3.org/TR/html401/interact/forms.html#disabled">disabled 
+  input controls</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-tabindex"><SAMP 
+  class="ainst">tabindex</SAMP></A> (<A href="http://www.w3.org/TR/html401/interact/forms.html#tabbing-navigation">tabbing 
+  navigation</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-accesskey"><SAMP 
+  class="ainst">accesskey</SAMP></A> (<A href="http://www.w3.org/TR/html401/interact/forms.html#access-keys">access
+   keys</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/struct/objects.html#adef-usemap"><SAMP 
+  class="ainst">usemap</SAMP></A> (<A href="http://www.w3.org/TR/html401/struct/objects.html#edef-MAP">client-side 
+  image maps</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/struct/objects.html#adef-ismap"><SAMP 
+  class="ainst">ismap</SAMP></A> (<A href="http://www.w3.org/TR/html401/struct/objects.html#server-side">server-side 
+  image maps</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onfocus"><SAMP 
+  class="ainst">onfocus</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onblur"><SAMP 
+  class="ainst">onblur</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onselect"><SAMP 
+  class="ainst">onselect</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onchange"><SAMP 
+  class="ainst">onchange</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onclick"><SAMP 
+  class="ainst">onclick</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-ondblclick"><SAMP 
+  class="ainst">ondblclick</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onmousedown"><SAMP 
+  class="ainst">onmousedown</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onmouseup"><SAMP 
+  class="ainst">onmouseup</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onmouseover"><SAMP 
+  class="ainst">onmouseover</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onmousemove"><SAMP 
+  class="ainst">onmousemove</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onmouseout"><SAMP 
+  class="ainst">onmouseout</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onkeypress"><SAMP 
+  class="ainst">onkeypress</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onkeydown"><SAMP 
+  class="ainst">onkeydown</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onkeyup"><SAMP 
+  class="ainst">onkeyup</SAMP></A> (<A href="http://www.w3.org/TR/html401/interact/scripts.html#events">intrinsic 
+  events</A>)</LI></UL></DIV>
+<H3><A name="h-17.4.1">17.4.1</A> <A name="input-control-types">Control types
+ created with INPUT</A></H3>
+<P>The <A 
+href="http://www.w3.org/TR/html401/interact/forms.html#form-controls">control 
+type</A> defined by the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-INPUT"><SAMP 
+class="einst">INPUT</SAMP></A> element depends on the value of the <A class="noxref" 
+href="http://www.w3.org/TR/html401/interact/forms.html#adef-type-INPUT"><SAMP 
+class="ainst-INPUT">type</SAMP></A> attribute:</P>
+<DL>
+  <DT><STRONG>text</STRONG></DT>
+  <DD><SPAN title="text input control::single-line" class="index-inst">Creates a
+   single-line <A name="idx-text_input_control-1" href="http://www.w3.org/TR/html401/interact/forms.html#text-input">text
+   input</A> control.</SPAN></DD>
+  <DT><STRONG>password</STRONG></DT>
+  <DD><SPAN title="password input control" class="index-inst"><A name="idx-password_input_control">Like 
+  "text",</A></SPAN> but the input text is rendered in such a way as to hide the 
+  characters (e.g., a series of asterisks). This control type is often used for 
+  sensitive input such as passwords. Note that the <A href="http://www.w3.org/TR/html401/interact/forms.html#current-value">current 
+  value</A> is the text <EM>entered</EM> by the user, not the text rendered by 
+  the user agent.  
+  <DIV class="note">
+  <P><EM><SPAN title="security::of password control" class="index-inst"><A name="idx-security"><STRONG>Note.</STRONG></A></SPAN> 
+  Application designers should note that this mechanism affords only light 
+  security protection. Although the password is masked by user agents from 
+  casual observers, it is transmitted to the server in clear text, and may be 
+  read by anyone with low-level access to the network.</EM></P></DIV></DD>
+  <DT><STRONG>checkbox</STRONG></DT>
+  <DD>Creates a <A href="http://www.w3.org/TR/html401/interact/forms.html#checkbox">checkbox.</A></DD>
+  <DT><STRONG>radio</STRONG></DT>
+  <DD>Creates a <A 
+  href="http://www.w3.org/TR/html401/interact/forms.html#radio">radio 
+  button.</A></DD>
+  <DT><STRONG>submit</STRONG></DT>
+  <DD>Creates a <A href="http://www.w3.org/TR/html401/interact/forms.html#submit-button">submit 
+  button.</A></DD>
+  <DT><STRONG>image</STRONG></DT>
+  <DD>Creates a graphical <A href="http://www.w3.org/TR/html401/interact/forms.html#submit-button">submit 
+  button.</A> The value of the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-src"><SAMP 
+  class="ainst">src</SAMP></A> attribute specifies the URI of the image that 
+  will decorate the button. For accessibility reasons, authors should provide <A 
+  href="http://www.w3.org/TR/html401/struct/objects.html#alternate-text">alternate 
+  text</A> for the image via the <A class="noxref" href="http://www.w3.org/TR/html401/struct/objects.html#adef-alt"><SAMP 
+  class="ainst">alt</SAMP></A> attribute.  
+  <P><SPAN title="coordinates::of form submit click" class="index-inst"><A name="idx-coordinates">When 
+  a pointing device is used to click on the image,</A></SPAN> the form is 
+  submitted and the click coordinates passed to the server. The x value is 
+  measured in <A href="http://www.w3.org/TR/html401/types.html#type-pixels">
+  pixels</A> from the left of the image, and the y value in <A href="http://www.w3.org/TR/html401/types.html#type-pixels">pixels</A> 
+  from the top of the image. The submitted data includes 
+  <EM>name</EM>.x=<EM>x-value</EM> and <EM>name</EM>.y=<EM>y-value</EM> where 
+  <EM>"name"</EM> is the value of the <SAMP class="ainst">name</SAMP> attribute, 
+  and <EM>x-value</EM> and <EM>y-value</EM> are the x and y coordinate values, 
+  respectively.</P>
+  <P>If the server takes different actions depending on the location clicked,
+   users of non-graphical browsers will be disadvantaged. For this reason, 
+  authors should consider alternate approaches:</P>
+  <UL>
+    <LI>Use multiple submit buttons (each with its own image) in place of a 
+    single graphical submit button. Authors may use style sheets to control the
+     positioning of these buttons.</LI>
+    <LI>Use a <A href="http://www.w3.org/TR/html401/struct/objects.html#include-maps">client-side 
+    image map</A> together with scripting.</LI></UL></DD>
+  <DT><STRONG>reset</STRONG></DT>
+  <DD>Creates a <A href="http://www.w3.org/TR/html401/interact/forms.html#reset-button">reset 
+  button.</A></DD>
+  <DT><STRONG>button</STRONG></DT>
+  <DD>Creates a <A href="http://www.w3.org/TR/html401/interact/forms.html#push-button">push 
+  button.</A> User agents should use the value of the <SAMP 
+  class="ainst">value</SAMP> attribute as the button's label.</DD>
+  <DT><STRONG>hidden</STRONG></DT>
+  <DD>Creates a <A href="http://www.w3.org/TR/html401/interact/forms.html#hidden-control">hidden 
+  control.</A></DD>
+  <DT><STRONG>file</STRONG></DT>
+  <DD>Creates a <A href="http://www.w3.org/TR/html401/interact/forms.html#file-select">file 
+  select</A> control. User agents may use the value of the <A class="noxref" 
+  href="http://www.w3.org/TR/html401/interact/forms.html#adef-value-INPUT"><SAMP 
+  class="ainst-INPUT">value</SAMP></A> attribute as the initial file 
+name.</DD></DL>
+<H3><A name="h-17.4.2">17.4.2</A> Examples of forms containing INPUT
+ controls</H3>
+<DIV class="example">
+<P>The following sample HTML fragment defines a simple form that allows the user 
+to enter a first name, last name, email address, and gender. When the submit 
+button is activated, the form will be sent to the program specified by the <A 
+class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-action"><SAMP 
+class="ainst">action</SAMP></A> attribute.</P>
+<PRE> &lt;FORM action="http://somesite.com/prog/adduser" method="post"&gt;
+    &lt;P&gt;
+    First name: &lt;INPUT type="text" name="firstname"&gt;&lt;BR&gt;
+    Last name: &lt;INPUT type="text" name="lastname"&gt;&lt;BR&gt;
+    email: &lt;INPUT type="text" name="email"&gt;&lt;BR&gt;
+    &lt;INPUT type="radio" name="sex" value="Male"&gt; Male&lt;BR&gt;
+    &lt;INPUT type="radio" name="sex" value="Female"&gt; Female&lt;BR&gt;
+    &lt;INPUT type="submit" value="Send"&gt; &lt;INPUT type="reset"&gt;
+    &lt;/P&gt;
+ &lt;/FORM&gt;
+</PRE>
+<P>This form might be rendered as follows:</P>
+<P><IMG alt="An example form rendering." src="Forms%20in%20HTML%20documents_files/form_exmpl.gif"></P>
+<P>In the section on the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-LABEL"><SAMP 
+class="einst">LABEL</SAMP></A> element, we discuss marking up labels such as
+ "First name".</P></DIV>
+<DIV class="example">
+<P>In this next example, the JavaScript function name <TT>verify</TT> is
+ triggered when the "onclick" event occurs:</P>
+<PRE>&lt;HEAD&gt;
+&lt;META http-equiv="Content-Script-Type" content="text/javascript"&gt;
+&lt;/HEAD&gt;
+&lt;BODY&gt;
+ &lt;FORM action="..." method="post"&gt;
+    &lt;P&gt;
+    &lt;INPUT type="button" value="Click Me" onclick="verify()"&gt;
+ &lt;/FORM&gt;
+&lt;/BODY&gt;
+</PRE>
+<P>Please consult the section on <A href="http://www.w3.org/TR/html401/interact/scripts.html#events">intrinsic
+ events</A> for more information about scripting and events.</P></DIV>
+<DIV class="example">
+<P>The following example shows how the contents of a user-specified file may be
+ submitted with a form. The user is prompted for his or her name and a list of
+ file names whose contents should be submitted with the form. By specifying the 
+<A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-enctype"><SAMP 
+class="ainst">enctype</SAMP></A> value of "multipart/form-data", each file's 
+contents will be packaged for submission in a separate section of a multipart 
+document.</P>
+<PRE>&lt;FORM action="http://server.dom/cgi/handle"
+    enctype="multipart/form-data"
+    method="post"&gt;
+ &lt;P&gt;
+ What is your name? &lt;INPUT type="text" name="name_of_sender"&gt;
+ What files are you sending? &lt;INPUT type="file" name="name_of_files"&gt;
+ &lt;/P&gt;
+&lt;/FORM&gt;
+</PRE></DIV>
+<H2><A name="h-17.5">17.5</A> The <A name="edef-BUTTON"><SAMP class="edef">
+BUTTON</SAMP></A> element</H2>
+<DIV class="dtd-fragment">
+<PRE class="dtd-fragment">&lt;!ELEMENT <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-BUTTON"><SAMP class="einst">BUTTON</SAMP></A> - -
+     (<A href="http://www.w3.org/TR/html401/sgml/dtd.html#flow">%flow;</A>)* -(A|<A href="http://www.w3.org/TR/html401/sgml/dtd.html#formctrl">%formctrl;</A>|FORM|FIELDSET)
+     -- push button --&gt;
+&lt;!ATTLIST BUTTON
+  <A href="http://www.w3.org/TR/html401/sgml/dtd.html#attrs">%attrs;</A>                              -- <A href="http://www.w3.org/TR/html401/sgml/dtd.html#coreattrs">%coreattrs</A>, <A href="http://www.w3.org/TR/html401/sgml/dtd.html#i18n">%i18n</A>, <A href="http://www.w3.org/TR/html401/sgml/dtd.html#events">%events</A> --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-name-BUTTON"><SAMP class="ainst-BUTTON">name</SAMP></A>        <A href="http://www.w3.org/TR/html401/types.html#type-cdata">CDATA</A>          #IMPLIED
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-value-BUTTON"><SAMP class="ainst-BUTTON">value</SAMP></A>       <A href="http://www.w3.org/TR/html401/types.html#type-cdata">CDATA</A>          #IMPLIED  -- sent to server when submitted --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-type-BUTTON"><SAMP class="ainst-BUTTON">type</SAMP></A>        (button|submit|reset) submit -- for use as form button --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-disabled"><SAMP class="ainst-BUTTON">disabled</SAMP></A>    (disabled)     #IMPLIED  -- unavailable in this context --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-tabindex"><SAMP class="ainst-BUTTON">tabindex</SAMP></A>    <A href="http://www.w3.org/TR/html401/types.html#type-number">NUMBER</A>         #IMPLIED  -- position in tabbing order --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-accesskey"><SAMP class="ainst-BUTTON">accesskey</SAMP></A>   <A href="http://www.w3.org/TR/html401/sgml/dtd.html#Character">%Character;</A>    #IMPLIED  -- accessibility key character --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onfocus"><SAMP class="ainst-BUTTON">onfocus</SAMP></A>     <A href="http://www.w3.org/TR/html401/sgml/dtd.html#Script">%Script;</A>       #IMPLIED  -- the element got the focus --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onblur"><SAMP class="ainst-BUTTON">onblur</SAMP></A>      <A href="http://www.w3.org/TR/html401/sgml/dtd.html#Script">%Script;</A>       #IMPLIED  -- the element lost the focus --
+  &gt;
+</PRE></DIV>
+<P><EM>Start tag: <STRONG>required</STRONG>, End tag: <STRONG>
+required</STRONG></EM></P>
+<DIV class="adef-list">
+<P><EM>Attribute definitions</EM></P>
+<DL>
+  <DT><A name="adef-name-BUTTON"><SAMP class="adef">name</SAMP></A> = <A href="http://www.w3.org/TR/html401/types.html#type-cdata"><EM>cdata</EM></A> 
+  <A 
+  href="http://www.w3.org/TR/html401/types.html#case-insensitive">[CI]</A></DT>
+  <DD>This attribute assigns the <A href="http://www.w3.org/TR/html401/interact/forms.html#control-name">control 
+  name.</A></DD>
+  <DT><A name="adef-value-BUTTON"><SAMP class="adef">value</SAMP></A> = <A href="http://www.w3.org/TR/html401/types.html#type-cdata"><EM>cdata</EM></A> 
+  <A href="http://www.w3.org/TR/html401/types.html#case-sensitive">[CS]</A></DT>
+  <DD>This attribute assigns the <A href="http://www.w3.org/TR/html401/interact/forms.html#initial-value">initial 
+  value</A> to the button.</DD>
+  <DT><A name="adef-type-BUTTON"><SAMP class="adef">type</SAMP></A> = <SAMP>
+  submit|button|reset</SAMP> <A href="http://www.w3.org/TR/html401/types.html#case-insensitive">
+  [CI]</A></DT>
+  <DD>This attribute declares the type of the button. Possible values:  
+  <UL>
+    <LI><SAMP>submit:</SAMP> Creates a <A href="http://www.w3.org/TR/html401/interact/forms.html#submit-button">submit 
+    button.</A> This is the default value.</LI>
+    <LI><SAMP>reset:</SAMP> Creates a <A href="http://www.w3.org/TR/html401/interact/forms.html#reset-button">reset
+     button.</A></LI>
+    <LI><SAMP>button:</SAMP> Creates a <A href="http://www.w3.org/TR/html401/interact/forms.html#push-button">push 
+    button.</A></LI></UL></DD></DL></DIV>
+<DIV class="aref-list">
+<P><EM>Attributes defined elsewhere</EM></P>
+<UL>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/struct/global.html#adef-id"><SAMP 
+  class="ainst">id</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/struct/global.html#adef-class"><SAMP 
+  class="ainst">class</SAMP></A> (<A href="http://www.w3.org/TR/html401/struct/global.html#id-and-class">document-wide 
+  identifiers</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/struct/dirlang.html#adef-lang"><SAMP 
+  class="ainst">lang</SAMP></A> (<A href="http://www.w3.org/TR/html401/struct/dirlang.html#language-info">language 
+  information</A>), <A class="noxref" href="http://www.w3.org/TR/html401/struct/dirlang.html#adef-dir"><SAMP 
+  class="ainst">dir</SAMP></A> (<A href="http://www.w3.org/TR/html401/struct/dirlang.html#bidirection">text
+   direction</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/struct/global.html#adef-title"><SAMP 
+  class="ainst">title</SAMP></A> (<A href="http://www.w3.org/TR/html401/struct/global.html#title">element
+   title</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/present/styles.html#adef-style"><SAMP 
+  class="ainst">style</SAMP></A> (<A href="http://www.w3.org/TR/html401/present/styles.html#style-element">inline
+   style information</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-disabled"><SAMP 
+  class="ainst">disabled</SAMP></A> (<A href="http://www.w3.org/TR/html401/interact/forms.html#disabled">disabled 
+  input controls</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-accesskey"><SAMP 
+  class="ainst">accesskey</SAMP></A> (<A href="http://www.w3.org/TR/html401/interact/forms.html#access-keys">access
+   keys</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-tabindex"><SAMP 
+  class="ainst">tabindex</SAMP></A> (<A href="http://www.w3.org/TR/html401/interact/forms.html#tabbing-navigation">tabbing 
+  navigation</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onfocus"><SAMP 
+  class="ainst">onfocus</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onblur"><SAMP 
+  class="ainst">onblur</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onclick"><SAMP 
+  class="ainst">onclick</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-ondblclick"><SAMP 
+  class="ainst">ondblclick</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onmousedown"><SAMP 
+  class="ainst">onmousedown</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onmouseup"><SAMP 
+  class="ainst">onmouseup</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onmouseover"><SAMP 
+  class="ainst">onmouseover</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onmousemove"><SAMP 
+  class="ainst">onmousemove</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onmouseout"><SAMP 
+  class="ainst">onmouseout</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onkeypress"><SAMP 
+  class="ainst">onkeypress</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onkeydown"><SAMP 
+  class="ainst">onkeydown</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onkeyup"><SAMP 
+  class="ainst">onkeyup</SAMP></A> (<A href="http://www.w3.org/TR/html401/interact/scripts.html#events">intrinsic 
+  events</A>)</LI></UL></DIV>
+<P>Buttons created with the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-BUTTON"><SAMP 
+class="einst">BUTTON</SAMP></A> element function just like buttons created with 
+the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-INPUT"><SAMP 
+class="einst">INPUT</SAMP></A> element, but they offer richer rendering
+ possibilities: the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-BUTTON"><SAMP 
+class="einst">BUTTON</SAMP></A> element may have content. For example, a <A 
+class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-BUTTON"><SAMP 
+class="einst">BUTTON</SAMP></A> element that contains an image functions like 
+and may resemble an <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-INPUT"><SAMP 
+class="einst">INPUT</SAMP></A> element whose <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-type-INPUT"><SAMP 
+class="ainst-INPUT">type</SAMP></A> is set to "image", but the <A class="noxref" 
+href="http://www.w3.org/TR/html401/interact/forms.html#edef-BUTTON"><SAMP class="einst">BUTTON</SAMP></A>
+ element type allows content.</P>
+<P>Visual user agents may render <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-BUTTON"><SAMP 
+class="einst">BUTTON</SAMP></A> buttons with relief and an up/down motion when 
+clicked, while they may render <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-INPUT"><SAMP 
+class="einst">INPUT</SAMP></A> buttons as "flat" images.</P>
+<DIV class="example">
+<P>The following example expands a previous example, but creates <A href="http://www.w3.org/TR/html401/interact/forms.html#submit-button">submit</A> 
+and <A 
+href="http://www.w3.org/TR/html401/interact/forms.html#reset-button">reset</A> 
+buttons with <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-BUTTON"><SAMP 
+class="einst">BUTTON</SAMP></A> instead of <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-INPUT"><SAMP 
+class="einst">INPUT</SAMP></A>. The buttons contain images by way of the <A 
+class="noxref" 
+href="http://www.w3.org/TR/html401/struct/objects.html#edef-IMG"><SAMP class="einst">
+IMG</SAMP></A> element.</P>
+<PRE> &lt;FORM action="http://somesite.com/prog/adduser" method="post"&gt;
+    &lt;P&gt;
+    First name: &lt;INPUT type="text" name="firstname"&gt;&lt;BR&gt;
+    Last name: &lt;INPUT type="text" name="lastname"&gt;&lt;BR&gt;
+    email: &lt;INPUT type="text" name="email"&gt;&lt;BR&gt;
+    &lt;INPUT type="radio" name="sex" value="Male"&gt; Male&lt;BR&gt;
+    &lt;INPUT type="radio" name="sex" value="Female"&gt; Female&lt;BR&gt;
+    &lt;BUTTON name="submit" value="submit" type="submit"&gt;
+    Send&lt;IMG src="/icons/wow.gif" alt="wow"&gt;&lt;/BUTTON&gt;
+    &lt;BUTTON name="reset" type="reset"&gt;
+    Reset&lt;IMG src="/icons/oops.gif" alt="oops"&gt;&lt;/BUTTON&gt;
+    &lt;/P&gt;
+ &lt;/FORM&gt;
+</PRE></DIV>
+<P>Recall that authors must provide <A href="http://www.w3.org/TR/html401/struct/objects.html#alternate-text">alternate 
+text</A> for an <A class="noxref" href="http://www.w3.org/TR/html401/struct/objects.html#edef-IMG"><SAMP 
+class="einst">IMG</SAMP></A> element.</P>
+<P><SPAN title="error::image map with IMG in BUTTON|image &#10;map::illegal for IMG in BUTTON" 
+class="index-inst"><A name="idx-error">It is illegal</A></SPAN> to associate an 
+image map with an <A class="noxref" href="http://www.w3.org/TR/html401/struct/objects.html#edef-IMG"><SAMP 
+class="einst">IMG</SAMP></A> that appears as the contents of a <A class="noxref" 
+href="http://www.w3.org/TR/html401/interact/forms.html#edef-BUTTON"><SAMP class="einst">
+BUTTON</SAMP></A> element.</P>
+<DIV class="illegal-example">
+<P><SPAN class="example-title">ILLEGAL EXAMPLE:</SPAN> <BR>The following is not 
+legal HTML.</P>
+<PRE>&lt;BUTTON&gt;
+&lt;IMG src="foo.gif" usemap="..."&gt;
+&lt;/BUTTON&gt;
+</PRE></DIV>
+<H2><A name="h-17.6">17.6</A> The <A name="edef-SELECT"><SAMP class="edef">
+SELECT</SAMP></A>, <A name="edef-OPTGROUP"><SAMP class="edef">
+OPTGROUP</SAMP></A>, and <A name="edef-OPTION"><SAMP class="edef">
+OPTION</SAMP></A> elements</H2>
+<DIV class="dtd-fragment">
+<PRE class="dtd-fragment">&lt;!ELEMENT <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-SELECT"><SAMP class="einst">SELECT</SAMP></A> - - (OPTGROUP|OPTION)+ -- option selector --&gt;
+&lt;!ATTLIST SELECT
+  <A href="http://www.w3.org/TR/html401/sgml/dtd.html#attrs">%attrs;</A>                              -- <A href="http://www.w3.org/TR/html401/sgml/dtd.html#coreattrs">%coreattrs</A>, <A href="http://www.w3.org/TR/html401/sgml/dtd.html#i18n">%i18n</A>, <A href="http://www.w3.org/TR/html401/sgml/dtd.html#events">%events</A> --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-name-SELECT"><SAMP class="ainst-SELECT">name</SAMP></A>        <A href="http://www.w3.org/TR/html401/types.html#type-cdata">CDATA</A>          #IMPLIED  -- field name --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-size-SELECT"><SAMP class="ainst-SELECT">size</SAMP></A>        <A href="http://www.w3.org/TR/html401/types.html#type-number">NUMBER</A>         #IMPLIED  -- rows visible --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-multiple"><SAMP class="ainst-SELECT">multiple</SAMP></A>    (multiple)     #IMPLIED  -- default is single selection --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-disabled"><SAMP class="ainst-SELECT">disabled</SAMP></A>    (disabled)     #IMPLIED  -- unavailable in this context --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-tabindex"><SAMP class="ainst-SELECT">tabindex</SAMP></A>    <A href="http://www.w3.org/TR/html401/types.html#type-number">NUMBER</A>         #IMPLIED  -- position in tabbing order --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onfocus"><SAMP class="ainst-SELECT">onfocus</SAMP></A>     <A href="http://www.w3.org/TR/html401/sgml/dtd.html#Script">%Script;</A>       #IMPLIED  -- the element got the focus --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onblur"><SAMP class="ainst-SELECT">onblur</SAMP></A>      <A href="http://www.w3.org/TR/html401/sgml/dtd.html#Script">%Script;</A>       #IMPLIED  -- the element lost the focus --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onchange"><SAMP class="ainst-SELECT">onchange</SAMP></A>    <A href="http://www.w3.org/TR/html401/sgml/dtd.html#Script">%Script;</A>       #IMPLIED  -- the element value was changed --
+  &gt;
+</PRE></DIV>
+<P><EM>Start tag: <STRONG>required</STRONG>, End tag: <STRONG>
+required</STRONG></EM></P>
+<DIV class="adef-list">
+<P><EM>SELECT Attribute definitions</EM></P>
+<DL>
+  <DT><A name="adef-name-SELECT"><SAMP class="adef">name</SAMP></A> = <A href="http://www.w3.org/TR/html401/types.html#type-cdata"><EM>cdata</EM></A> 
+  <A 
+  href="http://www.w3.org/TR/html401/types.html#case-insensitive">[CI]</A></DT>
+  <DD>This attribute assigns the <A href="http://www.w3.org/TR/html401/interact/forms.html#control-name">control 
+  name.</A></DD>
+  <DT><A name="adef-size-SELECT"><SAMP class="adef">size</SAMP></A> = <A href="http://www.w3.org/TR/html401/types.html#type-number"><EM>number</EM></A> 
+  <A href="http://www.w3.org/TR/html401/types.html#case-neutral">[CN]</A></DT>
+  <DD>If a <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-SELECT"><SAMP 
+  class="einst">SELECT</SAMP></A> element is presented as a scrolled list box, 
+  this attribute specifies the number of rows in the list that should be visible 
+  at the same time. Visual user agents are not required to present a <A class="noxref" 
+  href="http://www.w3.org/TR/html401/interact/forms.html#edef-SELECT"><SAMP 
+  class="einst">SELECT</SAMP></A> element as a list box; they may use any other 
+  mechanism, such as a drop-down menu.</DD>
+  <DT><A name="adef-multiple"><SAMP class="adef">multiple</SAMP></A> <A href="http://www.w3.org/TR/html401/types.html#case-insensitive">[CI]</A></DT>
+  <DD>If set, this boolean attribute allows multiple selections. If not set, the 
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-SELECT"><SAMP 
+  class="einst">SELECT</SAMP></A> element only permits single 
+selections.</DD></DL></DIV>
+<DIV class="aref-list">
+<P><EM>Attributes defined elsewhere</EM></P>
+<UL>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/struct/global.html#adef-id"><SAMP 
+  class="ainst">id</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/struct/global.html#adef-class"><SAMP 
+  class="ainst">class</SAMP></A> (<A href="http://www.w3.org/TR/html401/struct/global.html#id-and-class">document-wide 
+  identifiers</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/struct/dirlang.html#adef-lang"><SAMP 
+  class="ainst">lang</SAMP></A> (<A href="http://www.w3.org/TR/html401/struct/dirlang.html#language-info">language 
+  information</A>), <A class="noxref" href="http://www.w3.org/TR/html401/struct/dirlang.html#adef-dir"><SAMP 
+  class="ainst">dir</SAMP></A> (<A href="http://www.w3.org/TR/html401/struct/dirlang.html#bidirection">text
+   direction</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/struct/global.html#adef-title"><SAMP 
+  class="ainst">title</SAMP></A> (<A href="http://www.w3.org/TR/html401/struct/global.html#title">element
+   title</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/present/styles.html#adef-style"><SAMP 
+  class="ainst">style</SAMP></A> (<A href="http://www.w3.org/TR/html401/present/styles.html#style-element">inline
+   style information</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-disabled"><SAMP 
+  class="ainst">disabled</SAMP></A> (<A href="http://www.w3.org/TR/html401/interact/forms.html#disabled">disabled 
+  input controls</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-tabindex"><SAMP 
+  class="ainst">tabindex</SAMP></A> (<A href="http://www.w3.org/TR/html401/interact/forms.html#tabbing-navigation">tabbing 
+  navigation</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onclick"><SAMP 
+  class="ainst">onclick</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-ondblclick"><SAMP 
+  class="ainst">ondblclick</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onmousedown"><SAMP 
+  class="ainst">onmousedown</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onmouseup"><SAMP 
+  class="ainst">onmouseup</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onmouseover"><SAMP 
+  class="ainst">onmouseover</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onmousemove"><SAMP 
+  class="ainst">onmousemove</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onmouseout"><SAMP 
+  class="ainst">onmouseout</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onkeypress"><SAMP 
+  class="ainst">onkeypress</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onkeydown"><SAMP 
+  class="ainst">onkeydown</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onkeyup"><SAMP 
+  class="ainst">onkeyup</SAMP></A> (<A href="http://www.w3.org/TR/html401/interact/scripts.html#events">intrinsic 
+  events</A>)</LI></UL></DIV>
+<P>The <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-SELECT"><SAMP 
+class="einst">SELECT</SAMP></A> element creates a <A href="http://www.w3.org/TR/html401/interact/forms.html#menu">menu</A>. 
+Each choice offered by the menu is represented by an <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-OPTION"><SAMP 
+class="einst">OPTION</SAMP></A> element. A <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-SELECT"><SAMP 
+class="einst">SELECT</SAMP></A> element must contain at least one <A class="noxref" 
+href="http://www.w3.org/TR/html401/interact/forms.html#edef-OPTION"><SAMP class="einst">OPTION</SAMP></A> 
+element.</P>
+<P><SPAN title="menu::grouping of choices" class="index-inst">The <A name="idx-menu-1" 
+class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-OPTGROUP"><SAMP 
+class="einst">OPTGROUP</SAMP></A> element</SPAN> allows authors to group choices
+ logically. This is particularly helpful when the user must choose from a long
+ list of options; groups of related choices are easier to grasp and remember
+ than a single long list of options. In HTML 4, all <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-OPTGROUP"><SAMP 
+class="einst">OPTGROUP</SAMP></A> elements must be specified directly within a 
+<A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-SELECT"><SAMP 
+class="einst">SELECT</SAMP></A> element (i.e., groups may not be nested).</P>
+<H3><A name="h-17.6.1">17.6.1</A> <SPAN title="menu::preselected options" class="index-inst"><A 
+name="idx-menu-2">Pre-selected options</A></SPAN></H3>
+<P>Zero or more choices may be pre-selected for the user. User agents should
+ determine which choices are pre-selected as follows:</P>
+<UL>
+  <LI>If no <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-OPTION"><SAMP 
+  class="einst">OPTION</SAMP></A> element has the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-selected"><SAMP 
+  class="ainst">selected</SAMP></A> attribute set, user agent behavior for 
+  choosing which option is initially selected is undefined. <STRONG>
+  Note.</STRONG> Since existing implementations handle this case differently, 
+  the current specification differs from RFC 1866 (<A class="normref" href="http://www.w3.org/TR/html401/references.html#ref-RFC1866" 
+  rel="biblioentry">[RFC1866]</A> section 8.1.3), which states:  
+  <BLOCKQUOTE>The initial state has the first option selected, unless a 
+    SELECTED attribute is present on any of the &lt;OPTION&gt; 
+  elements.</BLOCKQUOTE>
+  <P>Since user agent behavior differs, authors should ensure that each menu
+   includes a default pre-selected <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-OPTION"><SAMP 
+  class="einst">OPTION</SAMP></A>.</P></LI>
+  <LI>If one <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-OPTION"><SAMP 
+  class="einst">OPTION</SAMP></A> element has the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-selected"><SAMP 
+  class="ainst">selected</SAMP></A> attribute set, it should be
+   pre-selected.</LI>
+  <LI>If the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-SELECT"><SAMP 
+  class="einst">SELECT</SAMP></A> element has the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-multiple"><SAMP 
+  class="ainst">multiple</SAMP></A> attribute set and more than one <A class="noxref" 
+  href="http://www.w3.org/TR/html401/interact/forms.html#edef-OPTION"><SAMP 
+  class="einst">OPTION</SAMP></A> element has the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-selected"><SAMP 
+  class="ainst">selected</SAMP></A> attribute set, they should all be 
+  pre-selected.</LI>
+  <LI>It is considered an error if more than one <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-OPTION"><SAMP 
+  class="einst">OPTION</SAMP></A> element has the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-selected"><SAMP 
+  class="ainst">selected</SAMP></A> attribute set and the <A class="noxref" 
+  href="http://www.w3.org/TR/html401/interact/forms.html#edef-SELECT"><SAMP 
+  class="einst">SELECT</SAMP></A> element does not have the <A class="noxref" 
+  href="http://www.w3.org/TR/html401/interact/forms.html#adef-multiple"><SAMP 
+  class="ainst">multiple</SAMP></A> attribute set. User agents may vary in how 
+  they handle this error, but should not pre-select more than one 
+choice.</LI></UL>
+<DIV class="dtd-fragment">
+<PRE class="dtd-fragment">&lt;!ELEMENT <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-OPTGROUP"><SAMP class="einst">OPTGROUP</SAMP></A> - - (OPTION)+ -- option group --&gt;
+&lt;!ATTLIST OPTGROUP
+  <A href="http://www.w3.org/TR/html401/sgml/dtd.html#attrs">%attrs;</A>                              -- <A href="http://www.w3.org/TR/html401/sgml/dtd.html#coreattrs">%coreattrs</A>, <A href="http://www.w3.org/TR/html401/sgml/dtd.html#i18n">%i18n</A>, <A href="http://www.w3.org/TR/html401/sgml/dtd.html#events">%events</A> --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-disabled"><SAMP class="ainst-OPTION">disabled</SAMP></A>    (disabled)     #IMPLIED  -- unavailable in this context --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-label-OPTGROUP"><SAMP class="ainst-OPTGROUP">label</SAMP></A>       <A href="http://www.w3.org/TR/html401/sgml/dtd.html#Text">%Text;</A>         #REQUIRED -- for use in hierarchical menus --
+  &gt;
+</PRE></DIV>
+<P><EM>Start tag: <STRONG>required</STRONG>, End tag: <STRONG>
+required</STRONG></EM></P>
+<DIV class="adef-list">
+<P><EM>OPTGROUP Attribute definitions</EM></P>
+<DL>
+  <DT><A name="adef-label-OPTGROUP"><SAMP class="adef">label</SAMP></A> = <A 
+  href="http://www.w3.org/TR/html401/types.html#type-text"><EM>text</EM></A> <A 
+  href="http://www.w3.org/TR/html401/types.html#case-sensitive">[CS]</A></DT>
+  <DD>This attribute specifies the label for the option group.</DD></DL></DIV>
+<DIV class="aref-list">
+<P><EM>Attributes defined elsewhere</EM></P>
+<UL>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/struct/global.html#adef-id"><SAMP 
+  class="ainst">id</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/struct/global.html#adef-class"><SAMP 
+  class="ainst">class</SAMP></A> (<A href="http://www.w3.org/TR/html401/struct/global.html#id-and-class">document-wide 
+  identifiers</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/struct/dirlang.html#adef-lang"><SAMP 
+  class="ainst">lang</SAMP></A> (<A href="http://www.w3.org/TR/html401/struct/dirlang.html#language-info">language 
+  information</A>), <A class="noxref" href="http://www.w3.org/TR/html401/struct/dirlang.html#adef-dir"><SAMP 
+  class="ainst">dir</SAMP></A> (<A href="http://www.w3.org/TR/html401/struct/dirlang.html#bidirection">text
+   direction</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/struct/global.html#adef-title"><SAMP 
+  class="ainst">title</SAMP></A> (<A href="http://www.w3.org/TR/html401/struct/global.html#title">element
+   title</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/present/styles.html#adef-style"><SAMP 
+  class="ainst">style</SAMP></A> (<A href="http://www.w3.org/TR/html401/present/styles.html#style-element">inline
+   style information</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-disabled"><SAMP 
+  class="ainst">disabled</SAMP></A> (<A href="http://www.w3.org/TR/html401/interact/forms.html#disabled">disabled 
+  input controls</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onclick"><SAMP 
+  class="ainst">onclick</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-ondblclick"><SAMP 
+  class="ainst">ondblclick</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onmousedown"><SAMP 
+  class="ainst">onmousedown</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onmouseup"><SAMP 
+  class="ainst">onmouseup</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onmouseover"><SAMP 
+  class="ainst">onmouseover</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onmousemove"><SAMP 
+  class="ainst">onmousemove</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onmouseout"><SAMP 
+  class="ainst">onmouseout</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onkeypress"><SAMP 
+  class="ainst">onkeypress</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onkeydown"><SAMP 
+  class="ainst">onkeydown</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onkeyup"><SAMP 
+  class="ainst">onkeyup</SAMP></A> (<A href="http://www.w3.org/TR/html401/interact/scripts.html#events">intrinsic 
+  events</A>)</LI></UL></DIV>
+<DIV class="note">
+<P><EM><STRONG>Note.</STRONG> Implementors are advised that future versions of
+ HTML may extend the grouping mechanism to allow for nested groups (i.e., <A 
+class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-OPTGROUP"><SAMP 
+class="einst">OPTGROUP</SAMP></A> elements may nest). This will allow authors to 
+represent a richer hierarchy of choices.</EM></P></DIV>
+<DIV class="dtd-fragment">
+<PRE class="dtd-fragment">&lt;!ELEMENT <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-OPTION"><SAMP class="einst">OPTION</SAMP></A> - O (#PCDATA)         -- selectable choice --&gt;
+&lt;!ATTLIST OPTION
+  <A href="http://www.w3.org/TR/html401/sgml/dtd.html#attrs">%attrs;</A>                              -- <A href="http://www.w3.org/TR/html401/sgml/dtd.html#coreattrs">%coreattrs</A>, <A href="http://www.w3.org/TR/html401/sgml/dtd.html#i18n">%i18n</A>, <A href="http://www.w3.org/TR/html401/sgml/dtd.html#events">%events</A> --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-selected"><SAMP class="ainst-OPTION">selected</SAMP></A>    (selected)     #IMPLIED
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-disabled"><SAMP class="ainst-OPTION">disabled</SAMP></A>    (disabled)     #IMPLIED  -- unavailable in this context --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-label-OPTION"><SAMP class="ainst-OPTION">label</SAMP></A>       <A href="http://www.w3.org/TR/html401/sgml/dtd.html#Text">%Text;</A>         #IMPLIED  -- for use in hierarchical menus --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-value-OPTION"><SAMP class="ainst-OPTION">value</SAMP></A>       <A href="http://www.w3.org/TR/html401/types.html#type-cdata">CDATA</A>          #IMPLIED  -- defaults to element content --
+  &gt;
+</PRE></DIV>
+<P><EM>Start tag: <STRONG>required</STRONG>, End tag: <STRONG>
+optional</STRONG></EM></P>
+<DIV class="adef-list">
+<P><EM>OPTION Attribute definitions</EM></P>
+<DL>
+  <DT><A name="adef-selected"><SAMP class="adef">selected</SAMP></A> <A href="http://www.w3.org/TR/html401/types.html#case-insensitive">[CI]</A></DT>
+  <DD>When set, this boolean attribute specifies that this option is
+   pre-selected.</DD>
+  <DT><A name="adef-value-OPTION"><SAMP class="adef">value</SAMP></A> = <A href="http://www.w3.org/TR/html401/types.html#type-cdata"><EM>cdata</EM></A> 
+  <A href="http://www.w3.org/TR/html401/types.html#case-sensitive">[CS]</A></DT>
+  <DD>This attribute specifies the <A href="http://www.w3.org/TR/html401/interact/forms.html#initial-value">initial 
+  value</A> of the control. If this attribute is not set, the <A href="http://www.w3.org/TR/html401/interact/forms.html#initial-value">initial
+   value</A> is set to the contents of the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-OPTION"><SAMP 
+  class="einst">OPTION</SAMP></A> element.</DD>
+  <DT><A name="adef-label-OPTION"><SAMP class="adef">label</SAMP></A> = <A href="http://www.w3.org/TR/html401/types.html#type-text"><EM>text</EM></A> 
+  <A href="http://www.w3.org/TR/html401/types.html#case-sensitive">[CS]</A></DT>
+  <DD>This attribute allows authors to specify a shorter label for an option 
+  than the content of the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-OPTION"><SAMP 
+  class="einst">OPTION</SAMP></A> element. When specified, user agents should 
+  use the value of this attribute rather than the content of the <A class="noxref" 
+  href="http://www.w3.org/TR/html401/interact/forms.html#edef-OPTION"><SAMP 
+  class="einst">OPTION</SAMP></A> element as the option label.</DD></DL></DIV>
+<DIV class="aref-list">
+<P><EM>Attributes defined elsewhere</EM></P>
+<UL>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/struct/global.html#adef-id"><SAMP 
+  class="ainst">id</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/struct/global.html#adef-class"><SAMP 
+  class="ainst">class</SAMP></A> (<A href="http://www.w3.org/TR/html401/struct/global.html#id-and-class">document-wide 
+  identifiers</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/struct/dirlang.html#adef-lang"><SAMP 
+  class="ainst">lang</SAMP></A> (<A href="http://www.w3.org/TR/html401/struct/dirlang.html#language-info">language 
+  information</A>), <A class="noxref" href="http://www.w3.org/TR/html401/struct/dirlang.html#adef-dir"><SAMP 
+  class="ainst">dir</SAMP></A> (<A href="http://www.w3.org/TR/html401/struct/dirlang.html#bidirection">text
+   direction</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/struct/global.html#adef-title"><SAMP 
+  class="ainst">title</SAMP></A> (<A href="http://www.w3.org/TR/html401/struct/global.html#title">element
+   title</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/present/styles.html#adef-style"><SAMP 
+  class="ainst">style</SAMP></A> (<A href="http://www.w3.org/TR/html401/present/styles.html#style-element">inline
+   style information</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-disabled"><SAMP 
+  class="ainst">disabled</SAMP></A> (<A href="http://www.w3.org/TR/html401/interact/forms.html#disabled">disabled 
+  input controls</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onclick"><SAMP 
+  class="ainst">onclick</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-ondblclick"><SAMP 
+  class="ainst">ondblclick</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onmousedown"><SAMP 
+  class="ainst">onmousedown</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onmouseup"><SAMP 
+  class="ainst">onmouseup</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onmouseover"><SAMP 
+  class="ainst">onmouseover</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onmousemove"><SAMP 
+  class="ainst">onmousemove</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onmouseout"><SAMP 
+  class="ainst">onmouseout</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onkeypress"><SAMP 
+  class="ainst">onkeypress</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onkeydown"><SAMP 
+  class="ainst">onkeydown</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onkeyup"><SAMP 
+  class="ainst">onkeyup</SAMP></A> (<A href="http://www.w3.org/TR/html401/interact/scripts.html#events">intrinsic 
+  events</A>)</LI></UL></DIV>
+<P><SPAN title="menu::rendering of choices" class="index-inst"><A name="idx-menu-3">When 
+rendering a menu choice</A></SPAN>, user agents should use the value of the <A 
+class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-label-OPTION"><SAMP 
+class="ainst-OPTION">label</SAMP></A> attribute of the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-OPTION"><SAMP 
+class="einst">OPTION</SAMP></A> element as the choice. If this attribute is not 
+specified, user agents should use the contents of the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-OPTION"><SAMP 
+class="einst">OPTION</SAMP></A> element.</P>
+<P>The <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-label-OPTGROUP"><SAMP 
+class="ainst-OPTGROUP">label</SAMP></A> attribute of the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-OPTGROUP"><SAMP 
+class="einst">OPTGROUP</SAMP></A> element specifies the label for a group of 
+choices.</P>
+<DIV class="example">
+<P>In this example, we create a menu that allows the user to select which of
+ seven software components to install. The first and second components are
+ pre-selected but may be deselected by the user. The remaining components are
+ not pre-selected. The <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-size-SELECT"><SAMP 
+class="ainst-SELECT">size</SAMP></A> attribute states that the menu should only 
+have 4 rows even though the user may select from among 7 options. The other 
+options should be made available through a scrolling mechanism.</P>
+<P>The <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-SELECT"><SAMP 
+class="einst">SELECT</SAMP></A> is followed by submit and reset buttons.</P>
+<PRE>&lt;FORM action="http://somesite.com/prog/component-select" method="post"&gt;
+   &lt;P&gt;
+   &lt;SELECT multiple size="4" name="component-select"&gt;
+      &lt;OPTION selected value="Component_1_a"&gt;Component_1&lt;/OPTION&gt;
+      &lt;OPTION selected value="Component_1_b"&gt;Component_2&lt;/OPTION&gt;
+      &lt;OPTION&gt;Component_3&lt;/OPTION&gt;
+      &lt;OPTION&gt;Component_4&lt;/OPTION&gt;
+      &lt;OPTION&gt;Component_5&lt;/OPTION&gt;
+      &lt;OPTION&gt;Component_6&lt;/OPTION&gt;
+      &lt;OPTION&gt;Component_7&lt;/OPTION&gt;
+   &lt;/SELECT&gt;
+   &lt;INPUT type="submit" value="Send"&gt;&lt;INPUT type="reset"&gt;
+   &lt;/P&gt;
+&lt;/FORM&gt;
+</PRE>
+<P>Only selected options will be <A href="http://www.w3.org/TR/html401/interact/forms.html#successful-controls">successful</A>
+ (using the <A href="http://www.w3.org/TR/html401/interact/forms.html#control-name">control 
+name</A> "component-select"). When no options are selected, the control is not 
+successful and neither the name nor any values are submitted to the server when 
+the form is submitted. Note that where the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-value-OPTION"><SAMP 
+class="ainst-OPTION">value</SAMP></A> attribute is set, it determines the 
+control's <A href="http://www.w3.org/TR/html401/interact/forms.html#initial-value">initial 
+value</A>, otherwise it's the element's contents.</P></DIV>
+<DIV class="example">
+<P>In this example we use the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-OPTGROUP"><SAMP 
+class="einst">OPTGROUP</SAMP></A> element to group choices. The following 
+markup:</P>
+<PRE>&lt;FORM action="http://somesite.com/prog/someprog" method="post"&gt;
+ &lt;P&gt;
+ &lt;SELECT name="ComOS"&gt;
+     &lt;OPTION selected label="none" value="none"&gt;None&lt;/OPTION&gt;
+     &lt;OPTGROUP label="PortMaster 3"&gt;
+       &lt;OPTION label="3.7.1" value="pm3_3.7.1"&gt;PortMaster 3 with ComOS 3.7.1&lt;/OPTION&gt;
+       &lt;OPTION label="3.7" value="pm3_3.7"&gt;PortMaster 3 with ComOS 3.7&lt;/OPTION&gt;
+       &lt;OPTION label="3.5" value="pm3_3.5"&gt;PortMaster 3 with ComOS 3.5&lt;/OPTION&gt;
+     &lt;/OPTGROUP&gt;
+     &lt;OPTGROUP label="PortMaster 2"&gt;
+       &lt;OPTION label="3.7" value="pm2_3.7"&gt;PortMaster 2 with ComOS 3.7&lt;/OPTION&gt;
+       &lt;OPTION label="3.5" value="pm2_3.5"&gt;PortMaster 2 with ComOS 3.5&lt;/OPTION&gt;
+     &lt;/OPTGROUP&gt;
+     &lt;OPTGROUP label="IRX"&gt;
+       &lt;OPTION label="3.7R" value="IRX_3.7R"&gt;IRX with ComOS 3.7R&lt;/OPTION&gt;
+       &lt;OPTION label="3.5R" value="IRX_3.5R"&gt;IRX with ComOS 3.5R&lt;/OPTION&gt;
+     &lt;/OPTGROUP&gt;
+ &lt;/SELECT&gt;
+&lt;/FORM&gt;
+</PRE>
+<P>represents the following grouping:</P>
+<PRE>  None
+  PortMaster 3
+      3.7.1
+      3.7
+      3.5
+  PortMaster 2
+      3.7
+      3.5
+  IRX
+      3.7R
+      3.5R
+</PRE>
+<P><SPAN title="menu::visual rendering of grouped options" class="index-inst"><A 
+name="idx-menu-4">Visual user agents</A></SPAN> may allow users to select from 
+option groups through a hierarchical menu or some other mechanism that reflects 
+the structure of choices.</P>
+<P>A graphical user agent might render this as:</P>
+<P><IMG alt="A possible rendering of OPTGROUP" src="Forms%20in%20HTML%20documents_files/optgroup_exmpl.gif"></P>
+<P>This image shows a <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-SELECT"><SAMP 
+class="einst">SELECT</SAMP></A> element rendered as cascading menus. The top
+ label of the menu displays the currently selected value (PortMaster 3, 3.7.1).
+ The user has unfurled two cascading menus, but has not yet selected the new
+ value (PortMaster 2, 3.7). Note that each cascading menu displays the label of
+ an <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-OPTGROUP"><SAMP 
+class="einst">OPTGROUP</SAMP></A> or <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-OPTION"><SAMP 
+class="einst">OPTION</SAMP></A> element.</P></DIV>
+<H2><A name="h-17.7">17.7</A> The <A name="edef-TEXTAREA"><SAMP class="edef">
+TEXTAREA</SAMP></A> element</H2>
+<DIV class="dtd-fragment">
+<PRE class="dtd-fragment">&lt;!ELEMENT <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-TEXTAREA"><SAMP class="einst">TEXTAREA</SAMP></A> - - (#PCDATA)       -- multi-line text field --&gt;
+&lt;!ATTLIST TEXTAREA
+  <A href="http://www.w3.org/TR/html401/sgml/dtd.html#attrs">%attrs;</A>                              -- <A href="http://www.w3.org/TR/html401/sgml/dtd.html#coreattrs">%coreattrs</A>, <A href="http://www.w3.org/TR/html401/sgml/dtd.html#i18n">%i18n</A>, <A href="http://www.w3.org/TR/html401/sgml/dtd.html#events">%events</A> --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-name-TEXTAREA"><SAMP class="ainst-TEXTAREA">name</SAMP></A>        <A href="http://www.w3.org/TR/html401/types.html#type-cdata">CDATA</A>          #IMPLIED
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-rows-TEXTAREA"><SAMP class="ainst-TEXTAREA">rows</SAMP></A>        <A href="http://www.w3.org/TR/html401/types.html#type-number">NUMBER</A>         #REQUIRED
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-cols-TEXTAREA"><SAMP class="ainst-TEXTAREA">cols</SAMP></A>        <A href="http://www.w3.org/TR/html401/types.html#type-number">NUMBER</A>         #REQUIRED
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-disabled"><SAMP class="ainst-TEXTAREA">disabled</SAMP></A>    (disabled)     #IMPLIED  -- unavailable in this context --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-readonly"><SAMP class="ainst-TEXTAREA">readonly</SAMP></A>    (readonly)     #IMPLIED
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-tabindex"><SAMP class="ainst-TEXTAREA">tabindex</SAMP></A>    <A href="http://www.w3.org/TR/html401/types.html#type-number">NUMBER</A>         #IMPLIED  -- position in tabbing order --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-accesskey"><SAMP class="ainst-TEXTAREA">accesskey</SAMP></A>   <A href="http://www.w3.org/TR/html401/sgml/dtd.html#Character">%Character;</A>    #IMPLIED  -- accessibility key character --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onfocus"><SAMP class="ainst-TEXTAREA">onfocus</SAMP></A>     <A href="http://www.w3.org/TR/html401/sgml/dtd.html#Script">%Script;</A>       #IMPLIED  -- the element got the focus --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onblur"><SAMP class="ainst-TEXTAREA">onblur</SAMP></A>      <A href="http://www.w3.org/TR/html401/sgml/dtd.html#Script">%Script;</A>       #IMPLIED  -- the element lost the focus --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onselect"><SAMP class="ainst-TEXTAREA">onselect</SAMP></A>    <A href="http://www.w3.org/TR/html401/sgml/dtd.html#Script">%Script;</A>       #IMPLIED  -- some text was selected --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onchange"><SAMP class="ainst-TEXTAREA">onchange</SAMP></A>    <A href="http://www.w3.org/TR/html401/sgml/dtd.html#Script">%Script;</A>       #IMPLIED  -- the element value was changed --
+  &gt;
+</PRE></DIV>
+<P><EM>Start tag: <STRONG>required</STRONG>, End tag: <STRONG>
+required</STRONG></EM></P>
+<DIV class="adef-list">
+<P><EM>Attribute definitions</EM></P>
+<DL>
+  <DT><A name="adef-name-TEXTAREA"><SAMP class="adef">name</SAMP></A> = <A href="http://www.w3.org/TR/html401/types.html#type-cdata"><EM>cdata</EM></A> 
+  <A 
+  href="http://www.w3.org/TR/html401/types.html#case-insensitive">[CI]</A></DT>
+  <DD>This attribute assigns the <A href="http://www.w3.org/TR/html401/interact/forms.html#control-name">control 
+  name.</A></DD>
+  <DT><A name="adef-rows-TEXTAREA"><SAMP class="adef">rows</SAMP></A> = <A href="http://www.w3.org/TR/html401/types.html#type-number"><EM>number</EM></A> 
+  <A href="http://www.w3.org/TR/html401/types.html#case-neutral">[CN]</A></DT>
+  <DD>This attribute specifies the number of visible text lines. Users should be
+   able to enter more lines than this, so user agents should provide some means 
+  to scroll through the contents of the control when the contents extend beyond 
+  the visible area.</DD>
+  <DT><A name="adef-cols-TEXTAREA"><SAMP class="adef">cols</SAMP></A> = <A href="http://www.w3.org/TR/html401/types.html#type-number"><EM>number</EM></A> 
+  <A href="http://www.w3.org/TR/html401/types.html#case-neutral">[CN]</A></DT>
+  <DD>This attribute specifies the visible width in average character widths.
+   Users should be able to enter longer lines than this, so user agents should
+   provide some means to scroll through the contents of the control when the
+   contents extend beyond the visible area. User agents may wrap visible text
+   lines to keep long lines visible without the need for 
+scrolling.</DD></DL></DIV>
+<DIV class="aref-list">
+<P><EM>Attributes defined elsewhere</EM></P>
+<UL>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/struct/global.html#adef-id"><SAMP 
+  class="ainst">id</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/struct/global.html#adef-class"><SAMP 
+  class="ainst">class</SAMP></A> (<A href="http://www.w3.org/TR/html401/struct/global.html#id-and-class">document-wide 
+  identifiers</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/struct/dirlang.html#adef-lang"><SAMP 
+  class="ainst">lang</SAMP></A> (<A href="http://www.w3.org/TR/html401/struct/dirlang.html#language-info">language 
+  information</A>), <A class="noxref" href="http://www.w3.org/TR/html401/struct/dirlang.html#adef-dir"><SAMP 
+  class="ainst">dir</SAMP></A> (<A href="http://www.w3.org/TR/html401/struct/dirlang.html#bidirection">text
+   direction</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/struct/global.html#adef-title"><SAMP 
+  class="ainst">title</SAMP></A> (<A href="http://www.w3.org/TR/html401/struct/global.html#title">element
+   title</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/present/styles.html#adef-style"><SAMP 
+  class="ainst">style</SAMP></A> (<A href="http://www.w3.org/TR/html401/present/styles.html#style-element">inline
+   style information</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-readonly"><SAMP 
+  class="ainst">readonly</SAMP></A> (<A href="http://www.w3.org/TR/html401/interact/forms.html#read-only">read-only 
+  input controls</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-disabled"><SAMP 
+  class="ainst">disabled</SAMP></A> (<A href="http://www.w3.org/TR/html401/interact/forms.html#disabled">disabled 
+  input controls</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-tabindex"><SAMP 
+  class="ainst">tabindex</SAMP></A> (<A href="http://www.w3.org/TR/html401/interact/forms.html#tabbing-navigation">tabbing 
+  navigation</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onfocus"><SAMP 
+  class="ainst">onfocus</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onblur"><SAMP 
+  class="ainst">onblur</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onselect"><SAMP 
+  class="ainst">onselect</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onchange"><SAMP 
+  class="ainst">onchange</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onclick"><SAMP 
+  class="ainst">onclick</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-ondblclick"><SAMP 
+  class="ainst">ondblclick</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onmousedown"><SAMP 
+  class="ainst">onmousedown</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onmouseup"><SAMP 
+  class="ainst">onmouseup</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onmouseover"><SAMP 
+  class="ainst">onmouseover</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onmousemove"><SAMP 
+  class="ainst">onmousemove</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onmouseout"><SAMP 
+  class="ainst">onmouseout</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onkeypress"><SAMP 
+  class="ainst">onkeypress</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onkeydown"><SAMP 
+  class="ainst">onkeydown</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onkeyup"><SAMP 
+  class="ainst">onkeyup</SAMP></A> (<A href="http://www.w3.org/TR/html401/interact/scripts.html#events">intrinsic 
+  events</A>)</LI></UL></DIV>
+<P>The <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-TEXTAREA"><SAMP 
+class="einst">TEXTAREA</SAMP></A> element creates a <SPAN title="text &#10;input control::multi-line" 
+class="index-inst"><A name="idx-text_input_control-2">multi-line</A></SPAN> <A 
+href="http://www.w3.org/TR/html401/interact/forms.html#text-input">text 
+input</A> control. User agents should use the contents of this element as the <A 
+href="http://www.w3.org/TR/html401/interact/forms.html#initial-value">initial
+ value</A> of the control and should render this text initially.</P>
+<DIV class="example">
+<P>This example creates a <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-TEXTAREA"><SAMP 
+class="einst">TEXTAREA</SAMP></A> control that is 20 rows by 80 columns and 
+contains two lines of text initially. The <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-TEXTAREA"><SAMP 
+class="einst">TEXTAREA</SAMP></A> is followed by submit and reset buttons.</P>
+<PRE>&lt;FORM action="http://somesite.com/prog/text-read" method="post"&gt;
+   &lt;P&gt;
+   &lt;TEXTAREA name="thetext" rows="20" cols="80"&gt;
+   First line of initial text.
+   Second line of initial text.
+   &lt;/TEXTAREA&gt;
+   &lt;INPUT type="submit" value="Send"&gt;&lt;INPUT type="reset"&gt;
+   &lt;/P&gt;
+&lt;/FORM&gt;
+</PRE>
+<P>Setting the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-readonly"><SAMP 
+class="ainst">readonly</SAMP></A> attribute allows authors to display 
+unmodifiable text in a <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-TEXTAREA"><SAMP 
+class="einst">TEXTAREA</SAMP></A>. This differs from using standard marked-up 
+text in a document because the value of <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-TEXTAREA"><SAMP 
+class="einst">TEXTAREA</SAMP></A> is submitted with the form.</P></DIV>
+<H2><A name="h-17.8">17.8</A> The <A name="edef-ISINDEX"><SAMP class="edef">
+ISINDEX</SAMP></A> element</H2>
+<P><STRONG>ISINDEX is <A href="http://www.w3.org/TR/html401/conform.html#deprecated">
+deprecated</A>.</STRONG> This element creates a single-line <A href="http://www.w3.org/TR/html401/interact/forms.html#text-input">text 
+input</A> control. Authors should use the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-INPUT"><SAMP 
+class="einst">INPUT</SAMP></A> element to create <A href="http://www.w3.org/TR/html401/interact/forms.html#text-input">text 
+input</A> controls.</P>
+<P>See the <A 
+href="http://www.w3.org/TR/html401/sgml/loosedtd.html#isindex">Transitional 
+DTD</A> for the formal definition.</P>
+<DIV class="adef-list">
+<P><EM>Attribute definitions</EM></P>
+<DL>
+  <DT><A name="adef-prompt"><SAMP class="adef">prompt</SAMP></A> = <A href="http://www.w3.org/TR/html401/types.html#type-text"><EM>text</EM></A> 
+  <A href="http://www.w3.org/TR/html401/types.html#case-sensitive">[CS]</A></DT>
+  <DD><A 
+  href="http://www.w3.org/TR/html401/conform.html#deprecated"><STRONG>Deprecated.</STRONG></A> 
+  This attribute specifies a prompt string for the input field.</DD></DL></DIV>
+<DIV class="aref-list">
+<P><EM>Attributes defined elsewhere</EM></P>
+<UL>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/struct/global.html#adef-id"><SAMP 
+  class="ainst">id</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/struct/global.html#adef-class"><SAMP 
+  class="ainst">class</SAMP></A> (<A href="http://www.w3.org/TR/html401/struct/global.html#id-and-class">document-wide 
+  identifiers</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/struct/dirlang.html#adef-lang"><SAMP 
+  class="ainst">lang</SAMP></A> (<A href="http://www.w3.org/TR/html401/struct/dirlang.html#language-info">language 
+  information</A>), <A class="noxref" href="http://www.w3.org/TR/html401/struct/dirlang.html#adef-dir"><SAMP 
+  class="ainst">dir</SAMP></A> (<A href="http://www.w3.org/TR/html401/struct/dirlang.html#bidirection">text
+   direction</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/struct/global.html#adef-title"><SAMP 
+  class="ainst">title</SAMP></A> (<A href="http://www.w3.org/TR/html401/struct/global.html#title">element
+   title</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/present/styles.html#adef-style"><SAMP 
+  class="ainst">style</SAMP></A> (<A href="http://www.w3.org/TR/html401/present/styles.html#style-element">inline
+   style information</A>)</LI></UL></DIV>
+<P>The <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-ISINDEX"><SAMP 
+class="einst">ISINDEX</SAMP></A> element creates a single-line <A href="http://www.w3.org/TR/html401/interact/forms.html#text-input">text
+ input</A> control that allows any number of characters. User agents may use the
+ value of the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-prompt"><SAMP 
+class="ainst">prompt</SAMP></A> attribute as a title for the prompt.</P>
+<DIV class="deprecated-example">
+<P><SPAN class="example-title">DEPRECATED EXAMPLE:</SPAN> <BR>The following <A 
+class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-ISINDEX"><SAMP 
+class="einst">ISINDEX</SAMP></A> declaration:</P>
+<PRE>&lt;ISINDEX prompt="Enter your search phrase: "&gt;
+</PRE>
+<P>could be rewritten with <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-INPUT"><SAMP 
+class="einst">INPUT</SAMP></A> as follows:</P>
+<PRE>&lt;FORM action="..." method="post"&gt;
+&lt;P&gt;Enter your search phrase: &lt;INPUT type="text"&gt;&lt;/P&gt;
+&lt;/FORM&gt;
+</PRE></DIV>
+<DIV class="note">
+<P><EM><STRONG>Semantics of <SAMP class="einst">ISINDEX.</SAMP></STRONG>
+ Currently, the semantics for <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-ISINDEX"><SAMP 
+class="einst">ISINDEX</SAMP></A> are only well-defined when the base URI for the 
+enclosing document is an HTTP URI. In practice, the input string is restricted 
+to Latin-1 as there is no mechanism for the URI to specify a different character 
+set.</EM></P></DIV>
+<H2><A name="h-17.9">17.9</A> <SPAN title="form::adding &#10;labels to" class="index-inst"><A 
+name="form-labels">Labels</A></SPAN></H2>
+<P>Some form controls automatically have labels associated with them (press
+ buttons) while most do not (text fields, checkboxes and radio buttons, and
+ menus).</P>
+<P>For those controls that have implicit labels, user agents should use the
+ value of the <SAMP class="ainst">value</SAMP> attribute as the label
+ string.</P>
+<P>The <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-LABEL"><SAMP 
+class="einst">LABEL</SAMP></A> element is used to specify labels for controls 
+that do not have implicit labels,</P>
+<H3><A name="h-17.9.1">17.9.1</A> The <A name="edef-LABEL"><SAMP class="edef">
+LABEL</SAMP></A> element</H3>
+<DIV class="dtd-fragment">
+<PRE class="dtd-fragment">&lt;!ELEMENT <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-LABEL"><SAMP class="einst">LABEL</SAMP></A> - - (<A href="http://www.w3.org/TR/html401/sgml/dtd.html#inline">%inline;</A>)* -(LABEL) -- form field label text --&gt;
+&lt;!ATTLIST LABEL
+  <A href="http://www.w3.org/TR/html401/sgml/dtd.html#attrs">%attrs;</A>                              -- <A href="http://www.w3.org/TR/html401/sgml/dtd.html#coreattrs">%coreattrs</A>, <A href="http://www.w3.org/TR/html401/sgml/dtd.html#i18n">%i18n</A>, <A href="http://www.w3.org/TR/html401/sgml/dtd.html#events">%events</A> --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-for"><SAMP class="ainst-LABEL">for</SAMP></A>         <A href="http://www.w3.org/TR/html401/types.html#type-idref">IDREF</A>          #IMPLIED  -- matches field ID value --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-accesskey"><SAMP class="ainst-LABEL">accesskey</SAMP></A>   <A href="http://www.w3.org/TR/html401/sgml/dtd.html#Character">%Character;</A>    #IMPLIED  -- accessibility key character --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onfocus"><SAMP class="ainst-LABEL">onfocus</SAMP></A>     <A href="http://www.w3.org/TR/html401/sgml/dtd.html#Script">%Script;</A>       #IMPLIED  -- the element got the focus --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onblur"><SAMP class="ainst-LABEL">onblur</SAMP></A>      <A href="http://www.w3.org/TR/html401/sgml/dtd.html#Script">%Script;</A>       #IMPLIED  -- the element lost the focus --
+  &gt;
+</PRE></DIV>
+<P><EM>Start tag: <STRONG>required</STRONG>, End tag: <STRONG>
+required</STRONG></EM></P>
+<DIV class="adef-list">
+<P><EM>Attribute definitions</EM></P>
+<DL>
+  <DT><A name="adef-for"><SAMP class="adef">for</SAMP></A> = <A href="http://www.w3.org/TR/html401/types.html#type-idref"><EM>idref</EM></A> 
+  <A href="http://www.w3.org/TR/html401/types.html#case-sensitive">[CS]</A></DT>
+  <DD>This attribute explicitly associates the label being defined with another
+   control. When present, the value of this attribute must be the same as the
+   value of the <A class="noxref" href="http://www.w3.org/TR/html401/struct/global.html#adef-id"><SAMP 
+  class="ainst">id</SAMP></A> attribute of some other control in the same
+   document. When absent, the label being defined is associated with the 
+  element's contents.</DD></DL></DIV>
+<DIV class="aref-list">
+<P><EM>Attributes defined elsewhere</EM></P>
+<UL>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/struct/global.html#adef-id"><SAMP 
+  class="ainst">id</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/struct/global.html#adef-class"><SAMP 
+  class="ainst">class</SAMP></A> (<A href="http://www.w3.org/TR/html401/struct/global.html#id-and-class">document-wide 
+  identifiers</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/struct/dirlang.html#adef-lang"><SAMP 
+  class="ainst">lang</SAMP></A> (<A href="http://www.w3.org/TR/html401/struct/dirlang.html#language-info">language 
+  information</A>), <A class="noxref" href="http://www.w3.org/TR/html401/struct/dirlang.html#adef-dir"><SAMP 
+  class="ainst">dir</SAMP></A> (<A href="http://www.w3.org/TR/html401/struct/dirlang.html#bidirection">text
+   direction</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/struct/global.html#adef-title"><SAMP 
+  class="ainst">title</SAMP></A> (<A href="http://www.w3.org/TR/html401/struct/global.html#title">element
+   title</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/present/styles.html#adef-style"><SAMP 
+  class="ainst">style</SAMP></A> (<A href="http://www.w3.org/TR/html401/present/styles.html#style-element">inline
+   style information</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-accesskey"><SAMP 
+  class="ainst">accesskey</SAMP></A> (<A href="http://www.w3.org/TR/html401/interact/forms.html#access-keys">access
+   keys</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onfocus"><SAMP 
+  class="ainst">onfocus</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onblur"><SAMP 
+  class="ainst">onblur</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onclick"><SAMP 
+  class="ainst">onclick</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-ondblclick"><SAMP 
+  class="ainst">ondblclick</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onmousedown"><SAMP 
+  class="ainst">onmousedown</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onmouseup"><SAMP 
+  class="ainst">onmouseup</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onmouseover"><SAMP 
+  class="ainst">onmouseover</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onmousemove"><SAMP 
+  class="ainst">onmousemove</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onmouseout"><SAMP 
+  class="ainst">onmouseout</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onkeypress"><SAMP 
+  class="ainst">onkeypress</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onkeydown"><SAMP 
+  class="ainst">onkeydown</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onkeyup"><SAMP 
+  class="ainst">onkeyup</SAMP></A> (<A href="http://www.w3.org/TR/html401/interact/scripts.html#events">intrinsic 
+  events</A>)</LI></UL></DIV>
+<P>The <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-LABEL"><SAMP 
+class="einst">LABEL</SAMP></A> element may be used to attach information to 
+controls. Each <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-LABEL"><SAMP 
+class="einst">LABEL</SAMP></A> element is associated with exactly one form 
+control.</P>
+<P><SPAN title="label::explicit association with control" class="index-inst">The 
+<A name="idx-label" class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-for"><SAMP 
+class="ainst">for</SAMP></A> attribute associates</SPAN> a label with another 
+control explicitly: the value of the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-for"><SAMP 
+class="ainst">for</SAMP></A> attribute must be the same as the value of the <A 
+class="noxref" 
+href="http://www.w3.org/TR/html401/struct/global.html#adef-id"><SAMP class="ainst">
+id</SAMP></A> attribute of the associated control element. More than one <A 
+class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-LABEL"><SAMP 
+class="einst">LABEL</SAMP></A> may be associated with the same control by 
+creating multiple references via the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-for"><SAMP 
+class="ainst">for</SAMP></A> attribute.</P>
+<DIV class="example">
+<P>This example creates a table that is used to align two <A href="http://www.w3.org/TR/html401/interact/forms.html#text-input">text 
+input</A> controls and their associated labels. Each label is associated 
+explicitly with one <A href="http://www.w3.org/TR/html401/interact/forms.html#text-input">text 
+input</A>:</P>
+<PRE>&lt;FORM action="..." method="post"&gt;
+&lt;TABLE&gt;
+  &lt;TR&gt;
+    &lt;TD&gt;&lt;LABEL for="fname"&gt;First Name&lt;/LABEL&gt;
+    &lt;TD&gt;&lt;INPUT type="text" name="firstname" id="fname"&gt;
+  &lt;TR&gt;
+    &lt;TD&gt;&lt;LABEL for="lname"&gt;Last Name&lt;/LABEL&gt;
+    &lt;TD&gt;&lt;INPUT type="text" name="lastname" id="lname"&gt;
+&lt;/TABLE&gt;
+&lt;/FORM&gt;
+</PRE></DIV>
+<DIV class="example">
+<P>This example extends a previous example form to include <A class="noxref" 
+href="http://www.w3.org/TR/html401/interact/forms.html#edef-LABEL"><SAMP class="einst">LABEL</SAMP></A>
+ elements.</P>
+<PRE> &lt;FORM action="http://somesite.com/prog/adduser" method="post"&gt;
+    &lt;P&gt;
+    &lt;LABEL for="firstname"&gt;First name: &lt;/LABEL&gt;
+              &lt;INPUT type="text" id="firstname"&gt;&lt;BR&gt;
+    &lt;LABEL for="lastname"&gt;Last name: &lt;/LABEL&gt;
+              &lt;INPUT type="text" id="lastname"&gt;&lt;BR&gt;
+    &lt;LABEL for="email"&gt;email: &lt;/LABEL&gt;
+              &lt;INPUT type="text" id="email"&gt;&lt;BR&gt;
+    &lt;INPUT type="radio" name="sex" value="Male"&gt; Male&lt;BR&gt;
+    &lt;INPUT type="radio" name="sex" value="Female"&gt; Female&lt;BR&gt;
+    &lt;INPUT type="submit" value="Send"&gt; &lt;INPUT type="reset"&gt;
+    &lt;/P&gt;
+ &lt;/FORM&gt;
+</PRE></DIV>
+<P><SPAN title="label::implicit association with control" class="index-inst"><A 
+name="idx-label-1">To associate a label</A></SPAN> with another control
+ implicitly, the control element must be within the contents of the <A class="noxref" 
+href="http://www.w3.org/TR/html401/interact/forms.html#edef-LABEL"><SAMP class="einst">LABEL</SAMP></A>
+ element. In this case, the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-LABEL"><SAMP 
+class="einst">LABEL</SAMP></A> may only contain one control element. The label
+ itself may be positioned before or after the associated control.</P>
+<DIV class="example">
+<P>In this example, we implicitly associate two labels with two <A href="http://www.w3.org/TR/html401/interact/forms.html#text-input">text 
+input</A> controls:</P>
+<PRE>&lt;FORM action="..." method="post"&gt;
+&lt;P&gt;
+&lt;LABEL&gt;
+   First Name
+   &lt;INPUT type="text" name="firstname"&gt;
+&lt;/LABEL&gt;
+&lt;LABEL&gt;
+   &lt;INPUT type="text" name="lastname"&gt;
+   Last Name
+&lt;/LABEL&gt;
+&lt;/P&gt;
+&lt;/FORM&gt;
+</PRE>
+<P>Note that this technique cannot be used when a table is being used for
+ layout, with the label in one cell and its associated control in another
+ cell.</P></DIV>
+<P><SPAN title="label::and focus|focus::label gives to &#10;control" class="index-inst">When 
+a <A name="idx-label-2" class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-LABEL"><SAMP 
+class="einst">LABEL</SAMP></A> element</SPAN> receives <A href="http://www.w3.org/TR/html401/interact/forms.html#focus">focus</A>, 
+it passes the focus on to its associated control. See the section below on <A 
+href="http://www.w3.org/TR/html401/interact/forms.html#access-keys">access 
+keys</A> for examples.</P>
+<P>Labels may be rendered by user agents in a number of ways (e.g., visually,
+ read by speech synthesizers, etc.)</P>
+<H2><A name="h-17.10">17.10</A> <A name="form-structure">Adding structure to
+ forms:</A> the <A name="edef-FIELDSET"><SAMP class="edef">FIELDSET</SAMP></A>
+ and <A name="edef-LEGEND"><SAMP class="edef">LEGEND</SAMP></A> elements</H2>
+<DIV class="dtd-fragment">
+<PRE class="dtd-fragment">&lt;!--
+  #PCDATA is to solve the mixed content problem,
+  per specification only whitespace is allowed there!
+ --&gt;
+&lt;!ELEMENT <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-FIELDSET"><SAMP class="einst">FIELDSET</SAMP></A> - - (#PCDATA,LEGEND,(<A href="http://www.w3.org/TR/html401/sgml/dtd.html#flow">%flow;</A>)*) -- form control group --&gt;
+&lt;!ATTLIST FIELDSET
+  <A href="http://www.w3.org/TR/html401/sgml/dtd.html#attrs">%attrs;</A>                              -- <A href="http://www.w3.org/TR/html401/sgml/dtd.html#coreattrs">%coreattrs</A>, <A href="http://www.w3.org/TR/html401/sgml/dtd.html#i18n">%i18n</A>, <A href="http://www.w3.org/TR/html401/sgml/dtd.html#events">%events</A> --
+  &gt;
+
+&lt;!ELEMENT <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-LEGEND"><SAMP class="einst">LEGEND</SAMP></A> - - (<A href="http://www.w3.org/TR/html401/sgml/dtd.html#inline">%inline;</A>)*       -- fieldset legend --&gt;
+
+&lt;!ATTLIST LEGEND
+  <A href="http://www.w3.org/TR/html401/sgml/dtd.html#attrs">%attrs;</A>                              -- <A href="http://www.w3.org/TR/html401/sgml/dtd.html#coreattrs">%coreattrs</A>, <A href="http://www.w3.org/TR/html401/sgml/dtd.html#i18n">%i18n</A>, <A href="http://www.w3.org/TR/html401/sgml/dtd.html#events">%events</A> --
+  <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-accesskey"><SAMP class="ainst-LEGEND">accesskey</SAMP></A>   <A href="http://www.w3.org/TR/html401/sgml/dtd.html#Character">%Character;</A>    #IMPLIED  -- accessibility key character --
+  &gt;
+</PRE></DIV>
+<P><EM>Start tag: <STRONG>required</STRONG>, End tag: <STRONG>
+required</STRONG></EM></P>
+<DIV class="adef-list">
+<P><EM>LEGEND Attribute definitions</EM></P>
+<DL>
+  <DT><A name="adef-align-LEGEND"><SAMP class="adef">align</SAMP></A> = <SAMP>
+  top|bottom|left|right</SAMP> <A href="http://www.w3.org/TR/html401/types.html#case-insensitive">
+  [CI]</A></DT>
+  <DD><A 
+  href="http://www.w3.org/TR/html401/conform.html#deprecated"><STRONG>Deprecated.</STRONG></A> 
+  This attribute specifies the position of the legend with respect to the 
+  fieldset. Possible values:  
+  <UL>
+    <LI><SAMP>top:</SAMP> The legend is at the top of the fieldset. This is the
+     default value.</LI>
+    <LI><SAMP>bottom:</SAMP> The legend is at the bottom of the fieldset.</LI>
+    <LI><SAMP>left:</SAMP> The legend is at the left side of the fieldset.</LI>
+    <LI><SAMP>right:</SAMP> The legend is at the right side of the 
+  fieldset.</LI></UL></DD></DL></DIV>
+<DIV class="aref-list">
+<P><EM>Attributes defined elsewhere</EM></P>
+<UL>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/struct/global.html#adef-id"><SAMP 
+  class="ainst">id</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/struct/global.html#adef-class"><SAMP 
+  class="ainst">class</SAMP></A> (<A href="http://www.w3.org/TR/html401/struct/global.html#id-and-class">document-wide 
+  identifiers</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/struct/dirlang.html#adef-lang"><SAMP 
+  class="ainst">lang</SAMP></A> (<A href="http://www.w3.org/TR/html401/struct/dirlang.html#language-info">language 
+  information</A>), <A class="noxref" href="http://www.w3.org/TR/html401/struct/dirlang.html#adef-dir"><SAMP 
+  class="ainst">dir</SAMP></A> (<A href="http://www.w3.org/TR/html401/struct/dirlang.html#bidirection">text
+   direction</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/struct/global.html#adef-title"><SAMP 
+  class="ainst">title</SAMP></A> (<A href="http://www.w3.org/TR/html401/struct/global.html#title">element
+   title</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/present/styles.html#adef-style"><SAMP 
+  class="ainst">style</SAMP></A> (<A href="http://www.w3.org/TR/html401/present/styles.html#style-element">inline
+   style information</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-accesskey"><SAMP 
+  class="ainst">accesskey</SAMP></A> (<A href="http://www.w3.org/TR/html401/interact/forms.html#access-keys">access
+   keys</A>)</LI>
+  <LI><A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onclick"><SAMP 
+  class="ainst">onclick</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-ondblclick"><SAMP 
+  class="ainst">ondblclick</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onmousedown"><SAMP 
+  class="ainst">onmousedown</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onmouseup"><SAMP 
+  class="ainst">onmouseup</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onmouseover"><SAMP 
+  class="ainst">onmouseover</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onmousemove"><SAMP 
+  class="ainst">onmousemove</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onmouseout"><SAMP 
+  class="ainst">onmouseout</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onkeypress"><SAMP 
+  class="ainst">onkeypress</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onkeydown"><SAMP 
+  class="ainst">onkeydown</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/scripts.html#adef-onkeyup"><SAMP 
+  class="ainst">onkeyup</SAMP></A> (<A href="http://www.w3.org/TR/html401/interact/scripts.html#events">intrinsic 
+  events</A>)</LI></UL></DIV>
+<P><SPAN title="form::structuring controls in" class="index-inst">The <A name="idx-form-6" 
+class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-FIELDSET"><SAMP 
+class="einst">FIELDSET</SAMP></A> element</SPAN> allows authors to group 
+thematically related controls and labels. Grouping controls makes it easier for 
+users to understand their purpose while simultaneously facilitating tabbing 
+navigation for visual user agents and speech navigation for speech-oriented user 
+agents. The proper use of this element makes documents more accessible.</P>
+<P>The <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-LEGEND"><SAMP 
+class="einst">LEGEND</SAMP></A> element allows authors to assign a caption to a 
+<A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-FIELDSET"><SAMP 
+class="einst">FIELDSET</SAMP></A>. The legend improves accessibility when the <A 
+class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-FIELDSET"><SAMP 
+class="einst">FIELDSET</SAMP></A> is rendered non-visually.</P>
+<DIV class="example">
+<P>In this example, we create a form that one might fill out at the doctor's
+ office. It is divided into three sections: personal information, medical
+ history, and current medication. Each section contains controls for inputting
+ the appropriate information.</P>
+<PRE>&lt;FORM action="..." method="post"&gt;
+ &lt;P&gt;
+ &lt;FIELDSET&gt;
+  &lt;LEGEND&gt;Personal Information&lt;/LEGEND&gt;
+  Last Name: &lt;INPUT name="personal_lastname" type="text" tabindex="1"&gt;
+  First Name: &lt;INPUT name="personal_firstname" type="text" tabindex="2"&gt;
+  Address: &lt;INPUT name="personal_address" type="text" tabindex="3"&gt;
+  <EM>...more personal information...</EM>
+ &lt;/FIELDSET&gt;
+ &lt;FIELDSET&gt;
+  &lt;LEGEND&gt;Medical History&lt;/LEGEND&gt;
+  &lt;INPUT name="history_illness" 
+         type="checkbox" 
+         value="Smallpox" tabindex="20"&gt; Smallpox
+  &lt;INPUT name="history_illness" 
+         type="checkbox" 
+         value="Mumps" tabindex="21"&gt; Mumps
+  &lt;INPUT name="history_illness" 
+         type="checkbox" 
+         value="Dizziness" tabindex="22"&gt; Dizziness
+  &lt;INPUT name="history_illness" 
+         type="checkbox" 
+         value="Sneezing" tabindex="23"&gt; Sneezing
+  <EM>...more medical history...</EM>
+ &lt;/FIELDSET&gt;
+ &lt;FIELDSET&gt;
+  &lt;LEGEND&gt;Current Medication&lt;/LEGEND&gt;
+  Are you currently taking any medication? 
+  &lt;INPUT name="medication_now" 
+         type="radio" 
+         value="Yes" tabindex="35"&gt;Yes
+  &lt;INPUT name="medication_now" 
+         type="radio" 
+         value="No" tabindex="35"&gt;No
+
+  If you are currently taking medication, please indicate
+  it in the space below:
+  &lt;TEXTAREA name="current_medication" 
+            rows="20" cols="50"
+            tabindex="40"&gt;
+  &lt;/TEXTAREA&gt;
+ &lt;/FIELDSET&gt;
+&lt;/FORM&gt;
+</PRE>
+<P>Note that in this example, we might improve the visual presentation of the
+ form by aligning elements within each <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-FIELDSET"><SAMP 
+class="einst">FIELDSET</SAMP></A> (with style sheets), adding color and font 
+information (with style sheets), adding scripting (say, to only open the 
+"current medication" text area if the user indicates he or she is currently on 
+medication), etc.</P></DIV>
+<H2><A name="h-17.11">17.11</A> <SPAN title="focus|control::giving focus to" 
+class="index-def"><A name="focus">Giving focus to an element</A></SPAN></H2>
+<P>In an HTML document, an element must receive <DFN>focus</DFN> from the user
+ in order to become active and perform its tasks. For example, users must
+ activate a link specified by the <A class="noxref" href="http://www.w3.org/TR/html401/struct/links.html#edef-A"><SAMP 
+class="einst">A</SAMP></A> element in order to follow the specified link. 
+Similarly, users must give a <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-TEXTAREA"><SAMP 
+class="einst">TEXTAREA</SAMP></A> focus in order to enter text into it.</P>
+<P>There are several ways to give focus to an element:</P>
+<UL>
+  <LI>Designate the element with a pointing device.</LI>
+  <LI>Navigate from one element to the next with the keyboard. The document's
+   author may define a <EM>tabbing order</EM> that specifies the order in which
+   elements will receive focus if the user navigates the document with the
+   keyboard (see <A href="http://www.w3.org/TR/html401/interact/forms.html#tabbing-navigation">tabbing 
+  navigation</A>). Once selected, an element may be activated by some other key 
+  sequence.</LI>
+  <LI>Select an element through an <A href="http://www.w3.org/TR/html401/interact/forms.html#access-keys"><EM>access 
+  key</EM></A> (sometimes called "keyboard shortcut" or "keyboard 
+  accelerator").</LI></UL>
+<H3><A name="h-17.11.1">17.11.1</A> <SPAN title="control::tabbing navigation|tabbing navigation|form::navigating through &#10;controls" 
+class="index-def"><A name="tabbing-navigation">Tabbing 
+navigation</A></SPAN></H3>
+<DIV class="adef-list">
+<P><EM>Attribute definitions</EM></P>
+<DL>
+  <DT><A name="adef-tabindex"><SAMP class="adef">tabindex</SAMP></A> = <A href="http://www.w3.org/TR/html401/types.html#type-number"><EM>number</EM></A> 
+  <A href="http://www.w3.org/TR/html401/types.html#case-neutral">[CN]</A></DT>
+  <DD>This attribute specifies the position of the current element in the 
+  tabbing order for the current document. This value must be a number between 0 
+  and 32767. User agents should ignore leading zeros.</DD></DL></DIV>
+<P><SPAN title="tabbing order|form::tabbing order of&#10;controls" class="index-def"><A 
+name="didx-tabbing_order">The <DFN>tabbing order</DFN></A></SPAN> defines the 
+order in which elements will receive focus when navigated by the user via the 
+keyboard. The tabbing order may include elements nested within other 
+elements.</P>
+<P>Elements that may receive focus should be navigated by user agents according
+ to the following rules:</P>
+<OL>
+  <LI>Those elements that support the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-tabindex"><SAMP 
+  class="ainst">tabindex</SAMP></A> attribute and assign a positive value to it 
+  are navigated first. Navigation proceeds from the element with the lowest <A 
+  class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-tabindex"><SAMP 
+  class="ainst">tabindex</SAMP></A> value to the element with the highest value. 
+  Values need not be sequential nor must they begin with any particular value. 
+  Elements that have identical <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-tabindex"><SAMP 
+  class="ainst">tabindex</SAMP></A> values should be navigated in the order they
+   appear in the character stream.</LI>
+  <LI>Those elements that do not support the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-tabindex"><SAMP 
+  class="ainst">tabindex</SAMP></A> attribute or support it and assign it a 
+  value of "0" are navigated next. These elements are navigated in the order 
+  they appear in the character stream.</LI>
+  <LI>Elements that are <A href="http://www.w3.org/TR/html401/interact/forms.html#disabled">disabled</A> 
+  do not participate in the tabbing order.</LI></OL>
+<P>The following elements support the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-tabindex"><SAMP 
+class="ainst">tabindex</SAMP></A> attribute: <A class="noxref" href="http://www.w3.org/TR/html401/struct/links.html#edef-A"><SAMP 
+class="einst">A</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/struct/objects.html#edef-AREA"><SAMP 
+class="einst">AREA</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-BUTTON"><SAMP 
+class="einst">BUTTON</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-INPUT"><SAMP 
+class="einst">INPUT</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/struct/objects.html#edef-OBJECT"><SAMP 
+class="einst">OBJECT</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-SELECT"><SAMP 
+class="einst">SELECT</SAMP></A>, and <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-TEXTAREA"><SAMP 
+class="einst">TEXTAREA</SAMP></A>.</P>
+<DIV class="example">
+<P>In this example, the tabbing order will be the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-BUTTON"><SAMP 
+class="einst">BUTTON</SAMP></A>, the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-INPUT"><SAMP 
+class="einst">INPUT</SAMP></A> elements in order (note that "field1" and the 
+button share the same tabindex, but "field1" appears later in the character 
+stream), and finally the link created by the <A class="noxref" href="http://www.w3.org/TR/html401/struct/links.html#edef-A"><SAMP 
+class="einst">A</SAMP></A> element.</P>
+<PRE>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd"&gt;
+&lt;HTML&gt;
+&lt;HEAD&gt;
+&lt;TITLE&gt;A document with FORM&lt;/TITLE&gt;
+&lt;/HEAD&gt;
+&lt;BODY&gt;
+<EM>...some text...</EM>
+&lt;P&gt;Go to the 
+&lt;A tabindex="10" href="http://www.w3.org/"&gt;W3C Web site.&lt;/A&gt;
+<EM>...some more...</EM>
+&lt;BUTTON type="button" name="get-database"
+           tabindex="1" onclick="get-database"&gt;
+Get the current database.
+&lt;/BUTTON&gt;
+<EM>...some more...</EM>
+&lt;FORM action="..." method="post"&gt;
+&lt;P&gt;
+&lt;INPUT tabindex="1" type="text" name="field1"&gt;
+&lt;INPUT tabindex="2" type="text" name="field2"&gt;
+&lt;INPUT tabindex="3" type="submit" name="submit"&gt;
+&lt;/P&gt;
+&lt;/FORM&gt;
+&lt;/BODY&gt;
+&lt;/HTML&gt;
+</PRE></DIV>
+<DIV class="note">
+<P><EM><STRONG>Tabbing keys.</STRONG> The actual key sequence that causes
+ tabbing navigation or element activation depends on the configuration of the
+ user agent (e.g., the "tab" key is used for navigation and the "enter" key is
+ used to activate a selected element).</EM></P>
+<P><EM>User agents may also define key sequences to navigate the tabbing order
+ in reverse. When the end (or beginning) of the tabbing order is reached, user
+ agents may circle back to the beginning (or end).</EM></P></DIV>
+<H3><A name="h-17.11.2">17.11.2</A> <SPAN title="access &#10;key|control::access key for|accessibility::access keys" 
+class="index-def"><A name="access-keys">Access keys</A></SPAN></H3>
+<DIV class="adef-list">
+<P><EM>Attribute definitions</EM></P>
+<DL>
+  <DT><A name="adef-accesskey"><SAMP class="adef">accesskey</SAMP></A> = <A 
+  href="http://www.w3.org/TR/html401/types.html#type-character"><EM>character</EM></A> 
+  <A href="http://www.w3.org/TR/html401/types.html#case-neutral">[CN]</A></DT>
+  <DD>This attribute assigns an access key to an element. <SPAN title="characters::access key" 
+  class="index-inst"><A name="idx-characters">An access key</A></SPAN> is a 
+  single character from the document character set. <STRONG>Note.</STRONG> 
+  Authors should consider the input method of the expected reader when 
+  specifying an accesskey.</DD></DL></DIV>
+<P><SPAN title="focus::and access key" class="index-inst"><A 
+name="idx-focus-2">Pressing an access key assigned to an element gives focus to 
+the element.</A></SPAN> The action that occurs when an element receives focus
+ depends on the element. For example, when a user activates a link defined by
+ the <A class="noxref" href="http://www.w3.org/TR/html401/struct/links.html#edef-A"><SAMP 
+class="einst">A</SAMP></A> element, the user agent generally follows the link. 
+When a user activates a radio button, the user agent changes the value of the 
+radio button. When the user activates a text field, it allows input, etc.</P>
+<P>The following elements support the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-accesskey"><SAMP 
+class="ainst">accesskey</SAMP></A> attribute: <A class="noxref" href="http://www.w3.org/TR/html401/struct/links.html#edef-A"><SAMP 
+class="einst">A</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/struct/objects.html#edef-AREA"><SAMP 
+class="einst">AREA</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-BUTTON"><SAMP 
+class="einst">BUTTON</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-INPUT"><SAMP 
+class="einst">INPUT</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-LABEL"><SAMP 
+class="einst">LABEL</SAMP></A>, and <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-LEGEND"><SAMP 
+class="einst">LEGEND</SAMP></A>, and <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-TEXTAREA"><SAMP 
+class="einst">TEXTAREA</SAMP></A>.</P>
+<DIV class="example">
+<P>This example assigns the access key "U" to a label associated with an <A 
+class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-INPUT"><SAMP 
+class="einst">INPUT</SAMP></A> control. Typing the access key gives focus to the 
+label which in turn gives it to the associated control. The user may then enter 
+text into the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-INPUT"><SAMP 
+class="einst">INPUT</SAMP></A> area.</P>
+<PRE>&lt;FORM action="..." method="post"&gt;
+&lt;P&gt;
+&lt;LABEL for="fuser" accesskey="U"&gt;
+User Name
+&lt;/LABEL&gt;
+&lt;INPUT type="text" name="user" id="fuser"&gt;
+&lt;/P&gt;
+&lt;/FORM&gt;
+</PRE></DIV>
+<DIV class="example">
+<P>In this example, we assign an access key to a link defined by the <A class="noxref" 
+href="http://www.w3.org/TR/html401/struct/links.html#edef-A"><SAMP 
+class="einst">A</SAMP></A> element. Typing this access key takes the user to 
+another document, in this case, a table of contents.</P>
+<PRE>&lt;P&gt;&lt;A accesskey="C" 
+      rel="contents"
+      href="http://someplace.com/specification/contents.html"&gt;
+    Table of Contents&lt;/A&gt;
+</PRE></DIV>
+<P>The invocation of access keys depends on the underlying system. For instance, 
+on machines running MS Windows, one generally has to press the "alt" key in 
+addition to the access key. On Apple systems, one generally has to press the 
+"cmd" key in addition to the access key.</P>
+<P>The rendering of access keys depends on the user agent. We recommend that
+ authors include the access key in label text or wherever the access key is to
+ apply. User agents should render the value of an access key in such a way as to
+ emphasize its role and to distinguish it from other characters (e.g., by
+ underlining it).</P>
+<H2><A name="h-17.12">17.12</A> <A name="disabled-read-only">Disabled and
+ read-only controls</A></H2>
+<P>In contexts where user input is either undesirable or irrelevant, it is
+ important to be able to disable a control or render it read-only. For example,
+ one may want to disable a form's submit button until the user has entered some
+ required data. Similarly, an author may want to include a piece of read-only
+ text that must be submitted as a value along with the form. The following
+ sections describe disabled and read-only controls.</P>
+<H3><A name="h-17.12.1">17.12.1</A> <SPAN title="control::disabled|disabled controls" 
+class="index-inst"><A name="disabled">Disabled controls</A></SPAN></H3>
+<DIV class="adef-list">
+<P><EM>Attribute definitions</EM></P>
+<DL>
+  <DT><A name="adef-disabled"><SAMP class="adef">disabled</SAMP></A> <A href="http://www.w3.org/TR/html401/types.html#case-insensitive">[CI]</A></DT>
+  <DD>When set for a form control, this boolean attribute disables the control
+   for user input.</DD></DL></DIV>
+<P>When set, the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-disabled"><SAMP 
+class="ainst">disabled</SAMP></A> attribute has the following effects on an
+ element:</P>
+<UL>
+  <LI>Disabled controls do not receive <A href="http://www.w3.org/TR/html401/interact/forms.html#focus">focus</A>.</LI>
+  <LI>Disabled controls are skipped in <A href="http://www.w3.org/TR/html401/interact/forms.html#tabbing-navigation">tabbing
+   navigation</A>.</LI>
+  <LI>Disabled controls cannot be <A href="http://www.w3.org/TR/html401/interact/forms.html#successful-controls">
+  successful</A>.</LI></UL>
+<P>The following elements support the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-disabled"><SAMP 
+class="ainst">disabled</SAMP></A> attribute: <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-BUTTON"><SAMP 
+class="einst">BUTTON</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-INPUT"><SAMP 
+class="einst">INPUT</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-OPTGROUP"><SAMP 
+class="einst">OPTGROUP</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-OPTION"><SAMP 
+class="einst">OPTION</SAMP></A>, <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-SELECT"><SAMP 
+class="einst">SELECT</SAMP></A>, and <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-TEXTAREA"><SAMP 
+class="einst">TEXTAREA</SAMP></A>.</P>
+<P>This attribute is inherited but local declarations override the inherited
+ value.</P>
+<P>How disabled elements are rendered depends on the user agent. For example,
+ some user agents "gray out" disabled menu items, button labels, etc.</P>
+<DIV class="example">
+<P>In this example, the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-INPUT"><SAMP 
+class="einst">INPUT</SAMP></A> element is disabled. Therefore, it cannot receive 
+user input nor will its value be submitted with the form.</P>
+<PRE>&lt;INPUT disabled name="fred" value="stone"&gt;
+</PRE></DIV>
+<DIV class="note">
+<P><EM><STRONG>Note.</STRONG> The only way to modify dynamically the value of
+ the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-disabled"><SAMP 
+class="ainst">disabled</SAMP></A> attribute is through a <A href="http://www.w3.org/TR/html401/interact/scripts.html">
+script.</A></EM></P></DIV>
+<H3><A name="h-17.12.2">17.12.2</A> <SPAN title="control::read only|read only controls" 
+class="index-inst"><A name="read-only">Read-only controls</A></SPAN></H3>
+<DIV class="adef-list">
+<P><EM>Attribute definitions</EM></P>
+<DL>
+  <DT><A name="adef-readonly"><SAMP class="adef">readonly</SAMP></A> <A href="http://www.w3.org/TR/html401/types.html#case-insensitive">[CI]</A></DT>
+  <DD>When set for a form control, this boolean attribute prohibits changes to
+   the control.</DD></DL></DIV>
+<P>The <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-readonly"><SAMP 
+class="ainst">readonly</SAMP></A> attribute specifies whether the control may be 
+modified by the user.</P>
+<P>When set, the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-readonly"><SAMP 
+class="ainst">readonly</SAMP></A> attribute has the following effects on an
+ element:</P>
+<UL>
+  <LI>Read-only elements receive <A href="http://www.w3.org/TR/html401/interact/forms.html#focus">focus</A> 
+  but cannot be modified by the user.</LI>
+  <LI>Read-only elements are included in <A href="http://www.w3.org/TR/html401/interact/forms.html#tabbing-navigation">tabbing
+   navigation</A>.</LI>
+  <LI>Read-only elements may be <A href="http://www.w3.org/TR/html401/interact/forms.html#successful-controls">
+  successful</A>.</LI></UL>
+<P>The following elements support the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-readonly"><SAMP 
+class="ainst">readonly</SAMP></A> attribute: <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-INPUT"><SAMP 
+class="einst">INPUT</SAMP></A> and <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-TEXTAREA"><SAMP 
+class="einst">TEXTAREA</SAMP></A>.</P>
+<P>How read-only elements are rendered depends on the user agent.</P>
+<DIV class="note">
+<P><EM><STRONG>Note.</STRONG> The only way to modify dynamically the value of
+ the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-readonly"><SAMP 
+class="ainst">readonly</SAMP></A> attribute is through a <A href="http://www.w3.org/TR/html401/interact/scripts.html">
+script.</A></EM></P></DIV>
+<H2><A name="h-17.13">17.13</A> <SPAN title="form::submission of" class="index-inst"><A 
+name="submit-format">Form submission</A></SPAN></H2>
+<P>The following sections explain how user agents submit form data to form
+ processing agents.</P>
+<H3><A name="h-17.13.1">17.13.1</A> <SPAN title="form::submission method of|GET::and form submission|POST::and form &#10;submission|HTTP::GET and POST with forms" 
+class="index-inst"><A name="idx-form-8">Form submission method</A></SPAN></H3>
+<P>The <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-method"><SAMP 
+class="ainst">method</SAMP></A> attribute of the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-FORM"><SAMP 
+class="einst">FORM</SAMP></A> element specifies the HTTP method used to send the 
+form to the processing agent. This attribute may take two values:</P>
+<UL>
+  <LI><SAMP>get:</SAMP> With the HTTP "get" method, the <A href="http://www.w3.org/TR/html401/interact/forms.html#form-data-set">
+  form data set</A> is appended to the URI specified by the <A class="noxref" 
+  href="http://www.w3.org/TR/html401/interact/forms.html#adef-action"><SAMP 
+  class="ainst">action</SAMP></A> attribute (with a question-mark ("?") as 
+  separator) and this new URI is sent to the processing agent.</LI>
+  <LI><SAMP>post:</SAMP> With the HTTP "post" method, the <A href="http://www.w3.org/TR/html401/interact/forms.html#form-data-set">form 
+  data set</A> is included in the body of the form and sent to the processing 
+  agent.</LI></UL>
+<P>The "get" method should be used when the form is idempotent (i.e., causes no
+ side-effects). Many database searches have no visible side-effects and make
+ ideal applications for the "get" method.</P>
+<P>If the service associated with the processing of a form causes side effects
+ (for example, if the form modifies a database or subscription to a service),
+ the "post" method should be used.</P>
+<DIV class="note">
+<P><EM><SPAN title="POST::for non-ASCII form data" class="index-inst"><A name="idx-POST-1"><STRONG>Note.</STRONG></A></SPAN> 
+The "get" method restricts <A href="http://www.w3.org/TR/html401/interact/forms.html#form-data-set">form 
+data set</A> values to ASCII characters. Only the "post" method (with <A class="noxref" 
+href="http://www.w3.org/TR/html401/interact/forms.html#adef-enctype"><SAMP 
+class="ainst">enctype</SAMP></A>="multipart/form-data") is specified to cover
+ the entire <A class="normref" href="http://www.w3.org/TR/html401/references.html#ref-ISO10646" 
+rel="biblioentry">[ISO10646]</A> character set.</EM></P></DIV>
+<H3><A name="h-17.13.2">17.13.2</A> <SPAN title="control::successful|successful control|form::values submitted" 
+class="index-inst"><A name="successful-controls">Successful 
+controls</A></SPAN></H3>
+<P>A <DFN>successful control</DFN> is "valid" for submission. Every successful
+ control has its <A href="http://www.w3.org/TR/html401/interact/forms.html#control-name">control 
+name</A> paired with its <A href="http://www.w3.org/TR/html401/interact/forms.html#current-value">current 
+value</A> as part of the submitted <A href="http://www.w3.org/TR/html401/interact/forms.html#form-data-set">form 
+data set</A>. A successful control must be defined within a <A class="noxref" 
+href="http://www.w3.org/TR/html401/interact/forms.html#edef-FORM"><SAMP class="einst">
+FORM</SAMP></A> element and must have a <A href="http://www.w3.org/TR/html401/interact/forms.html#control-name">control
+ name.</A></P>
+<P>However:</P>
+<UL>
+  <LI><SPAN title="disabled controls::not successful" class="index-inst"><A 
+  name="idx-disabled_controls-1">Controls</A></SPAN> that are <A href="http://www.w3.org/TR/html401/interact/forms.html#disabled">
+  disabled</A> cannot be successful.</LI>
+  <LI>If a form contains more than one <A href="http://www.w3.org/TR/html401/interact/forms.html#buttons">submit 
+  button</A>, only the activated submit button is successful.</LI>
+  <LI>All "on" <A href="http://www.w3.org/TR/html401/interact/forms.html#checkbox">checkboxes</A> 
+  may be successful.</LI>
+  <LI>For <A href="http://www.w3.org/TR/html401/interact/forms.html#radio">radio 
+  buttons</A> that share the same value of the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-name-INPUT"><SAMP 
+  class="ainst-INPUT">name</SAMP></A> attribute, only the "on" radio button may 
+  be successful.</LI>
+  <LI>For <A 
+  href="http://www.w3.org/TR/html401/interact/forms.html#menu">menus</A>, the <A 
+  href="http://www.w3.org/TR/html401/interact/forms.html#control-name">control 
+  name</A> is provided by a <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-SELECT"><SAMP 
+  class="einst">SELECT</SAMP></A> element and values are provided by <A class="noxref" 
+  href="http://www.w3.org/TR/html401/interact/forms.html#edef-OPTION"><SAMP 
+  class="einst">OPTION</SAMP></A> elements. Only selected options may be 
+  successful. When no options are selected, the control is not successful and 
+  neither the name nor any values are submitted to the server when the form is 
+  submitted.</LI>
+  <LI><SPAN title="file select control::submission of" class="index-inst">The <A 
+  name="idx-file_select_control-1" href="http://www.w3.org/TR/html401/interact/forms.html#current-value">current 
+  value</A></SPAN> of a <A href="http://www.w3.org/TR/html401/interact/forms.html#file-select">file 
+  select</A> is a list of one or more file names. Upon submission of the form, 
+  the <EM>contents</EM> of each file are submitted with the rest of the form 
+  data. The file contents are packaged according to the form's <A href="http://www.w3.org/TR/html401/interact/forms.html#form-content-type">content 
+  type</A>.</LI>
+  <LI>The current value of an object control is determined by the object's
+   implementation.</LI></UL>
+<P>If a control doesn't have a <A href="http://www.w3.org/TR/html401/interact/forms.html#current-value">current 
+value</A> when the form is submitted, user agents are not required to treat it 
+as a successful control.</P>
+<P>Furthermore, user agents should not consider the following controls
+ successful:</P>
+<UL>
+  <LI><A 
+  href="http://www.w3.org/TR/html401/interact/forms.html#reset-button">Reset 
+  buttons.</A></LI>
+  <LI><SPAN title="object control" class="index-inst"><A name="idx-object_control-1" 
+  class="noxref" href="http://www.w3.org/TR/html401/struct/objects.html#edef-OBJECT"><SAMP 
+  class="einst">OBJECT</SAMP></A> elements</SPAN> whose <A class="noxref" href="http://www.w3.org/TR/html401/struct/objects.html#adef-declare"><SAMP 
+  class="ainst">declare</SAMP></A> attribute has been set.</LI></UL>
+<P><SPAN title="hidden control" class="index-inst"><A name="idx-hidden_control-1" 
+href="http://www.w3.org/TR/html401/interact/forms.html#hidden-control">Hidden 
+controls</A></SPAN> and controls that are not rendered because of <A href="http://www.w3.org/TR/html401/present/styles.html">
+style sheet</A> settings may still be successful. For example:</P>
+<DIV class="example">
+<PRE>&lt;FORM action="..." method="post"&gt;
+&lt;P&gt;
+&lt;INPUT type="password" style="display:none"  
+          name="invisible-password"
+          value="mypassword"&gt;
+&lt;/FORM&gt;
+</PRE>
+<P>will still cause a value to be paired with the name "invisible-password" and
+ submitted with the form.</P></DIV>
+<H3><A name="h-17.13.3">17.13.3</A> <SPAN title="form::processing controls of" 
+class="index-inst"><A name="form-data-processing">Processing form
+ data</A></SPAN></H3>
+<P>When the user submits a form (e.g., by activating a <A href="http://www.w3.org/TR/html401/interact/forms.html#submit-button">submit 
+button</A>), the user agent processes it as follows.</P>
+<H4>Step one: Identify the <A href="http://www.w3.org/TR/html401/interact/forms.html#successful-controls">successful
+ controls</A><A name="h-17.13.3.1">&nbsp;</A></H4>
+<H4>Step two: Build a <A name="form-data-set">form data set</A><A name="h-17.13.3.2">&nbsp;</A></H4>
+<P><SPAN title="form data set" class="index-def"><A name="didx-form_data_set">A 
+<DFN>form data set</DFN></A></SPAN> is a sequence of <A href="http://www.w3.org/TR/html401/interact/forms.html#control-name">
+control-name</A>/<A href="http://www.w3.org/TR/html401/interact/forms.html#current-value">current-value</A> 
+pairs constructed from <A href="http://www.w3.org/TR/html401/interact/forms.html#successful-controls">successful 
+controls</A></P>
+<H4><SPAN title="form::encoding data of|form data &#10;set::encoding" class="index-inst"><A 
+name="idx-form-11">Step three: Encode the form data set</A></SPAN><A name="h-17.13.3.3">&nbsp;</A></H4>
+<P>The form data set is then encoded according to the <A href="http://www.w3.org/TR/html401/interact/forms.html#form-content-type">content 
+type</A> specified by the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-enctype"><SAMP 
+class="ainst">enctype</SAMP></A> attribute of the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-FORM"><SAMP 
+class="einst">FORM</SAMP></A> element.</P>
+<H4><SPAN title="form::methods and actions" class="index-inst"><A name="idx-form-12">Step 
+four: Submit the encoded form data set</A></SPAN><A 
+name="h-17.13.3.4">&nbsp;</A></H4>
+<P>Finally, the encoded data is sent to the processing agent designated by the 
+<A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-action"><SAMP 
+class="ainst">action</SAMP></A> attribute using the protocol specified by the <A 
+class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-method"><SAMP 
+class="ainst">method</SAMP></A> attribute.</P>
+<P>This specification does not specify all valid submission methods or <A href="http://www.w3.org/TR/html401/interact/forms.html#form-content-type">content 
+types</A> that may be used with forms. However, HTML 4 user agents must support 
+the established conventions in the following cases:</P>
+<UL>
+  <LI>If the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-method"><SAMP 
+  class="ainst">method</SAMP></A> is "get" and the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-action"><SAMP 
+  class="ainst">action</SAMP></A> is an HTTP URI, the user agent takes the value 
+  of <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-action"><SAMP 
+  class="ainst">action</SAMP></A>, appends a <SAMP>`?'</SAMP> to it, then 
+  appends the <A href="http://www.w3.org/TR/html401/interact/forms.html#form-data-set">form 
+  data set</A>, encoded using the "application/x-www-form-urlencoded" <A href="http://www.w3.org/TR/html401/interact/forms.html#form-content-type">content
+   type</A>. The user agent then traverses the link to this URI. In this 
+  scenario, form data are restricted to ASCII codes.</LI>
+  <LI>If the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-method"><SAMP 
+  class="ainst">method</SAMP></A> is "post" and the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-action"><SAMP 
+  class="ainst">action</SAMP></A> is an HTTP URI, the user agent conducts an 
+  HTTP "post" transaction using the value of the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-action"><SAMP 
+  class="ainst">action</SAMP></A> attribute and a message created according to 
+  the <A href="http://www.w3.org/TR/html401/interact/forms.html#form-content-type">
+  content type</A> specified by the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-enctype"><SAMP 
+  class="ainst">enctype</SAMP></A> attribute.</LI></UL>
+<P>For any other value of <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-action"><SAMP 
+class="ainst">action</SAMP></A> or <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-method"><SAMP 
+class="ainst">method</SAMP></A>, behavior is unspecified.</P>
+<P>User agents should render the response from the HTTP "get" and "post"
+ transactions.</P>
+<H3><A name="h-17.13.4">17.13.4</A> <SPAN title="form::content types for encoding|content types::for encoding form data" 
+class="index-inst"><A name="form-content-type">Form content 
+types</A></SPAN></H3>
+<P>The <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#adef-enctype"><SAMP 
+class="ainst">enctype</SAMP></A> attribute of the <A class="noxref" href="http://www.w3.org/TR/html401/interact/forms.html#edef-FORM"><SAMP 
+class="einst">FORM</SAMP></A> element specifies the <A href="http://www.w3.org/TR/html401/types.html#type-content-type">content 
+type</A> used to encode the <A href="http://www.w3.org/TR/html401/interact/forms.html#form-data-set">form 
+data set</A> for submission to the server. User agents must support the content 
+types listed below. Behavior for other content types is unspecified.</P>
+<P>Please also consult the section on <A href="http://www.w3.org/TR/html401/appendix/notes.html#ampersands-in-uris">escaping 
+ampersands in URI attribute values</A>.</P>
+<H4><SPAN title="application/x-www-form-urlencoded|content &#10;type::application/x-www-form-urlencoded" 
+class="index-def"><A name="didx-applicationx-www-form-urlencoded">
+application/x-www-form-urlencoded</A></SPAN> <A name="h-17.13.4.1">
+&nbsp;</A></H4>
+<P>This is the default content type. Forms submitted with this content type must 
+be encoded as follows:</P>
+<OL>
+  <LI>Control names and values are escaped. Space characters are replaced by 
+  <SAMP>`+'</SAMP>, and then reserved characters are escaped as described in <A 
+  class="normref" href="http://www.w3.org/TR/html401/references.html#ref-RFC1738" 
+  rel="biblioentry">[RFC1738]</A>, section 2.2: Non-alphanumeric characters are 
+  replaced by <SAMP>`%HH'</SAMP>, a percent sign and two hexadecimal digits 
+  representing the ASCII code of the character. Line breaks are represented as 
+  "CR LF" pairs (i.e., <SAMP>`%0D%0A'</SAMP>).</LI>
+  <LI>The control names/values are listed in the order they appear in the
+   document. The name is separated from the value by <SAMP>`='</SAMP> and
+   name/value pairs are separated from each other by 
+<SAMP>`&amp;'</SAMP>.</LI></OL>
+<H4><SPAN title="multipart/form-data|content &#10;type::multipart/form-data" 
+class="index-def"><A name="didx-multipartform-data">
+multipart/form-data</A></SPAN> <A name="h-17.13.4.2">&nbsp;</A></H4>
+<DIV class="note">
+<P><EM><STRONG>Note.</STRONG> Please consult <A class="informref" href="http://www.w3.org/TR/html401/references.html#ref-RFC2388" 
+rel="biblioentry">[RFC2388]</A> for additional information about file uploads, 
+including backwards compatibility issues, the relationship between 
+"multipart/form-data" and other content types, performance issues, etc.</EM></P>
+<P><EM>Please consult the appendix for information about <A href="http://www.w3.org/TR/html401/appendix/notes.html#forms-security">security 
+issues for forms</A>.</EM></P></DIV>
+<P>The content type "application/x-www-form-urlencoded" is inefficient for
+ sending large quantities of binary data or text containing non-ASCII
+ characters. The content type "multipart/form-data" should be used for
+ submitting forms that contain files, non-ASCII data, and binary data.</P>
+<P>The content "multipart/form-data" follows the rules of all multipart MIME
+ data streams as outlined in <A class="normref" href="http://www.w3.org/TR/html401/references.html#ref-RFC2045" 
+rel="biblioentry">[RFC2045]</A>. The definition of "multipart/form-data" is 
+available at the <A href="http://www.w3.org/TR/html401/references.html#ref-IANA" 
+rel="biblioentry">[IANA]</A> registry.</P>
+<P>A "multipart/form-data" message contains a series of parts, each representing 
+a <A 
+href="http://www.w3.org/TR/html401/interact/forms.html#successful-controls">successful 
+control</A>. The parts are sent to the processing agent in the same order the 
+corresponding controls appear in the document stream. Part boundaries should not 
+occur in any of the data; how this is done lies outside the scope of this 
+specification.</P>
+<P>As with all multipart MIME types, each part has an optional "Content-Type"
+ header that defaults to "text/plain". User agents should supply the
+ "Content-Type" header, accompanied by a "charset" parameter.</P>
+<P>Each part is expected to contain:</P>
+<OL>
+  <LI>a "Content-Disposition" header whose value is "form-data".</LI>
+  <LI>a name attribute specifying the <A href="http://www.w3.org/TR/html401/interact/forms.html#control-name">control 
+  name</A> of the corresponding control. Control names originally encoded in 
+  non-ASCII <A href="http://www.w3.org/TR/html401/charset.html">character 
+  sets</A> may be encoded using the method outlined in <A class="normref" href="http://www.w3.org/TR/html401/references.html#ref-RFC2045" 
+  rel="biblioentry">[RFC2045]</A>.</LI></OL>
+<P>Thus, for example, for a control named "mycontrol", the corresponding part
+ would be specified:</P>
+<PRE>Content-Disposition: form-data; name="mycontrol"
+</PRE>
+<P>As with all MIME transmissions, "CR LF" (i.e., <SAMP>`%0D%0A'</SAMP>) is used 
+to separate lines of data.</P>
+<P>Each part may be encoded and the "Content-Transfer-Encoding" header supplied
+ if the value of that part does not conform to the default (7BIT) encoding (see 
+<A class="normref" href="http://www.w3.org/TR/html401/references.html#ref-RFC2045" 
+rel="biblioentry">[RFC2045]</A>, section 6)</P>
+<P>If the contents of a file are submitted with a form, the file input should be 
+identified by the appropriate <A href="http://www.w3.org/TR/html401/types.html#type-content-type">
+content type</A> (e.g., "application/octet-stream"). If multiple files are to be 
+returned as the result of a single form entry, they should be returned as
+ "multipart/mixed" embedded within the "multipart/form-data".</P>
+<P>The user agent should attempt to supply a file name for each submitted file.
+ The file name may be specified with the "filename" parameter of the
+ 'Content-Disposition: form-data' header, or, in the case of multiple files, in
+ a 'Content-Disposition: file' header of the subpart. If the file name of the
+ client's operating system is not in US-ASCII, the file name might be
+ approximated or encoded using the method of <A class="normref" href="http://www.w3.org/TR/html401/references.html#ref-RFC2045" 
+rel="biblioentry">[RFC2045]</A>. This is convenient for those cases where, for 
+example, the uploaded files might contain references to each other (e.g., a TeX 
+file and its ".sty" auxiliary style description).</P>
+<P>The following example illustrates "multipart/form-data" encoding. Suppose we
+ have the following form:</P>
+<DIV class="example">
+<PRE> &lt;FORM action="http://server.com/cgi/handle"
+       enctype="multipart/form-data"
+       method="post"&gt;
+   &lt;P&gt;
+   What is your name? &lt;INPUT type="text" name="submit-name"&gt;&lt;BR&gt;
+   What files are you sending? &lt;INPUT type="file" name="files"&gt;&lt;BR&gt;
+   &lt;INPUT type="submit" value="Send"&gt; &lt;INPUT type="reset"&gt;
+ &lt;/FORM&gt;
+</PRE></DIV>
+<P>If the user enters "Larry" in the text input, and selects the text file
+ "file1.txt", the user agent might send back the following data:</P>
+<PRE>   Content-Type: multipart/form-data; boundary=AaB03x
+
+   --AaB03x
+   Content-Disposition: form-data; name="submit-name"
+
+   Larry
+   --AaB03x
+   Content-Disposition: form-data; name="files"; filename="file1.txt"
+   Content-Type: text/plain
+
+   ... contents of file1.txt ...
+   --AaB03x--
+</PRE>
+<P>If the user selected a second (image) file "file2.gif", the user agent might
+ construct the parts as follows:</P>
+<PRE>   Content-Type: multipart/form-data; boundary=AaB03x
+
+   --AaB03x
+   Content-Disposition: form-data; name="submit-name"
+
+   Larry
+   --AaB03x
+   Content-Disposition: form-data; name="files"
+   Content-Type: multipart/mixed; boundary=BbC04y
+
+   --BbC04y
+   Content-Disposition: file; filename="file1.txt"
+   Content-Type: text/plain
+
+   ... contents of file1.txt ...
+   --BbC04y
+   Content-Disposition: file; filename="file2.gif"
+   Content-Type: image/gif
+   Content-Transfer-Encoding: binary
+
+   ...contents of file2.gif...
+   --BbC04y--
+   --AaB03x--
+</PRE>
+<DIV align="center" class="navbar">
+<HR>
+<A href="http://www.w3.org/TR/html401/present/frames.html">previous</A> &nbsp; 
+<A href="http://www.w3.org/TR/html401/interact/scripts.html">next</A> &nbsp; <A 
+href="http://www.w3.org/TR/html401/cover.html#minitoc">contents</A>&nbsp;  <A 
+href="http://www.w3.org/TR/html401/index/elements.html">elements</A> &nbsp; <A 
+href="http://www.w3.org/TR/html401/index/attributes.html">attributes</A> &nbsp; 
+<A href="http://www.w3.org/TR/html401/index/list.html">
+index</A></DIV></BODY></HTML>

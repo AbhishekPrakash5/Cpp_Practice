@@ -1,0 +1,11 @@
+#include<iostream>
+#include<conio>
+#include<stdio>
+using name spaces;
+void main()
+{	char name[30]; 
+	cout<<"please enter your name..";
+	gets(name);
+	cout<<"hello mr./mrs."<<name;
+	getch();
+}

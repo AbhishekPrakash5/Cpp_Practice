@@ -1,0 +1,20 @@
+************************************MUST READ************************************
+NTDC is a hacked TC++ compiler created using Notepad++ , TC++ and Dosbox.....ENJOY
+
+1.	Errors & Warnings will appear in the console below...U CAN DOUBLE CLICK ON AN ERROR OR WARNING AND 
+	NTDC WILL TAKE YOU THERE (at the exact file & line).
+
+2.	The 8 character limit for file & directory name because of MS-DOS still exists.
+
+3.	BGI Path is "C:\\BGI\\" (ie - initgraph( <gdrive> , <gmode> ,"C:\\BGI\\"); ).
+
+4.	TC++ runs in a sandbox therefore files outside the current directory will not work
+	therefore use #include "header.cpp" not #include "C:\\header.cpp".
+
+5. 	Shortcuts  -    		Ctrl + F9 --> Run
+							Ctrl + Alt + F9 --> Run in fullscreen	 
+
+6.	Never save file with spaces in their name (ie, never use "my first program.cpp",
+	use "my_first_program.cpp" ).
+
+7.	U can see this again....all instructions are saved in instructions.txt alongside the ndtc.exe
