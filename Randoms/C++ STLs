@@ -1,0 +1,24 @@
+vector<int,int> a;
+____________________________________________________________________________________________
+
+a.front() gives front num
+a.back() gives last num
+Input  :  myvector = 1, 2, 3
+          myvector.front();
+Output :  1
+
+Input  :  myvector = 3, 4, 1, 7, 3
+          myvector.front();
+Output :  3
+_______________________________________________________________________________________________
+
+lower = lower_bound (v.begin(), v.end(), 6);  
+upper = upper_bound (v.begin(), v.end(), 6); 
+
+Iterator lower_bound (Iterator first, Iterator last, const val)
+Iterator upper_bound (Iterator first, Iterator last, const val)
+ 
+lower_bound returns an iterator pointing to the first element in the range [first,last) which has a value not less than ‘val’.
+ 
+upper_bound returns an iterator pointing to the first element in the range [first,last) which has a value greater than ‘val’.
+___________________________________________________________________________________________________________ 
